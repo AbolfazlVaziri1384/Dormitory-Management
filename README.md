@@ -1,2 +1,3 @@
-# Nerds_First_Project
-Nerds' first C# project 
+# Nerds_First_Project 
+Dormitory C# Project 
+Developed by the "Nerds" Group
