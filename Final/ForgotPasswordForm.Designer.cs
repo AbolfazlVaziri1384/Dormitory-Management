@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             label1 = new Label();
-            txtStudentId = new TextBox();
+            txtStu_Per_Code = new TextBox();
             label2 = new Label();
             txtNationalCode = new TextBox();
             btnVerify = new Button();
@@ -46,25 +46,25 @@
             label1.AutoSize = true;
             label1.Font = new Font("B Koodak", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 178);
             label1.ForeColor = Color.RoyalBlue;
-            label1.Location = new Point(441, 59);
+            label1.Location = new Point(370, 59);
             label1.Name = "label1";
             label1.Size = new Size(167, 29);
             label1.TabIndex = 0;
             label1.Text = ":شماره پرسنلی / دانشجویی";
             // 
-            // txtStudentId
+            // txtStu_Per_Code
             // 
-            txtStudentId.Location = new Point(292, 58);
-            txtStudentId.Name = "txtStudentId";
-            txtStudentId.Size = new Size(143, 27);
-            txtStudentId.TabIndex = 1;
+            txtStu_Per_Code.Location = new Point(221, 58);
+            txtStu_Per_Code.Name = "txtStu_Per_Code";
+            txtStu_Per_Code.Size = new Size(143, 27);
+            txtStu_Per_Code.TabIndex = 1;
             // 
             // label2
             // 
             label2.AutoSize = true;
             label2.Font = new Font("B Koodak", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 178);
             label2.ForeColor = Color.RoyalBlue;
-            label2.Location = new Point(441, 111);
+            label2.Location = new Point(370, 111);
             label2.Name = "label2";
             label2.Size = new Size(58, 29);
             label2.TabIndex = 2;
@@ -72,7 +72,7 @@
             // 
             // txtNationalCode
             // 
-            txtNationalCode.Location = new Point(292, 113);
+            txtNationalCode.Location = new Point(221, 113);
             txtNationalCode.Name = "txtNationalCode";
             txtNationalCode.Size = new Size(143, 27);
             txtNationalCode.TabIndex = 3;
@@ -82,7 +82,7 @@
             btnVerify.BackColor = Color.AliceBlue;
             btnVerify.Font = new Font("B Koodak", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 178);
             btnVerify.ForeColor = Color.MediumBlue;
-            btnVerify.Location = new Point(292, 168);
+            btnVerify.Location = new Point(221, 168);
             btnVerify.Name = "btnVerify";
             btnVerify.Size = new Size(143, 34);
             btnVerify.TabIndex = 4;
@@ -95,7 +95,7 @@
             label3.AutoSize = true;
             label3.Font = new Font("B Koodak", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 178);
             label3.ForeColor = Color.RoyalBlue;
-            label3.Location = new Point(441, 233);
+            label3.Location = new Point(370, 233);
             label3.Name = "label3";
             label3.Size = new Size(105, 29);
             label3.TabIndex = 5;
@@ -104,7 +104,7 @@
             // txtNewPassword
             // 
             txtNewPassword.Enabled = false;
-            txtNewPassword.Location = new Point(292, 235);
+            txtNewPassword.Location = new Point(221, 235);
             txtNewPassword.Name = "txtNewPassword";
             txtNewPassword.Size = new Size(143, 27);
             txtNewPassword.TabIndex = 6;
@@ -115,7 +115,7 @@
             label4.AutoSize = true;
             label4.Font = new Font("B Koodak", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 178);
             label4.ForeColor = Color.RoyalBlue;
-            label4.Location = new Point(441, 286);
+            label4.Location = new Point(370, 286);
             label4.Name = "label4";
             label4.Size = new Size(106, 29);
             label4.TabIndex = 7;
@@ -124,7 +124,7 @@
             // txtConfirmPassword
             // 
             txtConfirmPassword.Enabled = false;
-            txtConfirmPassword.Location = new Point(292, 288);
+            txtConfirmPassword.Location = new Point(221, 288);
             txtConfirmPassword.Name = "txtConfirmPassword";
             txtConfirmPassword.Size = new Size(143, 27);
             txtConfirmPassword.TabIndex = 8;
@@ -136,7 +136,7 @@
             btnSubmit.Enabled = false;
             btnSubmit.Font = new Font("B Koodak", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 178);
             btnSubmit.ForeColor = Color.MediumBlue;
-            btnSubmit.Location = new Point(292, 346);
+            btnSubmit.Location = new Point(221, 346);
             btnSubmit.Name = "btnSubmit";
             btnSubmit.Size = new Size(143, 34);
             btnSubmit.TabIndex = 9;
@@ -147,7 +147,8 @@
             // chkShowPassword
             // 
             chkShowPassword.AutoSize = true;
-            chkShowPassword.Location = new Point(268, 241);
+            chkShowPassword.Enabled = false;
+            chkShowPassword.Location = new Point(197, 241);
             chkShowPassword.Name = "chkShowPassword";
             chkShowPassword.Size = new Size(18, 17);
             chkShowPassword.TabIndex = 10;
@@ -158,7 +159,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(669, 450);
             Controls.Add(chkShowPassword);
             Controls.Add(btnSubmit);
             Controls.Add(txtConfirmPassword);
@@ -168,9 +169,11 @@
             Controls.Add(btnVerify);
             Controls.Add(txtNationalCode);
             Controls.Add(label2);
-            Controls.Add(txtStudentId);
+            Controls.Add(txtStu_Per_Code);
             Controls.Add(label1);
+            MaximizeBox = false;
             Name = "ForgotPasswordForm";
+            StartPosition = FormStartPosition.CenterParent;
             Text = "فراموشی رمز عبور";
             ResumeLayout(false);
             PerformLayout();
@@ -179,7 +182,7 @@
         #endregion
 
         private Label label1;
-        private TextBox txtStudentId;
+        private TextBox txtStu_Per_Code;
         private Label label2;
         private TextBox txtNationalCode;
         private Button btnVerify;

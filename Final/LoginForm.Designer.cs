@@ -30,7 +30,7 @@
         {
             label1 = new Label();
             label2 = new Label();
-            textUsername = new TextBox();
+            txtUserName = new TextBox();
             label3 = new Label();
             txtPassword = new TextBox();
             chkShowPassword = new CheckBox();
@@ -64,14 +64,14 @@
             label2.TabIndex = 1;
             label2.Text = ":نام کاربری";
             // 
-            // textUsername
+            // txtUserName
             // 
-            textUsername.BackColor = SystemColors.Window;
-            textUsername.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            textUsername.Location = new Point(453, 159);
-            textUsername.Name = "textUsername";
-            textUsername.Size = new Size(146, 30);
-            textUsername.TabIndex = 2;
+            txtUserName.BackColor = SystemColors.Window;
+            txtUserName.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtUserName.Location = new Point(453, 159);
+            txtUserName.Name = "txtUserName";
+            txtUserName.Size = new Size(146, 30);
+            txtUserName.TabIndex = 2;
             // 
             // label3
             // 
@@ -154,7 +154,7 @@
             Controls.Add(chkShowPassword);
             Controls.Add(txtPassword);
             Controls.Add(label3);
-            Controls.Add(textUsername);
+            Controls.Add(txtUserName);
             Controls.Add(label2);
             Controls.Add(label1);
             MaximizeBox = false;
@@ -171,7 +171,7 @@
 
         private Label label1;
         private Label label2;
-        private TextBox textUsername;
+        private TextBox txtUserName;
         private Label label3;
         private TextBox txtPassword;
         private CheckBox chkShowPassword;

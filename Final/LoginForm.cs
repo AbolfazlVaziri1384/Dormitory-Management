@@ -7,11 +7,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Final.Models;
+using Final.Tools;
+using Microsoft.VisualBasic.Logging;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 
 namespace Final
 {
     public partial class LoginForm : Form
     {
+        DormitoryDbContext db = new DormitoryDbContext();
         public LoginForm()
         {
             InitializeComponent();
@@ -41,6 +46,44 @@ namespace Final
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
+            try
+            {
+                var user = db.Users.Where(i => i.UserName == txtUserName.Text && i.Password == txtPassword.Text).FirstOrDefault();
+                if (user != null && user.IsDeleted == false)
+                {
+                    if (user.IsActive == true)
+                    {
+                        if (user.LastLogin == null)
+                            user.LastLogin = DateTime.Now;
+                        else
+                        {
+                            user.PreviousLogin = user.LastLogin;
+                            user.LastLogin = DateTime.Now;
+                        }
+                        db.SaveChanges();
+
+                        MessageBoxTool.msgw($"خوش آمدید {user.FirstName} {user.LastName}");
+                        user.UserName = txtUserName.Text;
+                        user.Password = txtPassword.Text;
+                        //////////////////frmMain
+                        ForgotPasswordForm frm = new ForgotPasswordForm();
+                        frm.Show();
+                        Hide();
+                    }
+                    else
+                    {
+                        MessageBoxTool.msger("اکانت شما غیر فعال است");
+                    }
+                }
+                else
+                {
+                    MessageBoxTool.msger("نام کاربری یا رمز عبور اشتباه است");
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBoxTool.msger(ex.Message);
+            }
 
         }
 

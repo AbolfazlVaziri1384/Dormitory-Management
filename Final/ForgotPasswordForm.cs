@@ -7,11 +7,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Final.Models;
+using Final.Tools;
 
 namespace Final
 {
     public partial class ForgotPasswordForm : Form
     {
+        DormitoryDbContext db = new DormitoryDbContext();
+        User? user = new User();
         public ForgotPasswordForm()
         {
             InitializeComponent();
@@ -19,24 +23,26 @@ namespace Final
 
         private void btnVerify_Click(object sender, EventArgs e)
         {
-            string studentId = txtStudentId.Text.Trim();
-            string nationalCode = txtNationalCode.Text.Trim();
+            string Stu_Per_Code = txtStu_Per_Code.Text.Trim();
+            string NationalCode = txtNationalCode.Text.Trim();
 
-            if (studentId == "" && nationalCode == "")
+            user = db.Users.Where(i => i.StuPerCode == Convert.ToInt64(Stu_Per_Code) && i.NationalCode == Convert.ToInt64(NationalCode)).FirstOrDefault();
+
+            if (user != null)
             {
-                MessageBox.Show("اطلاعات تأیید شد");
-
-                txtStudentId.Enabled = false;
+                MessageBoxTool.msgr("اطلاعات تأیید شد");
+                txtStu_Per_Code.Enabled = false;
                 txtNationalCode.Enabled = false;
                 btnVerify.Enabled = false;
 
                 txtNewPassword.Enabled = true;
                 txtConfirmPassword.Enabled = true;
                 btnSubmit.Enabled = true;
+                chkShowPassword.Enabled = true;
             }
             else
             {
-                MessageBox.Show("اطلاعات وارد شده نادرست است");
+                MessageBoxTool.msger("اطلاعات وارد شده نادرست است");
             }
         }
 
@@ -44,13 +50,15 @@ namespace Final
         {
             if (txtNewPassword.Text == txtConfirmPassword.Text && txtNewPassword.Text.Length >= 4)
             {
-                MessageBox.Show("رمز جدید با موفقیت ثبت شد");
+                user.Password = txtNewPassword.Text;
+                db.SaveChanges();
+                MessageBoxTool.msgr("رمز جدید با موفقیت ثبت شد");
                 this.DialogResult = DialogResult.OK;
                 this.Close();
             }
             else
             {
-                MessageBox.Show("رمزها با هم مطابقت ندارند");
+                MessageBoxTool.msger("رمزها با هم مطابقت ندارند");
             }
         }
 
@@ -60,6 +68,11 @@ namespace Final
 
             txtNewPassword.UseSystemPasswordChar = !show;
             txtConfirmPassword.UseSystemPasswordChar = !show;
+        }
+
+        private void ForgotPasswordForm_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
