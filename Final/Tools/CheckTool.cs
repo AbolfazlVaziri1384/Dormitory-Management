@@ -43,5 +43,26 @@ namespace Final.Tools
             }
             return true;
         }
+
+        public static bool DormitoryField(string Name, string Address, int Capacity)
+        {
+            bool Istrue = false;
+            if ((string.IsNullOrWhiteSpace(Name)) ||
+                (string.IsNullOrWhiteSpace(Address)) ||
+                (Capacity < 0))
+            {
+                MessageBoxTool.msger("تمام فیلد ها باید به درستی کامل شوند");
+                return false;
+            }
+            // چک کردن تکراری نبودن نام خوابگاه
+            bool IsNameExist = Dormitory.AnyDormitory(Name);
+            if (IsNameExist)
+            {
+                MessageBoxTool.msger("این نام قبلا به خوابگاهی اختصاص داده شده است");
+                return false;
+            }
+            return true;
+        }
+
     }
 }
