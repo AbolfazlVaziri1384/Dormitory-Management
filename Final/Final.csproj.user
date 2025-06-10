@@ -4,6 +4,9 @@
     <Compile Update="ForgotPasswordForm.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="frmBlock.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="frmDormitory.cs">
       <SubType>Form</SubType>
     </Compile>
