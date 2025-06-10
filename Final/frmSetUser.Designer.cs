@@ -44,9 +44,10 @@
             label6 = new Label();
             txtAddress = new TextBox();
             grpPersonalInfo = new GroupBox();
+            radWoman = new RadioButton();
+            radMen = new RadioButton();
             pictureBox1 = new PictureBox();
             label11 = new Label();
-            cmbGender = new ComboBox();
             label10 = new Label();
             mskBirthDay = new MaskedTextBox();
             numNationalCode = new NumericUpDown();
@@ -84,6 +85,7 @@
             // 
             txtFirstName.Location = new Point(104, 40);
             txtFirstName.Name = "txtFirstName";
+            txtFirstName.RightToLeft = RightToLeft.Yes;
             txtFirstName.Size = new Size(125, 37);
             txtFirstName.TabIndex = 1;
             // 
@@ -102,6 +104,7 @@
             // 
             txtLastName.Location = new Point(104, 86);
             txtLastName.Name = "txtLastName";
+            txtLastName.RightToLeft = RightToLeft.Yes;
             txtLastName.Size = new Size(125, 37);
             txtLastName.TabIndex = 3;
             // 
@@ -213,15 +216,17 @@
             txtAddress.Location = new Point(47, 222);
             txtAddress.Multiline = true;
             txtAddress.Name = "txtAddress";
+            txtAddress.RightToLeft = RightToLeft.Yes;
             txtAddress.ScrollBars = ScrollBars.Vertical;
             txtAddress.Size = new Size(182, 64);
             txtAddress.TabIndex = 13;
             // 
             // grpPersonalInfo
             // 
+            grpPersonalInfo.Controls.Add(radWoman);
+            grpPersonalInfo.Controls.Add(radMen);
             grpPersonalInfo.Controls.Add(pictureBox1);
             grpPersonalInfo.Controls.Add(label11);
-            grpPersonalInfo.Controls.Add(cmbGender);
             grpPersonalInfo.Controls.Add(label10);
             grpPersonalInfo.Controls.Add(mskBirthDay);
             grpPersonalInfo.Controls.Add(txtFirstName);
@@ -238,6 +243,28 @@
             grpPersonalInfo.TabIndex = 14;
             grpPersonalInfo.TabStop = false;
             grpPersonalInfo.Text = "مشخصات فردی";
+            // 
+            // radWoman
+            // 
+            radWoman.AutoSize = true;
+            radWoman.Location = new Point(169, 174);
+            radWoman.Name = "radWoman";
+            radWoman.Size = new Size(60, 33);
+            radWoman.TabIndex = 25;
+            radWoman.TabStop = true;
+            radWoman.Text = "خانم";
+            radWoman.UseVisualStyleBackColor = true;
+            // 
+            // radMen
+            // 
+            radMen.AutoSize = true;
+            radMen.Location = new Point(104, 174);
+            radMen.Name = "radMen";
+            radMen.Size = new Size(50, 33);
+            radMen.TabIndex = 24;
+            radMen.TabStop = true;
+            radMen.Text = "آقا";
+            radMen.UseVisualStyleBackColor = true;
             // 
             // pictureBox1
             // 
@@ -259,16 +286,6 @@
             label11.Size = new Size(54, 26);
             label11.TabIndex = 17;
             label11.Text = ":جنسیت";
-            // 
-            // cmbGender
-            // 
-            cmbGender.DropDownStyle = ComboBoxStyle.DropDownList;
-            cmbGender.FormattingEnabled = true;
-            cmbGender.Items.AddRange(new object[] { "زن", "مرد" });
-            cmbGender.Location = new Point(104, 175);
-            cmbGender.Name = "cmbGender";
-            cmbGender.Size = new Size(125, 37);
-            cmbGender.TabIndex = 16;
             // 
             // label10
             // 
@@ -401,7 +418,7 @@
             Controls.Add(grpLoginInfo);
             Name = "frmSetUser";
             StartPosition = FormStartPosition.CenterParent;
-            Text = "ثبت یا ویرایش اطلاعات کاربری";
+            Text = "ثبت کاربرد جدید";
             Load += frmSetUser_Load;
             grpLoginInfo.ResumeLayout(false);
             grpLoginInfo.PerformLayout();
@@ -443,12 +460,13 @@
         private Label label9;
         private MaskedTextBox mskBirthDay;
         private Label label10;
-        private ComboBox cmbGender;
         private Label label11;
         private GroupBox grpIdentityInfo;
         private Button btnSave;
         private PictureBox pictureBox1;
         private PictureBox pictureBox3;
         private PictureBox pictureBox2;
+        private RadioButton radWoman;
+        private RadioButton radMen;
     }
 }

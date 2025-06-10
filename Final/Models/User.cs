@@ -122,7 +122,7 @@ public partial class User
         user.Phone = Phone;
         user.Address = Address;
         user.IsActive = true;
-        user.IsDeleted = true;
+        user.IsDeleted = false;
         
         db.Users.Add(user);
         db.SaveChanges();
