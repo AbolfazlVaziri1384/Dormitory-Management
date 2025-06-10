@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using Microsoft.VisualBasic.ApplicationServices;
 
 namespace Final.Models;
 
@@ -153,6 +154,24 @@ public partial class User
         user.ModifiedOn = DateTime.Now;
 
         db.Users.Add(user);
+        db.SaveChanges();
+    }
+    public static void DeleteUser(long UserDeletedId , long UserId)
+    {
+        DormitoryDbContext db = new DormitoryDbContext();
+        Models.User user = Models.User.FindUserById(UserDeletedId);
+        db.Users.Update(user);
+        user.IsDeleted = true;
+        user.DeletedBy = Models.User.FindUserById(UserId).Id;
+        user.DeletedTime = DateTime.Now;
+        db.SaveChanges();
+    }
+    public static void ChangeActiveUser(long UserId)
+    {
+        DormitoryDbContext db = new DormitoryDbContext();
+        Models.User user = Models.User.FindUserById(UserId);
+        db.Users.Update(user);
+        user.IsActive = (user.IsActive == true) ? false : true;
         db.SaveChanges();
     }
 }

@@ -60,6 +60,7 @@
             txtSearch.Name = "txtSearch";
             txtSearch.Size = new Size(253, 42);
             txtSearch.TabIndex = 0;
+            txtSearch.TextChanged += txtSearch_TextChanged;
             // 
             // label1
             // 
@@ -123,6 +124,7 @@
             btnEdit.TabIndex = 5;
             btnEdit.Text = "ویرایش";
             btnEdit.UseVisualStyleBackColor = false;
+            btnEdit.Click += btnEdit_Click;
             // 
             // pictureBox1
             // 
@@ -165,6 +167,7 @@
             btnDelete.TabIndex = 11;
             btnDelete.Text = "حذف";
             btnDelete.UseVisualStyleBackColor = false;
+            btnDelete.Click += btnDelete_Click;
             // 
             // btnChangeStatus
             // 
@@ -175,8 +178,9 @@
             btnChangeStatus.Name = "btnChangeStatus";
             btnChangeStatus.Size = new Size(108, 40);
             btnChangeStatus.TabIndex = 12;
-            btnChangeStatus.Text = "وضعیت";
+            btnChangeStatus.Text = "تغییر وضعیت";
             btnChangeStatus.UseVisualStyleBackColor = false;
+            btnChangeStatus.Click += btnChangeStatus_Click;
             // 
             // pictureBox4
             // 
@@ -220,6 +224,7 @@
             btnBackToMain.TabIndex = 16;
             btnBackToMain.Text = "بازگشت";
             btnBackToMain.UseVisualStyleBackColor = false;
+            btnBackToMain.Click += btnBackToMain_Click;
             // 
             // frmUsers
             // 
@@ -244,6 +249,7 @@
             Name = "frmUsers";
             StartPosition = FormStartPosition.CenterParent;
             Text = "مدیریت کاربران";
+            Load += frmUsers_Load;
             ((System.ComponentModel.ISupportInitialize)dgvUsers).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
