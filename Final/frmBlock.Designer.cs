@@ -291,6 +291,7 @@
             Controls.Add(dgvBlocks);
             Name = "frmBlock";
             Text = "frmBlock";
+            Load += frmBlock_Load;
             ((System.ComponentModel.ISupportInitialize)dgvBlocks).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();

@@ -123,9 +123,29 @@ namespace Final.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap new_blocks {
+            get {
+                object obj = ResourceManager.GetObject("new blocks", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap newBlock {
             get {
                 object obj = ResourceManager.GetObject("newBlock", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap newroom {
+            get {
+                object obj = ResourceManager.GetObject("newroom", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

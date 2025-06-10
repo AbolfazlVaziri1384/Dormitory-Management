@@ -10,10 +10,22 @@
     <Compile Update="frmDormitory.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="frmRepairRoomAssetsRequest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="frmSetBlock.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="frmSetDormitory.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="frmSetRoom.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="frmSetUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="frmTransferRoomAssetHistory.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="frmUsers.cs">

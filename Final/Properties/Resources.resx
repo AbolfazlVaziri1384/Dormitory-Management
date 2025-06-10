@@ -136,8 +136,14 @@
   <data name="log" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\log.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="new blocks" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\new blocks.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="newBlock" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\newBlock.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="newroom" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\new room.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="pen" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\pen.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
