@@ -1,11 +1,10 @@
 {
   "Version": 1,
-<<<<<<< HEAD
   "WorkspaceRootPath": "C:\\Users\\Asus\\Desktop\\Nerd\\Nerds_First_Project\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|c:\\users\\asus\\desktop\\nerd\\nerds_first_project\\final\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|solutionrelative:final\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|c:\\users\\asus\\desktop\\nerd\\nerds_first_project\\final\\forgotpasswordform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|solutionrelative:final\\forgotpasswordform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|c:\\users\\asus\\desktop\\nerd\\nerds_first_project\\final\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -16,67 +15,16 @@
       "RelativeMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|solutionrelative:final\\forgotpasswordform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|c:\\users\\asus\\desktop\\nerd\\nerds_first_project\\final\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|solutionrelative:final\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|C:\\Users\\Asus\\Desktop\\Nerd\\Nerds_First_Project\\final\\forgotpasswordform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|solutionrelative:final\\forgotpasswordform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|C:\\Users\\Asus\\Desktop\\Nerd\\Nerds_First_Project\\final\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|solutionrelative:final\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-=======
-  "WorkspaceRootPath": "C:\\Users\\tuf Pc\\Desktop\\CS Projects\\Nerds_First_Project\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|c:\\users\\tuf pc\\desktop\\cs projects\\nerds_first_project\\final\\frmsetdormitory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|solutionrelative:final\\frmsetdormitory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|c:\\users\\tuf pc\\desktop\\cs projects\\nerds_first_project\\final\\frmdormitory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|solutionrelative:final\\frmdormitory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|C:\\Users\\tuf Pc\\Desktop\\CS Projects\\Nerds_First_Project\\final\\frmdormitory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|solutionrelative:final\\frmdormitory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|C:\\Users\\tuf Pc\\Desktop\\CS Projects\\Nerds_First_Project\\final\\frmsetuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|solutionrelative:final\\frmsetuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|C:\\Users\\tuf Pc\\Desktop\\CS Projects\\Nerds_First_Project\\final\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|solutionrelative:final\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|c:\\users\\tuf pc\\desktop\\cs projects\\nerds_first_project\\final\\properties\\resources.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}",
-      "RelativeMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|solutionrelative:final\\properties\\resources.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|C:\\Users\\tuf Pc\\Desktop\\CS Projects\\Nerds_First_Project\\final\\frmusers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|solutionrelative:final\\frmusers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|c:\\users\\tuf pc\\desktop\\cs projects\\nerds_first_project\\final\\frmusers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|solutionrelative:final\\frmusers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|C:\\Users\\tuf Pc\\Desktop\\CS Projects\\Nerds_First_Project\\final\\forgotpasswordform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|solutionrelative:final\\forgotpasswordform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|c:\\users\\tuf pc\\desktop\\cs projects\\nerds_first_project\\final\\loginform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|solutionrelative:final\\loginform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|c:\\users\\tuf pc\\desktop\\cs projects\\nerds_first_project\\final\\frmsetuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|solutionrelative:final\\frmsetuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|c:\\users\\tuf pc\\desktop\\cs projects\\nerds_first_project\\final\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|solutionrelative:final\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|c:\\users\\tuf pc\\desktop\\cs projects\\nerds_first_project\\final\\forgotpasswordform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|solutionrelative:final\\forgotpasswordform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
->>>>>>> a0ff7ac (new forms)
     }
   ],
   "DocumentGroupContainers": [
@@ -86,227 +34,89 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-<<<<<<< HEAD
-          "SelectedChildIndex": 6,
-=======
-          "SelectedChildIndex": 0,
->>>>>>> a0ff7ac (new forms)
+          "SelectedChildIndex": 2,
           "Children": [
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
               "$type": "Document",
-<<<<<<< HEAD
+              "DocumentIndex": 0,
+              "Title": "ForgotPasswordForm.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\Nerd\\Nerds_First_Project\\Final\\ForgotPasswordForm.Designer.cs",
+              "RelativeDocumentMoniker": "Final\\ForgotPasswordForm.Designer.cs",
+              "ToolTip": "C:\\Users\\Asus\\Desktop\\Nerd\\Nerds_First_Project\\Final\\ForgotPasswordForm.Designer.cs*",
+              "RelativeToolTip": "Final\\ForgotPasswordForm.Designer.cs*",
+              "ViewState": "AgIAAK0AAAAAAAAAAIAwwMAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-10T09:31:46.493Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 2,
               "Title": "ForgotPasswordForm.cs",
               "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\Nerd\\Nerds_First_Project\\Final\\ForgotPasswordForm.cs",
               "RelativeDocumentMoniker": "Final\\ForgotPasswordForm.cs",
               "ToolTip": "C:\\Users\\Asus\\Desktop\\Nerd\\Nerds_First_Project\\Final\\ForgotPasswordForm.cs",
               "RelativeToolTip": "Final\\ForgotPasswordForm.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAADwAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAEQAAAAAAAAAAAAswEsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-10T07:37:22.322Z",
+              "WhenOpened": "2025-06-10T08:43:47.384Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "ForgotPasswordForm.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\Nerd\\Nerds_First_Project\\Final\\ForgotPasswordForm.cs",
               "RelativeDocumentMoniker": "Final\\ForgotPasswordForm.cs",
-              "ToolTip": "C:\\Users\\Asus\\Desktop\\Nerd\\Nerds_First_Project\\Final\\ForgotPasswordForm.cs [Design]",
-              "RelativeToolTip": "Final\\ForgotPasswordForm.cs [Design]",
+              "ToolTip": "C:\\Users\\tuf Pc\\Desktop\\CS Projects\\Nerds_First_Project\\Final\\ForgotPasswordForm.cs [Design]",
+              "RelativeToolTip": "..\\..\\..\\..\\tuf Pc\\Desktop\\CS Projects\\Nerds_First_Project\\Final\\ForgotPasswordForm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-10T07:37:20.286Z"
-=======
-              "DocumentIndex": 0,
-              "Title": "frmSetDormitory.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\tuf Pc\\Desktop\\CS Projects\\Nerds_First_Project\\Final\\frmSetDormitory.cs",
-              "RelativeDocumentMoniker": "Final\\frmSetDormitory.cs",
-              "ToolTip": "C:\\Users\\tuf Pc\\Desktop\\CS Projects\\Nerds_First_Project\\Final\\frmSetDormitory.cs [Design]",
-              "RelativeToolTip": "Final\\frmSetDormitory.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-10T05:58:58.01Z",
-              "EditorCaption": " [Design]"
->>>>>>> a0ff7ac (new forms)
+              "WhenOpened": "2025-06-10T08:43:49.298Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-<<<<<<< HEAD
               "Title": "LoginForm.cs",
               "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\Nerd\\Nerds_First_Project\\Final\\LoginForm.cs",
               "RelativeDocumentMoniker": "Final\\LoginForm.cs",
               "ToolTip": "C:\\Users\\Asus\\Desktop\\Nerd\\Nerds_First_Project\\Final\\LoginForm.cs",
               "RelativeToolTip": "Final\\LoginForm.cs",
-              "ViewState": "AgIAACgAAAAAAAAAAEBCwDwAAAAlAAAAAAAAAA==",
+              "ViewState": "AgIAAGIAAAAAAAAAAAAawHMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-10T07:36:09.895Z",
+              "WhenOpened": "2025-06-10T08:43:49.301Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "LoginForm.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\Nerd\\Nerds_First_Project\\Final\\LoginForm.cs",
               "RelativeDocumentMoniker": "Final\\LoginForm.cs",
-              "ToolTip": "C:\\Users\\Asus\\Desktop\\Nerd\\Nerds_First_Project\\Final\\LoginForm.cs [Design]",
-              "RelativeToolTip": "Final\\LoginForm.cs [Design]",
+              "ToolTip": "C:\\Users\\tuf Pc\\Desktop\\CS Projects\\Nerds_First_Project\\Final\\LoginForm.cs [Design]",
+              "RelativeToolTip": "..\\..\\..\\..\\tuf Pc\\Desktop\\CS Projects\\Nerds_First_Project\\Final\\LoginForm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-10T07:35:59.631Z"
+              "WhenOpened": "2025-06-10T08:43:49.337Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "User.cs",
               "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\Nerd\\Nerds_First_Project\\Final\\Models\\User.cs",
               "RelativeDocumentMoniker": "Final\\Models\\User.cs",
               "ToolTip": "C:\\Users\\Asus\\Desktop\\Nerd\\Nerds_First_Project\\Final\\Models\\User.cs",
               "RelativeToolTip": "Final\\Models\\User.cs",
-              "ViewState": "AgIAAFsAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAFsAAAAAAAAAAAA+wAEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-10T07:32:44.646Z",
+              "WhenOpened": "2025-06-10T08:43:49.339Z",
               "EditorCaption": ""
-=======
-              "Title": "frmDormitory.cs",
-              "DocumentMoniker": "C:\\Users\\tuf Pc\\Desktop\\CS Projects\\Nerds_First_Project\\Final\\frmDormitory.cs",
-              "RelativeDocumentMoniker": "Final\\frmDormitory.cs",
-              "ToolTip": "C:\\Users\\tuf Pc\\Desktop\\CS Projects\\Nerds_First_Project\\Final\\frmDormitory.cs",
-              "RelativeToolTip": "Final\\frmDormitory.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAMwBoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-09T21:09:29.804Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "frmDormitory.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\tuf Pc\\Desktop\\CS Projects\\Nerds_First_Project\\Final\\frmDormitory.cs",
-              "RelativeDocumentMoniker": "Final\\frmDormitory.cs",
-              "ToolTip": "C:\\Users\\tuf Pc\\Desktop\\CS Projects\\Nerds_First_Project\\Final\\frmDormitory.cs [Design]",
-              "RelativeToolTip": "Final\\frmDormitory.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-09T09:08:30.573Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "LoginForm.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\tuf Pc\\Desktop\\CS Projects\\Nerds_First_Project\\Final\\LoginForm.cs",
-              "RelativeDocumentMoniker": "Final\\LoginForm.cs",
-              "ToolTip": "C:\\Users\\tuf Pc\\Desktop\\CS Projects\\Nerds_First_Project\\Final\\LoginForm.cs [Design]",
-              "RelativeToolTip": "Final\\LoginForm.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-09T07:35:27.536Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "frmSetUser.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\tuf Pc\\Desktop\\CS Projects\\Nerds_First_Project\\Final\\frmSetUser.cs",
-              "RelativeDocumentMoniker": "Final\\frmSetUser.cs",
-              "ToolTip": "C:\\Users\\tuf Pc\\Desktop\\CS Projects\\Nerds_First_Project\\Final\\frmSetUser.cs [Design]",
-              "RelativeToolTip": "Final\\frmSetUser.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-07T07:18:01.876Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Resources.resx",
-              "DocumentMoniker": "C:\\Users\\tuf Pc\\Desktop\\CS Projects\\Nerds_First_Project\\Final\\Properties\\Resources.resx",
-              "RelativeDocumentMoniker": "Final\\Properties\\Resources.resx",
-              "ToolTip": "C:\\Users\\tuf Pc\\Desktop\\CS Projects\\Nerds_First_Project\\Final\\Properties\\Resources.resx",
-              "RelativeToolTip": "Final\\Properties\\Resources.resx",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
-              "WhenOpened": "2025-06-08T19:57:23.345Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "frmUsers.cs",
-              "DocumentMoniker": "C:\\Users\\tuf Pc\\Desktop\\CS Projects\\Nerds_First_Project\\Final\\frmUsers.cs",
-              "RelativeDocumentMoniker": "Final\\frmUsers.cs",
-              "ToolTip": "C:\\Users\\tuf Pc\\Desktop\\CS Projects\\Nerds_First_Project\\Final\\frmUsers.cs",
-              "RelativeToolTip": "Final\\frmUsers.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAMwBsAAAAdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-09T08:21:16.944Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "frmUsers.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\tuf Pc\\Desktop\\CS Projects\\Nerds_First_Project\\Final\\frmUsers.cs",
-              "RelativeDocumentMoniker": "Final\\frmUsers.cs",
-              "ToolTip": "C:\\Users\\tuf Pc\\Desktop\\CS Projects\\Nerds_First_Project\\Final\\frmUsers.cs [Design]",
-              "RelativeToolTip": "Final\\frmUsers.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-08T22:20:39.073Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "ForgotPasswordForm.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\tuf Pc\\Desktop\\CS Projects\\Nerds_First_Project\\Final\\ForgotPasswordForm.cs",
-              "RelativeDocumentMoniker": "Final\\ForgotPasswordForm.cs",
-              "ToolTip": "C:\\Users\\tuf Pc\\Desktop\\CS Projects\\Nerds_First_Project\\Final\\ForgotPasswordForm.cs [Design]",
-              "RelativeToolTip": "Final\\ForgotPasswordForm.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-07T06:51:22.682Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "LoginForm.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\tuf Pc\\Desktop\\CS Projects\\Nerds_First_Project\\Final\\LoginForm.Designer.cs",
-              "RelativeDocumentMoniker": "Final\\LoginForm.Designer.cs",
-              "ToolTip": "C:\\Users\\tuf Pc\\Desktop\\CS Projects\\Nerds_First_Project\\Final\\LoginForm.Designer.cs",
-              "RelativeToolTip": "Final\\LoginForm.Designer.cs",
-              "ViewState": "AgIAAKwAAAAAAAAAAAAnwJwAAAAzAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-09T07:34:04.571Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "frmSetUser.cs",
-              "DocumentMoniker": "C:\\Users\\tuf Pc\\Desktop\\CS Projects\\Nerds_First_Project\\Final\\frmSetUser.cs",
-              "RelativeDocumentMoniker": "Final\\frmSetUser.cs",
-              "ToolTip": "C:\\Users\\tuf Pc\\Desktop\\CS Projects\\Nerds_First_Project\\Final\\frmSetUser.cs",
-              "RelativeToolTip": "Final\\frmSetUser.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAAYwCwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-08T15:50:22.056Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "LoginForm.cs",
-              "DocumentMoniker": "C:\\Users\\tuf Pc\\Desktop\\CS Projects\\Nerds_First_Project\\Final\\LoginForm.cs",
-              "RelativeDocumentMoniker": "Final\\LoginForm.cs",
-              "ToolTip": "C:\\Users\\tuf Pc\\Desktop\\CS Projects\\Nerds_First_Project\\Final\\LoginForm.cs",
-              "RelativeToolTip": "Final\\LoginForm.cs",
-              "ViewState": "AgIAAGgAAAAAAAAAAAAnwHcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-22T10:23:09.153Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "ForgotPasswordForm.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\tuf Pc\\Desktop\\CS Projects\\Nerds_First_Project\\Final\\ForgotPasswordForm.Designer.cs",
-              "RelativeDocumentMoniker": "Final\\ForgotPasswordForm.Designer.cs",
-              "ToolTip": "C:\\Users\\tuf Pc\\Desktop\\CS Projects\\Nerds_First_Project\\Final\\ForgotPasswordForm.Designer.cs",
-              "RelativeToolTip": "Final\\ForgotPasswordForm.Designer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-26T05:17:09.885Z"
->>>>>>> a0ff7ac (new forms)
             }
           ]
         }

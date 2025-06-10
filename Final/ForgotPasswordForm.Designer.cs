@@ -167,7 +167,6 @@
             btnBackToLogin.TabIndex = 11;
             btnBackToLogin.Text = "بازگشت به ورود";
             btnBackToLogin.UseVisualStyleBackColor = false;
-            btnBackToLogin.Click += btnBackToLogin_Click;
             // 
             // ForgotPasswordForm
             // 
@@ -191,7 +190,6 @@
             Name = "ForgotPasswordForm";
             StartPosition = FormStartPosition.CenterParent;
             Text = "فراموشی رمز عبور";
-            Load += ForgotPasswordForm_Load_1;
             ResumeLayout(false);
             PerformLayout();
         }
