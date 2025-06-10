@@ -43,6 +43,16 @@
             pictureBox5 = new PictureBox();
             pictureBox6 = new PictureBox();
             btnBackToMain = new Button();
+            Id = new DataGridViewTextBoxColumn();
+            FisrtName = new DataGridViewTextBoxColumn();
+            LastName = new DataGridViewTextBoxColumn();
+            Gender = new DataGridViewTextBoxColumn();
+            Birthday = new DataGridViewTextBoxColumn();
+            StuPerCode = new DataGridViewTextBoxColumn();
+            NationalCode = new DataGridViewTextBoxColumn();
+            Phone = new DataGridViewTextBoxColumn();
+            Status = new DataGridViewTextBoxColumn();
+            Address = new DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)dgvUsers).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
@@ -55,10 +65,10 @@
             // txtSearch
             // 
             txtSearch.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            txtSearch.Location = new Point(207, 42);
+            txtSearch.Location = new Point(312, 36);
             txtSearch.Multiline = true;
             txtSearch.Name = "txtSearch";
-            txtSearch.Size = new Size(253, 42);
+            txtSearch.Size = new Size(328, 42);
             txtSearch.TabIndex = 0;
             txtSearch.TextChanged += txtSearch_TextChanged;
             // 
@@ -67,7 +77,7 @@
             label1.AutoSize = true;
             label1.Font = new Font("B Koodak", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 178);
             label1.ForeColor = Color.MediumBlue;
-            label1.Location = new Point(466, 51);
+            label1.Location = new Point(641, 43);
             label1.Name = "label1";
             label1.Size = new Size(105, 29);
             label1.TabIndex = 1;
@@ -76,15 +86,19 @@
             // 
             // dgvUsers
             // 
+            dgvUsers.AllowUserToAddRows = false;
+            dgvUsers.AllowUserToDeleteRows = false;
             dgvUsers.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dgvUsers.BackgroundColor = Color.AliceBlue;
             dgvUsers.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvUsers.Location = new Point(207, 107);
+            dgvUsers.Columns.AddRange(new DataGridViewColumn[] { Id, FisrtName, LastName, Gender, Birthday, StuPerCode, NationalCode, Phone, Status, Address });
+            dgvUsers.Location = new Point(12, 107);
             dgvUsers.Name = "dgvUsers";
             dgvUsers.ReadOnly = true;
+            dgvUsers.RightToLeft = RightToLeft.Yes;
             dgvUsers.RowHeadersWidth = 51;
             dgvUsers.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            dgvUsers.Size = new Size(291, 170);
+            dgvUsers.Size = new Size(1031, 170);
             dgvUsers.TabIndex = 2;
             // 
             // btnAddNew
@@ -93,9 +107,9 @@
             btnAddNew.Font = new Font("B Koodak", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 178);
             btnAddNew.ForeColor = Color.MediumSeaGreen;
             btnAddNew.ImageAlign = ContentAlignment.MiddleLeft;
-            btnAddNew.Location = new Point(544, 328);
+            btnAddNew.Location = new Point(641, 326);
             btnAddNew.Name = "btnAddNew";
-            btnAddNew.Size = new Size(108, 38);
+            btnAddNew.Size = new Size(149, 38);
             btnAddNew.TabIndex = 3;
             btnAddNew.Text = "افزودن کاربر";
             btnAddNew.UseVisualStyleBackColor = false;
@@ -106,9 +120,9 @@
             btnPrint.BackColor = Color.AliceBlue;
             btnPrint.Font = new Font("B Koodak", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 178);
             btnPrint.ForeColor = Color.MediumOrchid;
-            btnPrint.Location = new Point(544, 382);
+            btnPrint.Location = new Point(641, 380);
             btnPrint.Name = "btnPrint";
-            btnPrint.Size = new Size(108, 38);
+            btnPrint.Size = new Size(149, 38);
             btnPrint.TabIndex = 4;
             btnPrint.Text = "چاپ لیست";
             btnPrint.UseVisualStyleBackColor = false;
@@ -118,9 +132,9 @@
             btnEdit.BackColor = Color.AliceBlue;
             btnEdit.Font = new Font("B Koodak", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 178);
             btnEdit.ForeColor = Color.Orange;
-            btnEdit.Location = new Point(352, 330);
+            btnEdit.Location = new Point(410, 324);
             btnEdit.Name = "btnEdit";
-            btnEdit.Size = new Size(108, 40);
+            btnEdit.Size = new Size(149, 40);
             btnEdit.TabIndex = 5;
             btnEdit.Text = "ویرایش";
             btnEdit.UseVisualStyleBackColor = false;
@@ -129,7 +143,7 @@
             // pictureBox1
             // 
             pictureBox1.Image = Properties.Resources.pl;
-            pictureBox1.Location = new Point(658, 328);
+            pictureBox1.Location = new Point(796, 326);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(43, 38);
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
@@ -139,7 +153,7 @@
             // pictureBox2
             // 
             pictureBox2.Image = Properties.Resources.printer;
-            pictureBox2.Location = new Point(658, 382);
+            pictureBox2.Location = new Point(796, 380);
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Size = new Size(43, 38);
             pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
@@ -149,7 +163,7 @@
             // pictureBox3
             // 
             pictureBox3.Image = Properties.Resources.pen;
-            pictureBox3.Location = new Point(466, 330);
+            pictureBox3.Location = new Point(565, 328);
             pictureBox3.Name = "pictureBox3";
             pictureBox3.Size = new Size(37, 38);
             pictureBox3.SizeMode = PictureBoxSizeMode.Zoom;
@@ -161,9 +175,9 @@
             btnDelete.BackColor = Color.AliceBlue;
             btnDelete.Font = new Font("B Koodak", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 178);
             btnDelete.ForeColor = Color.Crimson;
-            btnDelete.Location = new Point(352, 384);
+            btnDelete.Location = new Point(410, 382);
             btnDelete.Name = "btnDelete";
-            btnDelete.Size = new Size(108, 38);
+            btnDelete.Size = new Size(149, 38);
             btnDelete.TabIndex = 11;
             btnDelete.Text = "حذف";
             btnDelete.UseVisualStyleBackColor = false;
@@ -174,9 +188,9 @@
             btnChangeStatus.BackColor = Color.AliceBlue;
             btnChangeStatus.Font = new Font("B Koodak", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 178);
             btnChangeStatus.ForeColor = Color.DodgerBlue;
-            btnChangeStatus.Location = new Point(149, 328);
+            btnChangeStatus.Location = new Point(176, 324);
             btnChangeStatus.Name = "btnChangeStatus";
-            btnChangeStatus.Size = new Size(108, 40);
+            btnChangeStatus.Size = new Size(149, 40);
             btnChangeStatus.TabIndex = 12;
             btnChangeStatus.Text = "تغییر وضعیت";
             btnChangeStatus.UseVisualStyleBackColor = false;
@@ -185,7 +199,7 @@
             // pictureBox4
             // 
             pictureBox4.Image = Properties.Resources.trash;
-            pictureBox4.Location = new Point(466, 384);
+            pictureBox4.Location = new Point(565, 382);
             pictureBox4.Name = "pictureBox4";
             pictureBox4.Size = new Size(43, 38);
             pictureBox4.SizeMode = PictureBoxSizeMode.Zoom;
@@ -196,7 +210,7 @@
             // pictureBox5
             // 
             pictureBox5.Image = Properties.Resources.status;
-            pictureBox5.Location = new Point(263, 330);
+            pictureBox5.Location = new Point(331, 328);
             pictureBox5.Name = "pictureBox5";
             pictureBox5.Size = new Size(43, 38);
             pictureBox5.SizeMode = PictureBoxSizeMode.Zoom;
@@ -206,7 +220,7 @@
             // pictureBox6
             // 
             pictureBox6.Image = Properties.Resources.search;
-            pictureBox6.Location = new Point(565, 51);
+            pictureBox6.Location = new Point(740, 43);
             pictureBox6.Name = "pictureBox6";
             pictureBox6.Size = new Size(31, 26);
             pictureBox6.SizeMode = PictureBoxSizeMode.Zoom;
@@ -218,19 +232,108 @@
             btnBackToMain.BackColor = Color.AliceBlue;
             btnBackToMain.Font = new Font("B Koodak", 9F, FontStyle.Bold, GraphicsUnit.Point, 178);
             btnBackToMain.ForeColor = Color.MediumBlue;
-            btnBackToMain.Location = new Point(12, 405);
+            btnBackToMain.Location = new Point(12, 398);
             btnBackToMain.Name = "btnBackToMain";
-            btnBackToMain.Size = new Size(67, 33);
+            btnBackToMain.Size = new Size(99, 40);
             btnBackToMain.TabIndex = 16;
             btnBackToMain.Text = "بازگشت";
             btnBackToMain.UseVisualStyleBackColor = false;
             btnBackToMain.Click += btnBackToMain_Click;
             // 
+            // Id
+            // 
+            Id.HeaderText = "Id";
+            Id.MinimumWidth = 6;
+            Id.Name = "Id";
+            Id.ReadOnly = true;
+            Id.Visible = false;
+            // 
+            // FisrtName
+            // 
+            FisrtName.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
+            FisrtName.HeaderText = "نام";
+            FisrtName.MinimumWidth = 6;
+            FisrtName.Name = "FisrtName";
+            FisrtName.ReadOnly = true;
+            FisrtName.Width = 56;
+            // 
+            // LastName
+            // 
+            LastName.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
+            LastName.HeaderText = "نام خانوادگی";
+            LastName.MinimumWidth = 6;
+            LastName.Name = "LastName";
+            LastName.ReadOnly = true;
+            LastName.Width = 119;
+            // 
+            // Gender
+            // 
+            Gender.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
+            Gender.HeaderText = "جنسیت";
+            Gender.MinimumWidth = 6;
+            Gender.Name = "Gender";
+            Gender.ReadOnly = true;
+            Gender.Width = 84;
+            // 
+            // Birthday
+            // 
+            Birthday.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
+            Birthday.HeaderText = "تاریخ تولد";
+            Birthday.MinimumWidth = 6;
+            Birthday.Name = "Birthday";
+            Birthday.ReadOnly = true;
+            Birthday.Width = 98;
+            // 
+            // StuPerCode
+            // 
+            StuPerCode.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
+            StuPerCode.HeaderText = "کد دانشجویی/پرسنلی";
+            StuPerCode.MinimumWidth = 6;
+            StuPerCode.Name = "StuPerCode";
+            StuPerCode.ReadOnly = true;
+            StuPerCode.Width = 161;
+            // 
+            // NationalCode
+            // 
+            NationalCode.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
+            NationalCode.HeaderText = "کد ملی";
+            NationalCode.MinimumWidth = 6;
+            NationalCode.Name = "NationalCode";
+            NationalCode.ReadOnly = true;
+            NationalCode.Width = 79;
+            // 
+            // Phone
+            // 
+            Phone.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
+            Phone.HeaderText = "تلفن";
+            Phone.MinimumWidth = 6;
+            Phone.Name = "Phone";
+            Phone.ReadOnly = true;
+            Phone.Width = 66;
+            // 
+            // Status
+            // 
+            Status.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
+            Status.HeaderText = "وضعیت";
+            Status.MinimumWidth = 6;
+            Status.Name = "Status";
+            Status.ReadOnly = true;
+            Status.Width = 89;
+            // 
+            // Address
+            // 
+            Address.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
+            Address.HeaderText = "آدرس";
+            Address.MinimumWidth = 6;
+            Address.Name = "Address";
+            Address.ReadOnly = true;
+            Address.Width = 73;
+            // 
             // frmUsers
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(1055, 450);
             Controls.Add(btnBackToMain);
             Controls.Add(pictureBox6);
             Controls.Add(pictureBox5);
@@ -278,5 +381,15 @@
         private PictureBox pictureBox5;
         private PictureBox pictureBox6;
         private Button btnBackToMain;
+        private DataGridViewTextBoxColumn Id;
+        private DataGridViewTextBoxColumn FisrtName;
+        private DataGridViewTextBoxColumn LastName;
+        private DataGridViewTextBoxColumn Gender;
+        private DataGridViewTextBoxColumn Birthday;
+        private DataGridViewTextBoxColumn StuPerCode;
+        private DataGridViewTextBoxColumn NationalCode;
+        private DataGridViewTextBoxColumn Phone;
+        private DataGridViewTextBoxColumn Status;
+        private DataGridViewTextBoxColumn Address;
     }
 }
