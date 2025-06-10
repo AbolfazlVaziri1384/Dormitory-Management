@@ -5,6 +5,7 @@ namespace Final.Models;
 
 public partial class User
 {
+
     public long Id { get; set; }
 
     public string FirstName { get; set; } = null!;
@@ -17,7 +18,7 @@ public partial class User
 
     public int Gender { get; set; }
 
-    public DateOnly Birthday { get; set; }
+    public string Birthday { get; set; }
 
     public long StuPerCode { get; set; }
 
@@ -58,4 +59,47 @@ public partial class User
     public virtual ICollection<SubstituteStudentAsset> SubstituteStudentAssets { get; set; } = new List<SubstituteStudentAsset>();
 
     public virtual ICollection<TransferRoomAssetHistory> TransferRoomAssetHistories { get; set; } = new List<TransferRoomAssetHistory>();
+    public virtual ICollection<Repair> Repairs { get; set; } = new List<Repair>();
+    public virtual ICollection<RoomAsset> RoomAssets { get; set; } = new List<RoomAsset>();
+
+    public static User? FindUser(string UserName, string Password)
+    {
+        DormitoryDbContext db = new DormitoryDbContext();
+        return db.Users.Where(i => i.UserName == UserName && i.Password == Password).FirstOrDefault();
+    }
+    public static User? FindUserByNationalCode(string Stu_Per_Code, string NationalCode)
+    {
+        DormitoryDbContext db = new DormitoryDbContext();
+        return db.Users.Where(i => i.StuPerCode == Convert.ToInt64(Stu_Per_Code) && i.NationalCode == Convert.ToInt64(NationalCode)).FirstOrDefault();
+    }
+    public static User? FindUserById(long UserId)
+    {
+        DormitoryDbContext db = new DormitoryDbContext();
+        return db.Users.Where(i => i.Id == UserId).FirstOrDefault();
+    }
+    public static bool AnyUser(string UserName)
+    {
+        DormitoryDbContext db = new DormitoryDbContext();
+        return db.Users.Any(i => i.UserName == UserName);
+    }
+    public static void ChangePassword(User user, string Password)
+    {
+        DormitoryDbContext db = new DormitoryDbContext();
+        db.Users.Update(user);
+        user.Password = Password;
+        db.SaveChanges();
+    }
+    public static void SetLogin(User user)
+    {
+        DormitoryDbContext db = new DormitoryDbContext();
+        db.Users.Update(user);
+        if (user.LastLogin == null)
+            user.LastLogin = DateTime.Now;
+        else
+        {
+            user.PreviousLogin = user.LastLogin;
+            user.LastLogin = DateTime.Now;
+        }
+        db.SaveChanges();
+    }
 }
