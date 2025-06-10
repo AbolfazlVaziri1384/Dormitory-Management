@@ -16,7 +16,6 @@ namespace Final
 {
     public partial class LoginForm : Form
     {
-        DormitoryDbContext db = new DormitoryDbContext();
         public LoginForm()
         {
             InitializeComponent();
@@ -48,27 +47,19 @@ namespace Final
         {
             try
             {
-                var user = db.Users.Where(i => i.UserName == txtUserName.Text && i.Password == txtPassword.Text).FirstOrDefault();
+                User? user = User.FindUser(txtUserName.Text, txtPassword.Text);
                 if (user != null && user.IsDeleted == false)
                 {
                     if (user.IsActive == true)
                     {
-                        if (user.LastLogin == null)
-                            user.LastLogin = DateTime.Now;
-                        else
-                        {
-                            user.PreviousLogin = user.LastLogin;
-                            user.LastLogin = DateTime.Now;
-                        }
-                        db.SaveChanges();
+                        User.SetLogin(user);
 
                         MessageBoxTool.msgw($"خوش آمدید {user.FirstName} {user.LastName}");
-                        user.UserName = txtUserName.Text;
-                        user.Password = txtPassword.Text;
-                        //////////////////frmMain
-                        ForgotPasswordForm frm = new ForgotPasswordForm();
-                        frm.Show();
-                        Hide();
+
+                        //frmMain frm = new frmMain();
+                        //frm.UserId = user.Id;
+                        //frm.Show();
+                        Close();
                     }
                     else
                     {
@@ -103,5 +94,7 @@ namespace Final
         {
 
         }
+
+
     }
 }

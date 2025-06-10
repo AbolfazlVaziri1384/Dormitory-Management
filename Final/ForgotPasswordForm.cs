@@ -14,7 +14,6 @@ namespace Final
 {
     public partial class ForgotPasswordForm : Form
     {
-        DormitoryDbContext db = new DormitoryDbContext();
         User? user = new User();
         public ForgotPasswordForm()
         {
@@ -26,7 +25,7 @@ namespace Final
             string Stu_Per_Code = txtStu_Per_Code.Text.Trim();
             string NationalCode = txtNationalCode.Text.Trim();
 
-            user = db.Users.Where(i => i.StuPerCode == Convert.ToInt64(Stu_Per_Code) && i.NationalCode == Convert.ToInt64(NationalCode)).FirstOrDefault();
+            user = User.FindUserByNationalCode(Stu_Per_Code, NationalCode);
 
             if (user != null)
             {
@@ -50,8 +49,7 @@ namespace Final
         {
             if (txtNewPassword.Text == txtConfirmPassword.Text && txtNewPassword.Text.Length >= 4)
             {
-                user.Password = txtNewPassword.Text;
-                db.SaveChanges();
+                User.ChangePassword(user, txtNewPassword.Text);
                 MessageBoxTool.msgr("رمز جدید با موفقیت ثبت شد");
                 this.DialogResult = DialogResult.OK;
                 this.Close();
@@ -71,6 +69,11 @@ namespace Final
         }
 
         private void ForgotPasswordForm_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ForgotPasswordForm_Load_1(object sender, EventArgs e)
         {
 
         }
