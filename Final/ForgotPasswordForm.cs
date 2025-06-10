@@ -73,6 +73,15 @@ namespace Final
 
         }
 
+<<<<<<< HEAD
+=======
+        private void btnBackToLogin_Click(object sender, EventArgs e)
+        {
+            this.DialogResult = DialogResult.Cancel;
+            this.Close();
+        }
+
+>>>>>>> a0ff7ac (new forms)
         private void ForgotPasswordForm_Load_1(object sender, EventArgs e)
         {
 

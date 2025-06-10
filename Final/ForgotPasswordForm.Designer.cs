@@ -39,6 +39,7 @@
             txtConfirmPassword = new TextBox();
             btnSubmit = new Button();
             chkShowPassword = new CheckBox();
+            btnBackToLogin = new Button();
             SuspendLayout();
             // 
             // label1
@@ -155,11 +156,26 @@
             chkShowPassword.UseVisualStyleBackColor = true;
             chkShowPassword.CheckedChanged += chkShowPassword_CheckedChanged;
             // 
+            // btnBackToLogin
+            // 
+            btnBackToLogin.BackColor = Color.AliceBlue;
+            btnBackToLogin.Font = new Font("B Koodak", 9F, FontStyle.Bold, GraphicsUnit.Point, 178);
+            btnBackToLogin.ForeColor = Color.MediumBlue;
+            btnBackToLogin.Location = new Point(12, 404);
+            btnBackToLogin.Name = "btnBackToLogin";
+            btnBackToLogin.Size = new Size(108, 34);
+            btnBackToLogin.TabIndex = 11;
+            btnBackToLogin.Text = "بازگشت به ورود";
+            btnBackToLogin.UseVisualStyleBackColor = false;
+            btnBackToLogin.Click += btnBackToLogin_Click;
+            // 
             // ForgotPasswordForm
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = SystemColors.Control;
             ClientSize = new Size(669, 450);
+            Controls.Add(btnBackToLogin);
             Controls.Add(chkShowPassword);
             Controls.Add(btnSubmit);
             Controls.Add(txtConfirmPassword);
@@ -175,6 +191,7 @@
             Name = "ForgotPasswordForm";
             StartPosition = FormStartPosition.CenterParent;
             Text = "فراموشی رمز عبور";
+            Load += ForgotPasswordForm_Load_1;
             ResumeLayout(false);
             PerformLayout();
         }
@@ -192,5 +209,6 @@
         private TextBox txtConfirmPassword;
         private Button btnSubmit;
         private CheckBox chkShowPassword;
+        private Button btnBackToLogin;
     }
 }

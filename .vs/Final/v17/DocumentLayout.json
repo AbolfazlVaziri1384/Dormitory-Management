@@ -1,25 +1,25 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Asus\\Desktop\\Nerd\\Nerds_First_Project\\",
+  "WorkspaceRootPath": "C:\\Users\\tuf Pc\\Desktop\\CS Projects\\Nerds_First_Project\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|c:\\users\\asus\\desktop\\nerd\\nerds_first_project\\final\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|c:\\users\\tuf pc\\desktop\\cs projects\\nerds_first_project\\final\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|solutionrelative:final\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|c:\\users\\asus\\desktop\\nerd\\nerds_first_project\\final\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|c:\\users\\tuf pc\\desktop\\cs projects\\nerds_first_project\\final\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|solutionrelative:final\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|c:\\users\\asus\\desktop\\nerd\\nerds_first_project\\final\\forgotpasswordform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|c:\\users\\tuf pc\\desktop\\cs projects\\nerds_first_project\\final\\forgotpasswordform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|solutionrelative:final\\forgotpasswordform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|C:\\Users\\Asus\\Desktop\\Nerd\\Nerds_First_Project\\final\\forgotpasswordform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|C:\\Users\\tuf Pc\\Desktop\\CS Projects\\Nerds_First_Project\\final\\forgotpasswordform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|solutionrelative:final\\forgotpasswordform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|C:\\Users\\Asus\\Desktop\\Nerd\\Nerds_First_Project\\final\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|C:\\Users\\tuf Pc\\Desktop\\CS Projects\\Nerds_First_Project\\final\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|solutionrelative:final\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
@@ -44,61 +44,63 @@
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "ForgotPasswordForm.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\Nerd\\Nerds_First_Project\\Final\\ForgotPasswordForm.cs",
+              "DocumentMoniker": "C:\\Users\\tuf Pc\\Desktop\\CS Projects\\Nerds_First_Project\\Final\\ForgotPasswordForm.cs",
               "RelativeDocumentMoniker": "Final\\ForgotPasswordForm.cs",
-              "ToolTip": "C:\\Users\\Asus\\Desktop\\Nerd\\Nerds_First_Project\\Final\\ForgotPasswordForm.cs",
+              "ToolTip": "C:\\Users\\tuf Pc\\Desktop\\CS Projects\\Nerds_First_Project\\Final\\ForgotPasswordForm.cs",
               "RelativeToolTip": "Final\\ForgotPasswordForm.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAADwAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAUAAAAAAAAAAABRwDwAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-10T07:37:22.322Z",
+              "WhenOpened": "2025-06-10T08:43:47.384Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
               "Title": "ForgotPasswordForm.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\Nerd\\Nerds_First_Project\\Final\\ForgotPasswordForm.cs",
+              "DocumentMoniker": "C:\\Users\\tuf Pc\\Desktop\\CS Projects\\Nerds_First_Project\\Final\\ForgotPasswordForm.cs",
               "RelativeDocumentMoniker": "Final\\ForgotPasswordForm.cs",
-              "ToolTip": "C:\\Users\\Asus\\Desktop\\Nerd\\Nerds_First_Project\\Final\\ForgotPasswordForm.cs [Design]",
+              "ToolTip": "C:\\Users\\tuf Pc\\Desktop\\CS Projects\\Nerds_First_Project\\Final\\ForgotPasswordForm.cs [Design]",
               "RelativeToolTip": "Final\\ForgotPasswordForm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-10T07:37:20.286Z"
+              "WhenOpened": "2025-06-10T08:43:49.298Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "LoginForm.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\Nerd\\Nerds_First_Project\\Final\\LoginForm.cs",
+              "DocumentMoniker": "C:\\Users\\tuf Pc\\Desktop\\CS Projects\\Nerds_First_Project\\Final\\LoginForm.cs",
               "RelativeDocumentMoniker": "Final\\LoginForm.cs",
-              "ToolTip": "C:\\Users\\Asus\\Desktop\\Nerd\\Nerds_First_Project\\Final\\LoginForm.cs",
+              "ToolTip": "C:\\Users\\tuf Pc\\Desktop\\CS Projects\\Nerds_First_Project\\Final\\LoginForm.cs",
               "RelativeToolTip": "Final\\LoginForm.cs",
-              "ViewState": "AgIAACgAAAAAAAAAAEBCwDwAAAAlAAAAAAAAAA==",
+              "ViewState": "AgIAACoAAAAAAAAAAAAEwDwAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-10T07:36:09.895Z",
+              "WhenOpened": "2025-06-10T08:43:49.301Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
               "Title": "LoginForm.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\Nerd\\Nerds_First_Project\\Final\\LoginForm.cs",
+              "DocumentMoniker": "C:\\Users\\tuf Pc\\Desktop\\CS Projects\\Nerds_First_Project\\Final\\LoginForm.cs",
               "RelativeDocumentMoniker": "Final\\LoginForm.cs",
-              "ToolTip": "C:\\Users\\Asus\\Desktop\\Nerd\\Nerds_First_Project\\Final\\LoginForm.cs [Design]",
+              "ToolTip": "C:\\Users\\tuf Pc\\Desktop\\CS Projects\\Nerds_First_Project\\Final\\LoginForm.cs [Design]",
               "RelativeToolTip": "Final\\LoginForm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-10T07:35:59.631Z"
+              "WhenOpened": "2025-06-10T08:43:49.337Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "User.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\Nerd\\Nerds_First_Project\\Final\\Models\\User.cs",
+              "DocumentMoniker": "C:\\Users\\tuf Pc\\Desktop\\CS Projects\\Nerds_First_Project\\Final\\Models\\User.cs",
               "RelativeDocumentMoniker": "Final\\Models\\User.cs",
-              "ToolTip": "C:\\Users\\Asus\\Desktop\\Nerd\\Nerds_First_Project\\Final\\Models\\User.cs",
+              "ToolTip": "C:\\Users\\tuf Pc\\Desktop\\CS Projects\\Nerds_First_Project\\Final\\Models\\User.cs",
               "RelativeToolTip": "Final\\Models\\User.cs",
-              "ViewState": "AgIAAFsAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAFsAAAAAAAAAAAAuwAEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-10T07:32:44.646Z",
+              "WhenOpened": "2025-06-10T08:43:49.339Z",
               "EditorCaption": ""
             }
           ]

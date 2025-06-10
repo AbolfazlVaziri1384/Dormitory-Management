@@ -37,6 +37,7 @@
             pictureBox1 = new PictureBox();
             btnLogin = new Button();
             linkLabel1 = new LinkLabel();
+            btnRegister = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -121,9 +122,9 @@
             btnLogin.BackColor = Color.AliceBlue;
             btnLogin.Font = new Font("B Koodak", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 178);
             btnLogin.ForeColor = Color.MediumBlue;
-            btnLogin.Location = new Point(453, 298);
+            btnLogin.Location = new Point(453, 294);
             btnLogin.Name = "btnLogin";
-            btnLogin.Size = new Size(146, 42);
+            btnLogin.Size = new Size(146, 36);
             btnLogin.TabIndex = 7;
             btnLogin.Text = "ورود";
             btnLogin.UseVisualStyleBackColor = false;
@@ -142,12 +143,26 @@
             linkLabel1.Text = "بازیابی رمز عبور";
             linkLabel1.LinkClicked += linkLabel1_LinkClicked;
             // 
+            // btnRegister
+            // 
+            btnRegister.BackColor = Color.LavenderBlush;
+            btnRegister.Font = new Font("B Koodak", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 178);
+            btnRegister.ForeColor = Color.MediumBlue;
+            btnRegister.Location = new Point(453, 336);
+            btnRegister.Name = "btnRegister";
+            btnRegister.Size = new Size(146, 36);
+            btnRegister.TabIndex = 9;
+            btnRegister.Text = "ثبت نام";
+            btnRegister.UseVisualStyleBackColor = false;
+            btnRegister.Click += btnRegister_Click;
+            // 
             // LoginForm
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
             ClientSize = new Size(800, 450);
+            Controls.Add(btnRegister);
             Controls.Add(linkLabel1);
             Controls.Add(btnLogin);
             Controls.Add(pictureBox1);
@@ -178,5 +193,6 @@
         private PictureBox pictureBox1;
         private Button btnLogin;
         private LinkLabel linkLabel1;
+        private Button btnRegister;
     }
 }

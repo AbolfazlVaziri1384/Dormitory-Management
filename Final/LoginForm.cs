@@ -55,11 +55,20 @@ namespace Final
                         User.SetLogin(user);
 
                         MessageBoxTool.msgw($"خوش آمدید {user.FirstName} {user.LastName}");
+<<<<<<< HEAD
 
                         //frmMain frm = new frmMain();
                         //frm.UserId = user.Id;
                         //frm.Show();
                         Close();
+=======
+                        user.UserName = txtUserName.Text;
+                        user.Password = txtPassword.Text;
+
+                        ForgotPasswordForm frm = new ForgotPasswordForm();
+                        frm.Show();
+                        Hide();
+>>>>>>> a0ff7ac (new forms)
                     }
                     else
                     {
@@ -88,13 +97,26 @@ namespace Final
                 MessageBox.Show("اکنون می‌توانید با رمز جدید وارد شوید", "بازگشت به ورود", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 txtPassword.Focus();
             }
+            else if (result == DialogResult.Cancel)
+            {
+                MessageBox.Show("به فرم ورود برگشتید");
+            }
         }
+
 
         private void LoginForm_Load(object sender, EventArgs e)
         {
 
         }
 
+<<<<<<< HEAD
+=======
+        private void btnRegister_Click(object sender, EventArgs e)
+        {
+            frmSetUser registerForm = new frmSetUser();
+            registerForm.ShowDialog();
+        }
+>>>>>>> a0ff7ac (new forms)
 
     }
 }
