@@ -63,9 +63,9 @@ namespace Final
                         user.UserName = txtUserName.Text;
                         user.Password = txtPassword.Text;
 
-                        ForgotPasswordForm frm = new ForgotPasswordForm();
-                        frm.Show();
-                        Hide();
+                        //ForgotPasswordForm frm = new ForgotPasswordForm();
+                        //frm.Show();
+                        //Hide();
 
                     }
                     else

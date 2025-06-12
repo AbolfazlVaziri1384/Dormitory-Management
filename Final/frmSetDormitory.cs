@@ -29,12 +29,15 @@ namespace Final
         {
             try
             {
-                bool Istrue = CheckTool.DormitoryField(txtName.Text,txtAddress.Text,Convert.ToInt32(numCapacity.Value));
+                bool Istrue = CheckTool.DormitoryField(txtName.Text, txtAddress.Text, Convert.ToInt32(numCapacity.Value));
                 if (DormitoryEditId == -1)
                 {
                     if (Istrue == true)
                     {
-                        Dormitory.SetDormitory(txtName.Text, txtAddress.Text, Convert.ToInt32(numCapacity.Value),UserId);
+                        int Dormitorygender = 1;
+                        if (radWoman.Checked == true) Dormitorygender = 0;
+                        if (radFamily.Checked == true) Dormitorygender = 2;
+                        Dormitory.SetDormitory(txtName.Text, txtAddress.Text, Convert.ToInt32(numCapacity.Value), UserId, Dormitorygender);
                         MessageBoxTool.msgr("کاربر جدید با موفقیت ثبت شد");
                         Close();
                     }
@@ -46,7 +49,10 @@ namespace Final
                             result = MessageBoxTool.msgq("آیا از ویرایش مطمئن هستید؟");
                             if (result == DialogResult.Yes)
                             {
-                                Dormitory.EditDormitory(DormitoryEditId,UserId,txtName.Text,txtAddress.Text,Convert.ToInt32(numCapacity.Value));
+                                int Dormitorygender = 1;
+                                if (radWoman.Checked == true) Dormitorygender = 0;
+                                if (radFamily.Checked == true) Dormitorygender = 2;
+                                Dormitory.EditDormitory(DormitoryEditId, UserId, txtName.Text, txtAddress.Text, Convert.ToInt32(numCapacity.Value), Dormitorygender);
                                 MessageBoxTool.msgr("کابر با موفقیت ویرایش شد");
                                 Close();
                             }
@@ -74,8 +80,12 @@ namespace Final
                 txtName.Text = EditDormitory.Name;
                 txtAddress.Text = EditDormitory.Address;
                 numCapacity.Value = EditDormitory.Capacity;
-
+                if(EditDormitory.DormitoryGender == 0) radWoman.Checked = true;
+                else if(EditDormitory.DormitoryGender == 1) radMan.Checked = true;
+                else if(EditDormitory.DormitoryGender == 2) radFamily.Checked = true;
             }
+            else
+                radMan.Checked = true;
         }
     }
 }

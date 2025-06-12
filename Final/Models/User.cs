@@ -137,6 +137,8 @@ public partial class User
         DormitoryDbContext db = new DormitoryDbContext();
         User? user = new User();
         user = User.FindUserById(UserEditId);
+        db.Users.Update(user);
+
         user.FirstName = FirstName;
         user.LastName = LastName;
         user.UserName = UserName;
@@ -153,7 +155,6 @@ public partial class User
         user.ModifiedBy = User.FindUserById(UserId).Id;
         user.ModifiedOn = DateTime.Now;
 
-        db.Users.Add(user);
         db.SaveChanges();
     }
     public static void DeleteUser(long UserDeletedId , long UserId)

@@ -50,9 +50,12 @@ namespace Final
                 if (EditUser.Gender == 0) radWoman.Checked = true;
                 else radMen.Checked = true;
             }
-            radMen.Checked = true;
-            bool show = chkShowPassword.Checked;
+            else
+            {
+                radMen.Checked = true;
+            }
 
+            bool show = chkShowPassword.Checked;
             txtPassword.UseSystemPasswordChar = !show;
             txtConfirmPassword.UseSystemPasswordChar = !show;
         }

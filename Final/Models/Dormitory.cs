@@ -27,6 +27,7 @@ public partial class Dormitory
     public long? ModifiedBy { get; set; }
 
     public DateTime? ModifiedOn { get; set; }
+    public int DormitoryGender { get; set; }
 
     public virtual ICollection<Block> Blocks { get; set; } = new List<Block>();
 
@@ -44,7 +45,7 @@ public partial class Dormitory
         DormitoryDbContext db = new DormitoryDbContext();
         return db.Dormitories.Any(i => i.Name == DormitoryName);
     }
-    public static void SetDormitory(string Name , string Address, int Capacity, long UserId)
+    public static void SetDormitory(string Name , string Address, int Capacity, long UserId , int DormitoryGender)
     {
         DormitoryDbContext db = new DormitoryDbContext();
         Dormitory dormitory = new Dormitory();
@@ -54,22 +55,25 @@ public partial class Dormitory
         dormitory.IsDeleted = false;
         dormitory.CreatBy = UserId;
         dormitory.CreatOn = DateTime.Now;
+        dormitory.DormitoryGender = DormitoryGender;
 
         db.Dormitories.Add(dormitory);
         db.SaveChanges();
     }
-    public static void EditDormitory(long DormitoryEditId, long UserId, string Name, string Address, int Capacity)
+    public static void EditDormitory(long DormitoryEditId, long UserId, string Name, string Address, int Capacity , int DormitoryGender)
     {
         DormitoryDbContext db = new DormitoryDbContext();
         Dormitory? dormitory = new Dormitory();
         dormitory = Dormitory.FindDormitoryById(DormitoryEditId);
+        db.Dormitories.Update(dormitory);
+
         dormitory.Name = Name;
         dormitory.Capacity = Capacity;
         dormitory.Address = Address;
         dormitory.ModifiedBy = UserId;
         dormitory.ModifiedOn = DateTime.Now;
+        dormitory.DormitoryGender = DormitoryGender;
 
-        db.Dormitories.Add(dormitory);
         db.SaveChanges();
     }
 }
