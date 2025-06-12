@@ -53,7 +53,7 @@
             pictureBox5 = new PictureBox();
             pictureBox6 = new PictureBox();
             btnBackToMain = new Button();
-            stiReport1 = new Stimulsoft.Report.StiReport();
+            stiUserPrint = new Stimulsoft.Report.StiReport();
             ((System.ComponentModel.ISupportInitialize)dgvUsers).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
@@ -216,6 +216,7 @@
             btnPrint.TabIndex = 4;
             btnPrint.Text = "چاپ لیست";
             btnPrint.UseVisualStyleBackColor = false;
+            btnPrint.Click += btnPrint_Click;
             // 
             // btnEdit
             // 
@@ -330,13 +331,13 @@
             btnBackToMain.UseVisualStyleBackColor = false;
             btnBackToMain.Click += btnBackToMain_Click;
             // 
-            // stiReport1
+            // stiUserPrint
             // 
-            stiReport1.CookieContainer = null;
-            stiReport1.EngineVersion = Stimulsoft.Report.Engine.StiEngineVersion.EngineV2;
-            stiReport1.HttpHeadersContainer = null;
-            stiReport1.Key = "fcee65fd1bf54b209697e8a1e6ad91dc";
-            stiReport1.ReferencedAssemblies = new string[]
+            stiUserPrint.CookieContainer = null;
+            stiUserPrint.EngineVersion = Stimulsoft.Report.Engine.StiEngineVersion.EngineV2;
+            stiUserPrint.HttpHeadersContainer = null;
+            stiUserPrint.Key = "fcee65fd1bf54b209697e8a1e6ad91dc";
+            stiUserPrint.ReferencedAssemblies = new string[]
     {
     "System.Dll",
     "System.Drawing.Dll",
@@ -347,13 +348,13 @@
     "Stimulsoft.Base.Dll",
     "Stimulsoft.Report.Dll"
     };
-            stiReport1.ReportAlias = "Report";
-            stiReport1.ReportGuid = "9478882d08e247adaca1c36b3f36a171";
-            stiReport1.ReportName = "Report";
-            stiReport1.ReportSource = null;
-            stiReport1.ReportUnit = Stimulsoft.Report.StiReportUnitType.Centimeters;
-            stiReport1.ScriptLanguage = Stimulsoft.Report.StiReportLanguageType.CSharp;
-            stiReport1.UseProgressInThread = false;
+            stiUserPrint.ReportAlias = "Report";
+            stiUserPrint.ReportGuid = "9478882d08e247adaca1c36b3f36a171";
+            stiUserPrint.ReportName = "Report";
+            stiUserPrint.ReportSource = null;
+            stiUserPrint.ReportUnit = Stimulsoft.Report.StiReportUnitType.Centimeters;
+            stiUserPrint.ScriptLanguage = Stimulsoft.Report.StiReportLanguageType.CSharp;
+            stiUserPrint.UseProgressInThread = false;
             // 
             // frmUsers
             // 
@@ -417,6 +418,6 @@
         private DataGridViewTextBoxColumn Phone;
         private DataGridViewTextBoxColumn Status;
         private DataGridViewTextBoxColumn Address;
-        private Stimulsoft.Report.StiReport stiReport1;
+        private Stimulsoft.Report.StiReport stiUserPrint;
     }
 }

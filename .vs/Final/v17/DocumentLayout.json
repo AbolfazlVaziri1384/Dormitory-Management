@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\Asus\\Desktop\\Nerd\\Nerds_First_Project\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|c:\\users\\asus\\desktop\\nerd\\nerds_first_project\\final\\frmusers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|solutionrelative:final\\frmusers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|c:\\users\\asus\\desktop\\nerd\\nerds_first_project\\final\\frmusers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|solutionrelative:final\\frmusers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
@@ -19,10 +23,6 @@
       "RelativeMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|solutionrelative:final\\final.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|c:\\users\\asus\\desktop\\nerd\\nerds_first_project\\final\\frmusers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|solutionrelative:final\\frmusers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|c:\\users\\asus\\desktop\\nerd\\nerds_first_project\\final\\models\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|solutionrelative:final\\models\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -37,7 +37,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Bookmark",
@@ -49,7 +49,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "LoginForm.cs",
               "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\Nerd\\Nerds_First_Project\\Final\\LoginForm.cs",
               "RelativeDocumentMoniker": "Final\\LoginForm.cs",
@@ -62,15 +62,14 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "LoginForm.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\Nerd\\Nerds_First_Project\\Final\\LoginForm.cs",
               "RelativeDocumentMoniker": "Final\\LoginForm.cs",
               "ToolTip": "C:\\Users\\Asus\\Desktop\\Nerd\\Nerds_First_Project\\Final\\LoginForm.cs [Design]",
               "RelativeToolTip": "Final\\LoginForm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-12T07:21:12.442Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-06-12T07:21:12.442Z"
             },
             {
               "$type": "Document",
@@ -82,12 +81,11 @@
               "RelativeToolTip": "Final\\Models\\Role.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-12T07:18:21.256Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-12T07:18:21.256Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "frmUsers.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\Nerd\\Nerds_First_Project\\Final\\frmUsers.cs",
               "RelativeDocumentMoniker": "Final\\frmUsers.cs",
@@ -112,7 +110,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Final.csproj",
               "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\Nerd\\Nerds_First_Project\\Final\\Final.csproj",
               "RelativeDocumentMoniker": "Final\\Final.csproj",
@@ -120,18 +118,17 @@
               "RelativeToolTip": "Final\\Final.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAD4AAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-06-12T12:49:52.327Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-12T12:49:52.327Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
               "Title": "frmUsers.cs",
               "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\Nerd\\Nerds_First_Project\\Final\\frmUsers.cs",
               "RelativeDocumentMoniker": "Final\\frmUsers.cs",
               "ToolTip": "C:\\Users\\Asus\\Desktop\\Nerd\\Nerds_First_Project\\Final\\frmUsers.cs",
               "RelativeToolTip": "Final\\frmUsers.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAMUAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAMAAAAAAAAAAAAAcwN0AAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-12T07:14:28.736Z",
               "EditorCaption": ""

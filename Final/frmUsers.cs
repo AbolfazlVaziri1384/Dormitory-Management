@@ -45,7 +45,7 @@ namespace Final
             RefreshUsersList(db.Users.ToList());
         }
 
-        
+
         private void txtSearch_TextChanged(object sender, EventArgs e)
         {
             try
@@ -196,5 +196,35 @@ namespace Final
 
         }
 
+        private void btnPrint_Click(object sender, EventArgs e)
+        {
+            DataTable dtUser = new DataTable();
+            dtUser.Columns.Add("FirstName");
+            dtUser.Columns.Add("LastName");
+            dtUser.Columns.Add("Gender");
+            dtUser.Columns.Add("Birthday");
+            dtUser.Columns.Add("StuPerCode");
+            dtUser.Columns.Add("NationalCode");
+            dtUser.Columns.Add("Phone");
+            dtUser.Columns.Add("ISActive");
+            dtUser.Columns.Add("Address");
+            foreach (DataGridViewRow row in dgvUsers.Rows)
+            {
+                dtUser.Rows.Add(
+                    row.Cells[1].Value.ToString(),
+                    row.Cells[2].Value.ToString(),
+                    row.Cells[3].Value.ToString(),
+                    row.Cells[4].Value.ToString(),
+                    row.Cells[5].Value.ToString(),
+                    row.Cells[6].Value.ToString(),
+                    row.Cells[7].Value.ToString(),
+                    row.Cells[8].Value.ToString(),
+                    row.Cells[9].Value.ToString()
+                    );
+            }
+            stiUserPrint.Load(Application.StartupPath + "/UserReport.mrt");
+            stiUserPrint.RegData("DTUser", dtUser);
+            stiUserPrint.Show();
+        }
     }
 }

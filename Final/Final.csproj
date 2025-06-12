@@ -24,6 +24,7 @@
   <ItemGroup>
     <Reference Include="Stimulsoft.Base">
       <HintPath>D:\برنامه نویسی\C#\Stimul_dll\Stimulsoft.Base.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="Stimulsoft.Controls">
       <HintPath>D:\برنامه نویسی\C#\Stimul_dll\Stimulsoft.Controls.dll</HintPath>
@@ -42,6 +43,7 @@
     </Reference>
     <Reference Include="Stimulsoft.Report">
       <HintPath>D:\برنامه نویسی\C#\Stimul_dll\Stimulsoft.Report.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="Stimulsoft.Report.Check">
       <HintPath>D:\برنامه نویسی\C#\Stimul_dll\Stimulsoft.Report.Check.dll</HintPath>
