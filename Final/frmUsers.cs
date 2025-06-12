@@ -42,47 +42,10 @@ namespace Final
 
         private void frmUsers_Load(object sender, EventArgs e)
         {
-
+            RefreshUsersList(db.Users.ToList());
         }
 
-        private void RefreshUsersList(List<Models.User> Userslist)
-        {
-            dgvUsers.Rows.Clear();
-            List<Models.User> Lst = new List<Models.User>();
-            foreach (var item in Userslist)
-            {
-                if ((item.Id != UserID) && (item.IsDeleted == false))
-                {
-                    dgvUsers.Rows.Add(item.Id.ToString(),
-                                      item.FirstName,
-                                      item.LastName,
-                                     (item.Gender == 0) ? "خانم" : "آقا",
-                                      item.Birthday,
-                                      item.StuPerCode,
-                                      item.NationalCode,
-                                      item.Phone,
-                                     (item.IsActive == true) ? "فعال" : "غیر فعال",
-                                      item.Address);
-                }
-
-            }
-
-            if (dgvUsers.Rows.Count != 0)
-            {
-                foreach (DataGridViewRow row in dgvUsers.Rows)
-                {
-                    // برای زمانی که اگر کسی غیر فعال است قر مز بشه
-                    if (row.Cells[8].Value.ToString() != "0")
-                    {
-                        row.DefaultCellStyle.BackColor = Color.Red;
-                    }
-                }
-            }
-
-
-
-        }
-
+        
         private void txtSearch_TextChanged(object sender, EventArgs e)
         {
             try
@@ -140,6 +103,7 @@ namespace Final
                     {
                         Models.User.DeleteUser(id, UserID);
                         MessageBoxTool.msg();
+                        db = new DormitoryDbContext();
                         RefreshUsersList(db.Users.ToList());
                     }
                 }
@@ -170,6 +134,10 @@ namespace Final
                     {
                         Models.User.ChangeActiveUser(id);
                         MessageBoxTool.msg();
+
+                        //برای اینکه بعد از هر تغیر اطلاعات را از کش نخواند 
+                        db = new DormitoryDbContext();
+
                         RefreshUsersList(db.Users.ToList());
                     }
                 }
@@ -188,5 +156,45 @@ namespace Final
              go to frmMaim
              */
         }
+        private void RefreshUsersList(List<Models.User> Userslist)
+        {
+            dgvUsers.Rows.Clear();
+            List<Models.User> Lst = new List<Models.User>();
+            foreach (var item in Userslist)
+            {
+                // فردی که ادمین است را نشان نمی دهد
+                if ((Models.Role.FindRole(item.Id) != 0) || (Models.Role.FindRole(item.Id) == null))
+                    if ((item.Id != UserID) && (item.IsDeleted == false))
+                    {
+                        dgvUsers.Rows.Add(item.Id.ToString(),
+                                          item.FirstName,
+                                          item.LastName,
+                                         (item.Gender == 0) ? "خانم" : "آقا",
+                                          item.Birthday,
+                                          item.StuPerCode,
+                                          item.NationalCode,
+                                          item.Phone,
+                                         (item.IsActive == true) ? "فعال" : "غیر فعال",
+                                          item.Address);
+                    }
+
+            }
+
+            if (dgvUsers.Rows.Count != 0)
+            {
+                foreach (DataGridViewRow row in dgvUsers.Rows)
+                {
+                    // برای زمانی که اگر کسی غیر فعال است قر مز بشه
+                    if (row.Cells[8].Value.ToString() == "غیر فعال")
+                    {
+                        row.DefaultCellStyle.BackColor = Color.Red;
+                    }
+                }
+            }
+
+
+
+        }
+
     }
 }

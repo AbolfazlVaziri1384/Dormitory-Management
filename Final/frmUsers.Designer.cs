@@ -31,6 +31,16 @@
             txtSearch = new TextBox();
             label1 = new Label();
             dgvUsers = new DataGridView();
+            Id = new DataGridViewTextBoxColumn();
+            FisrtName = new DataGridViewTextBoxColumn();
+            LastName = new DataGridViewTextBoxColumn();
+            Gender = new DataGridViewTextBoxColumn();
+            Birthday = new DataGridViewTextBoxColumn();
+            StuPerCode = new DataGridViewTextBoxColumn();
+            NationalCode = new DataGridViewTextBoxColumn();
+            Phone = new DataGridViewTextBoxColumn();
+            Status = new DataGridViewTextBoxColumn();
+            Address = new DataGridViewTextBoxColumn();
             btnAddNew = new Button();
             btnPrint = new Button();
             btnEdit = new Button();
@@ -43,16 +53,6 @@
             pictureBox5 = new PictureBox();
             pictureBox6 = new PictureBox();
             btnBackToMain = new Button();
-            Id = new DataGridViewTextBoxColumn();
-            FisrtName = new DataGridViewTextBoxColumn();
-            LastName = new DataGridViewTextBoxColumn();
-            Gender = new DataGridViewTextBoxColumn();
-            Birthday = new DataGridViewTextBoxColumn();
-            StuPerCode = new DataGridViewTextBoxColumn();
-            NationalCode = new DataGridViewTextBoxColumn();
-            Phone = new DataGridViewTextBoxColumn();
-            Status = new DataGridViewTextBoxColumn();
-            Address = new DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)dgvUsers).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
@@ -65,10 +65,10 @@
             // txtSearch
             // 
             txtSearch.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            txtSearch.Location = new Point(312, 36);
-            txtSearch.Multiline = true;
+            txtSearch.Location = new Point(307, 45);
             txtSearch.Name = "txtSearch";
-            txtSearch.Size = new Size(328, 42);
+            txtSearch.RightToLeft = RightToLeft.Yes;
+            txtSearch.Size = new Size(328, 27);
             txtSearch.TabIndex = 0;
             txtSearch.TextChanged += txtSearch_TextChanged;
             // 
@@ -100,6 +100,95 @@
             dgvUsers.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             dgvUsers.Size = new Size(1031, 170);
             dgvUsers.TabIndex = 2;
+            // 
+            // Id
+            // 
+            Id.HeaderText = "Id";
+            Id.MinimumWidth = 6;
+            Id.Name = "Id";
+            Id.ReadOnly = true;
+            Id.Visible = false;
+            // 
+            // FisrtName
+            // 
+            FisrtName.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
+            FisrtName.HeaderText = "نام";
+            FisrtName.MinimumWidth = 6;
+            FisrtName.Name = "FisrtName";
+            FisrtName.ReadOnly = true;
+            FisrtName.Width = 56;
+            // 
+            // LastName
+            // 
+            LastName.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
+            LastName.HeaderText = "نام خانوادگی";
+            LastName.MinimumWidth = 6;
+            LastName.Name = "LastName";
+            LastName.ReadOnly = true;
+            LastName.Width = 110;
+            // 
+            // Gender
+            // 
+            Gender.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
+            Gender.HeaderText = "جنسیت";
+            Gender.MinimumWidth = 6;
+            Gender.Name = "Gender";
+            Gender.ReadOnly = true;
+            Gender.Width = 84;
+            // 
+            // Birthday
+            // 
+            Birthday.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
+            Birthday.HeaderText = "تاریخ تولد";
+            Birthday.MinimumWidth = 6;
+            Birthday.Name = "Birthday";
+            Birthday.ReadOnly = true;
+            Birthday.Width = 91;
+            // 
+            // StuPerCode
+            // 
+            StuPerCode.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
+            StuPerCode.HeaderText = "کد دانشجویی/پرسنلی";
+            StuPerCode.MinimumWidth = 6;
+            StuPerCode.Name = "StuPerCode";
+            StuPerCode.ReadOnly = true;
+            StuPerCode.Width = 161;
+            // 
+            // NationalCode
+            // 
+            NationalCode.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
+            NationalCode.HeaderText = "کد ملی";
+            NationalCode.MinimumWidth = 6;
+            NationalCode.Name = "NationalCode";
+            NationalCode.ReadOnly = true;
+            NationalCode.Width = 79;
+            // 
+            // Phone
+            // 
+            Phone.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
+            Phone.HeaderText = "تلفن";
+            Phone.MinimumWidth = 6;
+            Phone.Name = "Phone";
+            Phone.ReadOnly = true;
+            Phone.Width = 66;
+            // 
+            // Status
+            // 
+            Status.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
+            Status.HeaderText = "وضعیت";
+            Status.MinimumWidth = 6;
+            Status.Name = "Status";
+            Status.ReadOnly = true;
+            Status.Width = 89;
+            // 
+            // Address
+            // 
+            Address.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
+            Address.HeaderText = "آدرس";
+            Address.MinimumWidth = 6;
+            Address.Name = "Address";
+            Address.ReadOnly = true;
+            Address.Width = 73;
             // 
             // btnAddNew
             // 
@@ -239,95 +328,6 @@
             btnBackToMain.Text = "بازگشت";
             btnBackToMain.UseVisualStyleBackColor = false;
             btnBackToMain.Click += btnBackToMain_Click;
-            // 
-            // Id
-            // 
-            Id.HeaderText = "Id";
-            Id.MinimumWidth = 6;
-            Id.Name = "Id";
-            Id.ReadOnly = true;
-            Id.Visible = false;
-            // 
-            // FisrtName
-            // 
-            FisrtName.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
-            FisrtName.HeaderText = "نام";
-            FisrtName.MinimumWidth = 6;
-            FisrtName.Name = "FisrtName";
-            FisrtName.ReadOnly = true;
-            FisrtName.Width = 56;
-            // 
-            // LastName
-            // 
-            LastName.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
-            LastName.HeaderText = "نام خانوادگی";
-            LastName.MinimumWidth = 6;
-            LastName.Name = "LastName";
-            LastName.ReadOnly = true;
-            LastName.Width = 119;
-            // 
-            // Gender
-            // 
-            Gender.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
-            Gender.HeaderText = "جنسیت";
-            Gender.MinimumWidth = 6;
-            Gender.Name = "Gender";
-            Gender.ReadOnly = true;
-            Gender.Width = 84;
-            // 
-            // Birthday
-            // 
-            Birthday.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
-            Birthday.HeaderText = "تاریخ تولد";
-            Birthday.MinimumWidth = 6;
-            Birthday.Name = "Birthday";
-            Birthday.ReadOnly = true;
-            Birthday.Width = 98;
-            // 
-            // StuPerCode
-            // 
-            StuPerCode.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
-            StuPerCode.HeaderText = "کد دانشجویی/پرسنلی";
-            StuPerCode.MinimumWidth = 6;
-            StuPerCode.Name = "StuPerCode";
-            StuPerCode.ReadOnly = true;
-            StuPerCode.Width = 161;
-            // 
-            // NationalCode
-            // 
-            NationalCode.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
-            NationalCode.HeaderText = "کد ملی";
-            NationalCode.MinimumWidth = 6;
-            NationalCode.Name = "NationalCode";
-            NationalCode.ReadOnly = true;
-            NationalCode.Width = 79;
-            // 
-            // Phone
-            // 
-            Phone.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
-            Phone.HeaderText = "تلفن";
-            Phone.MinimumWidth = 6;
-            Phone.Name = "Phone";
-            Phone.ReadOnly = true;
-            Phone.Width = 66;
-            // 
-            // Status
-            // 
-            Status.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
-            Status.HeaderText = "وضعیت";
-            Status.MinimumWidth = 6;
-            Status.Name = "Status";
-            Status.ReadOnly = true;
-            Status.Width = 89;
-            // 
-            // Address
-            // 
-            Address.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
-            Address.HeaderText = "آدرس";
-            Address.MinimumWidth = 6;
-            Address.Name = "Address";
-            Address.ReadOnly = true;
-            Address.Width = 73;
             // 
             // frmUsers
             // 

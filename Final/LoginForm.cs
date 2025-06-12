@@ -62,7 +62,9 @@ namespace Final
                         //Close();
                         user.UserName = txtUserName.Text;
                         user.Password = txtPassword.Text;
-
+                        frmUsers frmUsers = new frmUsers();
+                        frmUsers.UserID = user.Id;
+                        frmUsers.ShowDialog();
                         //ForgotPasswordForm frm = new ForgotPasswordForm();
                         //frm.Show();
                         //Hide();
