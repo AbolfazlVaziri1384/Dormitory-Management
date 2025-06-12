@@ -53,6 +53,7 @@
             pictureBox5 = new PictureBox();
             pictureBox6 = new PictureBox();
             btnBackToMain = new Button();
+            stiReport1 = new Stimulsoft.Report.StiReport();
             ((System.ComponentModel.ISupportInitialize)dgvUsers).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
@@ -329,6 +330,31 @@
             btnBackToMain.UseVisualStyleBackColor = false;
             btnBackToMain.Click += btnBackToMain_Click;
             // 
+            // stiReport1
+            // 
+            stiReport1.CookieContainer = null;
+            stiReport1.EngineVersion = Stimulsoft.Report.Engine.StiEngineVersion.EngineV2;
+            stiReport1.HttpHeadersContainer = null;
+            stiReport1.Key = "fcee65fd1bf54b209697e8a1e6ad91dc";
+            stiReport1.ReferencedAssemblies = new string[]
+    {
+    "System.Dll",
+    "System.Drawing.Dll",
+    "System.Windows.Forms.Dll",
+    "System.Data.Dll",
+    "System.Xml.Dll",
+    "Stimulsoft.Controls.Dll",
+    "Stimulsoft.Base.Dll",
+    "Stimulsoft.Report.Dll"
+    };
+            stiReport1.ReportAlias = "Report";
+            stiReport1.ReportGuid = "9478882d08e247adaca1c36b3f36a171";
+            stiReport1.ReportName = "Report";
+            stiReport1.ReportSource = null;
+            stiReport1.ReportUnit = Stimulsoft.Report.StiReportUnitType.Centimeters;
+            stiReport1.ScriptLanguage = Stimulsoft.Report.StiReportLanguageType.CSharp;
+            stiReport1.UseProgressInThread = false;
+            // 
             // frmUsers
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -391,5 +417,6 @@
         private DataGridViewTextBoxColumn Phone;
         private DataGridViewTextBoxColumn Status;
         private DataGridViewTextBoxColumn Address;
+        private Stimulsoft.Report.StiReport stiReport1;
     }
 }

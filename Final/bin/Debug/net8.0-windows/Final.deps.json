@@ -10,7 +10,18 @@
         "dependencies": {
           "Microsoft.EntityFrameworkCore.Design": "9.0.5",
           "Microsoft.EntityFrameworkCore.SqlServer": "9.0.5",
-          "Microsoft.EntityFrameworkCore.Tools": "9.0.5"
+          "Microsoft.EntityFrameworkCore.Tools": "9.0.5",
+          "Stimulsoft.Base": "2014.3.0.0",
+          "Stimulsoft.Controls": "2014.3.0.0",
+          "Stimulsoft.Controls.Win": "2014.3.0.0",
+          "Stimulsoft.Database": "2014.3.0.0",
+          "Stimulsoft.Design": "2014.3.0.0",
+          "Stimulsoft.Editor": "2014.3.0.0",
+          "Stimulsoft.Report.Check": "2014.3.0.0",
+          "Stimulsoft.Report.Design": "2014.3.0.0",
+          "Stimulsoft.Report": "2014.3.0.0",
+          "Stimulsoft.Report.Helper": "2014.3.0.0",
+          "Stimulsoft.Report.Win": "2014.3.0.0"
         },
         "runtime": {
           "Final.dll": {}
@@ -954,6 +965,94 @@
         "dependencies": {
           "System.Drawing.Common": "6.0.0"
         }
+      },
+      "Stimulsoft.Base/2014.3.0.0": {
+        "runtime": {
+          "Stimulsoft.Base.dll": {
+            "assemblyVersion": "2014.3.0.0",
+            "fileVersion": "2014.3.0.0"
+          }
+        }
+      },
+      "Stimulsoft.Controls/2014.3.0.0": {
+        "runtime": {
+          "Stimulsoft.Controls.dll": {
+            "assemblyVersion": "2014.3.0.0",
+            "fileVersion": "2014.3.0.0"
+          }
+        }
+      },
+      "Stimulsoft.Controls.Win/2014.3.0.0": {
+        "runtime": {
+          "Stimulsoft.Controls.Win.dll": {
+            "assemblyVersion": "2014.3.0.0",
+            "fileVersion": "2014.3.0.0"
+          }
+        }
+      },
+      "Stimulsoft.Database/2014.3.0.0": {
+        "runtime": {
+          "Stimulsoft.Database.dll": {
+            "assemblyVersion": "2014.3.0.0",
+            "fileVersion": "2014.3.0.0"
+          }
+        }
+      },
+      "Stimulsoft.Design/2014.3.0.0": {
+        "runtime": {
+          "Stimulsoft.Design.dll": {
+            "assemblyVersion": "2014.3.0.0",
+            "fileVersion": "2014.3.0.0"
+          }
+        }
+      },
+      "Stimulsoft.Editor/2014.3.0.0": {
+        "runtime": {
+          "Stimulsoft.Editor.dll": {
+            "assemblyVersion": "2014.3.0.0",
+            "fileVersion": "2014.3.0.0"
+          }
+        }
+      },
+      "Stimulsoft.Report.Check/2014.3.0.0": {
+        "runtime": {
+          "Stimulsoft.Report.Check.dll": {
+            "assemblyVersion": "2014.3.0.0",
+            "fileVersion": "2014.3.0.0"
+          }
+        }
+      },
+      "Stimulsoft.Report.Design/2014.3.0.0": {
+        "runtime": {
+          "Stimulsoft.Report.Design.dll": {
+            "assemblyVersion": "2014.3.0.0",
+            "fileVersion": "2014.3.0.0"
+          }
+        }
+      },
+      "Stimulsoft.Report/2014.3.0.0": {
+        "runtime": {
+          "Stimulsoft.Report.dll": {
+            "assemblyVersion": "2014.3.0.0",
+            "fileVersion": "2014.3.0.0"
+          }
+        }
+      },
+      "Stimulsoft.Report.Helper/2014.3.0.0": {
+        "runtime": {
+          "Stimulsoft.Report.Helper.dll": {
+            "assemblyVersion": "2014.3.0.0",
+            "fileVersion": "2014.3.0.0"
+          }
+        }
+      },
+      "Stimulsoft.Report.Win/2014.3.0.0": {
+        "runtime": {
+          "Stimulsoft.Report.Win.dll": {
+            "assemblyVersion": "2014.3.0.0",
+            "fileVersion": "2014.3.0.0"
+          }
+        }
       }
     }
   },
@@ -1515,6 +1614,61 @@
       "sha512": "sha512-IXoJOXIqc39AIe+CIR7koBtRGMiCt/LPM3lI+PELtDIy9XdyeSrwXFdWV9dzJ2Awl0paLWUaknLxFQ5HpHZUog==",
       "path": "system.windows.extensions/6.0.0",
       "hashPath": "system.windows.extensions.6.0.0.nupkg.sha512"
+    },
+    "Stimulsoft.Base/2014.3.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Stimulsoft.Controls/2014.3.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Stimulsoft.Controls.Win/2014.3.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Stimulsoft.Database/2014.3.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Stimulsoft.Design/2014.3.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Stimulsoft.Editor/2014.3.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Stimulsoft.Report.Check/2014.3.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Stimulsoft.Report.Design/2014.3.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Stimulsoft.Report/2014.3.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Stimulsoft.Report.Helper/2014.3.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Stimulsoft.Report.Win/2014.3.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
     }
   }
 }

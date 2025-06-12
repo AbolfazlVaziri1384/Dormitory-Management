@@ -66,6 +66,10 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[9.0.5, )"
+            },
+            "Stimulsoft.Reports.Net": {
+              "target": "Package",
+              "version": "[2025.2.5, )"
             }
           },
           "imports": [

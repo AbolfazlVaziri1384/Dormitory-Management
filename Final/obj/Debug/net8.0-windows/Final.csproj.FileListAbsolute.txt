@@ -310,3 +310,14 @@ C:\Users\Asus\Desktop\Nerd\Nerds_First_Project\Final\obj\Debug\net8.0-windows\Fi
 C:\Users\Asus\Desktop\Nerd\Nerds_First_Project\Final\obj\Debug\net8.0-windows\Final.frmSetDormitory.resources
 C:\Users\Asus\Desktop\Nerd\Nerds_First_Project\Final\obj\Debug\net8.0-windows\Final.frmSetUser.resources
 C:\Users\Asus\Desktop\Nerd\Nerds_First_Project\Final\obj\Debug\net8.0-windows\Final.frmUsers.resources
+C:\Users\Asus\Desktop\Nerd\Nerds_First_Project\Final\bin\Debug\net8.0-windows\Stimulsoft.Base.dll
+C:\Users\Asus\Desktop\Nerd\Nerds_First_Project\Final\bin\Debug\net8.0-windows\Stimulsoft.Report.dll
+C:\Users\Asus\Desktop\Nerd\Nerds_First_Project\Final\bin\Debug\net8.0-windows\Stimulsoft.Controls.dll
+C:\Users\Asus\Desktop\Nerd\Nerds_First_Project\Final\bin\Debug\net8.0-windows\Stimulsoft.Controls.Win.dll
+C:\Users\Asus\Desktop\Nerd\Nerds_First_Project\Final\bin\Debug\net8.0-windows\Stimulsoft.Database.dll
+C:\Users\Asus\Desktop\Nerd\Nerds_First_Project\Final\bin\Debug\net8.0-windows\Stimulsoft.Design.dll
+C:\Users\Asus\Desktop\Nerd\Nerds_First_Project\Final\bin\Debug\net8.0-windows\Stimulsoft.Editor.dll
+C:\Users\Asus\Desktop\Nerd\Nerds_First_Project\Final\bin\Debug\net8.0-windows\Stimulsoft.Report.Check.dll
+C:\Users\Asus\Desktop\Nerd\Nerds_First_Project\Final\bin\Debug\net8.0-windows\Stimulsoft.Report.Design.dll
+C:\Users\Asus\Desktop\Nerd\Nerds_First_Project\Final\bin\Debug\net8.0-windows\Stimulsoft.Report.Helper.dll
+C:\Users\Asus\Desktop\Nerd\Nerds_First_Project\Final\bin\Debug\net8.0-windows\Stimulsoft.Report.Win.dll
