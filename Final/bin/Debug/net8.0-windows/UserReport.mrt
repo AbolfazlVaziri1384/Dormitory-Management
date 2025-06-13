@@ -41,9 +41,9 @@
           <Components isList="true" count="2">
             <Text2 Ref="5" type="Text" isKey="true">
               <Brush>Transparent</Brush>
-              <ClientRectangle>4.5,-0.02,1,0.2</ClientRectangle>
+              <ClientRectangle>5.1,-0.02,1,0.2</ClientRectangle>
               <Conditions isList="true" count="0" />
-              <Font>B Koodak,10,Bold</Font>
+              <Font>B Koodak,12,Bold</Font>
               <Margins>0,0,0,0</Margins>
               <Name>Text2</Name>
               <Page isRef="3" />
@@ -79,7 +79,7 @@
           <Components isList="true" count="1">
             <Text1 Ref="8" type="Text" isKey="true">
               <Brush>Transparent</Brush>
-              <ClientRectangle>3.9,0,2.3,0.5</ClientRectangle>
+              <ClientRectangle>4,0,2.3,0.5</ClientRectangle>
               <Conditions isList="true" count="0" />
               <Font>B Koodak,25,Bold</Font>
               <HorAlignment>Center</HorAlignment>
@@ -490,10 +490,10 @@
     <value>Stimulsoft.Report.Dll</value>
   </ReferencedAssemblies>
   <ReportAlias>Report</ReportAlias>
-  <ReportChanged>6/12/2025 11:27:28 PM</ReportChanged>
+  <ReportChanged>6/13/2025 6:01:57 AM</ReportChanged>
   <ReportCreated>6/12/2025 10:33:12 PM</ReportCreated>
   <ReportFile>C:\Users\Asus\Desktop\Nerd\Nerds_First_Project\Final\bin\Debug\net8.0-windows\UserReport.mrt</ReportFile>
-  <ReportGuid>ca52e11fb68948dc99dc5fce1f44394c</ReportGuid>
+  <ReportGuid>940c2172401745a081a3bd0fc8d7f681</ReportGuid>
   <ReportName>Report</ReportName>
   <ReportUnit>Inches</ReportUnit>
   <ReportVersion>2014.3.0</ReportVersion>

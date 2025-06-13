@@ -65,34 +65,34 @@ public partial class User
 
     public static User? FindUser(string UserName, string Password)
     {
-        DormitoryDbContext db = new DormitoryDbContext();
+        using DormitoryDbContext db = new DormitoryDbContext();
         return db.Users.Where(i => i.UserName == UserName && i.Password == Password).FirstOrDefault();
     }
     public static User? FindUserByNationalCode(string Stu_Per_Code, string NationalCode)
     {
-        DormitoryDbContext db = new DormitoryDbContext();
+        using DormitoryDbContext db = new DormitoryDbContext();
         return db.Users.Where(i => i.StuPerCode == Convert.ToInt64(Stu_Per_Code) && i.NationalCode == Convert.ToInt64(NationalCode)).FirstOrDefault();
     }
     public static User? FindUserById(long UserId)
     {
-        DormitoryDbContext db = new DormitoryDbContext();
+        using DormitoryDbContext db = new DormitoryDbContext();
         return db.Users.Where(i => i.Id == UserId).FirstOrDefault();
     }
     public static bool AnyUser(string UserName)
     {
-        DormitoryDbContext db = new DormitoryDbContext();
+        using DormitoryDbContext db = new DormitoryDbContext();
         return db.Users.Any(i => i.UserName == UserName);
     }
     public static void ChangePassword(User user, string Password)
     {
-        DormitoryDbContext db = new DormitoryDbContext();
+        using DormitoryDbContext db = new DormitoryDbContext();
         db.Users.Update(user);
         user.Password = Password;
         db.SaveChanges();
     }
     public static void SetLogin(User user)
     {
-        DormitoryDbContext db = new DormitoryDbContext();
+        using DormitoryDbContext db = new DormitoryDbContext();
         db.Users.Update(user);
         if (user.LastLogin == null)
             user.LastLogin = DateTime.Now;
@@ -109,7 +109,7 @@ public partial class User
                                long Stu_Per_Code, long Phone, 
                                string Birthday , bool IsMan)
     {
-        DormitoryDbContext db = new DormitoryDbContext();
+        using DormitoryDbContext db = new DormitoryDbContext();
         User user = new User();
         user.FirstName = FirstName;
         user.LastName = LastName;
@@ -134,7 +134,7 @@ public partial class User
                                long Stu_Per_Code, long Phone,
                                string Birthday, bool IsMan)
     {
-        DormitoryDbContext db = new DormitoryDbContext();
+        using DormitoryDbContext db = new DormitoryDbContext();
         User? user = new User();
         user = User.FindUserById(UserEditId);
         db.Users.Update(user);
@@ -159,7 +159,7 @@ public partial class User
     }
     public static void DeleteUser(long UserDeletedId , long UserId)
     {
-        DormitoryDbContext db = new DormitoryDbContext();
+        using DormitoryDbContext db = new DormitoryDbContext();
         Models.User user = Models.User.FindUserById(UserDeletedId);
         db.Users.Update(user);
         user.IsDeleted = true;
@@ -168,8 +168,8 @@ public partial class User
         db.SaveChanges();
     }
     public static void ChangeActiveUser(long UserId)
-    {
-        DormitoryDbContext db = new DormitoryDbContext();
+    {   
+        using DormitoryDbContext db = new DormitoryDbContext();
         Models.User user = Models.User.FindUserById(UserId);
         db.Users.Update(user);
         user.IsActive = (user.IsActive == true) ? false : true;

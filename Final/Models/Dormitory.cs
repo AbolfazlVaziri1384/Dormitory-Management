@@ -37,17 +37,17 @@ public partial class Dormitory
 
     public static Dormitory? FindDormitoryById(long DormitoryId)
     {
-        DormitoryDbContext db = new DormitoryDbContext();
+        using DormitoryDbContext db = new DormitoryDbContext();
         return db.Dormitories.Where(i => i.Id == DormitoryId).FirstOrDefault();
     }
     public static bool AnyDormitory(string DormitoryName)
     {
-        DormitoryDbContext db = new DormitoryDbContext();
+        using DormitoryDbContext db = new DormitoryDbContext();
         return db.Dormitories.Any(i => i.Name == DormitoryName);
     }
     public static void SetDormitory(string Name , string Address, int Capacity, long UserId , int DormitoryGender)
     {
-        DormitoryDbContext db = new DormitoryDbContext();
+        using DormitoryDbContext db = new DormitoryDbContext();
         Dormitory dormitory = new Dormitory();
         dormitory.Name = Name;
         dormitory.Capacity = Capacity;
@@ -62,7 +62,7 @@ public partial class Dormitory
     }
     public static void EditDormitory(long DormitoryEditId, long UserId, string Name, string Address, int Capacity , int DormitoryGender)
     {
-        DormitoryDbContext db = new DormitoryDbContext();
+        using DormitoryDbContext db = new DormitoryDbContext();
         Dormitory? dormitory = new Dormitory();
         dormitory = Dormitory.FindDormitoryById(DormitoryEditId);
         db.Dormitories.Update(dormitory);
