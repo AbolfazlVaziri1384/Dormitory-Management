@@ -151,7 +151,7 @@ public partial class User
         user.Phone = Phone;
         user.Address = Address;
         user.IsActive = true;
-        user.IsDeleted = true;
+        user.IsDeleted = false;
         user.ModifiedBy = User.FindUserById(UserId).Id;
         user.ModifiedOn = DateTime.Now;
 

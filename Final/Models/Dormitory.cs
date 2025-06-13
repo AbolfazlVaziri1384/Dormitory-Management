@@ -13,6 +13,7 @@ public partial class Dormitory
     public string Address { get; set; } = null!;
 
     public long Capacity { get; set; }
+    public long NowCapacity { get; set; }
 
     public bool IsDeleted { get; set; }
 
@@ -51,6 +52,7 @@ public partial class Dormitory
         Dormitory dormitory = new Dormitory();
         dormitory.Name = Name;
         dormitory.Capacity = Capacity;
+        dormitory.NowCapacity = Capacity;
         dormitory.Address = Address;
         dormitory.IsDeleted = false;
         dormitory.CreatBy = UserId;
@@ -75,5 +77,10 @@ public partial class Dormitory
         dormitory.DormitoryGender = DormitoryGender;
 
         db.SaveChanges();
+    }
+    public static long Now_Capacity(long DormitoryId)
+    { 
+        using DormitoryDbContext db = new DormitoryDbContext();
+        return db.Dormitories.Where(i => i.Id == DormitoryId).FirstOrDefault().NowCapacity;
     }
 }

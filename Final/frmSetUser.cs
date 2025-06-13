@@ -19,7 +19,7 @@ namespace Final
             InitializeComponent();
         }
         public int UserEditId = -1;
-        public long UserId;
+        public long UserId = -1;
         private void chkShowPassword_CheckedChanged(object sender, EventArgs e)
         {
             bool show = chkShowPassword.Checked;
@@ -58,6 +58,12 @@ namespace Final
             bool show = chkShowPassword.Checked;
             txtPassword.UseSystemPasswordChar = !show;
             txtConfirmPassword.UseSystemPasswordChar = !show;
+            // اگر فردی بخواهد تازه ثبت نام کند یا کسی بخواهد تغییری ایجاد کند
+            if (UserId != -1)
+            {
+                grpLoginInfo.Enabled = false;
+                txtUserName.UseSystemPasswordChar = !show;
+            }
         }
 
         private void label7_Click(object sender, EventArgs e)
@@ -74,7 +80,7 @@ namespace Final
         {
             try
             {
-                bool Istrue = CheckTool.UserField(txtFirstName.Text, txtLastName.Text, txtUserName.Text, txtPassword.Text, txtConfirmPassword.Text, txtAddress.Text, Convert.ToInt64(numNationalCode.Value), Convert.ToInt64(numStu_Per_Code.Value), Convert.ToInt64(numPhone.Value), mskBirthDay.Text.ToString());
+                bool Istrue = CheckTool.UserField(UserEditId, txtFirstName.Text, txtLastName.Text, txtUserName.Text, txtPassword.Text, txtConfirmPassword.Text, txtAddress.Text, Convert.ToInt64(numNationalCode.Value), Convert.ToInt64(numStu_Per_Code.Value), Convert.ToInt64(numPhone.Value), mskBirthDay.Text.ToString());
                 if (UserEditId == -1)
                 {
                     if (Istrue == true)
@@ -83,22 +89,20 @@ namespace Final
                         MessageBoxTool.msgr("کاربر جدید با موفقیت ثبت شد");
                         Close();
                     }
-                    else
+                }
+                else
+                {
+                    if (Istrue == true)
                     {
-                        if (Istrue == true)
+                        DialogResult result;
+                        result = MessageBoxTool.msgq("آیا از ویرایش مطمئن هستید؟");
+                        if (result == DialogResult.Yes)
                         {
-                            DialogResult result;
-                            result = MessageBoxTool.msgq("آیا از ویرایش مطمئن هستید؟");
-                            if (result == DialogResult.Yes)
-                            {
-                                User.EditUser(UserEditId, UserId, txtFirstName.Text, txtLastName.Text, txtUserName.Text, txtPassword.Text, txtAddress.Text, Convert.ToInt64(numNationalCode.Value), Convert.ToInt64(numStu_Per_Code.Value), Convert.ToInt64(numPhone.Value), mskBirthDay.Text.ToString(), radMen.Checked);
-                                MessageBoxTool.msgr("کابر با موفقیت ویرایش شد");
-                                Close();
-                            }
+                            User.EditUser(UserEditId, UserId, txtFirstName.Text, txtLastName.Text, txtUserName.Text, txtPassword.Text, txtAddress.Text, Convert.ToInt64(numNationalCode.Value), Convert.ToInt64(numStu_Per_Code.Value), Convert.ToInt64(numPhone.Value), mskBirthDay.Text.ToString(), radMen.Checked);
+                            MessageBoxTool.msgr("کابر با موفقیت ویرایش شد");
+                            Close();
                         }
                     }
-
-
                 }
             }
             catch (Exception ex)

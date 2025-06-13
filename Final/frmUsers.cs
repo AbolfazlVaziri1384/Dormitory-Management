@@ -32,7 +32,9 @@ namespace Final
             {
                 frmSetUser frm = new frmSetUser();
                 frm.ShowDialog();
+                db = new DormitoryDbContext();
                 RefreshUsersList(db.Users.ToList());
+                db.Dispose();
             }
             catch (Exception ex)
             {
@@ -42,7 +44,9 @@ namespace Final
 
         private void frmUsers_Load(object sender, EventArgs e)
         {
+            db = new DormitoryDbContext();
             RefreshUsersList(db.Users.ToList());
+            db.Dispose();
         }
 
 
@@ -50,10 +54,12 @@ namespace Final
         {
             try
             {
+                db = new DormitoryDbContext();
                 RefreshUsersList((List<Models.User>)db.Users.Where(i => i.FirstName.Contains(txtSearch.Text.Trim()) ||
                                                    i.LastName.Contains(txtSearch.Text.Trim()) ||
                                                    i.StuPerCode.ToString().Contains(txtSearch.Text.Trim()) ||
                                                    i.NationalCode.ToString().Contains(txtSearch.Text.Trim())).ToList());
+                db.Dispose();
             }
             catch (Exception ex)
             {
@@ -74,9 +80,11 @@ namespace Final
                 id = int.Parse(dgvUsers.CurrentRow.Cells[0].Value.ToString());
                 frmSetUser frm = new frmSetUser();
                 frm.UserEditId = id;
+                frm.UserId = UserID;
                 frm.ShowDialog();
                 db = new DormitoryDbContext();
                 RefreshUsersList(db.Users.ToList());
+                db.Dispose();
             }
             catch (Exception ex)
             {
@@ -105,6 +113,7 @@ namespace Final
                         MessageBoxTool.msg();
                         db = new DormitoryDbContext();
                         RefreshUsersList(db.Users.ToList());
+                        db.Dispose();
                     }
                 }
 
@@ -139,6 +148,7 @@ namespace Final
                         db = new DormitoryDbContext();
 
                         RefreshUsersList(db.Users.ToList());
+                        db.Dispose();
                     }
                 }
 
@@ -159,7 +169,6 @@ namespace Final
         private void RefreshUsersList(List<Models.User> Userslist)
         {
             dgvUsers.Rows.Clear();
-            List<Models.User> Lst = new List<Models.User>();
             foreach (var item in Userslist)
             {
                 // فردی که ادمین است را نشان نمی دهد

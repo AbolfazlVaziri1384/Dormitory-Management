@@ -50,6 +50,12 @@
             pictureBox9 = new PictureBox();
             btnShowBlocks = new Button();
             btnBackToMain = new Button();
+            Id = new DataGridViewTextBoxColumn();
+            Name = new DataGridViewTextBoxColumn();
+            Capacity = new DataGridViewTextBoxColumn();
+            NowCapacity = new DataGridViewTextBoxColumn();
+            DormitoryGender = new DataGridViewTextBoxColumn();
+            Address = new DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dgvDormitory).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
@@ -64,9 +70,10 @@
             // 
             // txtSearch
             // 
-            txtSearch.Location = new Point(239, 45);
+            txtSearch.Location = new Point(261, 45);
             txtSearch.Multiline = true;
             txtSearch.Name = "txtSearch";
+            txtSearch.RightToLeft = RightToLeft.Yes;
             txtSearch.Size = new Size(222, 39);
             txtSearch.TabIndex = 0;
             txtSearch.TextChanged += txtSearch_TextChanged;
@@ -76,7 +83,7 @@
             label1.AutoSize = true;
             label1.Font = new Font("B Koodak", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 178);
             label1.ForeColor = Color.MediumBlue;
-            label1.Location = new Point(465, 54);
+            label1.Location = new Point(487, 54);
             label1.Name = "label1";
             label1.Size = new Size(117, 29);
             label1.TabIndex = 1;
@@ -85,7 +92,7 @@
             // pictureBox1
             // 
             pictureBox1.Image = Properties.Resources.search;
-            pictureBox1.Location = new Point(574, 54);
+            pictureBox1.Location = new Point(596, 54);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(24, 30);
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
@@ -94,12 +101,17 @@
             // 
             // dgvDormitory
             // 
+            dgvDormitory.AllowUserToAddRows = false;
+            dgvDormitory.AllowUserToDeleteRows = false;
             dgvDormitory.BackgroundColor = Color.AliceBlue;
             dgvDormitory.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvDormitory.Location = new Point(228, 114);
+            dgvDormitory.Columns.AddRange(new DataGridViewColumn[] { Id, Name, Capacity, NowCapacity, DormitoryGender, Address });
+            dgvDormitory.Location = new Point(95, 113);
             dgvDormitory.Name = "dgvDormitory";
+            dgvDormitory.ReadOnly = true;
+            dgvDormitory.RightToLeft = RightToLeft.Yes;
             dgvDormitory.RowHeadersWidth = 51;
-            dgvDormitory.Size = new Size(370, 119);
+            dgvDormitory.Size = new Size(641, 119);
             dgvDormitory.TabIndex = 3;
             // 
             // pictureBox2
@@ -302,6 +314,60 @@
             btnBackToMain.Text = "بازگشت";
             btnBackToMain.UseVisualStyleBackColor = false;
             // 
+            // Id
+            // 
+            Id.HeaderText = "Id";
+            Id.MinimumWidth = 6;
+            Id.Name = "Id";
+            Id.ReadOnly = true;
+            Id.Visible = false;
+            Id.Width = 125;
+            // 
+            // Name
+            // 
+            Name.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
+            Name.HeaderText = "نام";
+            Name.MinimumWidth = 6;
+            Name.Name = "Name";
+            Name.ReadOnly = true;
+            Name.Width = 56;
+            // 
+            // Capacity
+            // 
+            Capacity.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
+            Capacity.HeaderText = "ظرفیت اصلی";
+            Capacity.MinimumWidth = 6;
+            Capacity.Name = "Capacity";
+            Capacity.ReadOnly = true;
+            Capacity.Width = 124;
+            // 
+            // NowCapacity
+            // 
+            NowCapacity.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
+            NowCapacity.HeaderText = "ظرفیت فعلی";
+            NowCapacity.MinimumWidth = 6;
+            NowCapacity.Name = "NowCapacity";
+            NowCapacity.ReadOnly = true;
+            NowCapacity.Width = 122;
+            // 
+            // DormitoryGender
+            // 
+            DormitoryGender.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
+            DormitoryGender.HeaderText = "نوع";
+            DormitoryGender.MinimumWidth = 6;
+            DormitoryGender.Name = "DormitoryGender";
+            DormitoryGender.ReadOnly = true;
+            DormitoryGender.Width = 60;
+            // 
+            // Address
+            // 
+            Address.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
+            Address.HeaderText = "آدرس";
+            Address.MinimumWidth = 6;
+            Address.Name = "Address";
+            Address.ReadOnly = true;
+            Address.Width = 73;
+            // 
             // frmDormitory
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -329,8 +395,8 @@
             Controls.Add(pictureBox1);
             Controls.Add(label1);
             Controls.Add(txtSearch);
-            Name = "frmDormitory";
-            Text = "frmDormitory";
+            //Name = "frmDormitory";
+            Text = "خوابگاه ها";
             Load += frmDormitory_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)dgvDormitory).EndInit();
@@ -370,5 +436,11 @@
         private PictureBox pictureBox9;
         private Button btnShowBlocks;
         private Button btnBackToMain;
+        private DataGridViewTextBoxColumn Id;
+        private DataGridViewTextBoxColumn Name;
+        private DataGridViewTextBoxColumn Capacity;
+        private DataGridViewTextBoxColumn NowCapacity;
+        private DataGridViewTextBoxColumn DormitoryGender;
+        private DataGridViewTextBoxColumn Address;
     }
 }

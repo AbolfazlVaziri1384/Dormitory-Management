@@ -28,18 +28,23 @@
     </Reference>
     <Reference Include="Stimulsoft.Controls">
       <HintPath>D:\برنامه نویسی\C#\Stimul_dll\Stimulsoft.Controls.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="Stimulsoft.Controls.Win">
       <HintPath>D:\برنامه نویسی\C#\Stimul_dll\Stimulsoft.Controls.Win.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="Stimulsoft.Database">
       <HintPath>D:\برنامه نویسی\C#\Stimul_dll\Stimulsoft.Database.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="Stimulsoft.Design">
       <HintPath>D:\برنامه نویسی\C#\Stimul_dll\Stimulsoft.Design.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="Stimulsoft.Editor">
       <HintPath>D:\برنامه نویسی\C#\Stimul_dll\Stimulsoft.Editor.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="Stimulsoft.Report">
       <HintPath>D:\برنامه نویسی\C#\Stimul_dll\Stimulsoft.Report.dll</HintPath>
@@ -47,15 +52,19 @@
     </Reference>
     <Reference Include="Stimulsoft.Report.Check">
       <HintPath>D:\برنامه نویسی\C#\Stimul_dll\Stimulsoft.Report.Check.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="Stimulsoft.Report.Design">
       <HintPath>D:\برنامه نویسی\C#\Stimul_dll\Stimulsoft.Report.Design.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="Stimulsoft.Report.Helper">
       <HintPath>D:\برنامه نویسی\C#\Stimul_dll\Stimulsoft.Report.Helper.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="Stimulsoft.Report.Win">
       <HintPath>D:\برنامه نویسی\C#\Stimul_dll\Stimulsoft.Report.Win.dll</HintPath>
+      <Private>True</Private>
     </Reference>
   </ItemGroup>
 

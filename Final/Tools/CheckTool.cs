@@ -9,7 +9,7 @@ namespace Final.Tools
 {
     internal class CheckTool
     {
-        public static bool UserField(string FirstName, string LastName, string UserName, string Password, string ConfirmPassword, string Address, long NationalCode, long Stu_Per_Code, long Phone, string Birthday)
+        public static bool UserField(int IsEdit ,string FirstName, string LastName, string UserName, string Password, string ConfirmPassword, string Address, long NationalCode, long Stu_Per_Code, long Phone, string Birthday)
         {
             bool Istrue = false;
             if ((string.IsNullOrWhiteSpace(FirstName)) ||
@@ -36,7 +36,7 @@ namespace Final.Tools
             }
             // چک کردن نام کاربری که تکراری نباشد
             bool IsUserNameExist = User.AnyUser(UserName);
-            if (IsUserNameExist)
+            if (IsUserNameExist && IsEdit == -1)
             {
                 MessageBoxTool.msger("این نام کاربری قبلا ثبت شده است");
                 return false;

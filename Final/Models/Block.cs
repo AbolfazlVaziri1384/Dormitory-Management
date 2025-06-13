@@ -38,4 +38,5 @@ public partial class Block
     public virtual ICollection<Role> Roles { get; set; } = new List<Role>();
 
     public virtual ICollection<Room> Rooms { get; set; } = new List<Room>();
+    
 }

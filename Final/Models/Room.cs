@@ -36,4 +36,5 @@ public partial class Room
     public virtual ICollection<RoomAssigment> RoomAssigments { get; set; } = new List<RoomAssigment>();
 
     public virtual ICollection<TransferRoomAssetHistory> TransferRoomAssetHistories { get; set; } = new List<TransferRoomAssetHistory>();
+
 }
