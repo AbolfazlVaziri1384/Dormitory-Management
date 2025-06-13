@@ -46,7 +46,7 @@ public partial class Dormitory
         using DormitoryDbContext db = new DormitoryDbContext();
         return db.Dormitories.Any(i => i.Name == DormitoryName);
     }
-    public static void SetDormitory(string Name , string Address, int Capacity, long UserId , int DormitoryGender)
+    public static void SetDormitory(string Name, string Address, int Capacity, long UserId, int DormitoryGender)
     {
         using DormitoryDbContext db = new DormitoryDbContext();
         Dormitory dormitory = new Dormitory();
@@ -62,7 +62,7 @@ public partial class Dormitory
         db.Dormitories.Add(dormitory);
         db.SaveChanges();
     }
-    public static void EditDormitory(long DormitoryEditId, long UserId, string Name, string Address, int Capacity , int DormitoryGender)
+    public static void EditDormitory(long DormitoryEditId, long UserId, string Name, string Address, int Capacity, int DormitoryGender)
     {
         using DormitoryDbContext db = new DormitoryDbContext();
         Dormitory? dormitory = new Dormitory();
@@ -79,8 +79,28 @@ public partial class Dormitory
         db.SaveChanges();
     }
     public static long Now_Capacity(long DormitoryId)
-    { 
+    {
         using DormitoryDbContext db = new DormitoryDbContext();
         return db.Dormitories.Where(i => i.Id == DormitoryId).FirstOrDefault().NowCapacity;
+    }
+    public static string? FindDormitoryOwnerName(long DormitoryId)
+    {
+        using DormitoryDbContext db = new DormitoryDbContext();
+        var user = User.FindUserById(db.Roles.Where(i => i.DermitoryId == DormitoryId).FirstOrDefault().Id);
+        return (user?.FirstName + " " + user?.LastName) ?? "";
+    }
+    public static List<RoomAssigment>? FindStudents(long DormitoryId)
+    {
+        using DormitoryDbContext db = new DormitoryDbContext();
+        List<Block> blocks = Block.FindByDormitoryId(DormitoryId);
+        List<RoomAssigment> RoomAssigments = new List<RoomAssigment>();
+
+        foreach (Block b in blocks)
+            foreach (Room r in Room.FindByBlockId(b.Id))
+                foreach (RoomAssigment rs in RoomAssigment.FindByRoomId(r.Id))
+                    RoomAssigments.Add(rs);
+
+
+        return RoomAssigments;
     }
 }

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
@@ -45,6 +46,7 @@ namespace Final
                                                 item.Name,
                                                 item.Capacity,
                                                 item.NowCapacity,
+                                                Dormitory.FindDormitoryOwnerName(item.Id),
                                                 (item.DormitoryGender == 0) ? "خواهران" : (item.DormitoryGender == 1) ? "برادران" : "متاهلی",
                                                 item.Address);
                     }
@@ -61,6 +63,7 @@ namespace Final
                                                 item.Name,
                                                 item.Capacity,
                                                 item.NowCapacity,
+                                                Dormitory.FindDormitoryOwnerName(item.Id),
                                                 (item.DormitoryGender == 0) ? "خواهران" : (item.DormitoryGender == 1) ? "برادران" : "متاهلی",
                                                 item.Address);
                     }
@@ -71,8 +74,8 @@ namespace Final
             {
                 foreach (DataGridViewRow row in dgvDormitory.Rows)
                 {
-                    // برای زمانی که اگر کسی غیر فعال است قر مز بشه
-                    if (row.Cells[8].Value.ToString() == "غیر فعال")
+                    // برای زمانی که خوابگاهی بی مسئوله
+                    if (row.Cells[4].Value.ToString() == "")
                     {
                         row.DefaultCellStyle.BackColor = Color.Red;
                     }
@@ -81,6 +84,73 @@ namespace Final
 
 
 
+        }
+
+        private void btnPrint_Click(object sender, EventArgs e)
+        {
+            DataTable dtDormitory = new DataTable();
+            dtDormitory.Columns.Add("Name");
+            dtDormitory.Columns.Add("Capacity");
+            dtDormitory.Columns.Add("NowCapacity");
+            dtDormitory.Columns.Add("Owner");
+            dtDormitory.Columns.Add("Gender");
+            dtDormitory.Columns.Add("Address");
+            foreach (DataGridViewRow row in dgvDormitory.Rows)
+            {
+                dtDormitory.Rows.Add(
+                    row.Cells[1].Value.ToString(),
+                    row.Cells[2].Value.ToString(),
+                    row.Cells[3].Value.ToString(),
+                    row.Cells[4].Value.ToString(),
+                    row.Cells[5].Value.ToString(),
+                    row.Cells[6].Value.ToString()
+                    );
+            }
+            stiDormitoryPrint.Load(Application.StartupPath + "/DormitoryReport.mrt");
+            stiDormitoryPrint.RegData("DTDormitory", dtDormitory);
+            stiDormitoryPrint.Show();
+        }
+
+        private void btnStudentPrint_Click(object sender, EventArgs e)
+        {
+            if (dgvDormitory.Rows.Count == 0)
+            {
+                return;
+            }
+            long id;
+            id = long.Parse(dgvDormitory.CurrentRow.Cells[0].Value.ToString());
+            List<RoomAssigment> RoomAssigments = new List<RoomAssigment>();
+            RoomAssigments = Dormitory.FindStudents(id);
+
+            DataTable dtStudent = new DataTable();
+            dtStudent.Columns.Add("StudentFirstName");
+            dtStudent.Columns.Add("StudentLastName");
+            dtStudent.Columns.Add("StudentCode");
+            dtStudent.Columns.Add("RoomNumber");
+            dtStudent.Columns.Add("RoomFloorNumber");
+            dtStudent.Columns.Add("BlockName");
+            dtStudent.Columns.Add("DormitoryName");
+            dtStudent.Columns.Add("CreatOn");
+
+            foreach (var row in RoomAssigments)
+            {
+                var user = User.FindUserById(row.Id);
+                var room = Room.FindRoomById(row.Id);
+                var block = Block.FindBlockById(row.Id);
+                dtStudent.Rows.Add(
+                    user.FirstName.ToString(),
+                    user.LastName.ToString(),
+                    user.StuPerCode.ToString(),
+                    room.Number.ToString(),
+                    room.FloorNumber.ToString(),
+                    block.Name.ToString(),
+                    dgvDormitory.CurrentRow.Cells[1].Value.ToString(),
+                    row.CreatOn.ToString()
+                    );
+            }
+            stiStudentPrint.Load(Application.StartupPath + "/StudentsReport.mrt");
+            stiStudentPrint.RegData("DTStudents", dtStudent);
+            stiStudentPrint.Show();
         }
     }
 }

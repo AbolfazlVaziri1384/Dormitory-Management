@@ -37,4 +37,14 @@ public partial class Room
 
     public virtual ICollection<TransferRoomAssetHistory> TransferRoomAssetHistories { get; set; } = new List<TransferRoomAssetHistory>();
 
+    public static List<Room>? FindByBlockId(long BlockId)
+    {
+        using DormitoryDbContext db = new DormitoryDbContext();
+        return db.Rooms.Where(i => i.BlockId == BlockId).ToList();
+    }
+    public static Room FindRoomById(long Id)
+    {
+        using DormitoryDbContext db = new DormitoryDbContext();
+        return db.Rooms.Where(i => i.Id == Id).FirstOrDefault();
+    }
 }

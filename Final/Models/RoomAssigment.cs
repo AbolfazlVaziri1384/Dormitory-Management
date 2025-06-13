@@ -28,4 +28,9 @@ public partial class RoomAssigment
     public virtual Room Room { get; set; } = null!;
 
     public virtual User Student { get; set; } = null!;
+    public static List<RoomAssigment>? FindByRoomId(long RoomId)
+    {
+        using DormitoryDbContext db = new DormitoryDbContext();
+        return db.RoomAssigments.Where(i => i.RoomId == RoomId).ToList();
+    }
 }
