@@ -30,6 +30,12 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Reference Include="BehComponents">
+      <HintPath>bin\Debug\net8.0-windows\BehComponents.dll</HintPath>
+    </Reference>
+    <Reference Include="PersianDate">
+      <HintPath>bin\Debug\net8.0-windows\PersianDate.dll</HintPath>
+    </Reference>
     <Reference Include="Stimulsoft.Base">
       <HintPath>D:\برنامه نویسی\C#\Stimul_dll\Stimulsoft.Base.dll</HintPath>
       <Private>True</Private>

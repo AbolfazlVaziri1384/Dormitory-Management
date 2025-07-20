@@ -829,3 +829,6 @@ D:\UNIVERSITY\PDF\Advanced Programming\NerdsProject\Nerds_First_Project\Final\ob
 D:\UNIVERSITY\PDF\Advanced Programming\NerdsProject\Nerds_First_Project\Final\obj\Debug\net8.0-windows\Final.frmLogin.resources
 D:\UNIVERSITY\PDF\Advanced Programming\NerdsProject\Nerds_First_Project\Final\obj\Debug\net8.0-windows\Final.frmRoom.resources
 D:\UNIVERSITY\PDF\Advanced Programming\NerdsProject\Nerds_First_Project\Final\obj\Debug\net8.0-windows\Final.frmSubstituteStudentAssets.resources
+D:\UNIVERSITY\PDF\Advanced Programming\NerdsProject\Nerds_First_Project\Final\obj\Debug\net8.0-windows\Final.AboutBox1.resources
+D:\UNIVERSITY\PDF\Advanced Programming\NerdsProject\Nerds_First_Project\Final\bin\Debug\net8.0-windows\PopupControl.dll
+D:\UNIVERSITY\PDF\Advanced Programming\NerdsProject\Nerds_First_Project\Final\bin\Debug\net8.0-windows\PersianDate.pdb

@@ -12,7 +12,9 @@
           "Microsoft.EntityFrameworkCore.SqlServer": "9.0.5",
           "Microsoft.EntityFrameworkCore.Tools": "9.0.5",
           "Microsoft.QualityTools.Testing.Fakes": "17.5.0-beta.23060.1",
-          "Stimulsoft.Reports.Net": "2025.2.5"
+          "Stimulsoft.Reports.Net": "2025.2.5",
+          "BehComponents": "2.2.0.0",
+          "PersianDate": "1.0.0.0"
         },
         "runtime": {
           "Final.dll": {}
@@ -1426,6 +1428,30 @@
         "dependencies": {
           "System.Drawing.Common": "8.0.13"
         }
+      },
+      "BehComponents/2.2.0.0": {
+        "runtime": {
+          "BehComponents.dll": {
+            "assemblyVersion": "2.2.0.0",
+            "fileVersion": "2.2.0.0"
+          }
+        }
+      },
+      "PersianDate/1.0.0.0": {
+        "runtime": {
+          "PersianDate.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "PopupControl/1.4.0.968": {
+        "runtime": {
+          "PopupControl.dll": {
+            "assemblyVersion": "1.4.0.968",
+            "fileVersion": "1.4.0.968"
+          }
+        }
       }
     }
   },
@@ -2162,6 +2188,21 @@
       "sha512": "sha512-IXoJOXIqc39AIe+CIR7koBtRGMiCt/LPM3lI+PELtDIy9XdyeSrwXFdWV9dzJ2Awl0paLWUaknLxFQ5HpHZUog==",
       "path": "system.windows.extensions/6.0.0",
       "hashPath": "system.windows.extensions.6.0.0.nupkg.sha512"
+    },
+    "BehComponents/2.2.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "PersianDate/1.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "PopupControl/1.4.0.968": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
     }
   }
 }

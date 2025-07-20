@@ -25,7 +25,7 @@ public partial class Role
 
     public virtual User User { get; set; } = null!;
 
-    public static long? FindRole(long UserId)
+    public static int FindRole(long UserId)
     {
         using DormitoryDbContext db = new DormitoryDbContext();
         var role = db.Roles.FirstOrDefault(i => i.UserId == UserId);

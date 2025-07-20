@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            dgvBlocks = new DataGridView();
             label1 = new Label();
             txtSearch = new TextBox();
             pictureBox1 = new PictureBox();
@@ -47,7 +46,15 @@
             pictureBox6 = new PictureBox();
             pictureBox3 = new PictureBox();
             btnShowRooms = new Button();
-            ((System.ComponentModel.ISupportInitialize)dgvBlocks).BeginInit();
+            stiBlockPrint = new Stimulsoft.Report.StiReport();
+            dgvBlocks = new DataGridView();
+            Id = new DataGridViewTextBoxColumn();
+            Name = new DataGridViewTextBoxColumn();
+            FloorNumber = new DataGridViewTextBoxColumn();
+            RoomNumber = new DataGridViewTextBoxColumn();
+            Capacity = new DataGridViewTextBoxColumn();
+            CreateOn = new DataGridViewTextBoxColumn();
+            OwnerName = new DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
@@ -56,53 +63,47 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox7).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dgvBlocks).BeginInit();
             SuspendLayout();
-            // 
-            // dgvBlocks
-            // 
-            dgvBlocks.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvBlocks.Location = new Point(154, 29);
-            dgvBlocks.Name = "dgvBlocks";
-            dgvBlocks.RowHeadersWidth = 51;
-            dgvBlocks.Size = new Size(496, 109);
-            dgvBlocks.TabIndex = 0;
             // 
             // label1
             // 
             label1.AutoSize = true;
             label1.Font = new Font("B Koodak", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 178);
             label1.ForeColor = Color.MediumBlue;
-            label1.Location = new Point(461, 159);
+            label1.Location = new Point(483, 253);
             label1.Name = "label1";
             label1.Size = new Size(105, 29);
             label1.TabIndex = 1;
             label1.Text = ":جستجوی بلوک";
+            label1.Click += label1_Click;
             // 
             // txtSearch
             // 
-            txtSearch.Location = new Point(242, 154);
+            txtSearch.Location = new Point(115, 248);
             txtSearch.Multiline = true;
             txtSearch.Name = "txtSearch";
-            txtSearch.Size = new Size(223, 34);
+            txtSearch.Size = new Size(367, 34);
             txtSearch.TabIndex = 2;
             txtSearch.TextChanged += textBox1_TextChanged;
             // 
             // pictureBox1
             // 
             pictureBox1.Image = Properties.Resources.search;
-            pictureBox1.Location = new Point(559, 159);
+            pictureBox1.Location = new Point(581, 253);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(25, 28);
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox1.TabIndex = 3;
             pictureBox1.TabStop = false;
+            pictureBox1.Click += this.pictureBox1_Click;
             // 
             // btnDelete
             // 
             btnDelete.BackColor = Color.AliceBlue;
             btnDelete.Font = new Font("B Koodak", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 178);
             btnDelete.ForeColor = Color.Crimson;
-            btnDelete.Location = new Point(154, 355);
+            btnDelete.Location = new Point(115, 447);
             btnDelete.Name = "btnDelete";
             btnDelete.Size = new Size(104, 38);
             btnDelete.TabIndex = 21;
@@ -114,7 +115,7 @@
             btnEdit.BackColor = Color.AliceBlue;
             btnEdit.Font = new Font("B Koodak", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 178);
             btnEdit.ForeColor = Color.Orange;
-            btnEdit.Location = new Point(328, 355);
+            btnEdit.Location = new Point(289, 447);
             btnEdit.Name = "btnEdit";
             btnEdit.Size = new Size(104, 38);
             btnEdit.TabIndex = 20;
@@ -125,7 +126,7 @@
             // pictureBox5
             // 
             pictureBox5.Image = Properties.Resources.trash;
-            pictureBox5.Location = new Point(258, 355);
+            pictureBox5.Location = new Point(219, 447);
             pictureBox5.Name = "pictureBox5";
             pictureBox5.Size = new Size(43, 38);
             pictureBox5.SizeMode = PictureBoxSizeMode.Zoom;
@@ -135,7 +136,7 @@
             // pictureBox4
             // 
             pictureBox4.Image = Properties.Resources.pen;
-            pictureBox4.Location = new Point(438, 355);
+            pictureBox4.Location = new Point(399, 447);
             pictureBox4.Name = "pictureBox4";
             pictureBox4.Size = new Size(37, 38);
             pictureBox4.SizeMode = PictureBoxSizeMode.Zoom;
@@ -145,7 +146,7 @@
             // pictureBox2
             // 
             pictureBox2.Image = Properties.Resources.printer;
-            pictureBox2.Location = new Point(614, 355);
+            pictureBox2.Location = new Point(575, 447);
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Size = new Size(36, 38);
             pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
@@ -158,19 +159,20 @@
             btnPrint.BackColor = Color.AliceBlue;
             btnPrint.Font = new Font("B Koodak", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 178);
             btnPrint.ForeColor = Color.DarkOrchid;
-            btnPrint.Location = new Point(503, 355);
+            btnPrint.Location = new Point(464, 447);
             btnPrint.Name = "btnPrint";
             btnPrint.Size = new Size(104, 38);
             btnPrint.TabIndex = 23;
             btnPrint.Text = "چاپ";
             btnPrint.UseVisualStyleBackColor = false;
+            btnPrint.Click += btnPrint_Click;
             // 
             // btnSetBlock
             // 
             btnSetBlock.BackColor = Color.AliceBlue;
             btnSetBlock.Font = new Font("B Koodak", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 178);
             btnSetBlock.ForeColor = Color.MediumSeaGreen;
-            btnSetBlock.Location = new Point(503, 228);
+            btnSetBlock.Location = new Point(464, 320);
             btnSetBlock.Name = "btnSetBlock";
             btnSetBlock.Size = new Size(104, 38);
             btnSetBlock.TabIndex = 24;
@@ -182,7 +184,7 @@
             btnSetRoom.BackColor = Color.AliceBlue;
             btnSetRoom.Font = new Font("B Koodak", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 178);
             btnSetRoom.ForeColor = Color.MediumSeaGreen;
-            btnSetRoom.Location = new Point(328, 225);
+            btnSetRoom.Location = new Point(289, 317);
             btnSetRoom.Name = "btnSetRoom";
             btnSetRoom.Size = new Size(104, 38);
             btnSetRoom.TabIndex = 25;
@@ -194,7 +196,7 @@
             btnDeleteOwner.BackColor = Color.AliceBlue;
             btnDeleteOwner.Font = new Font("B Koodak", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 178);
             btnDeleteOwner.ForeColor = Color.Crimson;
-            btnDeleteOwner.Location = new Point(311, 291);
+            btnDeleteOwner.Location = new Point(272, 383);
             btnDeleteOwner.Name = "btnDeleteOwner";
             btnDeleteOwner.Size = new Size(145, 38);
             btnDeleteOwner.TabIndex = 28;
@@ -206,7 +208,7 @@
             btnAddOwner.BackColor = Color.AliceBlue;
             btnAddOwner.Font = new Font("B Koodak", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 178);
             btnAddOwner.ForeColor = Color.MediumSeaGreen;
-            btnAddOwner.Location = new Point(462, 291);
+            btnAddOwner.Location = new Point(423, 383);
             btnAddOwner.Name = "btnAddOwner";
             btnAddOwner.Size = new Size(145, 38);
             btnAddOwner.TabIndex = 27;
@@ -216,7 +218,7 @@
             // pictureBox8
             // 
             pictureBox8.Image = Properties.Resources.personal;
-            pictureBox8.Location = new Point(613, 294);
+            pictureBox8.Location = new Point(574, 386);
             pictureBox8.Name = "pictureBox8";
             pictureBox8.Size = new Size(36, 35);
             pictureBox8.SizeMode = PictureBoxSizeMode.Zoom;
@@ -226,7 +228,7 @@
             // pictureBox7
             // 
             pictureBox7.Image = Properties.Resources.pl;
-            pictureBox7.Location = new Point(432, 225);
+            pictureBox7.Location = new Point(393, 317);
             pictureBox7.Name = "pictureBox7";
             pictureBox7.Size = new Size(43, 38);
             pictureBox7.SizeMode = PictureBoxSizeMode.Zoom;
@@ -236,7 +238,7 @@
             // pictureBox6
             // 
             pictureBox6.Image = Properties.Resources.pl;
-            pictureBox6.Location = new Point(607, 228);
+            pictureBox6.Location = new Point(568, 320);
             pictureBox6.Name = "pictureBox6";
             pictureBox6.Size = new Size(43, 38);
             pictureBox6.SizeMode = PictureBoxSizeMode.Zoom;
@@ -246,7 +248,7 @@
             // pictureBox3
             // 
             pictureBox3.Image = Properties.Resources.room;
-            pictureBox3.Location = new Point(258, 225);
+            pictureBox3.Location = new Point(219, 317);
             pictureBox3.Name = "pictureBox3";
             pictureBox3.Size = new Size(43, 38);
             pictureBox3.SizeMode = PictureBoxSizeMode.Zoom;
@@ -258,18 +260,122 @@
             btnShowRooms.BackColor = Color.AliceBlue;
             btnShowRooms.Font = new Font("B Koodak", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 178);
             btnShowRooms.ForeColor = Color.DeepPink;
-            btnShowRooms.Location = new Point(154, 225);
+            btnShowRooms.Location = new Point(115, 317);
             btnShowRooms.Name = "btnShowRooms";
             btnShowRooms.Size = new Size(104, 38);
             btnShowRooms.TabIndex = 32;
             btnShowRooms.Text = "نمایش اتاق ها";
             btnShowRooms.UseVisualStyleBackColor = false;
             // 
+            // stiBlockPrint
+            // 
+            stiBlockPrint.CookieContainer = null;
+            stiBlockPrint.EngineVersion = Stimulsoft.Report.Engine.StiEngineVersion.EngineV2;
+            stiBlockPrint.HttpHeadersContainer = null;
+            stiBlockPrint.Key = "47557b8934334926953d943555af1a3e";
+            stiBlockPrint.ReferencedAssemblies = new string[]
+    {
+    "System.Dll",
+    "System.Drawing.Dll",
+    "System.Windows.Forms.Dll",
+    "System.Data.Dll",
+    "System.Xml.Dll",
+    "Stimulsoft.Controls.Dll",
+    "Stimulsoft.Base.Dll",
+    "Stimulsoft.Report.Dll"
+    };
+            stiBlockPrint.ReportAlias = "Report";
+            stiBlockPrint.ReportGuid = "65a32e83ee534b44896118cdabec54d2";
+            stiBlockPrint.ReportName = "Report";
+            stiBlockPrint.ReportSource = null;
+            stiBlockPrint.ReportUnit = Stimulsoft.Report.StiReportUnitType.Centimeters;
+            stiBlockPrint.ScriptLanguage = Stimulsoft.Report.StiReportLanguageType.CSharp;
+            stiBlockPrint.UseProgressInThread = false;
+            // 
+            // dgvBlocks
+            // 
+            dgvBlocks.AllowUserToAddRows = false;
+            dgvBlocks.AllowUserToDeleteRows = false;
+            dgvBlocks.BackgroundColor = Color.AliceBlue;
+            dgvBlocks.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvBlocks.Columns.AddRange(new DataGridViewColumn[] { Id, Name, FloorNumber, RoomNumber, Capacity, CreateOn, OwnerName });
+            dgvBlocks.Location = new Point(12, 12);
+            dgvBlocks.Name = "dgvBlocks";
+            dgvBlocks.ReadOnly = true;
+            dgvBlocks.RightToLeft = RightToLeft.Yes;
+            dgvBlocks.RowHeadersWidth = 51;
+            dgvBlocks.Size = new Size(726, 217);
+            dgvBlocks.TabIndex = 33;
+            // 
+            // Id
+            // 
+            Id.HeaderText = "Id";
+            Id.MinimumWidth = 6;
+            Id.Name = "Id";
+            Id.ReadOnly = true;
+            Id.Visible = false;
+            Id.Width = 125;
+            // 
+            // Name
+            // 
+            Name.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
+            Name.HeaderText = "نام";
+            Name.MinimumWidth = 6;
+            Name.Name = "Name";
+            Name.ReadOnly = true;
+            Name.Width = 56;
+            // 
+            // FloorNumber
+            // 
+            FloorNumber.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
+            FloorNumber.HeaderText = "شماره طبقه";
+            FloorNumber.MinimumWidth = 6;
+            FloorNumber.Name = "FloorNumber";
+            FloorNumber.ReadOnly = true;
+            FloorNumber.Width = 115;
+            // 
+            // RoomNumber
+            // 
+            RoomNumber.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
+            RoomNumber.HeaderText = "تعداد اتاق ها";
+            RoomNumber.MinimumWidth = 6;
+            RoomNumber.Name = "RoomNumber";
+            RoomNumber.ReadOnly = true;
+            RoomNumber.Width = 118;
+            // 
+            // Capacity
+            // 
+            Capacity.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
+            Capacity.HeaderText = "ظرفیت";
+            Capacity.MinimumWidth = 6;
+            Capacity.Name = "Capacity";
+            Capacity.ReadOnly = true;
+            Capacity.Width = 83;
+            // 
+            // CreateOn
+            // 
+            CreateOn.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
+            CreateOn.HeaderText = "تاریخ ثبت";
+            CreateOn.MinimumWidth = 6;
+            CreateOn.Name = "CreateOn";
+            CreateOn.ReadOnly = true;
+            CreateOn.Width = 96;
+            // 
+            // OwnerName
+            // 
+            OwnerName.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
+            OwnerName.HeaderText = "نام مسئول";
+            OwnerName.MinimumWidth = 6;
+            OwnerName.Name = "OwnerName";
+            OwnerName.ReadOnly = true;
+            OwnerName.Width = 105;
+            // 
             // frmBlock
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(750, 524);
+            Controls.Add(dgvBlocks);
             Controls.Add(btnShowRooms);
             Controls.Add(pictureBox3);
             Controls.Add(pictureBox7);
@@ -288,11 +394,11 @@
             Controls.Add(pictureBox1);
             Controls.Add(txtSearch);
             Controls.Add(label1);
-            Controls.Add(dgvBlocks);
+            MaximizeBox = false;
             Name = "frmBlock";
+            StartPosition = FormStartPosition.CenterParent;
             Text = "frmBlock";
             Load += frmBlock_Load;
-            ((System.ComponentModel.ISupportInitialize)dgvBlocks).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
@@ -301,13 +407,12 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox7).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dgvBlocks).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
-
-        private DataGridView dgvBlocks;
         private Label label1;
         private TextBox txtSearch;
         private PictureBox pictureBox1;
@@ -326,5 +431,14 @@
         private PictureBox pictureBox6;
         private PictureBox pictureBox3;
         private Button btnShowRooms;
+        private Stimulsoft.Report.StiReport stiBlockPrint;
+        private DataGridView dgvBlocks;
+        private DataGridViewTextBoxColumn Id;
+        private DataGridViewTextBoxColumn Name;
+        private DataGridViewTextBoxColumn FloorNumber;
+        private DataGridViewTextBoxColumn RoomNumber;
+        private DataGridViewTextBoxColumn Capacity;
+        private DataGridViewTextBoxColumn CreateOn;
+        private DataGridViewTextBoxColumn OwnerName;
     }
 }

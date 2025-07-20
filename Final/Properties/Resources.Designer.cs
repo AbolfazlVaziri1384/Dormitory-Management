@@ -143,6 +143,16 @@ namespace Final.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Nerds2 {
+            get {
+                object obj = ResourceManager.GetObject("Nerds2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap new_blocks {
             get {
                 object obj = ResourceManager.GetObject("new blocks", resourceCulture);

@@ -73,7 +73,7 @@ public partial class User
         using DormitoryDbContext db = new DormitoryDbContext();
         return db.Users.Where(i => i.StuPerCode == Convert.ToInt64(Stu_Per_Code) && i.NationalCode == Convert.ToInt64(NationalCode)).FirstOrDefault();
     }
-    public static User? FindUserById(long UserId)
+    public static User FindUserById(long UserId)
     {
         using DormitoryDbContext db = new DormitoryDbContext();
         return db.Users.Where(i => i.Id == UserId).FirstOrDefault();
