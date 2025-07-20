@@ -96,10 +96,10 @@
             // 
             dgvDormitory.BackgroundColor = Color.AliceBlue;
             dgvDormitory.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvDormitory.Location = new Point(228, 114);
+            dgvDormitory.Location = new Point(95, 114);
             dgvDormitory.Name = "dgvDormitory";
             dgvDormitory.RowHeadersWidth = 51;
-            dgvDormitory.Size = new Size(370, 119);
+            dgvDormitory.Size = new Size(641, 119);
             dgvDormitory.TabIndex = 3;
             // 
             // pictureBox2

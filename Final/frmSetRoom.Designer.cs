@@ -122,9 +122,9 @@
             btnSave.BackColor = Color.Honeydew;
             btnSave.Font = new Font("B Koodak", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 178);
             btnSave.ForeColor = Color.MediumSeaGreen;
-            btnSave.Location = new Point(336, 338);
+            btnSave.Location = new Point(332, 333);
             btnSave.Name = "btnSave";
-            btnSave.Size = new Size(121, 37);
+            btnSave.Size = new Size(154, 43);
             btnSave.TabIndex = 16;
             btnSave.Text = "ذخیره اطلاعات";
             btnSave.UseVisualStyleBackColor = false;

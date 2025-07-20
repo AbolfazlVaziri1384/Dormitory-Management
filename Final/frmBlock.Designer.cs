@@ -61,10 +61,10 @@
             // dgvBlocks
             // 
             dgvBlocks.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvBlocks.Location = new Point(242, 29);
+            dgvBlocks.Location = new Point(154, 29);
             dgvBlocks.Name = "dgvBlocks";
             dgvBlocks.RowHeadersWidth = 51;
-            dgvBlocks.Size = new Size(300, 109);
+            dgvBlocks.Size = new Size(496, 109);
             dgvBlocks.TabIndex = 0;
             // 
             // label1
@@ -102,7 +102,7 @@
             btnDelete.BackColor = Color.AliceBlue;
             btnDelete.Font = new Font("B Koodak", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 178);
             btnDelete.ForeColor = Color.Crimson;
-            btnDelete.Location = new Point(154, 335);
+            btnDelete.Location = new Point(154, 355);
             btnDelete.Name = "btnDelete";
             btnDelete.Size = new Size(104, 38);
             btnDelete.TabIndex = 21;
@@ -114,7 +114,7 @@
             btnEdit.BackColor = Color.AliceBlue;
             btnEdit.Font = new Font("B Koodak", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 178);
             btnEdit.ForeColor = Color.Orange;
-            btnEdit.Location = new Point(328, 335);
+            btnEdit.Location = new Point(328, 355);
             btnEdit.Name = "btnEdit";
             btnEdit.Size = new Size(104, 38);
             btnEdit.TabIndex = 20;
@@ -125,7 +125,7 @@
             // pictureBox5
             // 
             pictureBox5.Image = Properties.Resources.trash;
-            pictureBox5.Location = new Point(258, 335);
+            pictureBox5.Location = new Point(258, 355);
             pictureBox5.Name = "pictureBox5";
             pictureBox5.Size = new Size(43, 38);
             pictureBox5.SizeMode = PictureBoxSizeMode.Zoom;
@@ -135,7 +135,7 @@
             // pictureBox4
             // 
             pictureBox4.Image = Properties.Resources.pen;
-            pictureBox4.Location = new Point(438, 335);
+            pictureBox4.Location = new Point(438, 355);
             pictureBox4.Name = "pictureBox4";
             pictureBox4.Size = new Size(37, 38);
             pictureBox4.SizeMode = PictureBoxSizeMode.Zoom;
@@ -145,7 +145,7 @@
             // pictureBox2
             // 
             pictureBox2.Image = Properties.Resources.printer;
-            pictureBox2.Location = new Point(614, 335);
+            pictureBox2.Location = new Point(614, 355);
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Size = new Size(36, 38);
             pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
@@ -158,7 +158,7 @@
             btnPrint.BackColor = Color.AliceBlue;
             btnPrint.Font = new Font("B Koodak", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 178);
             btnPrint.ForeColor = Color.DarkOrchid;
-            btnPrint.Location = new Point(503, 335);
+            btnPrint.Location = new Point(503, 355);
             btnPrint.Name = "btnPrint";
             btnPrint.Size = new Size(104, 38);
             btnPrint.TabIndex = 23;
@@ -194,7 +194,7 @@
             btnDeleteOwner.BackColor = Color.AliceBlue;
             btnDeleteOwner.Font = new Font("B Koodak", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 178);
             btnDeleteOwner.ForeColor = Color.Crimson;
-            btnDeleteOwner.Location = new Point(311, 281);
+            btnDeleteOwner.Location = new Point(311, 291);
             btnDeleteOwner.Name = "btnDeleteOwner";
             btnDeleteOwner.Size = new Size(145, 38);
             btnDeleteOwner.TabIndex = 28;
@@ -206,7 +206,7 @@
             btnAddOwner.BackColor = Color.AliceBlue;
             btnAddOwner.Font = new Font("B Koodak", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 178);
             btnAddOwner.ForeColor = Color.MediumSeaGreen;
-            btnAddOwner.Location = new Point(462, 281);
+            btnAddOwner.Location = new Point(462, 291);
             btnAddOwner.Name = "btnAddOwner";
             btnAddOwner.Size = new Size(145, 38);
             btnAddOwner.TabIndex = 27;
@@ -216,7 +216,7 @@
             // pictureBox8
             // 
             pictureBox8.Image = Properties.Resources.personal;
-            pictureBox8.Location = new Point(613, 284);
+            pictureBox8.Location = new Point(613, 294);
             pictureBox8.Name = "pictureBox8";
             pictureBox8.Size = new Size(36, 35);
             pictureBox8.SizeMode = PictureBoxSizeMode.Zoom;

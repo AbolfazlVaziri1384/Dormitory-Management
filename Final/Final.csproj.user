@@ -10,7 +10,19 @@
     <Compile Update="frmDormitory.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="frmRepairRoomAsset.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="frmRepairRoomAssetsRequest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="frmRoomAssets.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="frmRoomAssignment.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="frmSetBlock.cs">
@@ -19,10 +31,28 @@
     <Compile Update="frmSetDormitory.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="frmSetRole.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="frmSetRoom.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="frmSetRoomAssets.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="frmSetRoomAssignment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="frmSetStudentAssets.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="frmSetTransferStudentAssets.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="frmSetUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="frmStudentAssets.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="frmTransferRoomAssetHistory.cs">
