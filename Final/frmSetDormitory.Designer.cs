@@ -107,7 +107,7 @@
             // btnSave
             // 
             btnSave.BackColor = Color.Honeydew;
-            btnSave.Font = new Font("Microsoft Sans Serif", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 178);
+            btnSave.Font = new Font("B Koodak", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 178);
             btnSave.ForeColor = Color.MediumSeaGreen;
             btnSave.Location = new Point(420, 334);
             btnSave.Name = "btnSave";
