@@ -6836,11 +6836,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Asus\\Desktop\\Nerd\\Nerds_First_Project\\Final\\Final.csproj",
+      "projectUniqueName": "C:\\Users\\Asus\\Desktop\\nerd14040428\\Nerds_First_Project\\Final\\Final.csproj",
       "projectName": "Final",
-      "projectPath": "C:\\Users\\Asus\\Desktop\\Nerd\\Nerds_First_Project\\Final\\Final.csproj",
+      "projectPath": "C:\\Users\\Asus\\Desktop\\nerd14040428\\Nerds_First_Project\\Final\\Final.csproj",
       "packagesPath": "C:\\Users\\Asus\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Asus\\Desktop\\Nerd\\Nerds_First_Project\\Final\\obj\\",
+      "outputPath": "C:\\Users\\Asus\\Desktop\\nerd14040428\\Nerds_First_Project\\Final\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

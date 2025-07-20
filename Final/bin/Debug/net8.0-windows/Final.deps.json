@@ -11,8 +11,7 @@
           "Microsoft.EntityFrameworkCore.Design": "9.0.5",
           "Microsoft.EntityFrameworkCore.SqlServer": "9.0.5",
           "Microsoft.EntityFrameworkCore.Tools": "9.0.5",
-          "Stimulsoft.Reports.Net": "2025.2.5",
-          "Stimulsoft.Design": "2014.3.0.0"
+          "Stimulsoft.Reports.Net": "2025.2.5"
         },
         "runtime": {
           "Final.dll": {}
@@ -1367,15 +1366,7 @@
           "System.Runtime": "4.3.0"
         }
       },
-      "System.Threading.Tasks.Extensions/4.5.4": {},
-      "Stimulsoft.Design/2014.3.0.0": {
-        "runtime": {
-          "Stimulsoft.Design.dll": {
-            "assemblyVersion": "2014.3.0.0",
-            "fileVersion": "2014.3.0.0"
-          }
-        }
-      }
+      "System.Threading.Tasks.Extensions/4.5.4": {}
     }
   },
   "libraries": {
@@ -2090,11 +2081,6 @@
       "sha512": "sha512-zteT+G8xuGu6mS+mzDzYXbzS7rd3K6Fjb9RiZlYlJPam2/hU7JCBZBVEcywNuR+oZ1ncTvc/cq0faRr3P01OVg==",
       "path": "system.threading.tasks.extensions/4.5.4",
       "hashPath": "system.threading.tasks.extensions.4.5.4.nupkg.sha512"
-    },
-    "Stimulsoft.Design/2014.3.0.0": {
-      "type": "reference",
-      "serviceable": false,
-      "sha512": ""
     }
   }
 }
