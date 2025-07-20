@@ -22,12 +22,11 @@ public partial class Room
     public DateTime? DeletedOn { get; set; }
 
     public long CreatBy { get; set; }
+    public long ModifiedBy { get; set; }
+    public DateTime? ModifiedOn { get; set; }
+
 
     public DateTime CreatOn { get; set; }
-
-    public long? ModifiedBy { get; set; }
-
-    public DateTime? ModifiedOn { get; set; }
 
     public virtual Block Block { get; set; } = null!;
 
@@ -37,14 +36,29 @@ public partial class Room
 
     public virtual ICollection<TransferRoomAssetHistory> TransferRoomAssetHistories { get; set; } = new List<TransferRoomAssetHistory>();
 
+    public static int StudentCount(long RoomId)
+    {
+        using DormitoryDbContext db = new DormitoryDbContext();
+        int count = 0;
+        foreach (var i in db.RoomAssigments.ToList())
+        {
+            if (i.RoomId == RoomId) count++;
+        }
+        return count;
+    }
+    public static long FindBlockId(long RoomId)
+    {
+        using DormitoryDbContext db = new DormitoryDbContext();
+        return db.Rooms.Where(i => i.Id == RoomId).FirstOrDefault().BlockId;
+    }
+    public static Room FindRoomById(long RoomId)
+    {
+        using DormitoryDbContext db = new DormitoryDbContext();
+        return db.Rooms.Where(i => i.Id == RoomId).FirstOrDefault();
+    }
     public static List<Room>? FindByBlockId(long BlockId)
     {
         using DormitoryDbContext db = new DormitoryDbContext();
         return db.Rooms.Where(i => i.BlockId == BlockId).ToList();
-    }
-    public static Room FindRoomById(long Id)
-    {
-        using DormitoryDbContext db = new DormitoryDbContext();
-        return db.Rooms.Where(i => i.Id == Id).FirstOrDefault();
     }
 }

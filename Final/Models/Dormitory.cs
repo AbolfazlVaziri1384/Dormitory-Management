@@ -36,6 +36,11 @@ public partial class Dormitory
 
     public virtual ICollection<Role> Roles { get; set; } = new List<Role>();
 
+    public static int FindDormitoryType(long RoomId)
+    {
+        using DormitoryDbContext db = new DormitoryDbContext();
+        return db.Dormitories.Where(i => i.Id == Block.FindBlockById(Room.FindBlockId(RoomId)).DermitoryId).FirstOrDefault().DormitoryGender;
+    }
     public static Dormitory? FindDormitoryById(long DormitoryId)
     {
         using DormitoryDbContext db = new DormitoryDbContext();
@@ -52,7 +57,6 @@ public partial class Dormitory
         Dormitory dormitory = new Dormitory();
         dormitory.Name = Name;
         dormitory.Capacity = Capacity;
-        dormitory.NowCapacity = Capacity;
         dormitory.Address = Address;
         dormitory.IsDeleted = false;
         dormitory.CreatBy = UserId;
@@ -77,11 +81,6 @@ public partial class Dormitory
         dormitory.DormitoryGender = DormitoryGender;
 
         db.SaveChanges();
-    }
-    public static long Now_Capacity(long DormitoryId)
-    {
-        using DormitoryDbContext db = new DormitoryDbContext();
-        return db.Dormitories.Where(i => i.Id == DormitoryId).FirstOrDefault().NowCapacity;
     }
     public static string? FindDormitoryOwnerName(long DormitoryId)
     {

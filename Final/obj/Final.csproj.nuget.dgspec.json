@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Asus\\Desktop\\nerd14040428\\Nerds_First_Project\\Final\\Final.csproj": {}
+    "D:\\UNIVERSITY\\PDF\\Advanced Programming\\NerdsProject\\Nerds_First_Project\\Final\\Final.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Asus\\Desktop\\nerd14040428\\Nerds_First_Project\\Final\\Final.csproj": {
+    "D:\\UNIVERSITY\\PDF\\Advanced Programming\\NerdsProject\\Nerds_First_Project\\Final\\Final.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Asus\\Desktop\\nerd14040428\\Nerds_First_Project\\Final\\Final.csproj",
+        "projectUniqueName": "D:\\UNIVERSITY\\PDF\\Advanced Programming\\NerdsProject\\Nerds_First_Project\\Final\\Final.csproj",
         "projectName": "Final",
-        "projectPath": "C:\\Users\\Asus\\Desktop\\nerd14040428\\Nerds_First_Project\\Final\\Final.csproj",
+        "projectPath": "D:\\UNIVERSITY\\PDF\\Advanced Programming\\NerdsProject\\Nerds_First_Project\\Final\\Final.csproj",
         "packagesPath": "C:\\Users\\Asus\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Asus\\Desktop\\nerd14040428\\Nerds_First_Project\\Final\\obj\\",
+        "outputPath": "D:\\UNIVERSITY\\PDF\\Advanced Programming\\NerdsProject\\Nerds_First_Project\\Final\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -26,6 +26,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -44,7 +45,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.300"
+        "SdkAnalysisLevel": "9.0.200"
       },
       "frameworks": {
         "net8.0-windows7.0": {
@@ -65,6 +66,10 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[9.0.5, )"
+            },
+            "Microsoft.QualityTools.Testing.Fakes": {
+              "target": "Package",
+              "version": "[17.5.0-beta.23060.1, )"
             },
             "Stimulsoft.Reports.Net": {
               "target": "Package",

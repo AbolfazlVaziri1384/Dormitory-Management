@@ -103,11 +103,15 @@ public partial class User
         }
         db.SaveChanges();
     }
-    public static void SetUser(string FirstName, string LastName, 
-                               string UserName, string Password, 
+    public static string GetFullName(User user)
+    {
+        return ((user.Gender == 1) ? "آقا" : "خانم") + " " + user.FirstName + " " + user.LastName;
+    }
+    public static void SetUser(string FirstName, string LastName,
+                               string UserName, string Password,
                                string Address, long NationalCode,
-                               long Stu_Per_Code, long Phone, 
-                               string Birthday , bool IsMan)
+                               long Stu_Per_Code, long Phone,
+                               string Birthday, bool IsMan)
     {
         using DormitoryDbContext db = new DormitoryDbContext();
         User user = new User();
@@ -124,11 +128,11 @@ public partial class User
         user.Address = Address;
         user.IsActive = true;
         user.IsDeleted = false;
-        
+
         db.Users.Add(user);
         db.SaveChanges();
     }
-    public static void EditUser(long UserEditId ,long UserId ,string FirstName, string LastName,
+    public static void EditUser(long UserEditId, long UserId, string FirstName, string LastName,
                                string UserName, string Password,
                                string Address, long NationalCode,
                                long Stu_Per_Code, long Phone,
@@ -152,12 +156,12 @@ public partial class User
         user.Address = Address;
         user.IsActive = true;
         user.IsDeleted = false;
-        user.ModifiedBy = User.FindUserById(UserId).Id;
+        user.ModifiedBy = UserId;
         user.ModifiedOn = DateTime.Now;
 
         db.SaveChanges();
     }
-    public static void DeleteUser(long UserDeletedId , long UserId)
+    public static void DeleteUser(long UserDeletedId, long UserId)
     {
         using DormitoryDbContext db = new DormitoryDbContext();
         Models.User user = Models.User.FindUserById(UserDeletedId);
@@ -168,7 +172,7 @@ public partial class User
         db.SaveChanges();
     }
     public static void ChangeActiveUser(long UserId)
-    {   
+    {
         using DormitoryDbContext db = new DormitoryDbContext();
         Models.User user = Models.User.FindUserById(UserId);
         db.Users.Update(user);
