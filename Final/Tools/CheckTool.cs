@@ -9,7 +9,7 @@ namespace Final.Tools
 {
     internal class CheckTool
     {
-        public static bool UserField(int IsEdit ,string FirstName, string LastName, string UserName, string Password, string ConfirmPassword, string Address, long NationalCode, long Stu_Per_Code, long Phone, string Birthday)
+        public static bool UserField(string FirstName, string LastName, string UserName, string Password, string ConfirmPassword, string Address, long NationalCode, long Stu_Per_Code, long Phone, string Birthday)
         {
             bool Istrue = false;
             if ((string.IsNullOrWhiteSpace(FirstName)) ||
@@ -24,7 +24,7 @@ namespace Final.Tools
                 (Stu_Per_Code == 0) ||
                 (string.IsNullOrWhiteSpace(Phone.ToString())) ||
                 (Phone == 0) ||
-                (Birthday == "    /  /  "))
+                (Birthday != "    /  /  "))
             {
                 MessageBoxTool.msger("تمام فیلد ها باید کامل شوند");
                 return false;
@@ -36,14 +36,13 @@ namespace Final.Tools
             }
             // چک کردن نام کاربری که تکراری نباشد
             bool IsUserNameExist = User.AnyUser(UserName);
-            if (IsUserNameExist && IsEdit == -1)
+            if (IsUserNameExist)
             {
                 MessageBoxTool.msger("این نام کاربری قبلا ثبت شده است");
                 return false;
             }
             return true;
         }
-
         public static bool DormitoryField(string Name, string Address, int Capacity)
         {
             bool Istrue = false;
@@ -63,6 +62,5 @@ namespace Final.Tools
             }
             return true;
         }
-
     }
 }
