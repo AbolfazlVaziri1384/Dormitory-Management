@@ -19,7 +19,7 @@ namespace Final
             InitializeComponent();
         }
         public int DormitoryEditId = -1;
-        public long UserId;
+        public long UserID;
         private void label1_Click(object sender, EventArgs e)
         {
 
@@ -37,7 +37,7 @@ namespace Final
                         int Dormitorygender = 1;
                         if (radWoman.Checked == true) Dormitorygender = 0;
                         if (radFamily.Checked == true) Dormitorygender = 2;
-                        Dormitory.SetDormitory(txtName.Text, txtAddress.Text, Convert.ToInt32(numCapacity.Value), UserId, Dormitorygender);
+                        Dormitory.SetDormitory(txtName.Text, txtAddress.Text, Convert.ToInt32(numCapacity.Value), UserID, Dormitorygender);
                         MessageBoxTool.msgr("کاربر جدید با موفقیت ثبت شد");
                         Close();
                     }
@@ -52,7 +52,7 @@ namespace Final
                                 int Dormitorygender = 1;
                                 if (radWoman.Checked == true) Dormitorygender = 0;
                                 if (radFamily.Checked == true) Dormitorygender = 2;
-                                Dormitory.EditDormitory(DormitoryEditId, UserId, txtName.Text, txtAddress.Text, Convert.ToInt32(numCapacity.Value), Dormitorygender);
+                                Dormitory.EditDormitory(DormitoryEditId, UserID, txtName.Text, txtAddress.Text, Convert.ToInt32(numCapacity.Value), Dormitorygender);
                                 MessageBoxTool.msgr("کابر با موفقیت ویرایش شد");
                                 Close();
                             }

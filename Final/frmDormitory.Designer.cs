@@ -73,11 +73,9 @@
             // 
             // txtSearch
             // 
-            txtSearch.Location = new Point(261, 45);
-            txtSearch.Multiline = true;
+            txtSearch.Location = new Point(246, 20);
             txtSearch.Name = "txtSearch";
-            txtSearch.RightToLeft = RightToLeft.Yes;
-            txtSearch.Size = new Size(222, 39);
+            txtSearch.Size = new Size(251, 27);
             txtSearch.TabIndex = 0;
             txtSearch.TextChanged += txtSearch_TextChanged;
             // 
@@ -86,7 +84,7 @@
             label1.AutoSize = true;
             label1.Font = new Font("B Koodak", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 178);
             label1.ForeColor = Color.MediumBlue;
-            label1.Location = new Point(487, 54);
+            label1.Location = new Point(503, 21);
             label1.Name = "label1";
             label1.Size = new Size(117, 29);
             label1.TabIndex = 1;
@@ -95,7 +93,7 @@
             // pictureBox1
             // 
             pictureBox1.Image = Properties.Resources.search;
-            pictureBox1.Location = new Point(596, 54);
+            pictureBox1.Location = new Point(612, 21);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(24, 30);
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
@@ -109,12 +107,12 @@
             dgvDormitory.BackgroundColor = Color.AliceBlue;
             dgvDormitory.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgvDormitory.Columns.AddRange(new DataGridViewColumn[] { Id, Name, Capacity, NowCapacity, Owner, DormitoryGender, Address });
-            dgvDormitory.Location = new Point(95, 113);
+            dgvDormitory.Location = new Point(95, 73);
             dgvDormitory.Name = "dgvDormitory";
             dgvDormitory.ReadOnly = true;
             dgvDormitory.RightToLeft = RightToLeft.Yes;
             dgvDormitory.RowHeadersWidth = 51;
-            dgvDormitory.Size = new Size(641, 119);
+            dgvDormitory.Size = new Size(641, 159);
             dgvDormitory.TabIndex = 3;
             // 
             // Id
@@ -381,6 +379,7 @@
             btnBackToMain.TabIndex = 27;
             btnBackToMain.Text = "بازگشت";
             btnBackToMain.UseVisualStyleBackColor = false;
+            btnBackToMain.Click += btnBackToMain_Click;
             // 
             // stiDormitoryPrint
             // 
@@ -459,7 +458,9 @@
             Controls.Add(pictureBox1);
             Controls.Add(label1);
             Controls.Add(txtSearch);
-            //Name = "frmDormitory";
+            MaximizeBox = false;
+            Name = "frmDormitory";
+            StartPosition = FormStartPosition.CenterParent;
             Text = "خوابگاه ها";
             Load += frmDormitory_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();

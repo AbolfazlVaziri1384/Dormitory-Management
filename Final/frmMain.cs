@@ -67,5 +67,19 @@ namespace Final
         {
             lblTimer.Text = DateTime.Now.ToString("HH:mm:ss");
         }
+
+        private void mnuFrmDormitory_Click(object sender, EventArgs e)
+        {
+            frmDormitory frmDormitory = new frmDormitory();
+            frmDormitory.UserID = UserID;
+            frmDormitory.ShowDialog();
+        }
+
+        private void mnuSetDormitory_Click(object sender, EventArgs e)
+        {
+            frmSetDormitory frmSetDormitory = new frmSetDormitory();
+            frmSetDormitory.UserID = UserID;
+            frmSetDormitory.ShowDialog();
+        }
     }
 }

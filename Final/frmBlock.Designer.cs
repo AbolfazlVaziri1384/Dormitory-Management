@@ -28,9 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            label1 = new Label();
-            txtSearch = new TextBox();
-            pictureBox1 = new PictureBox();
             btnDelete = new Button();
             btnEdit = new Button();
             pictureBox5 = new PictureBox();
@@ -55,7 +52,9 @@
             Capacity = new DataGridViewTextBoxColumn();
             CreateOn = new DataGridViewTextBoxColumn();
             OwnerName = new DataGridViewTextBoxColumn();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            pictureBox1 = new PictureBox();
+            txtSearch = new TextBox();
+            label1 = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
@@ -64,39 +63,8 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dgvBlocks).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Font = new Font("B Koodak", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 178);
-            label1.ForeColor = Color.MediumBlue;
-            label1.Location = new Point(483, 253);
-            label1.Name = "label1";
-            label1.Size = new Size(105, 29);
-            label1.TabIndex = 1;
-            label1.Text = ":جستجوی بلوک";
-            label1.Click += label1_Click;
-            // 
-            // txtSearch
-            // 
-            txtSearch.Location = new Point(115, 248);
-            txtSearch.Multiline = true;
-            txtSearch.Name = "txtSearch";
-            txtSearch.Size = new Size(367, 34);
-            txtSearch.TabIndex = 2;
-            txtSearch.TextChanged += textBox1_TextChanged;
-            // 
-            // pictureBox1
-            // 
-            pictureBox1.Image = Properties.Resources.search;
-            pictureBox1.Location = new Point(581, 253);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(25, 28);
-            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox1.TabIndex = 3;
-            pictureBox1.TabStop = false;
-            pictureBox1.Click += this.pictureBox1_Click;
             // 
             // btnDelete
             // 
@@ -299,7 +267,7 @@
             dgvBlocks.BackgroundColor = Color.AliceBlue;
             dgvBlocks.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgvBlocks.Columns.AddRange(new DataGridViewColumn[] { Id, Name, FloorNumber, RoomNumber, Capacity, CreateOn, OwnerName });
-            dgvBlocks.Location = new Point(12, 12);
+            dgvBlocks.Location = new Point(12, 71);
             dgvBlocks.Name = "dgvBlocks";
             dgvBlocks.ReadOnly = true;
             dgvBlocks.RightToLeft = RightToLeft.Yes;
@@ -370,11 +338,43 @@
             OwnerName.ReadOnly = true;
             OwnerName.Width = 105;
             // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = Properties.Resources.search;
+            pictureBox1.Location = new Point(595, 26);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(25, 28);
+            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox1.TabIndex = 36;
+            pictureBox1.TabStop = false;
+            // 
+            // txtSearch
+            // 
+            txtSearch.Location = new Point(129, 21);
+            txtSearch.Multiline = true;
+            txtSearch.Name = "txtSearch";
+            txtSearch.Size = new Size(367, 34);
+            txtSearch.TabIndex = 35;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("B Koodak", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 178);
+            label1.ForeColor = Color.MediumBlue;
+            label1.Location = new Point(497, 26);
+            label1.Name = "label1";
+            label1.Size = new Size(105, 29);
+            label1.TabIndex = 34;
+            label1.Text = ":جستجوی بلوک";
+            // 
             // frmBlock
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(750, 524);
+            Controls.Add(pictureBox1);
+            Controls.Add(txtSearch);
+            Controls.Add(label1);
             Controls.Add(dgvBlocks);
             Controls.Add(btnShowRooms);
             Controls.Add(pictureBox3);
@@ -391,15 +391,10 @@
             Controls.Add(btnEdit);
             Controls.Add(pictureBox5);
             Controls.Add(pictureBox4);
-            Controls.Add(pictureBox1);
-            Controls.Add(txtSearch);
-            Controls.Add(label1);
             MaximizeBox = false;
-            Name = "frmBlock";
             StartPosition = FormStartPosition.CenterParent;
             Text = "frmBlock";
             Load += frmBlock_Load;
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
@@ -408,14 +403,12 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             ((System.ComponentModel.ISupportInitialize)dgvBlocks).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
-        private Label label1;
-        private TextBox txtSearch;
-        private PictureBox pictureBox1;
         private Button btnDelete;
         private Button btnEdit;
         private PictureBox pictureBox5;
@@ -440,5 +433,8 @@
         private DataGridViewTextBoxColumn Capacity;
         private DataGridViewTextBoxColumn CreateOn;
         private DataGridViewTextBoxColumn OwnerName;
+        private PictureBox pictureBox1;
+        private TextBox txtSearch;
+        private Label label1;
     }
 }

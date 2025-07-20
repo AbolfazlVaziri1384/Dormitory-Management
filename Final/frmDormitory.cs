@@ -19,7 +19,6 @@ namespace Final
             InitializeComponent();
         }
         DormitoryDbContext db = new DormitoryDbContext();
-
         public long UserID;
         private void txtSearch_TextChanged(object sender, EventArgs e)
         {
@@ -151,6 +150,11 @@ namespace Final
             stiStudentPrint.Load(Application.StartupPath + "/StudentsReport.mrt");
             stiStudentPrint.RegData("DTStudents", dtStudent);
             stiStudentPrint.Show();
+        }
+
+        private void btnBackToMain_Click(object sender, EventArgs e)
+        {
+            Close();
         }
     }
 }
