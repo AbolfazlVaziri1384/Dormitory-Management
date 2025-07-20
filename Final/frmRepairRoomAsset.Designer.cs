@@ -38,17 +38,18 @@
             // cmbStatus
             // 
             cmbStatus.FormattingEnabled = true;
-            cmbStatus.Location = new Point(318, 75);
+            cmbStatus.Items.AddRange(new object[] { "سالم", "معیوب" });
+            cmbStatus.Location = new Point(60, 53);
             cmbStatus.Name = "cmbStatus";
-            cmbStatus.Size = new Size(158, 28);
+            cmbStatus.Size = new Size(262, 28);
             cmbStatus.TabIndex = 0;
             // 
             // txtDiscription
             // 
-            txtDiscription.Location = new Point(214, 133);
+            txtDiscription.Location = new Point(60, 111);
             txtDiscription.Multiline = true;
             txtDiscription.Name = "txtDiscription";
-            txtDiscription.Size = new Size(262, 77);
+            txtDiscription.Size = new Size(262, 100);
             txtDiscription.TabIndex = 1;
             // 
             // label1
@@ -56,7 +57,7 @@
             label1.AutoSize = true;
             label1.Font = new Font("B Koodak", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 178);
             label1.ForeColor = Color.MediumBlue;
-            label1.Location = new Point(475, 75);
+            label1.Location = new Point(328, 53);
             label1.Name = "label1";
             label1.Size = new Size(97, 29);
             label1.TabIndex = 2;
@@ -67,7 +68,7 @@
             label2.AutoSize = true;
             label2.Font = new Font("B Koodak", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 178);
             label2.ForeColor = Color.MediumBlue;
-            label2.Location = new Point(475, 134);
+            label2.Location = new Point(328, 112);
             label2.Name = "label2";
             label2.Size = new Size(221, 29);
             label2.TabIndex = 3;
@@ -78,25 +79,29 @@
             btnSave.BackColor = Color.Honeydew;
             btnSave.Font = new Font("B Koodak", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 178);
             btnSave.ForeColor = Color.DarkGreen;
-            btnSave.Location = new Point(338, 279);
+            btnSave.Location = new Point(113, 238);
             btnSave.Name = "btnSave";
             btnSave.Size = new Size(161, 39);
             btnSave.TabIndex = 21;
             btnSave.Text = "ذخیره";
             btnSave.UseVisualStyleBackColor = false;
+            btnSave.Click += btnSave_Click;
             // 
             // frmRepairRoomAsset
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(572, 328);
             Controls.Add(btnSave);
             Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(txtDiscription);
             Controls.Add(cmbStatus);
+            MaximizeBox = false;
             Name = "frmRepairRoomAsset";
+            StartPosition = FormStartPosition.CenterParent;
             Text = "درخواست تعمیر وسیله";
+            Load += frmRepairRoomAsset_Load;
             ResumeLayout(false);
             PerformLayout();
         }

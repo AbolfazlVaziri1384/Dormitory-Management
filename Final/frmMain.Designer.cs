@@ -33,9 +33,9 @@
             menuStrip1 = new MenuStrip();
             HighMenu = new ToolStripMenuItem();
             mnuFrmDormitory = new ToolStripMenuItem();
+            mnuSetDormitory = new ToolStripMenuItem();
             مشاهدهلیستهمهدرخواستهایتعمیرToolStripMenuItem = new ToolStripMenuItem();
             لیستلوازمخوابگاهToolStripMenuItem = new ToolStripMenuItem();
-            mnuSetDormitory = new ToolStripMenuItem();
             mnuSetManager = new ToolStripMenuItem();
             ثبتوسیلهجدبدToolStripMenuItem = new ToolStripMenuItem();
             لیستوسایلتخصیصیافتهToolStripMenuItem = new ToolStripMenuItem();
@@ -45,7 +45,6 @@
             مشاهدهلیستدرخواستهایتعمیرToolStripMenuItem = new ToolStripMenuItem();
             ثبتوسیلهجدیدToolStripMenuItem = new ToolStripMenuItem();
             ثبتانتقالوسیلهToolStripMenuItem = new ToolStripMenuItem();
-            درخواستتعمیرToolStripMenuItem = new ToolStripMenuItem();
             مشاهدهلیستدروسایلمنToolStripMenuItem = new ToolStripMenuItem();
             AboutMenu = new ToolStripMenuItem();
             ExitMenu = new ToolStripMenuItem();
@@ -90,6 +89,13 @@
             mnuFrmDormitory.Text = "مشاهده لیست خوابگاه ها";
             mnuFrmDormitory.Click += mnuFrmDormitory_Click;
             // 
+            // mnuSetDormitory
+            // 
+            mnuSetDormitory.Name = "mnuSetDormitory";
+            mnuSetDormitory.Size = new Size(349, 26);
+            mnuSetDormitory.Text = "ثبت خوابگاه جدید";
+            mnuSetDormitory.Click += mnuSetDormitory_Click;
+            // 
             // مشاهدهلیستهمهدرخواستهایتعمیرToolStripMenuItem
             // 
             مشاهدهلیستهمهدرخواستهایتعمیرToolStripMenuItem.Name = "مشاهدهلیستهمهدرخواستهایتعمیرToolStripMenuItem";
@@ -101,13 +107,6 @@
             لیستلوازمخوابگاهToolStripMenuItem.Name = "لیستلوازمخوابگاهToolStripMenuItem";
             لیستلوازمخوابگاهToolStripMenuItem.Size = new Size(349, 26);
             لیستلوازمخوابگاهToolStripMenuItem.Text = "لیست لوازم خوابگاه";
-            // 
-            // mnuSetDormitory
-            // 
-            mnuSetDormitory.Name = "mnuSetDormitory";
-            mnuSetDormitory.Size = new Size(349, 26);
-            mnuSetDormitory.Text = "ثبت خوابگاه جدید";
-            mnuSetDormitory.Click += mnuSetDormitory_Click;
             // 
             // mnuSetManager
             // 
@@ -141,7 +140,7 @@
             // 
             // LowMenu
             // 
-            LowMenu.DropDownItems.AddRange(new ToolStripItem[] { مشاهدهلیستدرخواستهایتعمیرToolStripMenuItem, ثبتوسیلهجدیدToolStripMenuItem, ثبتانتقالوسیلهToolStripMenuItem, درخواستتعمیرToolStripMenuItem, مشاهدهلیستدروسایلمنToolStripMenuItem });
+            LowMenu.DropDownItems.AddRange(new ToolStripItem[] { مشاهدهلیستدرخواستهایتعمیرToolStripMenuItem, ثبتوسیلهجدیدToolStripMenuItem, ثبتانتقالوسیلهToolStripMenuItem, مشاهدهلیستدروسایلمنToolStripMenuItem });
             LowMenu.Name = "LowMenu";
             LowMenu.Size = new Size(120, 24);
             LowMenu.Text = "امور دانشجویی";
@@ -163,12 +162,6 @@
             ثبتانتقالوسیلهToolStripMenuItem.Name = "ثبتانتقالوسیلهToolStripMenuItem";
             ثبتانتقالوسیلهToolStripMenuItem.Size = new Size(345, 26);
             ثبتانتقالوسیلهToolStripMenuItem.Text = "ثبت انتقال وسیله";
-            // 
-            // درخواستتعمیرToolStripMenuItem
-            // 
-            درخواستتعمیرToolStripMenuItem.Name = "درخواستتعمیرToolStripMenuItem";
-            درخواستتعمیرToolStripMenuItem.Size = new Size(345, 26);
-            درخواستتعمیرToolStripMenuItem.Text = "درخواست تعمیر";
             // 
             // مشاهدهلیستدروسایلمنToolStripMenuItem
             // 
@@ -372,7 +365,6 @@
         private ToolStripMenuItem ثبتفردجدیدToolStripMenuItem;
         private ToolStripMenuItem ثبتوسیلهجدیدToolStripMenuItem;
         private ToolStripMenuItem ثبتانتقالوسیلهToolStripMenuItem;
-        private ToolStripMenuItem درخواستتعمیرToolStripMenuItem;
         private ToolStripMenuItem مشاهدهلیستدروسایلمنToolStripMenuItem;
     }
 }

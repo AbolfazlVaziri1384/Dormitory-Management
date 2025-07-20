@@ -459,7 +459,6 @@
             Controls.Add(label1);
             Controls.Add(txtSearch);
             MaximizeBox = false;
-            Name = "frmDormitory";
             StartPosition = FormStartPosition.CenterParent;
             Text = "خوابگاه ها";
             Load += frmDormitory_Load;
