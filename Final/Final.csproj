@@ -6,6 +6,7 @@
     <UseWindowsForms>true</UseWindowsForms>
     <ImplicitUsings>enable</ImplicitUsings>
     <TargetFramework>net8.0-windows</TargetFramework>
+    <ApplicationIcon>Resources\ManageDormitory.ico</ApplicationIcon>
   </PropertyGroup>
 
   <ItemGroup>
@@ -92,6 +93,10 @@
 
   <ItemGroup>
     <AdditionalDesignTimeBuildInput Remove="FakesAssemblies\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Resources\ManageDormitory.ico" />
   </ItemGroup>
 
 </Project>

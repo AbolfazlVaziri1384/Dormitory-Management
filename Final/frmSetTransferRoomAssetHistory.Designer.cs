@@ -1,6 +1,6 @@
 ﻿namespace Final
 {
-    partial class frmTransferRoomAssetHistory
+    partial class frmSetTransferRoomAssetHistory
     {
         /// <summary>
         /// Required designer variable.

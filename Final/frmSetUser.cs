@@ -80,7 +80,7 @@ namespace Final
         {
             try
             {
-                bool Istrue = CheckTool.UserField(UserEditId, txtFirstName.Text, txtLastName.Text, txtUserName.Text, txtPassword.Text, txtConfirmPassword.Text, txtAddress.Text, Convert.ToInt64(numNationalCode.Value), Convert.ToInt64(numStu_Per_Code.Value), Convert.ToInt64(numPhone.Value), mskBirthDay.Text.ToString());
+                bool Istrue = CheckTool.UserField(txtFirstName.Text, txtLastName.Text, txtUserName.Text, txtPassword.Text, txtConfirmPassword.Text, txtAddress.Text, Convert.ToInt64(numNationalCode.Value), Convert.ToInt64(numStu_Per_Code.Value), Convert.ToInt64(numPhone.Value), mskBirthDay.Text.ToString());
                 if (UserEditId == -1)
                 {
                     if (Istrue == true)

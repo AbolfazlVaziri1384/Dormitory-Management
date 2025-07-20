@@ -19,6 +19,9 @@
     <Compile Update="frmRepairRoomAssetsRequest.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="frmRoom.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="frmRoomAssets.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -55,7 +58,10 @@
     <Compile Update="frmStudentAssets.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="frmTransferRoomAssetHistory.cs">
+    <Compile Update="frmSetTransferRoomAssetHistory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="frmSubstituteStudentAssets.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="frmUsers.cs">

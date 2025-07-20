@@ -1,0 +1,30 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace Final
+{
+    public partial class frmRoom : Form
+    {
+        public frmRoom()
+        {
+            InitializeComponent();
+        }
+
+        private void dgvRooms_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void frmRoom_Load(object sender, EventArgs e)
+        {
+
+        }
+    }
+}

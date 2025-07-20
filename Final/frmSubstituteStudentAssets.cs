@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Final
 {
-    public partial class frmTransferRoomAssetHistory : Form
+    public partial class frmSubstituteStudentAssets : Form
     {
-        public frmTransferRoomAssetHistory()
+        public frmSubstituteStudentAssets()
         {
             InitializeComponent();
         }
