@@ -81,5 +81,12 @@ namespace Final
             frmSetDormitory.UserID = UserID;
             frmSetDormitory.ShowDialog();
         }
+
+        private void mnufrmRepairRoomAssetsRequest_Click(object sender, EventArgs e)
+        {
+            frmRepairRoomAssetsRequest frmRepairRoomAssetsRequest = new frmRepairRoomAssetsRequest();
+            frmRepairRoomAssetsRequest.UserID = UserID;
+            frmRepairRoomAssetsRequest.ShowDialog();
+        }
     }
 }

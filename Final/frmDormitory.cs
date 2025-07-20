@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Final.Models;
+using Final.Tools;
 
 namespace Final
 {
@@ -87,6 +88,11 @@ namespace Final
 
         private void btnPrint_Click(object sender, EventArgs e)
         {
+            if (dgvDormitory.Rows.Count == 0)
+            {
+                MessageBoxTool.msger("لیست خوابگاه ها خالی است");
+                return;
+            }
             DataTable dtDormitory = new DataTable();
             dtDormitory.Columns.Add("Name");
             dtDormitory.Columns.Add("Capacity");
@@ -114,6 +120,7 @@ namespace Final
         {
             if (dgvDormitory.Rows.Count == 0)
             {
+                MessageBoxTool.msger("لیست خوابگاه ها خالی است");
                 return;
             }
             long id;

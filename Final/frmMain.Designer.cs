@@ -34,7 +34,7 @@
             HighMenu = new ToolStripMenuItem();
             mnuFrmDormitory = new ToolStripMenuItem();
             mnuSetDormitory = new ToolStripMenuItem();
-            مشاهدهلیستهمهدرخواستهایتعمیرToolStripMenuItem = new ToolStripMenuItem();
+            mnufrmRepairRoomAssetsRequest = new ToolStripMenuItem();
             لیستلوازمخوابگاهToolStripMenuItem = new ToolStripMenuItem();
             mnuSetManager = new ToolStripMenuItem();
             ثبتوسیلهجدبدToolStripMenuItem = new ToolStripMenuItem();
@@ -77,7 +77,7 @@
             // 
             // HighMenu
             // 
-            HighMenu.DropDownItems.AddRange(new ToolStripItem[] { mnuFrmDormitory, mnuSetDormitory, مشاهدهلیستهمهدرخواستهایتعمیرToolStripMenuItem, لیستلوازمخوابگاهToolStripMenuItem, mnuSetManager, ثبتوسیلهجدبدToolStripMenuItem, لیستوسایلتخصیصیافتهToolStripMenuItem, لیستتعویضلوازمدانشجوToolStripMenuItem, ثبتفردجدیدToolStripMenuItem });
+            HighMenu.DropDownItems.AddRange(new ToolStripItem[] { mnuFrmDormitory, mnuSetDormitory, mnufrmRepairRoomAssetsRequest, لیستلوازمخوابگاهToolStripMenuItem, mnuSetManager, ثبتوسیلهجدبدToolStripMenuItem, لیستوسایلتخصیصیافتهToolStripMenuItem, لیستتعویضلوازمدانشجوToolStripMenuItem, ثبتفردجدیدToolStripMenuItem });
             HighMenu.Name = "HighMenu";
             HighMenu.Size = new Size(86, 24);
             HighMenu.Text = "امور اداری";
@@ -96,11 +96,12 @@
             mnuSetDormitory.Text = "ثبت خوابگاه جدید";
             mnuSetDormitory.Click += mnuSetDormitory_Click;
             // 
-            // مشاهدهلیستهمهدرخواستهایتعمیرToolStripMenuItem
+            // mnufrmRepairRoomAssetsRequest
             // 
-            مشاهدهلیستهمهدرخواستهایتعمیرToolStripMenuItem.Name = "مشاهدهلیستهمهدرخواستهایتعمیرToolStripMenuItem";
-            مشاهدهلیستهمهدرخواستهایتعمیرToolStripMenuItem.Size = new Size(349, 26);
-            مشاهدهلیستهمهدرخواستهایتعمیرToolStripMenuItem.Text = "مشاهده لیست همه درخواست های تعمیر";
+            mnufrmRepairRoomAssetsRequest.Name = "mnufrmRepairRoomAssetsRequest";
+            mnufrmRepairRoomAssetsRequest.Size = new Size(349, 26);
+            mnufrmRepairRoomAssetsRequest.Text = "مشاهده لیست همه درخواست های تعمیر";
+            mnufrmRepairRoomAssetsRequest.Click += mnufrmRepairRoomAssetsRequest_Click;
             // 
             // لیستلوازمخوابگاهToolStripMenuItem
             // 
@@ -354,7 +355,7 @@
         private GroupBox groupBox1;
         private GroupBox groupBox2;
         private ToolStripMenuItem mnuFrmDormitory;
-        private ToolStripMenuItem مشاهدهلیستهمهدرخواستهایتعمیرToolStripMenuItem;
+        private ToolStripMenuItem mnufrmRepairRoomAssetsRequest;
         private ToolStripMenuItem مشاهدهلیستدرخواستهایتعمیرToolStripMenuItem;
         private ToolStripMenuItem لیستلوازمخوابگاهToolStripMenuItem;
         private ToolStripMenuItem mnuSetDormitory;
