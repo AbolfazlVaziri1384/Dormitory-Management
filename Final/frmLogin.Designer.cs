@@ -74,6 +74,7 @@
             txtUserName.Name = "txtUserName";
             txtUserName.Size = new Size(146, 30);
             txtUserName.TabIndex = 0;
+            txtUserName.Text = "1";
             // 
             // label3
             // 
@@ -92,6 +93,7 @@
             txtPassword.Name = "txtPassword";
             txtPassword.Size = new Size(146, 27);
             txtPassword.TabIndex = 1;
+            txtPassword.Text = "1";
             txtPassword.UseSystemPasswordChar = true;
             // 
             // chkShowPassword

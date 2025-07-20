@@ -47,7 +47,8 @@ namespace Final
 
         private void btnSubmit_Click(object sender, EventArgs e)
         {
-            if (txtNewPassword.Text == txtConfirmPassword.Text && txtNewPassword.Text.Length >= 4)
+            if(txtNewPassword.Text.Length >= 4) MessageBoxTool.msger("طول رمز جدید کمتر از 4 کاراکتر است");
+            else if (txtNewPassword.Text == txtConfirmPassword.Text)
             {
                 User.ChangePassword(user, txtNewPassword.Text);
                 MessageBoxTool.msgr("رمز جدید با موفقیت ثبت شد");
@@ -73,6 +74,9 @@ namespace Final
 
         }
 
-
+        private void btnBackToLogin_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }

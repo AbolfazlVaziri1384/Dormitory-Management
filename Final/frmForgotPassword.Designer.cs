@@ -60,7 +60,7 @@
             txtStu_Per_Code.Margin = new Padding(4, 3, 4, 3);
             txtStu_Per_Code.Name = "txtStu_Per_Code";
             txtStu_Per_Code.Size = new Size(161, 27);
-            txtStu_Per_Code.TabIndex = 1;
+            txtStu_Per_Code.TabIndex = 0;
             // 
             // label2
             // 
@@ -80,7 +80,7 @@
             txtNationalCode.Margin = new Padding(4, 3, 4, 3);
             txtNationalCode.Name = "txtNationalCode";
             txtNationalCode.Size = new Size(161, 27);
-            txtNationalCode.TabIndex = 3;
+            txtNationalCode.TabIndex = 1;
             // 
             // btnVerify
             // 
@@ -91,7 +91,7 @@
             btnVerify.Margin = new Padding(4, 3, 4, 3);
             btnVerify.Name = "btnVerify";
             btnVerify.Size = new Size(161, 34);
-            btnVerify.TabIndex = 4;
+            btnVerify.TabIndex = 2;
             btnVerify.Text = "بررسی اطلاعات";
             btnVerify.UseVisualStyleBackColor = false;
             btnVerify.Click += btnVerify_Click;
@@ -115,7 +115,7 @@
             txtNewPassword.Margin = new Padding(4, 3, 4, 3);
             txtNewPassword.Name = "txtNewPassword";
             txtNewPassword.Size = new Size(161, 27);
-            txtNewPassword.TabIndex = 6;
+            txtNewPassword.TabIndex = 3;
             txtNewPassword.UseSystemPasswordChar = true;
             // 
             // label4
@@ -137,7 +137,7 @@
             txtConfirmPassword.Margin = new Padding(4, 3, 4, 3);
             txtConfirmPassword.Name = "txtConfirmPassword";
             txtConfirmPassword.Size = new Size(161, 27);
-            txtConfirmPassword.TabIndex = 8;
+            txtConfirmPassword.TabIndex = 5;
             txtConfirmPassword.UseSystemPasswordChar = true;
             // 
             // btnSubmit
@@ -150,7 +150,7 @@
             btnSubmit.Margin = new Padding(4, 3, 4, 3);
             btnSubmit.Name = "btnSubmit";
             btnSubmit.Size = new Size(161, 34);
-            btnSubmit.TabIndex = 9;
+            btnSubmit.TabIndex = 6;
             btnSubmit.Text = "ثبت اطلاعات";
             btnSubmit.UseVisualStyleBackColor = false;
             btnSubmit.Click += btnSubmit_Click;
@@ -163,7 +163,7 @@
             chkShowPassword.Margin = new Padding(4, 3, 4, 3);
             chkShowPassword.Name = "chkShowPassword";
             chkShowPassword.Size = new Size(18, 17);
-            chkShowPassword.TabIndex = 10;
+            chkShowPassword.TabIndex = 4;
             chkShowPassword.UseVisualStyleBackColor = true;
             chkShowPassword.CheckedChanged += chkShowPassword_CheckedChanged;
             // 
@@ -176,9 +176,10 @@
             btnBackToLogin.Margin = new Padding(4, 3, 4, 3);
             btnBackToLogin.Name = "btnBackToLogin";
             btnBackToLogin.Size = new Size(122, 34);
-            btnBackToLogin.TabIndex = 11;
+            btnBackToLogin.TabIndex = 7;
             btnBackToLogin.Text = "بازگشت به ورود";
             btnBackToLogin.UseVisualStyleBackColor = false;
+            btnBackToLogin.Click += btnBackToLogin_Click;
             // 
             // frmForgotPassword
             // 
