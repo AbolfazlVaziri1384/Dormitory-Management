@@ -91,7 +91,6 @@ public partial class DormitoryDbContext : DbContext
             entity.HasKey(e => e.Id).HasName("PK_Role");
 
             entity.Property(e => e.CreatOn).HasColumnType("datetime");
-            entity.Property(e => e.ModifiedOn).HasColumnType("datetime");
             entity.Property(e => e.Role1).HasColumnName("Role");
 
             entity.HasOne(d => d.Block).WithMany(p => p.Roles)

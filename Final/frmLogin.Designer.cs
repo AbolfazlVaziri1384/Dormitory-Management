@@ -1,6 +1,6 @@
 ﻿namespace Final
 {
-    partial class LoginForm
+    partial class frmLogin
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LoginForm));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmLogin));
             label1 = new Label();
             label2 = new Label();
             txtUserName = new TextBox();
@@ -73,7 +73,7 @@
             txtUserName.Location = new Point(453, 159);
             txtUserName.Name = "txtUserName";
             txtUserName.Size = new Size(146, 30);
-            txtUserName.TabIndex = 2;
+            txtUserName.TabIndex = 0;
             // 
             // label3
             // 
@@ -91,7 +91,7 @@
             txtPassword.Location = new Point(453, 216);
             txtPassword.Name = "txtPassword";
             txtPassword.Size = new Size(146, 27);
-            txtPassword.TabIndex = 4;
+            txtPassword.TabIndex = 1;
             txtPassword.UseSystemPasswordChar = true;
             // 
             // chkShowPassword
@@ -102,7 +102,7 @@
             chkShowPassword.Location = new Point(429, 222);
             chkShowPassword.Name = "chkShowPassword";
             chkShowPassword.Size = new Size(18, 17);
-            chkShowPassword.TabIndex = 5;
+            chkShowPassword.TabIndex = 2;
             chkShowPassword.UseVisualStyleBackColor = false;
             chkShowPassword.CheckedChanged += chkShowPassword_CheckedChanged;
             // 
@@ -126,7 +126,7 @@
             btnLogin.Location = new Point(453, 294);
             btnLogin.Name = "btnLogin";
             btnLogin.Size = new Size(146, 36);
-            btnLogin.TabIndex = 7;
+            btnLogin.TabIndex = 3;
             btnLogin.Text = "ورود";
             btnLogin.UseVisualStyleBackColor = false;
             btnLogin.Click += btnLogin_Click;
@@ -139,29 +139,29 @@
             linkLabel1.Location = new Point(506, 246);
             linkLabel1.Name = "linkLabel1";
             linkLabel1.Size = new Size(93, 26);
-            linkLabel1.TabIndex = 8;
+            linkLabel1.TabIndex = 4;
             linkLabel1.TabStop = true;
             linkLabel1.Text = "بازیابی رمز عبور";
             linkLabel1.LinkClicked += linkLabel1_LinkClicked;
             // 
             // btnRegister
             // 
-            btnRegister.BackColor = Color.LavenderBlush;
+            btnRegister.BackColor = Color.AliceBlue;
             btnRegister.Font = new Font("B Koodak", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 178);
             btnRegister.ForeColor = Color.MediumBlue;
             btnRegister.Location = new Point(453, 336);
             btnRegister.Name = "btnRegister";
             btnRegister.Size = new Size(146, 36);
-            btnRegister.TabIndex = 9;
+            btnRegister.TabIndex = 5;
             btnRegister.Text = "ثبت نام";
             btnRegister.UseVisualStyleBackColor = false;
             btnRegister.Click += btnRegister_Click;
             // 
-            // LoginForm
+            // frmLogin
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.White;
+            BackColor = SystemColors.Control;
             ClientSize = new Size(800, 450);
             Controls.Add(btnRegister);
             Controls.Add(linkLabel1);
@@ -175,7 +175,7 @@
             Controls.Add(label1);
             Icon = (Icon)resources.GetObject("$this.Icon");
             MaximizeBox = false;
-            Name = "LoginForm";
+            Name = "frmLogin";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "ورود به سامانه مدیریت خوابگاه";
             Load += LoginForm_Load;

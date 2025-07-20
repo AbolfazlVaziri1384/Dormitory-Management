@@ -16,5 +16,6 @@ namespace Final
         {
             InitializeComponent();
         }
+        public long UserID;
     }
 }

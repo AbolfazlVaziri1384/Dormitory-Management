@@ -105,7 +105,7 @@ public partial class User
     }
     public static string GetFullName(User user)
     {
-        return ((user.Gender == 1) ? "آقا" : "خانم") + " " + user.FirstName + " " + user.LastName;
+        return ((user.Gender == 1) ? "آقای" : "خانم") + " " + user.FirstName + " " + user.LastName;
     }
     public static void SetUser(string FirstName, string LastName,
                                string UserName, string Password,

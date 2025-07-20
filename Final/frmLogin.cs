@@ -14,9 +14,9 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 
 namespace Final
 {
-    public partial class LoginForm : Form
+    public partial class frmLogin : Form
     {
-        public LoginForm()
+        public frmLogin()
         {
             InitializeComponent();
 
@@ -54,21 +54,29 @@ namespace Final
                     {
                         User.SetLogin(user);
 
-                        MessageBoxTool.msgw($"خوش آمدید {user.FirstName} {user.LastName}");
-
-                        //frmMain frm = new frmMain();
-                        //frm.UserId = user.Id;
-                        //frm.Show();
-                        //Close();
-                        user.UserName = txtUserName.Text;
-                        user.Password = txtPassword.Text;
-                        frmUsers frmUsers = new frmUsers();
-                        frmUsers.UserID = user.Id;
-                        frmUsers.ShowDialog();
-                        //ForgotPasswordForm frm = new ForgotPasswordForm();
-                        //frm.Show();
-                        //Hide();
-
+                        string role = "";
+                        switch (Role.FindRole(user.Id))
+                        {
+                            case -1:
+                                role = "دانشجو";
+                                break;
+                            case 0:
+                                role = "ادمین";
+                                break;
+                            case 1:
+                                role = "مدیر";
+                                break;
+                            case 3:
+                                role = "مسئول بلوک";
+                                break;
+                            default:
+                                break;
+                        }
+                        MessageBoxTool.msgw($"خوش آمدید\n{User.GetFullName(user)}\n: نقش شما\n{role}");
+                        frmMain frm = new frmMain();
+                        frm.UserID = user.Id;
+                        frm.Show();
+                        Hide();
                     }
                     else
                     {
@@ -89,18 +97,8 @@ namespace Final
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            ForgotPasswordForm forgotForm = new ForgotPasswordForm();
-            var result = forgotForm.ShowDialog();
-
-            if (result == DialogResult.OK)
-            {
-                MessageBox.Show("اکنون می‌توانید با رمز جدید وارد شوید", "بازگشت به ورود", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                txtPassword.Focus();
-            }
-            else if (result == DialogResult.Cancel)
-            {
-                MessageBox.Show("به فرم ورود برگشتید");
-            }
+            frmForgotPassword forgotForm = new frmForgotPassword();
+            forgotForm.ShowDialog();
         }
 
 

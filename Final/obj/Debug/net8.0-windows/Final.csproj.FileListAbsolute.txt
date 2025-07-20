@@ -793,7 +793,6 @@ D:\UNIVERSITY\PDF\Advanced Programming\NerdsProject\Nerds_First_Project\Final\bi
 D:\UNIVERSITY\PDF\Advanced Programming\NerdsProject\Nerds_First_Project\Final\bin\Debug\net8.0-windows\runtimes\win\lib\net8.0\System.Runtime.Caching.dll
 D:\UNIVERSITY\PDF\Advanced Programming\NerdsProject\Nerds_First_Project\Final\bin\Debug\net8.0-windows\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll
 D:\UNIVERSITY\PDF\Advanced Programming\NerdsProject\Nerds_First_Project\Final\obj\Debug\net8.0-windows\Final.csproj.AssemblyReference.cache
-D:\UNIVERSITY\PDF\Advanced Programming\NerdsProject\Nerds_First_Project\Final\obj\Debug\net8.0-windows\Final.ForgotPasswordForm.resources
 D:\UNIVERSITY\PDF\Advanced Programming\NerdsProject\Nerds_First_Project\Final\obj\Debug\net8.0-windows\Final.frmBlock.resources
 D:\UNIVERSITY\PDF\Advanced Programming\NerdsProject\Nerds_First_Project\Final\obj\Debug\net8.0-windows\Final.frmDormitory.resources
 D:\UNIVERSITY\PDF\Advanced Programming\NerdsProject\Nerds_First_Project\Final\obj\Debug\net8.0-windows\Final.frmMain.resources
@@ -812,7 +811,6 @@ D:\UNIVERSITY\PDF\Advanced Programming\NerdsProject\Nerds_First_Project\Final\ob
 D:\UNIVERSITY\PDF\Advanced Programming\NerdsProject\Nerds_First_Project\Final\obj\Debug\net8.0-windows\Final.frmSetUser.resources
 D:\UNIVERSITY\PDF\Advanced Programming\NerdsProject\Nerds_First_Project\Final\obj\Debug\net8.0-windows\Final.frmStudentAssets.resources
 D:\UNIVERSITY\PDF\Advanced Programming\NerdsProject\Nerds_First_Project\Final\obj\Debug\net8.0-windows\Final.frmUsers.resources
-D:\UNIVERSITY\PDF\Advanced Programming\NerdsProject\Nerds_First_Project\Final\obj\Debug\net8.0-windows\Final.LoginForm.resources
 D:\UNIVERSITY\PDF\Advanced Programming\NerdsProject\Nerds_First_Project\Final\obj\Debug\net8.0-windows\Final.Properties.Resources.resources
 D:\UNIVERSITY\PDF\Advanced Programming\NerdsProject\Nerds_First_Project\Final\obj\Debug\net8.0-windows\Final.csproj.GenerateResource.cache
 D:\UNIVERSITY\PDF\Advanced Programming\NerdsProject\Nerds_First_Project\Final\obj\Debug\net8.0-windows\Final.GeneratedMSBuildEditorConfig.editorconfig
@@ -827,3 +825,7 @@ D:\UNIVERSITY\PDF\Advanced Programming\NerdsProject\Nerds_First_Project\Final\ob
 D:\UNIVERSITY\PDF\Advanced Programming\NerdsProject\Nerds_First_Project\Final\obj\Debug\net8.0-windows\Final.genruntimeconfig.cache
 D:\UNIVERSITY\PDF\Advanced Programming\NerdsProject\Nerds_First_Project\Final\obj\Debug\net8.0-windows\ref\Final.dll
 D:\UNIVERSITY\PDF\Advanced Programming\NerdsProject\Nerds_First_Project\Final\obj\Debug\net8.0-windows\Final.frmSetTransferRoomAssetHistory.resources
+D:\UNIVERSITY\PDF\Advanced Programming\NerdsProject\Nerds_First_Project\Final\obj\Debug\net8.0-windows\Final.frmForgotPassword.resources
+D:\UNIVERSITY\PDF\Advanced Programming\NerdsProject\Nerds_First_Project\Final\obj\Debug\net8.0-windows\Final.frmLogin.resources
+D:\UNIVERSITY\PDF\Advanced Programming\NerdsProject\Nerds_First_Project\Final\obj\Debug\net8.0-windows\Final.frmRoom.resources
+D:\UNIVERSITY\PDF\Advanced Programming\NerdsProject\Nerds_First_Project\Final\obj\Debug\net8.0-windows\Final.frmSubstituteStudentAssets.resources

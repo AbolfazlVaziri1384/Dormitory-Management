@@ -19,10 +19,6 @@ public partial class Role
 
     public DateTime CreatOn { get; set; }
 
-    public long? ModifiedBy { get; set; }
-
-    public DateTime? ModifiedOn { get; set; }
-
     public virtual Block? Block { get; set; }
 
     public virtual Dormitory? Dermitory { get; set; }

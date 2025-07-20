@@ -12,10 +12,10 @@ using Final.Tools;
 
 namespace Final
 {
-    public partial class ForgotPasswordForm : Form
+    public partial class frmForgotPassword : Form
     {
         User? user = new User();
-        public ForgotPasswordForm()
+        public frmForgotPassword()
         {
             InitializeComponent();
         }

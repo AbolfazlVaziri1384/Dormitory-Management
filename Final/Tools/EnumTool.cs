@@ -8,12 +8,13 @@ namespace Final.Tools
 {
     internal class EnumTool
     {
-        public enum Role : byte
+        public enum Role : int
         {
             Admin = 0,
             Manager = 1,
             DormitoryOwner = 2,
-            BlockOwner = 3
+            BlockOwner = 3,
+            Student = -1
         }
         public enum Status : byte
         {
