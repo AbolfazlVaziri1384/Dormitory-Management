@@ -114,7 +114,8 @@
             // 
             mnuSetManager.Name = "mnuSetManager";
             mnuSetManager.Size = new Size(293, 26);
-            mnuSetManager.Text = "دادن نقش مدیر";
+            mnuSetManager.Text = "ثبت نقش مدیر";
+            mnuSetManager.Click += mnuSetManager_Click;
             // 
             // ثبتوسیلهجدبدToolStripMenuItem
             // 

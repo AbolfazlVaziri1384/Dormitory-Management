@@ -194,7 +194,9 @@
             Controls.Add(txtName);
             Controls.Add(label2);
             Controls.Add(label1);
+            MaximizeBox = false;
             Name = "frmSetDormitory";
+            StartPosition = FormStartPosition.CenterParent;
             Text = "ثبت خوابگاه جدید";
             Load += frmSetDormitory_Load;
             ((System.ComponentModel.ISupportInitialize)numCapacity).EndInit();

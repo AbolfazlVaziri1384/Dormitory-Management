@@ -95,5 +95,12 @@ namespace Final
             frmRoomAssets.UserID = UserID;
             frmRoomAssets.ShowDialog();
         }
+
+        private void mnuSetManager_Click(object sender, EventArgs e)
+        {
+            frmSetRole frmSetRole = new frmSetRole();
+            frmSetRole.UserID = UserID;
+            frmSetRole.ShowDialog();
+        }
     }
 }

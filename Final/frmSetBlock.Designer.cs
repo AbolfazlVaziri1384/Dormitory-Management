@@ -154,7 +154,9 @@
             Controls.Add(label2);
             Controls.Add(txtName);
             Controls.Add(label1);
+            MaximizeBox = false;
             Name = "frmSetBlock";
+            StartPosition = FormStartPosition.CenterParent;
             Text = "ثبت بلوک جدید";
             ((System.ComponentModel.ISupportInitialize)numFloorNumber).EndInit();
             ((System.ComponentModel.ISupportInitialize)numeRoomNumber).EndInit();
