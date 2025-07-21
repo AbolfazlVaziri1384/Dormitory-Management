@@ -3,20 +3,20 @@
   "WorkspaceRootPath": "D:\\UNIVERSITY\\PDF\\Advanced Programming\\NerdsProject\\Nerds_First_Project\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|D:\\UNIVERSITY\\PDF\\Advanced Programming\\NerdsProject\\Nerds_First_Project\\final\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|d:\\university\\pdf\\advanced programming\\nerdsproject\\nerds_first_project\\final\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|solutionrelative:final\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|d:\\university\\pdf\\advanced programming\\nerdsproject\\nerds_first_project\\final\\frmsubstitutestudentassets.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|solutionrelative:final\\frmsubstitutestudentassets.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|d:\\university\\pdf\\advanced programming\\nerdsproject\\nerds_first_project\\final\\frmsubstitutestudentassets.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|solutionrelative:final\\frmsubstitutestudentassets.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|d:\\university\\pdf\\advanced programming\\nerdsproject\\nerds_first_project\\final\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|solutionrelative:final\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|d:\\university\\pdf\\advanced programming\\nerdsproject\\nerds_first_project\\final\\frmstudentassets.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|solutionrelative:final\\frmstudentassets.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|d:\\university\\pdf\\advanced programming\\nerdsproject\\nerds_first_project\\final\\frmstudentassets.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|solutionrelative:final\\frmstudentassets.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -50,38 +50,38 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "frmStudentAssets.cs",
-              "DocumentMoniker": "D:\\UNIVERSITY\\PDF\\Advanced Programming\\NerdsProject\\Nerds_First_Project\\Final\\frmStudentAssets.cs",
-              "RelativeDocumentMoniker": "Final\\frmStudentAssets.cs",
-              "ToolTip": "D:\\UNIVERSITY\\PDF\\Advanced Programming\\NerdsProject\\Nerds_First_Project\\Final\\frmStudentAssets.cs",
-              "RelativeToolTip": "Final\\frmStudentAssets.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAANAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "frmSubstituteStudentAssets.cs",
+              "DocumentMoniker": "D:\\UNIVERSITY\\PDF\\Advanced Programming\\NerdsProject\\Nerds_First_Project\\Final\\frmSubstituteStudentAssets.cs",
+              "RelativeDocumentMoniker": "Final\\frmSubstituteStudentAssets.cs",
+              "ToolTip": "D:\\UNIVERSITY\\PDF\\Advanced Programming\\NerdsProject\\Nerds_First_Project\\Final\\frmSubstituteStudentAssets.cs",
+              "RelativeToolTip": "Final\\frmSubstituteStudentAssets.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwBEAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-21T10:45:18.134Z",
+              "WhenOpened": "2025-07-21T11:37:09.014Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "frmStudentAssets.cs [Design]",
-              "DocumentMoniker": "D:\\UNIVERSITY\\PDF\\Advanced Programming\\NerdsProject\\Nerds_First_Project\\Final\\frmStudentAssets.cs",
-              "RelativeDocumentMoniker": "Final\\frmStudentAssets.cs",
-              "ToolTip": "D:\\UNIVERSITY\\PDF\\Advanced Programming\\NerdsProject\\Nerds_First_Project\\Final\\frmStudentAssets.cs [Design]",
-              "RelativeToolTip": "Final\\frmStudentAssets.cs [Design]",
+              "DocumentIndex": 1,
+              "Title": "frmSubstituteStudentAssets.cs [Design]",
+              "DocumentMoniker": "D:\\UNIVERSITY\\PDF\\Advanced Programming\\NerdsProject\\Nerds_First_Project\\Final\\frmSubstituteStudentAssets.cs",
+              "RelativeDocumentMoniker": "Final\\frmSubstituteStudentAssets.cs",
+              "ToolTip": "D:\\UNIVERSITY\\PDF\\Advanced Programming\\NerdsProject\\Nerds_First_Project\\Final\\frmSubstituteStudentAssets.cs [Design]",
+              "RelativeToolTip": "Final\\frmSubstituteStudentAssets.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-21T10:45:03.289Z",
+              "WhenOpened": "2025-07-21T11:36:14.625Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "frmMain.cs",
               "DocumentMoniker": "D:\\UNIVERSITY\\PDF\\Advanced Programming\\NerdsProject\\Nerds_First_Project\\Final\\frmMain.cs",
               "RelativeDocumentMoniker": "Final\\frmMain.cs",
               "ToolTip": "D:\\UNIVERSITY\\PDF\\Advanced Programming\\NerdsProject\\Nerds_First_Project\\Final\\frmMain.cs",
               "RelativeToolTip": "Final\\frmMain.cs",
-              "ViewState": "AgIAAHAAAAAAAAAAAAA6wIIAAAAqAAAAAAAAAA==",
+              "ViewState": "AgIAAHQAAAAAAAAAAAAlwIcAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-21T10:43:32.113Z",
               "EditorCaption": ""

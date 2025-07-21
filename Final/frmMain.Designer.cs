@@ -40,12 +40,12 @@
             frmSetUser = new ToolStripMenuItem();
             mnufrmSetRoomAssets = new ToolStripMenuItem();
             لیستوسایلتخصیصیافتهToolStripMenuItem = new ToolStripMenuItem();
-            لیستتعویضلوازمدانشجوToolStripMenuItem = new ToolStripMenuItem();
+            mnufrmSubstituteStudentAssets = new ToolStripMenuItem();
             LowMenu = new ToolStripMenuItem();
             mnufrmSetStudentAssets = new ToolStripMenuItem();
+            mnufrmStudentAssets = new ToolStripMenuItem();
             مشاهدهلیستدرخواستهایتعمیرToolStripMenuItem = new ToolStripMenuItem();
             ثبتانتقالوسیلهToolStripMenuItem = new ToolStripMenuItem();
-            mnufrmStudentAssets = new ToolStripMenuItem();
             AboutMenu = new ToolStripMenuItem();
             ExitMenu = new ToolStripMenuItem();
             label1 = new Label();
@@ -77,7 +77,7 @@
             // 
             // HighMenu
             // 
-            HighMenu.DropDownItems.AddRange(new ToolStripItem[] { mnuFrmDormitory, mnuSetDormitory, mnufrmRepairRoomAssetsRequest, mnuFrmRoomAssets, mnuSetManager, frmSetUser, mnufrmSetRoomAssets, لیستوسایلتخصیصیافتهToolStripMenuItem, لیستتعویضلوازمدانشجوToolStripMenuItem });
+            HighMenu.DropDownItems.AddRange(new ToolStripItem[] { mnuFrmDormitory, mnuSetDormitory, mnufrmRepairRoomAssetsRequest, mnuFrmRoomAssets, mnuSetManager, frmSetUser, mnufrmSetRoomAssets, mnufrmSubstituteStudentAssets, لیستوسایلتخصیصیافتهToolStripMenuItem });
             HighMenu.Name = "HighMenu";
             HighMenu.Size = new Size(86, 24);
             HighMenu.Text = "امور اداری";
@@ -85,63 +85,64 @@
             // mnuFrmDormitory
             // 
             mnuFrmDormitory.Name = "mnuFrmDormitory";
-            mnuFrmDormitory.Size = new Size(293, 26);
+            mnuFrmDormitory.Size = new Size(306, 26);
             mnuFrmDormitory.Text = "لیست خوابگاه ها";
             mnuFrmDormitory.Click += mnuFrmDormitory_Click;
             // 
             // mnuSetDormitory
             // 
             mnuSetDormitory.Name = "mnuSetDormitory";
-            mnuSetDormitory.Size = new Size(293, 26);
+            mnuSetDormitory.Size = new Size(306, 26);
             mnuSetDormitory.Text = "ثبت خوابگاه جدید";
             mnuSetDormitory.Click += mnuSetDormitory_Click;
             // 
             // mnufrmRepairRoomAssetsRequest
             // 
             mnufrmRepairRoomAssetsRequest.Name = "mnufrmRepairRoomAssetsRequest";
-            mnufrmRepairRoomAssetsRequest.Size = new Size(293, 26);
+            mnufrmRepairRoomAssetsRequest.Size = new Size(306, 26);
             mnufrmRepairRoomAssetsRequest.Text = "لیست همه درخواست های تعمیر";
             mnufrmRepairRoomAssetsRequest.Click += mnufrmRepairRoomAssetsRequest_Click;
             // 
             // mnuFrmRoomAssets
             // 
             mnuFrmRoomAssets.Name = "mnuFrmRoomAssets";
-            mnuFrmRoomAssets.Size = new Size(293, 26);
+            mnuFrmRoomAssets.Size = new Size(306, 26);
             mnuFrmRoomAssets.Text = "لیست لوازم خوابگاه";
             mnuFrmRoomAssets.Click += mnuFrmRoomAssets_Click;
             // 
             // mnuSetManager
             // 
             mnuSetManager.Name = "mnuSetManager";
-            mnuSetManager.Size = new Size(293, 26);
+            mnuSetManager.Size = new Size(306, 26);
             mnuSetManager.Text = "ثبت نقش مدیر";
             mnuSetManager.Click += mnuSetManager_Click;
             // 
             // frmSetUser
             // 
             frmSetUser.Name = "frmSetUser";
-            frmSetUser.Size = new Size(293, 26);
+            frmSetUser.Size = new Size(306, 26);
             frmSetUser.Text = "ثبت کاربر جدید";
             frmSetUser.Click += frmSetUser_Click;
             // 
             // mnufrmSetRoomAssets
             // 
             mnufrmSetRoomAssets.Name = "mnufrmSetRoomAssets";
-            mnufrmSetRoomAssets.Size = new Size(293, 26);
+            mnufrmSetRoomAssets.Size = new Size(306, 26);
             mnufrmSetRoomAssets.Text = "ثبت لوازم خوابگاه جدید";
             mnufrmSetRoomAssets.Click += mnufrmSetRoomAssets_Click;
             // 
             // لیستوسایلتخصیصیافتهToolStripMenuItem
             // 
             لیستوسایلتخصیصیافتهToolStripMenuItem.Name = "لیستوسایلتخصیصیافتهToolStripMenuItem";
-            لیستوسایلتخصیصیافتهToolStripMenuItem.Size = new Size(293, 26);
+            لیستوسایلتخصیصیافتهToolStripMenuItem.Size = new Size(306, 26);
             لیستوسایلتخصیصیافتهToolStripMenuItem.Text = "لیست وسایل تخصیص یافته";
             // 
-            // لیستتعویضلوازمدانشجوToolStripMenuItem
+            // mnufrmSubstituteStudentAssets
             // 
-            لیستتعویضلوازمدانشجوToolStripMenuItem.Name = "لیستتعویضلوازمدانشجوToolStripMenuItem";
-            لیستتعویضلوازمدانشجوToolStripMenuItem.Size = new Size(293, 26);
-            لیستتعویضلوازمدانشجوToolStripMenuItem.Text = "لیست تعویض لوازم دانشجو";
+            mnufrmSubstituteStudentAssets.Name = "mnufrmSubstituteStudentAssets";
+            mnufrmSubstituteStudentAssets.Size = new Size(306, 26);
+            mnufrmSubstituteStudentAssets.Text = "تاریخچه تعویض وسایل دانشجویان";
+            mnufrmSubstituteStudentAssets.Click += mnufrmSubstituteStudentAssets_Click;
             // 
             // LowMenu
             // 
@@ -157,6 +158,13 @@
             mnufrmSetStudentAssets.Text = "ثبت وسیله دانشجویی جدید";
             mnufrmSetStudentAssets.Click += mnufrmSetStudentAssets_Click;
             // 
+            // mnufrmStudentAssets
+            // 
+            mnufrmStudentAssets.Name = "mnufrmStudentAssets";
+            mnufrmStudentAssets.Size = new Size(345, 26);
+            mnufrmStudentAssets.Text = "لیست وسایل من";
+            mnufrmStudentAssets.Click += mnufrmStudentAssets_Click;
+            // 
             // مشاهدهلیستدرخواستهایتعمیرToolStripMenuItem
             // 
             مشاهدهلیستدرخواستهایتعمیرToolStripMenuItem.Name = "مشاهدهلیستدرخواستهایتعمیرToolStripMenuItem";
@@ -168,13 +176,6 @@
             ثبتانتقالوسیلهToolStripMenuItem.Name = "ثبتانتقالوسیلهToolStripMenuItem";
             ثبتانتقالوسیلهToolStripMenuItem.Size = new Size(345, 26);
             ثبتانتقالوسیلهToolStripMenuItem.Text = "ثبت انتقال وسیله";
-            // 
-            // mnufrmStudentAssets
-            // 
-            mnufrmStudentAssets.Name = "mnufrmStudentAssets";
-            mnufrmStudentAssets.Size = new Size(345, 26);
-            mnufrmStudentAssets.Text = "لیست وسایل من";
-            mnufrmStudentAssets.Click += mnufrmStudentAssets_Click;
             // 
             // AboutMenu
             // 
@@ -368,7 +369,7 @@
         private ToolStripMenuItem mnuSetManager;
         private ToolStripMenuItem mnufrmSetRoomAssets;
         private ToolStripMenuItem لیستوسایلتخصیصیافتهToolStripMenuItem;
-        private ToolStripMenuItem لیستتعویضلوازمدانشجوToolStripMenuItem;
+        private ToolStripMenuItem mnufrmSubstituteStudentAssets;
         private ToolStripMenuItem frmSetUser;
         private ToolStripMenuItem mnufrmSetStudentAssets;
         private ToolStripMenuItem ثبتانتقالوسیلهToolStripMenuItem;

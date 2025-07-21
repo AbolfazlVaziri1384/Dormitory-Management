@@ -130,5 +130,11 @@ namespace Final
             frmStudentAssets.UserID = UserID;
             frmStudentAssets.ShowDialog();
         }
+
+        private void mnufrmSubstituteStudentAssets_Click(object sender, EventArgs e)
+        {
+            frmSubstituteStudentAssets frmSubstituteStudentAssets = new frmSubstituteStudentAssets();
+            frmSubstituteStudentAssets.ShowDialog();
+        }
     }
 }
