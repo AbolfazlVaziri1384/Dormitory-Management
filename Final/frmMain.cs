@@ -48,9 +48,9 @@ namespace Final
             {
                 HighMenu.Visible = false;
             }
-            else if (role != (int)EnumTool.Role.Student)
+            else if (role != (int)EnumTool.Role.Admin)
             {
-                mnuSetManager.Enabled = false;
+                mnuSetManager.Visible = false;
             }
             lblFullName.Text = User.GetFullName(User.FindUserById(UserID));
             lblLogin.Text = User.FindUserById(UserID).PreviousLogin.ToHDateTime();
@@ -135,6 +135,13 @@ namespace Final
         {
             frmSubstituteStudentAssets frmSubstituteStudentAssets = new frmSubstituteStudentAssets();
             frmSubstituteStudentAssets.ShowDialog();
+        }
+
+        private void mnuFrmUser_Click(object sender, EventArgs e)
+        {
+            frmUsers frmUsers = new frmUsers();
+            frmUsers.UserID = UserID;
+            frmUsers.ShowDialog();
         }
     }
 }

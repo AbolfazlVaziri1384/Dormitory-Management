@@ -162,17 +162,16 @@ namespace Final
 
         private void btnBackToMain_Click(object sender, EventArgs e)
         {
-            /*
-             go to frmMaim
-             */
+            Close();
         }
         private void RefreshUsersList(List<Models.User> Userslist)
         {
             dgvUsers.Rows.Clear();
+            int RoleNumber = Role.FindRole(UserID);
             foreach (var item in Userslist)
             {
-                // فردی که ادمین است را نشان نمی دهد
-                if ((Models.Role.FindRole(item.Id) != 0) || (Models.Role.FindRole(item.Id) == null))
+                //افرادی را نمایش می دهیم که سمتشان پایین تر از فردی است که وارد شده یا دانشجو هستن
+                if (RoleNumber < Role.FindRole(item.Id) || Role.FindRole(item.Id) == (int)EnumTool.Role.Student)
                     if ((item.Id != UserID) && (item.IsDeleted == false))
                     {
                         dgvUsers.Rows.Add(item.Id.ToString(),

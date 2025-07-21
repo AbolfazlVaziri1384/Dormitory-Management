@@ -39,8 +39,8 @@
             mnuSetManager = new ToolStripMenuItem();
             frmSetUser = new ToolStripMenuItem();
             mnufrmSetRoomAssets = new ToolStripMenuItem();
-            لیستوسایلتخصیصیافتهToolStripMenuItem = new ToolStripMenuItem();
             mnufrmSubstituteStudentAssets = new ToolStripMenuItem();
+            لیستوسایلتخصیصیافتهToolStripMenuItem = new ToolStripMenuItem();
             LowMenu = new ToolStripMenuItem();
             mnufrmSetStudentAssets = new ToolStripMenuItem();
             mnufrmStudentAssets = new ToolStripMenuItem();
@@ -59,6 +59,7 @@
             label5 = new Label();
             groupBox1 = new GroupBox();
             groupBox2 = new GroupBox();
+            mnuFrmUser = new ToolStripMenuItem();
             menuStrip1.SuspendLayout();
             groupBox1.SuspendLayout();
             groupBox2.SuspendLayout();
@@ -77,7 +78,7 @@
             // 
             // HighMenu
             // 
-            HighMenu.DropDownItems.AddRange(new ToolStripItem[] { mnuFrmDormitory, mnuSetDormitory, mnufrmRepairRoomAssetsRequest, mnuFrmRoomAssets, mnuSetManager, frmSetUser, mnufrmSetRoomAssets, mnufrmSubstituteStudentAssets, لیستوسایلتخصیصیافتهToolStripMenuItem });
+            HighMenu.DropDownItems.AddRange(new ToolStripItem[] { mnuFrmDormitory, mnuSetDormitory, mnufrmRepairRoomAssetsRequest, mnuFrmRoomAssets, mnuSetManager, frmSetUser, mnufrmSetRoomAssets, mnufrmSubstituteStudentAssets, mnuFrmUser, لیستوسایلتخصیصیافتهToolStripMenuItem });
             HighMenu.Name = "HighMenu";
             HighMenu.Size = new Size(86, 24);
             HighMenu.Text = "امور اداری";
@@ -131,18 +132,18 @@
             mnufrmSetRoomAssets.Text = "ثبت لوازم خوابگاه جدید";
             mnufrmSetRoomAssets.Click += mnufrmSetRoomAssets_Click;
             // 
-            // لیستوسایلتخصیصیافتهToolStripMenuItem
-            // 
-            لیستوسایلتخصیصیافتهToolStripMenuItem.Name = "لیستوسایلتخصیصیافتهToolStripMenuItem";
-            لیستوسایلتخصیصیافتهToolStripMenuItem.Size = new Size(306, 26);
-            لیستوسایلتخصیصیافتهToolStripMenuItem.Text = "لیست وسایل تخصیص یافته";
-            // 
             // mnufrmSubstituteStudentAssets
             // 
             mnufrmSubstituteStudentAssets.Name = "mnufrmSubstituteStudentAssets";
             mnufrmSubstituteStudentAssets.Size = new Size(306, 26);
             mnufrmSubstituteStudentAssets.Text = "تاریخچه تعویض وسایل دانشجویان";
             mnufrmSubstituteStudentAssets.Click += mnufrmSubstituteStudentAssets_Click;
+            // 
+            // لیستوسایلتخصیصیافتهToolStripMenuItem
+            // 
+            لیستوسایلتخصیصیافتهToolStripMenuItem.Name = "لیستوسایلتخصیصیافتهToolStripMenuItem";
+            لیستوسایلتخصیصیافتهToolStripMenuItem.Size = new Size(306, 26);
+            لیستوسایلتخصیصیافتهToolStripMenuItem.Text = "لیست وسایل تخصیص یافته";
             // 
             // LowMenu
             // 
@@ -315,6 +316,13 @@
             groupBox2.TabStop = false;
             groupBox2.Text = "تاریخ و ساعت";
             // 
+            // mnuFrmUser
+            // 
+            mnuFrmUser.Name = "mnuFrmUser";
+            mnuFrmUser.Size = new Size(306, 26);
+            mnuFrmUser.Text = "لیست کاربران";
+            mnuFrmUser.Click += mnuFrmUser_Click;
+            // 
             // frmMain
             // 
             AutoScaleDimensions = new SizeF(10F, 26F);
@@ -374,5 +382,6 @@
         private ToolStripMenuItem mnufrmSetStudentAssets;
         private ToolStripMenuItem ثبتانتقالوسیلهToolStripMenuItem;
         private ToolStripMenuItem mnufrmStudentAssets;
+        private ToolStripMenuItem mnuFrmUser;
     }
 }
