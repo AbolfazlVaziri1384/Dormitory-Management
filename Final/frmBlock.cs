@@ -109,6 +109,11 @@ namespace Final
 
         private void btnPrint_Click(object sender, EventArgs e)
         {
+            if (dgvBlocks.Rows.Count == 0)
+            {
+                MessageBoxTool.msger("لیست بلوک ها خالی است");
+                return;
+            }
             DataTable dtBlock = new DataTable();
             dtBlock.Columns.Add("Name");
             dtBlock.Columns.Add("FloorNumber");
