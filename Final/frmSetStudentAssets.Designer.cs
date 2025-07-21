@@ -40,9 +40,10 @@
             // 
             // txtName
             // 
-            txtName.Location = new Point(504, 99);
+            txtName.Location = new Point(463, 99);
             txtName.Name = "txtName";
-            txtName.Size = new Size(125, 27);
+            txtName.RightToLeft = RightToLeft.Yes;
+            txtName.Size = new Size(166, 27);
             txtName.TabIndex = 0;
             // 
             // txtDiscription
@@ -50,7 +51,8 @@
             txtDiscription.Location = new Point(396, 165);
             txtDiscription.Multiline = true;
             txtDiscription.Name = "txtDiscription";
-            txtDiscription.Size = new Size(233, 63);
+            txtDiscription.RightToLeft = RightToLeft.Yes;
+            txtDiscription.Size = new Size(233, 81);
             txtDiscription.TabIndex = 1;
             // 
             // label1
@@ -118,7 +120,9 @@
             Controls.Add(label1);
             Controls.Add(txtDiscription);
             Controls.Add(txtName);
+            MaximizeBox = false;
             Name = "frmSetStudentAssets";
+            StartPosition = FormStartPosition.CenterParent;
             Text = "ثبت لوازم دانشجو";
             Load += frmSetStudentAssets_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();

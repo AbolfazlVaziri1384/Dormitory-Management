@@ -43,7 +43,7 @@
             ثبتفردجدیدToolStripMenuItem = new ToolStripMenuItem();
             LowMenu = new ToolStripMenuItem();
             مشاهدهلیستدرخواستهایتعمیرToolStripMenuItem = new ToolStripMenuItem();
-            ثبتوسیلهجدیدToolStripMenuItem = new ToolStripMenuItem();
+            mnufrmSetStudentAssets = new ToolStripMenuItem();
             ثبتانتقالوسیلهToolStripMenuItem = new ToolStripMenuItem();
             مشاهدهلیستدروسایلمنToolStripMenuItem = new ToolStripMenuItem();
             AboutMenu = new ToolStripMenuItem();
@@ -144,7 +144,7 @@
             // 
             // LowMenu
             // 
-            LowMenu.DropDownItems.AddRange(new ToolStripItem[] { مشاهدهلیستدرخواستهایتعمیرToolStripMenuItem, ثبتوسیلهجدیدToolStripMenuItem, ثبتانتقالوسیلهToolStripMenuItem, مشاهدهلیستدروسایلمنToolStripMenuItem });
+            LowMenu.DropDownItems.AddRange(new ToolStripItem[] { mnufrmSetStudentAssets, مشاهدهلیستدرخواستهایتعمیرToolStripMenuItem, ثبتانتقالوسیلهToolStripMenuItem, مشاهدهلیستدروسایلمنToolStripMenuItem });
             LowMenu.Name = "LowMenu";
             LowMenu.Size = new Size(120, 24);
             LowMenu.Text = "امور دانشجویی";
@@ -155,11 +155,12 @@
             مشاهدهلیستدرخواستهایتعمیرToolStripMenuItem.Size = new Size(345, 26);
             مشاهدهلیستدرخواستهایتعمیرToolStripMenuItem.Text = " مشاهده لیست درخواست های تعمیر من";
             // 
-            // ثبتوسیلهجدیدToolStripMenuItem
+            // mnufrmSetStudentAssets
             // 
-            ثبتوسیلهجدیدToolStripMenuItem.Name = "ثبتوسیلهجدیدToolStripMenuItem";
-            ثبتوسیلهجدیدToolStripMenuItem.Size = new Size(345, 26);
-            ثبتوسیلهجدیدToolStripMenuItem.Text = "ثبت وسیله جدید";
+            mnufrmSetStudentAssets.Name = "mnufrmSetStudentAssets";
+            mnufrmSetStudentAssets.Size = new Size(345, 26);
+            mnufrmSetStudentAssets.Text = "ثبت وسیله دانشجویی جدید";
+            mnufrmSetStudentAssets.Click += mnufrmSetStudentAssets_Click;
             // 
             // ثبتانتقالوسیلهToolStripMenuItem
             // 
@@ -367,7 +368,7 @@
         private ToolStripMenuItem لیستوسایلتخصیصیافتهToolStripMenuItem;
         private ToolStripMenuItem لیستتعویضلوازمدانشجوToolStripMenuItem;
         private ToolStripMenuItem ثبتفردجدیدToolStripMenuItem;
-        private ToolStripMenuItem ثبتوسیلهجدیدToolStripMenuItem;
+        private ToolStripMenuItem mnufrmSetStudentAssets;
         private ToolStripMenuItem ثبتانتقالوسیلهToolStripMenuItem;
         private ToolStripMenuItem مشاهدهلیستدروسایلمنToolStripMenuItem;
     }

@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Final.Models;
+using Final.Tools;
 
 namespace Final
 {
@@ -21,5 +22,164 @@ namespace Final
         public long RoomAssetID;
         public long EditTransferRoomAssetID = -1;
         DormitoryDbContext db;
+
+        private void frmSetTransferRoomAssetHistory_Load(object sender, EventArgs e)
+        {
+            if (EditTransferRoomAssetID != -1)
+            {
+                btnSave.Text = "ویرایش";
+                frmSetTransferRoomAssetHistory frm = new frmSetTransferRoomAssetHistory();
+                frm.Text = "ویرایش تخصیص وسایل";
+            }
+
+            db = new DormitoryDbContext();
+            if (RoomAsset.FindRoomAssetById(RoomAssetID).PartNumber == 1)
+            {
+                RefreshRoomList(db.Rooms.ToList());
+                grpRoom.Enabled = true;
+            }
+            else
+            {
+                RefreshStudentList(db.Users.ToList());
+                grpStudent.Enabled = true;
+            }
+            db.Dispose();
+        }
+        private void RefreshRoomList(List<Models.Room> Roomlist)
+        {
+            dgvRoom.Rows.Clear();
+            dgvOwner.Rows.Clear();
+
+            foreach (var item in Roomlist)
+            {
+                // اتاق هایی که به آنها اختصاص دادیم دیگر نمایش داده نشوند
+
+                if ((!TransferRoomAssetHistory.IsRoomInUse(item.Id)) && (item.IsDeleted == false))
+                {
+                    dgvRoom.Rows.Add(item.Id.ToString(),
+                                            item.Number,
+                                            item.FloorNumber,
+                                            item.Block.Name,
+                                            item.Block.Dermitory.Name);
+                }
+
+            }
+        }
+        private void RefreshStudentList(List<Models.User> Userlist)
+        {
+            dgvOwner.Rows.Clear();
+            dgvRoom.Rows.Clear();
+
+            foreach (var item in Userlist)
+            {
+                // دیگر اگر قبلا این وسیله را به ان فرد اختصاص دادیم نشانش ندیم
+
+                if ((!TransferRoomAssetHistory.IsStudentHasThisAsset(item.Id, RoomAsset.FindRoomAssetById(RoomAssetID).PartNumber)) && (item.IsDeleted == false))
+                {
+                    dgvOwner.Rows.Add(item.Id.ToString(),
+                                          item.FirstName,
+                                          item.LastName,
+                                         (item.Gender == 0) ? "خانم" : "آقا",
+                                          item.StuPerCode,
+                                          item.NationalCode,
+                                         (item.IsActive == true) ? "فعال" : "غیر فعال");
+                }
+
+            }
+
+            if (dgvOwner.Rows.Count != 0)
+            {
+                foreach (DataGridViewRow row in dgvOwner.Rows)
+                {
+                    // برای زمانی که اگر کسی غیر فعال است قر مز بشه
+                    if (row.Cells[6].Value.ToString() == "غیر فعال")
+                    {
+                        row.DefaultCellStyle.BackColor = Color.Red;
+                    }
+                }
+            }
+
+
+
+        }
+        private void btnSave_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                long id;
+
+                if (RoomAsset.FindRoomAssetById(RoomAssetID).PartNumber == 1)
+                {
+                    if (dgvRoom.Rows.Count == 0)
+                    {
+                        return;
+                    }
+                    id = long.Parse(dgvRoom.CurrentRow.Cells[0].Value.ToString());
+                    if (EditTransferRoomAssetID == -1)
+                    {
+                        TransferRoomAssetHistory.Set(RoomAssetID, true, id, UserID);
+                        MessageBoxTool.msgr("تخصیص با موفقیت انجام شد");
+                        Close();
+                    }
+                    DialogResult result;
+                    result = MessageBoxTool.msgq("آیا از ویرایش مطمئن هستید؟");
+                    if (result == DialogResult.Yes)
+                    {
+
+                        TransferRoomAssetHistory.Edit(EditTransferRoomAssetID, true, id, UserID);
+                        MessageBoxTool.msgr("تخصیص با موفقیت ویرایش شد");
+                        Close();
+                    }
+                }
+                else
+                {
+                    if (dgvOwner.Rows.Count == 0)
+                    {
+                        return;
+                    }
+                    id = long.Parse(dgvOwner.CurrentRow.Cells[0].Value.ToString());
+                    if (EditTransferRoomAssetID == -1)
+                    {
+                        TransferRoomAssetHistory.Set(RoomAssetID, false, id, UserID);
+                        MessageBoxTool.msgr("تخصیص با موفقیت انجام شد");
+                        Close();
+                    }
+                    DialogResult result;
+                    result = MessageBoxTool.msgq("آیا از ویرایش مطمئن هستید؟");
+                    if (result == DialogResult.Yes)
+                    {
+                        TransferRoomAssetHistory.Edit(EditTransferRoomAssetID, false, id, UserID);
+                        MessageBoxTool.msgr("تخصیص با موفقیت ویرایش شد");
+                        Close();
+                    }
+                }
+
+            }
+            catch (Exception ex)
+            {
+                MessageBoxTool.msger(ex.Message);
+            }
+        }
+
+        private void txtSearch_TextChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                db = new DormitoryDbContext();
+                if (RoomAsset.FindRoomAssetById(RoomAssetID).PartNumber == 1)
+                    RefreshRoomList((List<Models.Room>)db.Rooms.Where(i => i.Number.ToString().Contains(txtSearch.Text.Trim()) ||
+                                                                           i.FloorNumber.ToString().Contains(txtSearch.Text.Trim())).ToList());
+                else
+                    RefreshStudentList((List<Models.User>)db.Users.Where(i => i.FirstName.Contains(txtSearch.Text.Trim()) ||
+                                                               i.LastName.Contains(txtSearch.Text.Trim()) ||
+                                                               i.StuPerCode.ToString().Contains(txtSearch.Text.Trim()) ||
+                                                               i.NationalCode.ToString().Contains(txtSearch.Text.Trim())).ToList());
+                db.Dispose();
+            }
+            catch (Exception ex)
+            {
+                MessageBoxTool.msger(ex.ToString());
+            }
+        }
     }
 }

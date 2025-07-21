@@ -109,5 +109,12 @@ namespace Final
             frmSetRoomAssets.UserID = UserID;
             frmSetRoomAssets.ShowDialog();
         }
+
+        private void mnufrmSetStudentAssets_Click(object sender, EventArgs e)
+        {
+            frmSetStudentAssets frmSetStudentAssets = new frmSetStudentAssets();
+            frmSetStudentAssets.UserID = UserID;
+            frmSetStudentAssets.ShowDialog();
+        }
     }
 }
