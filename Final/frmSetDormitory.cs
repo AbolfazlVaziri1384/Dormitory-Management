@@ -80,12 +80,27 @@ namespace Final
                 txtName.Text = EditDormitory.Name;
                 txtAddress.Text = EditDormitory.Address;
                 numCapacity.Value = EditDormitory.Capacity;
-                if(EditDormitory.DormitoryGender == 0) radWoman.Checked = true;
-                else if(EditDormitory.DormitoryGender == 1) radMan.Checked = true;
-                else if(EditDormitory.DormitoryGender == 2) radFamily.Checked = true;
+                if (EditDormitory.DormitoryGender == 0) radWoman.Checked = true;
+                else if (EditDormitory.DormitoryGender == 1) radMan.Checked = true;
+                else if (EditDormitory.DormitoryGender == 2) radFamily.Checked = true;
             }
             else
                 radMan.Checked = true;
+        }
+
+        private void txtName_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtAddress_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void numCapacity_ValueChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -1,4 +1,8 @@
-﻿using System;
+﻿using Final.Models;
+using Final.Tools;
+using Microsoft.QualityTools.Testing.Fakes.Stubs;
+using Microsoft.VisualBasic.ApplicationServices;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -16,5 +20,47 @@ namespace Final
         {
             InitializeComponent();
         }
+        public long UserID;
+        public long DormitoryID;
+        public long EditBlockID = -1;
+
+        private void btnSave_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                bool Istrue = CheckTool.BlockField(txtName.Text ,(int)numFloorNumber.Value,(int)numeRoomNumber.Value,(int)numCapacity.Value);
+                if (EditBlockID == -1)
+                {
+                    if (Istrue == true)
+                    {
+                        Block.SetBlock(txtName.Text, (int)numFloorNumber.Value, (int)numeRoomNumber.Value, (int)numCapacity.Value, DormitoryID,UserID);
+                        MessageBoxTool.msgr("بلوک جدید با موفقیت ثبت شد");
+                        Close();
+                    }
+                }
+                else
+                {
+                    if (Istrue == true)
+                    {
+                        DialogResult result;
+                        result = MessageBoxTool.msgq("آیا از ویرایش مطمئن هستید؟");
+                        if (result == DialogResult.Yes)
+                        {
+                            Block.EditBlock(txtName.Text, (int)numFloorNumber.Value, (int)numeRoomNumber.Value, (int)numCapacity.Value, DormitoryID, UserID,EditBlockID);
+                            MessageBoxTool.msgr("بلوک با موفقیت ویرایش شد");
+                            Close();
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBoxTool.msger(ex.Message);
+            }
+
+        }
+
     }
 }
+    
+

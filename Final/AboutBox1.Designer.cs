@@ -129,7 +129,7 @@
             // textBoxDescription
             // 
             textBoxDescription.Dock = DockStyle.Fill;
-            textBoxDescription.Font = new Font("B Koodak", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 178);
+            textBoxDescription.Font = new Font("Microsoft Sans Serif", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 178);
             textBoxDescription.Location = new Point(239, 218);
             textBoxDescription.Margin = new Padding(10, 6, 5, 6);
             textBoxDescription.Multiline = true;
@@ -156,11 +156,11 @@
             // AboutBox1
             // 
             AcceptButton = okButton;
-            AutoScaleDimensions = new SizeF(10F, 26F);
+            AutoScaleDimensions = new SizeF(8F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(725, 566);
             Controls.Add(tableLayoutPanel);
-            Font = new Font("B Koodak", 9F, FontStyle.Bold, GraphicsUnit.Point, 178);
+            Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Bold, GraphicsUnit.Point, 178);
             FormBorderStyle = FormBorderStyle.FixedDialog;
             Margin = new Padding(5, 6, 5, 6);
             MaximizeBox = false;

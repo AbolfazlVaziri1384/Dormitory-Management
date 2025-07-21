@@ -33,7 +33,26 @@ namespace Final
 
         private void btnEdit_Click(object sender, EventArgs e)
         {
-
+            try
+            {
+                if (dgvBlocks.Rows.Count == 0)
+                {
+                    return;
+                }
+                int id;
+                id = int.Parse(dgvBlocks.CurrentRow.Cells[0].Value.ToString());
+                frmSetBlock frm = new frmSetBlock();
+                frm.EditBlockID = id;
+                frm.UserID = UserID;
+                frm.ShowDialog();
+                db = new DormitoryDbContext();
+                RefreshBlockList(db.Blocks.ToList());
+                db.Dispose();
+            }
+            catch (Exception ex)
+            {
+                MessageBoxTool.msger(ex.ToString());
+            }
         }
 
         private void frmBlock_Load(object sender, EventArgs e)
@@ -145,6 +164,180 @@ namespace Final
         private void label1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnSetBlock_Click(object sender, EventArgs e)
+        {
+            try
+            {
+
+                frmSetBlock frm = new frmSetBlock();
+                frm.UserID = UserID;
+                frm.DormitoryID = DormitoryId;
+                frm.ShowDialog();
+                db = new DormitoryDbContext();
+                RefreshBlockList(db.Blocks.ToList());
+                db.Dispose();
+            }
+            catch (Exception ex)
+            {
+                MessageBoxTool.msger(ex.ToString());
+            }
+        }
+
+        private void btnSetRoom_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (dgvBlocks.Rows.Count == 0)
+                {
+                    return;
+                }
+                long id;
+                id = int.Parse(dgvBlocks.CurrentRow.Cells[0].Value.ToString());
+                frmSetRoom frm = new frmSetRoom();
+                frm.UserId = UserID;
+                frm.BlockId = id;
+                frm.ShowDialog();
+                db = new DormitoryDbContext();
+                RefreshBlockList(db.Blocks.ToList());
+                db.Dispose();
+            }
+            catch (Exception ex)
+            {
+                MessageBoxTool.msger(ex.ToString());
+            }
+
+        }
+
+        private void btnShowRooms_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (dgvBlocks.Rows.Count == 0)
+                {
+                    return;
+                }
+                long id;
+                id = int.Parse(dgvBlocks.CurrentRow.Cells[0].Value.ToString());
+                frmRoom frm = new frmRoom();
+                frm.UserID = UserID;
+                frm.BlockId = id;
+                frm.ShowDialog();
+                db = new DormitoryDbContext();
+                RefreshBlockList(db.Blocks.ToList());
+                db.Dispose();
+            }
+            catch (Exception ex)
+            {
+                MessageBoxTool.msger(ex.ToString());
+            }
+
+        }
+
+        private void btnAddOwner_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (dgvBlocks.Rows.Count == 0)
+                {
+                    return;
+                }
+                long id;
+                id = int.Parse(dgvBlocks.CurrentRow.Cells[0].Value.ToString());
+                frmSetRole frm = new frmSetRole();
+                frm.UserID = UserID;
+                frm.Dormitory_BlockId = id;
+                frm.IsDormitory = false;
+                frm.ShowDialog();
+                db = new DormitoryDbContext();
+                RefreshBlockList(db.Blocks.ToList());
+                db.Dispose();
+            }
+            catch (Exception ex)
+            {
+                MessageBoxTool.msger(ex.ToString());
+            }
+        }
+
+        private void btnDeleteOwner_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (dgvBlocks.Rows.Count == 0)
+                {
+                    return;
+                }
+                int id;
+                id = int.Parse(dgvBlocks.CurrentRow.Cells[0].Value.ToString());
+                if (id != 0)
+                {
+                    DialogResult result;
+                    result = MessageBoxTool.msgq("آیا از حذف مطمئن هستید ؟");
+                    if (result == DialogResult.Yes)
+                    {
+
+                        Models.Role.DeleteRoleForBlock(id);
+                        MessageBoxTool.msg();
+                        db = new DormitoryDbContext();
+                        RefreshBlockList(db.Blocks.ToList());
+                        db.Dispose();
+                    }
+                }
+
+            }
+            catch (Exception ex)
+            {
+                MessageBoxTool.msger(ex.ToString());
+            }
+        }
+
+
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (dgvBlocks.Rows.Count == 0)
+                {
+                    return;
+                }
+                int id;
+                id = int.Parse(dgvBlocks.CurrentRow.Cells[0].Value.ToString());
+                if (id != 0)
+                {
+                    DialogResult result;
+                    result = MessageBoxTool.msgq("آیا از حذف مطمئن هستید ؟");
+                    if (result == DialogResult.Yes)
+                    {
+                        Models.Block.DeleteBlock(UserID, id);
+                        MessageBoxTool.msg();
+                        db = new DormitoryDbContext();
+                        RefreshBlockList(db.Blocks.ToList());
+                        db.Dispose();
+                    }
+                }
+
+            }
+            catch (Exception ex)
+            {
+                MessageBoxTool.msger(ex.ToString());
+            }
+
+        }
+
+        private void txtSearch_TextChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                db = new DormitoryDbContext();
+                RefreshBlockList((List<Models.Block>)db.Blocks.Where(i => i.Name.Contains(txtSearch.Text.Trim())).ToList());
+                db.Dispose();
+            }
+            catch (Exception ex)
+            {
+                MessageBoxTool.msger(ex.ToString());
+            }
         }
     }
 }

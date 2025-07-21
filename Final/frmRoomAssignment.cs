@@ -118,5 +118,61 @@ namespace Final
             stiRoomAssigmentPrint.RegData("DTRoomAssigment", dtRoomAssigment);
             stiRoomAssigmentPrint.Show();
         }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (dgvStudents.Rows.Count == 0)
+                {
+                    return;
+                }
+                int id;
+                id = int.Parse(dgvStudents.CurrentRow.Cells[0].Value.ToString());
+                if (id != 0)
+                {
+                    DialogResult result;
+                    result = MessageBoxTool.msgq("آیا از حذف مطمئن هستید ؟");
+                    if (result == DialogResult.Yes)
+                    {
+                        Models.Block.DeleteBlock(UserID, id);
+                        MessageBoxTool.msg();
+                        db = new DormitoryDbContext();
+                        RefreshRoomAssigmentList(db.RoomAssigments.ToList());
+                        db.Dispose();
+                    }
+                }
+
+            }
+            catch (Exception ex)
+            {
+                MessageBoxTool.msger(ex.ToString());
+            }
+
+        }
+
+        private void btnSetRoomAssignment_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (dgvStudents.Rows.Count == 0)
+                {
+                    return;
+                }
+                long id;
+                id = int.Parse(dgvStudents.CurrentRow.Cells[0].Value.ToString());
+                frmSetRoomAssignment frm = new frmSetRoomAssignment();
+                frm.UserID = UserID;
+                frm.RoomId = id;
+                frm.ShowDialog();
+                db = new DormitoryDbContext();
+                RefreshRoomAssigmentList(db.RoomAssigments.ToList());
+                db.Dispose();
+            }
+            catch (Exception ex)
+            {
+                MessageBoxTool.msger(ex.ToString());
+            }
+        }
     }
 }

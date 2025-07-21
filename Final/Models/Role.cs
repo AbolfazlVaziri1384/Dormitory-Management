@@ -85,4 +85,33 @@ public partial class Role
         db.Roles.Add(role);
         db.SaveChanges();
     }
+    public static Role findByDormitoryId(long DormitoryId)
+    {
+        using DormitoryDbContext db = new DormitoryDbContext();
+        var role = db.Roles.Where(r => r.DermitoryId== DormitoryId).FirstOrDefault();
+        return role ?? null;
+
+    }
+    public static Role findByBlockId(long BlockId)
+    {
+        using DormitoryDbContext db = new DormitoryDbContext();
+        var role = db.Roles.Where(r => r.BlockId == BlockId).FirstOrDefault();
+        return role ?? null;
+
+    }
+
+    public static void DeleteRole(long DormitoryId)
+    {
+        using DormitoryDbContext db = new DormitoryDbContext();
+        Models.Role role = Models.Role.findByDormitoryId(DormitoryId);
+        db.Roles.Remove(role);
+        db.SaveChanges();
+    }
+    public static void DeleteRoleForBlock(long BlockId)
+    {
+        using DormitoryDbContext db = new DormitoryDbContext();
+        Models.Role role = Models.Role.findByBlockId(BlockId);
+        db.Roles.Remove(role);
+        db.SaveChanges();
+    }
 }

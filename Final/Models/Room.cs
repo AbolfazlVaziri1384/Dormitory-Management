@@ -35,6 +35,35 @@ public partial class Room
     public virtual ICollection<RoomAssigment> RoomAssigments { get; set; } = new List<RoomAssigment>();
 
     public virtual ICollection<TransferRoomAssetHistory> TransferRoomAssetHistories { get; set; } = new List<TransferRoomAssetHistory>();
+    public static void SetRoom( int FloorNumber, int Number, int Capacity, long BlockId, long UserId)
+    {
+        using DormitoryDbContext db = new DormitoryDbContext();
+        Room room = new Room();
+        room.FloorNumber = FloorNumber;
+        room.Number = Number;
+        room.Capacity = Capacity;
+        room.BlockId = BlockId;
+        room.CreatBy = UserId;
+        room.CreatOn = DateTime.Now;
+
+        db.Rooms.Add(room);
+        db.SaveChanges();
+    }
+    public static void EditRoom(int FloorNumber, int Number, int Capacity, long UserId,long EditRoomId)
+    {
+        using DormitoryDbContext db = new DormitoryDbContext();
+        Room room = Room.FindRoomById(EditRoomId);
+        db.Rooms.Update(room);        
+        room.FloorNumber = FloorNumber;
+        room.Number = Number;
+        room.Capacity = Capacity;
+        room.ModifiedBy = UserId;
+        room.ModifiedOn = DateTime.Now;
+
+
+        db.SaveChanges();
+    }
+
 
     public static int StudentCount(long RoomId)
     {

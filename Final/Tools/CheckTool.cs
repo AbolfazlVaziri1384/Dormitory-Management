@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Final.Models;
+using static Stimulsoft.Report.Export.DeflaterHuffman;
 
 namespace Final.Tools
 {
@@ -60,6 +61,41 @@ namespace Final.Tools
                 MessageBoxTool.msger("این نام قبلا به خوابگاهی اختصاص داده شده است");
                 return false;
             }
+            return true;
+        }
+        public static  bool BlockField(string Name, int FloorNumber, int RoomNumber, int Capacity)
+        {
+            bool Istrue = false;
+            if ((string.IsNullOrWhiteSpace(Name)) ||
+                (Capacity < 0) ||
+                (FloorNumber == 0) ||
+                (RoomNumber == 0))
+            {
+                MessageBoxTool.msger("تمام فیلد ها باید به درستی کامل شوند");
+                return false;
+            }
+            // چک تکراری نبودن نام بلوک
+            bool IsNameExist = Block.AnyBlock(Name);
+            if (IsNameExist)
+            {
+                MessageBoxTool.msger("این نام قبلا به بلوکی اختصاص داده شده است");
+                return false;
+            }
+            return true;
+        }
+        public static bool RoomField(int FloorNumber, int Number, int Capacity)
+        {
+            bool Istrue = false;
+            if ((Capacity < 0) ||
+                (Capacity > 7) ||
+                (FloorNumber == 0) ||
+                (Number == 0))
+
+            {
+                MessageBoxTool.msger("تمام فیلد ها باید به درستی کامل شوند");
+                return false;
+            }
+
             return true;
         }
     }

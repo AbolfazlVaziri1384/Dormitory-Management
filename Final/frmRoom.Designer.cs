@@ -32,6 +32,12 @@
             label1 = new Label();
             txtSearch = new TextBox();
             dgvRooms = new DataGridView();
+            Id = new DataGridViewTextBoxColumn();
+            Number = new DataGridViewTextBoxColumn();
+            FloorNumber = new DataGridViewTextBoxColumn();
+            Capacity = new DataGridViewTextBoxColumn();
+            StudentCount = new DataGridViewTextBoxColumn();
+            CountOn = new DataGridViewTextBoxColumn();
             btnSetRoomAssegment = new Button();
             pictureBox9 = new PictureBox();
             btnSetRoom = new Button();
@@ -45,12 +51,6 @@
             pictureBox3 = new PictureBox();
             btnEdit = new Button();
             stiRoomPrint = new Stimulsoft.Report.StiReport();
-            Id = new DataGridViewTextBoxColumn();
-            Number = new DataGridViewTextBoxColumn();
-            FloorNumber = new DataGridViewTextBoxColumn();
-            Capacity = new DataGridViewTextBoxColumn();
-            StudentCount = new DataGridViewTextBoxColumn();
-            CountOn = new DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dgvRooms).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox9).BeginInit();
@@ -64,9 +64,10 @@
             // pictureBox1
             // 
             pictureBox1.Image = Properties.Resources.search;
-            pictureBox1.Location = new Point(577, 249);
+            pictureBox1.Location = new Point(505, 187);
+            pictureBox1.Margin = new Padding(3, 2, 3, 2);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(28, 30);
+            pictureBox1.Size = new Size(24, 22);
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox1.TabIndex = 8;
             pictureBox1.TabStop = false;
@@ -74,21 +75,22 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new Font("B Koodak", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 178);
+            label1.Font = new Font("Microsoft Sans Serif", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 178);
             label1.ForeColor = Color.MediumBlue;
-            label1.Location = new Point(477, 249);
+            label1.Location = new Point(417, 187);
             label1.Name = "label1";
             label1.RightToLeft = RightToLeft.Yes;
-            label1.Size = new Size(100, 29);
+            label1.Size = new Size(92, 17);
             label1.TabIndex = 7;
             label1.Text = "جستجوی اتاق :";
             // 
             // txtSearch
             // 
-            txtSearch.Location = new Point(255, 240);
+            txtSearch.Location = new Point(223, 180);
+            txtSearch.Margin = new Padding(3, 2, 3, 2);
             txtSearch.Multiline = true;
             txtSearch.Name = "txtSearch";
-            txtSearch.Size = new Size(222, 39);
+            txtSearch.Size = new Size(195, 30);
             txtSearch.TabIndex = 6;
             // 
             // dgvRooms
@@ -99,34 +101,91 @@
             dgvRooms.BackgroundColor = Color.AliceBlue;
             dgvRooms.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgvRooms.Columns.AddRange(new DataGridViewColumn[] { Id, Number, FloorNumber, Capacity, StudentCount, CountOn });
-            dgvRooms.Location = new Point(79, 12);
+            dgvRooms.Location = new Point(69, 9);
+            dgvRooms.Margin = new Padding(3, 2, 3, 2);
             dgvRooms.Name = "dgvRooms";
             dgvRooms.ReadOnly = true;
             dgvRooms.RightToLeft = RightToLeft.Yes;
             dgvRooms.RowHeadersWidth = 51;
             dgvRooms.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            dgvRooms.Size = new Size(628, 205);
+            dgvRooms.Size = new Size(550, 154);
             dgvRooms.TabIndex = 9;
             dgvRooms.CellContentClick += dgvRooms_CellContentClick;
+            // 
+            // Id
+            // 
+            Id.HeaderText = "Id";
+            Id.MinimumWidth = 6;
+            Id.Name = "Id";
+            Id.ReadOnly = true;
+            Id.Visible = false;
+            // 
+            // Number
+            // 
+            Number.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
+            Number.HeaderText = "شماره";
+            Number.MinimumWidth = 6;
+            Number.Name = "Number";
+            Number.ReadOnly = true;
+            Number.Width = 62;
+            // 
+            // FloorNumber
+            // 
+            FloorNumber.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
+            FloorNumber.HeaderText = "شماره طبقه";
+            FloorNumber.MinimumWidth = 6;
+            FloorNumber.Name = "FloorNumber";
+            FloorNumber.ReadOnly = true;
+            FloorNumber.Width = 91;
+            // 
+            // Capacity
+            // 
+            Capacity.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
+            Capacity.HeaderText = "ظرفیت";
+            Capacity.MinimumWidth = 6;
+            Capacity.Name = "Capacity";
+            Capacity.ReadOnly = true;
+            Capacity.Width = 67;
+            // 
+            // StudentCount
+            // 
+            StudentCount.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
+            StudentCount.HeaderText = "تعداد ساکنین";
+            StudentCount.MinimumWidth = 6;
+            StudentCount.Name = "StudentCount";
+            StudentCount.ReadOnly = true;
+            StudentCount.Width = 96;
+            // 
+            // CountOn
+            // 
+            CountOn.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
+            CountOn.HeaderText = "تاریخ ثبت";
+            CountOn.MinimumWidth = 6;
+            CountOn.Name = "CountOn";
+            CountOn.ReadOnly = true;
+            CountOn.Width = 78;
             // 
             // btnSetRoomAssegment
             // 
             btnSetRoomAssegment.BackColor = Color.AliceBlue;
-            btnSetRoomAssegment.Font = new Font("B Koodak", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 178);
+            btnSetRoomAssegment.Font = new Font("Microsoft Sans Serif", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 178);
             btnSetRoomAssegment.ForeColor = Color.CadetBlue;
-            btnSetRoomAssegment.Location = new Point(189, 389);
+            btnSetRoomAssegment.Location = new Point(165, 292);
+            btnSetRoomAssegment.Margin = new Padding(3, 2, 3, 2);
             btnSetRoomAssegment.Name = "btnSetRoomAssegment";
-            btnSetRoomAssegment.Size = new Size(166, 40);
+            btnSetRoomAssegment.Size = new Size(145, 30);
             btnSetRoomAssegment.TabIndex = 53;
             btnSetRoomAssegment.Text = "تخصیص اتاق";
             btnSetRoomAssegment.UseVisualStyleBackColor = false;
+            btnSetRoomAssegment.Click += btnSetRoomAssegment_Click;
             // 
             // pictureBox9
             // 
             pictureBox9.Image = Properties.Resources.personal;
-            pictureBox9.Location = new Point(356, 389);
+            pictureBox9.Location = new Point(312, 292);
+            pictureBox9.Margin = new Padding(3, 2, 3, 2);
             pictureBox9.Name = "pictureBox9";
-            pictureBox9.Size = new Size(50, 44);
+            pictureBox9.Size = new Size(44, 33);
             pictureBox9.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox9.TabIndex = 52;
             pictureBox9.TabStop = false;
@@ -134,21 +193,24 @@
             // btnSetRoom
             // 
             btnSetRoom.BackColor = Color.AliceBlue;
-            btnSetRoom.Font = new Font("B Koodak", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 178);
+            btnSetRoom.Font = new Font("Microsoft Sans Serif", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 178);
             btnSetRoom.ForeColor = Color.SeaGreen;
-            btnSetRoom.Location = new Point(424, 329);
+            btnSetRoom.Location = new Point(371, 247);
+            btnSetRoom.Margin = new Padding(3, 2, 3, 2);
             btnSetRoom.Name = "btnSetRoom";
-            btnSetRoom.Size = new Size(165, 40);
+            btnSetRoom.Size = new Size(144, 30);
             btnSetRoom.TabIndex = 49;
             btnSetRoom.Text = "افزودن اتاق جدید";
             btnSetRoom.UseVisualStyleBackColor = false;
+            btnSetRoom.Click += btnSetRoom_Click;
             // 
             // pictureBox7
             // 
             pictureBox7.Image = Properties.Resources.pl;
-            pictureBox7.Location = new Point(595, 327);
+            pictureBox7.Location = new Point(521, 245);
+            pictureBox7.Margin = new Padding(3, 2, 3, 2);
             pictureBox7.Name = "pictureBox7";
-            pictureBox7.Size = new Size(45, 44);
+            pictureBox7.Size = new Size(39, 33);
             pictureBox7.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox7.TabIndex = 48;
             pictureBox7.TabStop = false;
@@ -156,21 +218,24 @@
             // btnShowRoomAssegment
             // 
             btnShowRoomAssegment.BackColor = Color.AliceBlue;
-            btnShowRoomAssegment.Font = new Font("B Koodak", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 178);
+            btnShowRoomAssegment.Font = new Font("Microsoft Sans Serif", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 178);
             btnShowRoomAssegment.ForeColor = Color.Chocolate;
-            btnShowRoomAssegment.Location = new Point(190, 452);
+            btnShowRoomAssegment.Location = new Point(166, 339);
+            btnShowRoomAssegment.Margin = new Padding(3, 2, 3, 2);
             btnShowRoomAssegment.Name = "btnShowRoomAssegment";
-            btnShowRoomAssegment.Size = new Size(165, 40);
+            btnShowRoomAssegment.Size = new Size(144, 30);
             btnShowRoomAssegment.TabIndex = 47;
             btnShowRoomAssegment.Text = "مشاهده افراد داخل اتاق";
             btnShowRoomAssegment.UseVisualStyleBackColor = false;
+            btnShowRoomAssegment.Click += btnShowRoomAssegment_Click;
             // 
             // pictureBox6
             // 
             pictureBox6.Image = Properties.Resources.eye;
-            pictureBox6.Location = new Point(358, 450);
+            pictureBox6.Location = new Point(313, 338);
+            pictureBox6.Margin = new Padding(3, 2, 3, 2);
             pictureBox6.Name = "pictureBox6";
-            pictureBox6.Size = new Size(52, 50);
+            pictureBox6.Size = new Size(46, 38);
             pictureBox6.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox6.TabIndex = 46;
             pictureBox6.TabStop = false;
@@ -178,9 +243,10 @@
             // pictureBox2
             // 
             pictureBox2.Image = Properties.Resources.printer;
-            pictureBox2.Location = new Point(360, 331);
+            pictureBox2.Location = new Point(315, 248);
+            pictureBox2.Margin = new Padding(3, 2, 3, 2);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(43, 50);
+            pictureBox2.Size = new Size(38, 38);
             pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox2.TabIndex = 43;
             pictureBox2.TabStop = false;
@@ -188,11 +254,12 @@
             // btnPrint
             // 
             btnPrint.BackColor = Color.AliceBlue;
-            btnPrint.Font = new Font("B Koodak", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 178);
+            btnPrint.Font = new Font("Microsoft Sans Serif", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 178);
             btnPrint.ForeColor = Color.MediumOrchid;
-            btnPrint.Location = new Point(189, 331);
+            btnPrint.Location = new Point(165, 248);
+            btnPrint.Margin = new Padding(3, 2, 3, 2);
             btnPrint.Name = "btnPrint";
-            btnPrint.Size = new Size(166, 40);
+            btnPrint.Size = new Size(145, 30);
             btnPrint.TabIndex = 42;
             btnPrint.Text = "چاپ لیست اتاق ها";
             btnPrint.UseVisualStyleBackColor = false;
@@ -201,9 +268,10 @@
             // pictureBox4
             // 
             pictureBox4.Image = Properties.Resources.trash;
-            pictureBox4.Location = new Point(595, 448);
+            pictureBox4.Location = new Point(521, 336);
+            pictureBox4.Margin = new Padding(3, 2, 3, 2);
             pictureBox4.Name = "pictureBox4";
-            pictureBox4.Size = new Size(42, 50);
+            pictureBox4.Size = new Size(37, 38);
             pictureBox4.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox4.TabIndex = 41;
             pictureBox4.TabStop = false;
@@ -211,21 +279,24 @@
             // btnDelete
             // 
             btnDelete.BackColor = Color.AliceBlue;
-            btnDelete.Font = new Font("B Koodak", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 178);
+            btnDelete.Font = new Font("Microsoft Sans Serif", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 178);
             btnDelete.ForeColor = Color.Crimson;
-            btnDelete.Location = new Point(423, 452);
+            btnDelete.Location = new Point(370, 339);
+            btnDelete.Margin = new Padding(3, 2, 3, 2);
             btnDelete.Name = "btnDelete";
-            btnDelete.Size = new Size(166, 40);
+            btnDelete.Size = new Size(145, 30);
             btnDelete.TabIndex = 40;
             btnDelete.Text = "حذف اتاق انتخاب شده";
             btnDelete.UseVisualStyleBackColor = false;
+            btnDelete.Click += btnDelete_Click;
             // 
             // pictureBox3
             // 
             pictureBox3.Image = Properties.Resources.pen;
-            pictureBox3.Location = new Point(595, 389);
+            pictureBox3.Location = new Point(521, 292);
+            pictureBox3.Margin = new Padding(3, 2, 3, 2);
             pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(45, 42);
+            pictureBox3.Size = new Size(39, 32);
             pictureBox3.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox3.TabIndex = 39;
             pictureBox3.TabStop = false;
@@ -233,14 +304,16 @@
             // btnEdit
             // 
             btnEdit.BackColor = Color.AliceBlue;
-            btnEdit.Font = new Font("B Koodak", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 178);
+            btnEdit.Font = new Font("Microsoft Sans Serif", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 178);
             btnEdit.ForeColor = Color.Fuchsia;
-            btnEdit.Location = new Point(423, 391);
+            btnEdit.Location = new Point(370, 293);
+            btnEdit.Margin = new Padding(3, 2, 3, 2);
             btnEdit.Name = "btnEdit";
-            btnEdit.Size = new Size(166, 40);
+            btnEdit.Size = new Size(145, 30);
             btnEdit.TabIndex = 38;
             btnEdit.Text = "ویرایش اطلاعات اتاق";
             btnEdit.UseVisualStyleBackColor = false;
+            btnEdit.Click += btnEdit_Click;
             // 
             // stiRoomPrint
             // 
@@ -267,64 +340,11 @@
             stiRoomPrint.ScriptLanguage = Stimulsoft.Report.StiReportLanguageType.CSharp;
             stiRoomPrint.UseProgressInThread = false;
             // 
-            // Id
-            // 
-            Id.HeaderText = "Id";
-            Id.MinimumWidth = 6;
-            Id.Name = "Id";
-            Id.ReadOnly = true;
-            Id.Visible = false;
-            // 
-            // Number
-            // 
-            Number.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
-            Number.HeaderText = "شماره";
-            Number.MinimumWidth = 6;
-            Number.Name = "Number";
-            Number.ReadOnly = true;
-            Number.Width = 77;
-            // 
-            // FloorNumber
-            // 
-            FloorNumber.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
-            FloorNumber.HeaderText = "شماره طبقه";
-            FloorNumber.MinimumWidth = 6;
-            FloorNumber.Name = "FloorNumber";
-            FloorNumber.ReadOnly = true;
-            FloorNumber.Width = 115;
-            // 
-            // Capacity
-            // 
-            Capacity.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
-            Capacity.HeaderText = "ظرفیت";
-            Capacity.MinimumWidth = 6;
-            Capacity.Name = "Capacity";
-            Capacity.ReadOnly = true;
-            Capacity.Width = 83;
-            // 
-            // StudentCount
-            // 
-            StudentCount.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
-            StudentCount.HeaderText = "تعداد ساکنین";
-            StudentCount.MinimumWidth = 6;
-            StudentCount.Name = "StudentCount";
-            StudentCount.ReadOnly = true;
-            StudentCount.Width = 121;
-            // 
-            // CountOn
-            // 
-            CountOn.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
-            CountOn.HeaderText = "تاریخ ثبت";
-            CountOn.MinimumWidth = 6;
-            CountOn.Name = "CountOn";
-            CountOn.ReadOnly = true;
-            CountOn.Width = 96;
-            // 
             // frmRoom
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 548);
+            ClientSize = new Size(700, 411);
             Controls.Add(btnSetRoomAssegment);
             Controls.Add(pictureBox9);
             Controls.Add(btnSetRoom);
@@ -341,6 +361,7 @@
             Controls.Add(pictureBox1);
             Controls.Add(label1);
             Controls.Add(txtSearch);
+            Margin = new Padding(3, 2, 3, 2);
             MaximizeBox = false;
             Name = "frmRoom";
             StartPosition = FormStartPosition.CenterParent;

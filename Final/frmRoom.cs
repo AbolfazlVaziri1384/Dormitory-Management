@@ -115,5 +115,129 @@ namespace Final
             stiRoomPrint.RegData("DTRoom", dtRoom);
             stiRoomPrint.Show();
         }
+
+        private void btnSetRoom_Click(object sender, EventArgs e)
+        {
+            try
+            {
+
+                frmSetRoom frm = new frmSetRoom();
+                frm.UserId = UserID;
+                frm.BlockId = BlockId;
+                frm.ShowDialog();
+                db = new DormitoryDbContext();
+                RefreshRoomList(db.Rooms.ToList());
+                db.Dispose();
+            }
+            catch (Exception ex)
+            {
+                MessageBoxTool.msger(ex.ToString());
+            }
+
+        }
+
+        private void btnEdit_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (dgvRooms.Rows.Count == 0)
+                {
+                    return;
+                }
+                int id;
+                id = int.Parse(dgvRooms.CurrentRow.Cells[0].Value.ToString());
+                frmSetRoom frm = new frmSetRoom();
+                frm.EditRoomId = id;
+                frm.UserId = UserID;
+                frm.ShowDialog();
+                db = new DormitoryDbContext();
+                RefreshRoomList(db.Rooms.ToList());
+                db.Dispose();
+            }
+            catch (Exception ex)
+            {
+                MessageBoxTool.msger(ex.ToString());
+            }
+
+        }
+
+        private void btnSetRoomAssegment_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (dgvRooms.Rows.Count == 0)
+                {
+                    return;
+                }
+                long id;
+                id = int.Parse(dgvRooms.CurrentRow.Cells[0].Value.ToString());
+                frmSetRoomAssignment frm = new frmSetRoomAssignment();
+                frm.UserID = UserID;
+                frm.RoomId = id;
+                frm.ShowDialog();
+                db = new DormitoryDbContext();
+                RefreshRoomList(db.Rooms.ToList());
+                db.Dispose();
+            }
+            catch (Exception ex)
+            {
+                MessageBoxTool.msger(ex.ToString());
+            }
+        }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (dgvRooms.Rows.Count == 0)
+                {
+                    return;
+                }
+                int id;
+                id = int.Parse(dgvRooms.CurrentRow.Cells[0].Value.ToString());
+                if (id != 0)
+                {
+                    DialogResult result;
+                    result = MessageBoxTool.msgq("آیا از حذف مطمئن هستید ؟");
+                    if (result == DialogResult.Yes)
+                    {
+                        Models.Block.DeleteBlock(UserID, id);
+                        MessageBoxTool.msg();
+                        db = new DormitoryDbContext();
+                        RefreshRoomList(db.Rooms.ToList());
+                        db.Dispose();
+                    }
+                }
+
+            }
+            catch (Exception ex)
+            {
+                MessageBoxTool.msger(ex.ToString());
+            }
+        }
+
+        private void btnShowRoomAssegment_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (dgvRooms.Rows.Count == 0)
+                {
+                    return;
+                }
+                long id;
+                id = int.Parse(dgvRooms.CurrentRow.Cells[0].Value.ToString());
+                frmRoomAssignment frm = new frmRoomAssignment();
+                frm.UserID = UserID;
+                frm.RoomId = id;
+                frm.ShowDialog();
+                db = new DormitoryDbContext();
+                RefreshRoomList(db.Rooms.ToList());
+                db.Dispose();
+            }
+            catch (Exception ex)
+            {
+                MessageBoxTool.msger(ex.ToString());
+            }
+        }
     }
 }

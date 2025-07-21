@@ -380,7 +380,6 @@
             Controls.Add(pictureBox4);
             Controls.Add(btnDelete);
             MaximizeBox = false;
-            Name = "frmStudentAssets";
             StartPosition = FormStartPosition.CenterParent;
             Text = "لوازم دانشجو";
             Load += frmStudentAssets_Load;

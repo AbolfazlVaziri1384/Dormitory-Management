@@ -102,4 +102,23 @@ public partial class Dormitory
 
         return RoomAssigments;
     }
+    public static void DeleteDormitory(long UserDeletedId, long DormitoryId)
+    {
+        using DormitoryDbContext db = new DormitoryDbContext();
+        Models.Dormitory dormitory = Models.Dormitory.FindDormitoryById(DormitoryId);
+        db.Dormitories.Update(dormitory);
+        dormitory.IsDeleted = true;
+        dormitory.DeletedBy = UserDeletedId;
+        dormitory.DeletedOn = DateTime.Now;
+        db.SaveChanges();
+    }
+
+
+
+
+
+
+
+
+
 }

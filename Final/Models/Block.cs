@@ -38,6 +38,42 @@ public partial class Block
     public virtual ICollection<Role> Roles { get; set; } = new List<Role>();
 
     public virtual ICollection<Room> Rooms { get; set; } = new List<Room>();
+    public static void SetBlock(string Name, int FloorNumber,int RoomNumber,int Capacity, long DormitoryId,long UserId)
+    {
+        using DormitoryDbContext db = new DormitoryDbContext();
+        Block block = new Block();
+        block.Name = Name;
+        block.FloorNumber = FloorNumber;
+        block.RoomNumber = RoomNumber;
+        block.Capacity = Capacity;
+        block.DermitoryId = DormitoryId;
+        block.CreatBy = UserId;
+        block.CreatOn = DateTime.Now;
+
+        db.Blocks.Add(block);
+        db.SaveChanges();
+    }
+    public static void EditBlock(string Name, int FloorNumber, int RoomNumber, int Capacity, long DormitoryId, long UserId,long EditBlockId)
+    {
+        using DormitoryDbContext db = new DormitoryDbContext();
+        Block block = Block.FindBlockById(EditBlockId);
+        db.Blocks.Update(block);
+        block.Name = Name;
+        block.FloorNumber = FloorNumber;
+        block.RoomNumber = RoomNumber;
+        block.Capacity = Capacity;
+        block.DermitoryId = DormitoryId;
+        block.ModifiedBy = UserId;
+        block.ModifiedOn = DateTime.Now;
+
+
+        db.SaveChanges();
+    }
+    public static bool AnyBlock(string BlockName)
+    {
+        using DormitoryDbContext db = new DormitoryDbContext();
+        return db.Blocks.Any(i => i.Name == BlockName);
+    }
     public static string? FindBlockOwnerName(long BlockId)
     {
         using DormitoryDbContext db = new DormitoryDbContext();
@@ -53,6 +89,16 @@ public partial class Block
     {
         using DormitoryDbContext db = new DormitoryDbContext();
         return db.Blocks.Where(i => i.DermitoryId == DormitoryId).ToList();
+    }
+    public static void DeleteBlock(long UserDeletedId, long BlockId)
+    {
+        using DormitoryDbContext db = new DormitoryDbContext();
+        Models.Block Block = Models.Block.FindBlockById(BlockId);
+        db.Blocks.Update(Block);
+        Block.IsDeleted = true;
+        Block.DeletedBy = UserDeletedId;
+        Block.DeletedOn = DateTime.Now;
+        db.SaveChanges();
     }
 
 }
