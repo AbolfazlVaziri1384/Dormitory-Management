@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Final.Models;
 
 namespace Final
 {
@@ -16,5 +17,9 @@ namespace Final
         {
             InitializeComponent();
         }
+        public long UserID;
+        public long RoomAssetID;
+        public long EditTransferRoomAssetID = -1;
+        DormitoryDbContext db;
     }
 }

@@ -88,5 +88,12 @@ namespace Final
             frmRepairRoomAssetsRequest.UserID = UserID;
             frmRepairRoomAssetsRequest.ShowDialog();
         }
+
+        private void mnuFrmRoomAssets_Click(object sender, EventArgs e)
+        {
+            frmRoomAssets frmRoomAssets = new frmRoomAssets();
+            frmRoomAssets.UserID = UserID;
+            frmRoomAssets.ShowDialog();
+        }
     }
 }

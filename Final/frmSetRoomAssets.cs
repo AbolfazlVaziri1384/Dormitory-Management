@@ -16,5 +16,7 @@ namespace Final
         {
             InitializeComponent();
         }
+        public long UserID;
+        public long RoomAssetID = -1;
     }
 }

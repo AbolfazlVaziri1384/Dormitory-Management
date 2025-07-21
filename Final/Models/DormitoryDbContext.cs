@@ -128,6 +128,10 @@ public partial class DormitoryDbContext : DbContext
         {
             entity.Property(e => e.CreatOn).HasColumnType("datetime");
             entity.Property(e => e.ModifiedOn).HasColumnType("datetime");
+            entity.HasOne(d => d.User).WithMany(p => p.RoomAssets)
+                .HasForeignKey(d => d.CreatBy)
+                .OnDelete(DeleteBehavior.ClientSetNull)
+                .HasConstraintName("FK_RoomAssets_Users");
         });
 
         modelBuilder.Entity<RoomAssigment>(entity =>
