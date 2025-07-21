@@ -416,6 +416,7 @@
             Controls.Add(grpIdentityInfo);
             Controls.Add(grpPersonalInfo);
             Controls.Add(grpLoginInfo);
+            MaximizeBox = false;
             Name = "frmSetUser";
             StartPosition = FormStartPosition.CenterParent;
             Text = "ثبت کاربرد جدید";
