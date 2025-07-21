@@ -37,7 +37,7 @@
             mnufrmRepairRoomAssetsRequest = new ToolStripMenuItem();
             mnuFrmRoomAssets = new ToolStripMenuItem();
             mnuSetManager = new ToolStripMenuItem();
-            ثبتوسیلهجدبدToolStripMenuItem = new ToolStripMenuItem();
+            mnufrmSetRoomAssets = new ToolStripMenuItem();
             لیستوسایلتخصیصیافتهToolStripMenuItem = new ToolStripMenuItem();
             لیستتعویضلوازمدانشجوToolStripMenuItem = new ToolStripMenuItem();
             ثبتفردجدیدToolStripMenuItem = new ToolStripMenuItem();
@@ -77,7 +77,7 @@
             // 
             // HighMenu
             // 
-            HighMenu.DropDownItems.AddRange(new ToolStripItem[] { mnuFrmDormitory, mnuSetDormitory, mnufrmRepairRoomAssetsRequest, mnuFrmRoomAssets, mnuSetManager, ثبتوسیلهجدبدToolStripMenuItem, لیستوسایلتخصیصیافتهToolStripMenuItem, لیستتعویضلوازمدانشجوToolStripMenuItem, ثبتفردجدیدToolStripMenuItem });
+            HighMenu.DropDownItems.AddRange(new ToolStripItem[] { mnuFrmDormitory, mnuSetDormitory, mnufrmRepairRoomAssetsRequest, mnuFrmRoomAssets, mnuSetManager, mnufrmSetRoomAssets, لیستوسایلتخصیصیافتهToolStripMenuItem, لیستتعویضلوازمدانشجوToolStripMenuItem, ثبتفردجدیدToolStripMenuItem });
             HighMenu.Name = "HighMenu";
             HighMenu.Size = new Size(86, 24);
             HighMenu.Text = "امور اداری";
@@ -117,11 +117,12 @@
             mnuSetManager.Text = "ثبت نقش مدیر";
             mnuSetManager.Click += mnuSetManager_Click;
             // 
-            // ثبتوسیلهجدبدToolStripMenuItem
+            // mnufrmSetRoomAssets
             // 
-            ثبتوسیلهجدبدToolStripMenuItem.Name = "ثبتوسیلهجدبدToolStripMenuItem";
-            ثبتوسیلهجدبدToolStripMenuItem.Size = new Size(293, 26);
-            ثبتوسیلهجدبدToolStripMenuItem.Text = "ثبت وسیله جدبد";
+            mnufrmSetRoomAssets.Name = "mnufrmSetRoomAssets";
+            mnufrmSetRoomAssets.Size = new Size(293, 26);
+            mnufrmSetRoomAssets.Text = "ثبت لوازم خوابگاه جدید";
+            mnufrmSetRoomAssets.Click += mnufrmSetRoomAssets_Click;
             // 
             // لیستوسایلتخصیصیافتهToolStripMenuItem
             // 
@@ -362,7 +363,7 @@
         private ToolStripMenuItem mnuFrmRoomAssets;
         private ToolStripMenuItem mnuSetDormitory;
         private ToolStripMenuItem mnuSetManager;
-        private ToolStripMenuItem ثبتوسیلهجدبدToolStripMenuItem;
+        private ToolStripMenuItem mnufrmSetRoomAssets;
         private ToolStripMenuItem لیستوسایلتخصیصیافتهToolStripMenuItem;
         private ToolStripMenuItem لیستتعویضلوازمدانشجوToolStripMenuItem;
         private ToolStripMenuItem ثبتفردجدیدToolStripMenuItem;

@@ -3,12 +3,8 @@
   "WorkspaceRootPath": "D:\\UNIVERSITY\\PDF\\Advanced Programming\\NerdsProject\\Nerds_First_Project\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|d:\\university\\pdf\\advanced programming\\nerdsproject\\nerds_first_project\\final\\frmsetrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|solutionrelative:final\\frmsetrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|d:\\university\\pdf\\advanced programming\\nerdsproject\\nerds_first_project\\final\\frmsetrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|solutionrelative:final\\frmsetrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|d:\\university\\pdf\\advanced programming\\nerdsproject\\nerds_first_project\\final\\frmsetroomassets.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|solutionrelative:final\\frmsetroomassets.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|D:\\UNIVERSITY\\PDF\\Advanced Programming\\NerdsProject\\Nerds_First_Project\\final\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -17,6 +13,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|d:\\university\\pdf\\advanced programming\\nerdsproject\\nerds_first_project\\final\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|solutionrelative:final\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|d:\\university\\pdf\\advanced programming\\nerdsproject\\nerds_first_project\\final\\frmsetroomassets.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|solutionrelative:final\\frmsetroomassets.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -50,45 +50,45 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "frmSetRole.cs",
-              "DocumentMoniker": "D:\\UNIVERSITY\\PDF\\Advanced Programming\\NerdsProject\\Nerds_First_Project\\Final\\frmSetRole.cs",
-              "RelativeDocumentMoniker": "Final\\frmSetRole.cs",
-              "ToolTip": "D:\\UNIVERSITY\\PDF\\Advanced Programming\\NerdsProject\\Nerds_First_Project\\Final\\frmSetRole.cs",
-              "RelativeToolTip": "Final\\frmSetRole.cs",
-              "ViewState": "AgIAAEQAAAAAAAAAAAA1wFUAAAAMAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "frmSetRoomAssets.cs",
+              "DocumentMoniker": "D:\\UNIVERSITY\\PDF\\Advanced Programming\\NerdsProject\\Nerds_First_Project\\Final\\frmSetRoomAssets.cs",
+              "RelativeDocumentMoniker": "Final\\frmSetRoomAssets.cs",
+              "ToolTip": "D:\\UNIVERSITY\\PDF\\Advanced Programming\\NerdsProject\\Nerds_First_Project\\Final\\frmSetRoomAssets.cs",
+              "RelativeToolTip": "Final\\frmSetRoomAssets.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACsAAABsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-21T07:15:04.308Z",
+              "WhenOpened": "2025-07-21T07:46:19.75Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "frmSetRole.cs [Design]",
-              "DocumentMoniker": "D:\\UNIVERSITY\\PDF\\Advanced Programming\\NerdsProject\\Nerds_First_Project\\Final\\frmSetRole.cs",
-              "RelativeDocumentMoniker": "Final\\frmSetRole.cs",
-              "ToolTip": "D:\\UNIVERSITY\\PDF\\Advanced Programming\\NerdsProject\\Nerds_First_Project\\Final\\frmSetRole.cs [Design]",
-              "RelativeToolTip": "Final\\frmSetRole.cs [Design]",
+              "Title": "frmSetRoomAssets.cs [Design]",
+              "DocumentMoniker": "D:\\UNIVERSITY\\PDF\\Advanced Programming\\NerdsProject\\Nerds_First_Project\\Final\\frmSetRoomAssets.cs",
+              "RelativeDocumentMoniker": "Final\\frmSetRoomAssets.cs",
+              "ToolTip": "D:\\UNIVERSITY\\PDF\\Advanced Programming\\NerdsProject\\Nerds_First_Project\\Final\\frmSetRoomAssets.cs [Design]",
+              "RelativeToolTip": "Final\\frmSetRoomAssets.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-21T07:14:52.021Z",
+              "WhenOpened": "2025-07-21T07:28:28.9Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "frmMain.cs",
               "DocumentMoniker": "D:\\UNIVERSITY\\PDF\\Advanced Programming\\NerdsProject\\Nerds_First_Project\\Final\\frmMain.cs",
               "RelativeDocumentMoniker": "Final\\frmMain.cs",
               "ToolTip": "D:\\UNIVERSITY\\PDF\\Advanced Programming\\NerdsProject\\Nerds_First_Project\\Final\\frmMain.cs",
               "RelativeToolTip": "Final\\frmMain.cs",
-              "ViewState": "AgIAAFQAAAAAAAAAAAA6wGYAAAAWAAAAAAAAAA==",
+              "ViewState": "AgIAAFsAAAAAAAAAAAA6wGsAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-20T19:35:18.72Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "frmMain.cs [Design]",
               "DocumentMoniker": "D:\\UNIVERSITY\\PDF\\Advanced Programming\\NerdsProject\\Nerds_First_Project\\Final\\frmMain.cs",
               "RelativeDocumentMoniker": "Final\\frmMain.cs",

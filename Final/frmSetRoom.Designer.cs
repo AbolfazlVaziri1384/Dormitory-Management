@@ -84,6 +84,7 @@
             // numCapacity
             // 
             numCapacity.Location = new Point(408, 275);
+            numCapacity.Maximum = new decimal(new int[] { 10000, 0, 0, 0 });
             numCapacity.Name = "numCapacity";
             numCapacity.Size = new Size(125, 27);
             numCapacity.TabIndex = 13;
@@ -102,6 +103,7 @@
             // numNumber
             // 
             numNumber.Location = new Point(408, 218);
+            numNumber.Maximum = new decimal(new int[] { 1000, 0, 0, 0 });
             numNumber.Name = "numNumber";
             numNumber.Size = new Size(125, 27);
             numNumber.TabIndex = 14;
@@ -154,7 +156,9 @@
             Controls.Add(label2);
             Controls.Add(txtName);
             Controls.Add(label1);
+            MaximizeBox = false;
             Name = "frmSetRoom";
+            StartPosition = FormStartPosition.CenterParent;
             Text = "ثبت اتاق جدید";
             ((System.ComponentModel.ISupportInitialize)numFloorNumber).EndInit();
             ((System.ComponentModel.ISupportInitialize)numCapacity).EndInit();

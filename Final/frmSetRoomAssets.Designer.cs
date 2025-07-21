@@ -32,7 +32,7 @@
             txtAssetNumber = new TextBox();
             cmbPartNumber = new ComboBox();
             label2 = new Label();
-            comboBox1 = new ComboBox();
+            cmbStatus = new ComboBox();
             label3 = new Label();
             btnSave = new Button();
             pictureBox1 = new PictureBox();
@@ -46,12 +46,13 @@
             label1.ForeColor = Color.MediumBlue;
             label1.Location = new Point(537, 101);
             label1.Name = "label1";
-            label1.Size = new Size(86, 29);
+            label1.Size = new Size(89, 29);
             label1.TabIndex = 3;
-            label1.Text = ":شماره وسیله";
+            label1.Text = ":شماره سریال";
             // 
             // txtAssetNumber
             // 
+            txtAssetNumber.Enabled = false;
             txtAssetNumber.Location = new Point(382, 96);
             txtAssetNumber.Multiline = true;
             txtAssetNumber.Name = "txtAssetNumber";
@@ -61,6 +62,7 @@
             // cmbPartNumber
             // 
             cmbPartNumber.FormattingEnabled = true;
+            cmbPartNumber.Items.AddRange(new object[] { "یخچال", "میز", "صندلی", "تخت", "کمد" });
             cmbPartNumber.Location = new Point(382, 163);
             cmbPartNumber.Name = "cmbPartNumber";
             cmbPartNumber.Size = new Size(151, 28);
@@ -73,17 +75,19 @@
             label2.ForeColor = Color.MediumBlue;
             label2.Location = new Point(537, 163);
             label2.Name = "label2";
-            label2.Size = new Size(85, 29);
+            label2.RightToLeft = RightToLeft.Yes;
+            label2.Size = new Size(73, 29);
             label2.TabIndex = 5;
-            label2.Text = ":شماره بخش";
+            label2.Text = "نوع وسیله:";
             // 
-            // comboBox1
+            // cmbStatus
             // 
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point(382, 226);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(151, 28);
-            comboBox1.TabIndex = 6;
+            cmbStatus.FormattingEnabled = true;
+            cmbStatus.Items.AddRange(new object[] { "سالم", "معیوب", "در حال تعمیر" });
+            cmbStatus.Location = new Point(382, 226);
+            cmbStatus.Name = "cmbStatus";
+            cmbStatus.Size = new Size(151, 28);
+            cmbStatus.TabIndex = 6;
             // 
             // label3
             // 
@@ -107,6 +111,7 @@
             btnSave.TabIndex = 22;
             btnSave.Text = "ذخیره";
             btnSave.UseVisualStyleBackColor = false;
+            btnSave.Click += btnSave_Click;
             // 
             // pictureBox1
             // 
@@ -126,13 +131,16 @@
             Controls.Add(pictureBox1);
             Controls.Add(btnSave);
             Controls.Add(label3);
-            Controls.Add(comboBox1);
+            Controls.Add(cmbStatus);
             Controls.Add(label2);
             Controls.Add(cmbPartNumber);
             Controls.Add(label1);
             Controls.Add(txtAssetNumber);
+            MaximizeBox = false;
             Name = "frmSetRoomAssets";
+            StartPosition = FormStartPosition.CenterParent;
             Text = "ثبت وسیله جدید";
+            Load += frmSetRoomAssets_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
@@ -144,7 +152,7 @@
         private TextBox txtAssetNumber;
         private ComboBox cmbPartNumber;
         private Label label2;
-        private ComboBox comboBox1;
+        private ComboBox cmbStatus;
         private Label label3;
         private Button btnSave;
         private PictureBox pictureBox1;
