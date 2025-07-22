@@ -79,10 +79,10 @@
         <HeaderBand1 Ref="7" type="HeaderBand" isKey="true">
           <Brush>Transparent</Brush>
           <ClientRectangle>0,0.2,7.72,1.2</ClientRectangle>
-          <Components isList="true" count="2">
+          <Components isList="true" count="3">
             <Text1 Ref="8" type="Text" isKey="true">
               <Brush>Transparent</Brush>
-              <ClientRectangle>0,0.4,6.8,0.5</ClientRectangle>
+              <ClientRectangle>4.8,0.4,2,0.5</ClientRectangle>
               <Conditions isList="true" count="0" />
               <Font>B Koodak,22,Bold</Font>
               <Guid>5805bce025964d978d788fec5972404c</Guid>
@@ -91,7 +91,7 @@
               <Name>Text1</Name>
               <Page isRef="3" />
               <Parent isRef="7" />
-              <Text>{DTStudents.DormitoryName} لیست افراد خوابگاه</Text>
+              <Text>لیست افراد خوابگاه</Text>
               <TextBrush>Black</TextBrush>
               <Type>Expression</Type>
               <VertAlignment>Center</VertAlignment>
@@ -100,22 +100,38 @@
               <Brush>Transparent</Brush>
               <ClientRectangle>6.8,0.2,0.9,1</ClientRectangle>
               <Conditions isList="true" count="0" />
-              <Image>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</Image>
+              <Image>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</Image>
               <Name>Image1</Name>
               <Page isRef="3" />
               <Parent isRef="7" />
             </Image1>
+            <Text6 Ref="10" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,0.4,4.8,0.5</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Koodak,22,Bold</Font>
+              <Guid>2637f9e3979b4963bf71cd5aa02b9801</Guid>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text6</Name>
+              <Page isRef="3" />
+              <Parent isRef="7" />
+              <Text>{DTStudents.DormitoryName}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text6>
           </Components>
           <Conditions isList="true" count="0" />
           <Name>HeaderBand1</Name>
           <Page isRef="3" />
           <Parent isRef="3" />
         </HeaderBand1>
-        <HeaderDTStudents Ref="10" type="HeaderBand" isKey="true">
+        <HeaderDTStudents Ref="11" type="HeaderBand" isKey="true">
           <Brush>Transparent</Brush>
           <ClientRectangle>0,1.8,7.72,0.3</ClientRectangle>
           <Components isList="true" count="8">
-            <HeaderStimulsoft_Report_Wpf_NodeTreeViewItem_Header__Items_Count_0 Ref="11" type="Text" isKey="true">
+            <HeaderStimulsoft_Report_Wpf_NodeTreeViewItem_Header__Items_Count_0 Ref="12" type="Text" isKey="true">
               <Border>Bottom;Black;1;Solid;False;4;Black</Border>
               <Brush>Transparent</Brush>
               <ClientRectangle>6.3,0,0.7,0.3</ClientRectangle>
@@ -125,31 +141,31 @@
               <Margins>0,0,0,0</Margins>
               <Name>HeaderStimulsoft_Report_Wpf_NodeTreeViewItem_Header__Items_Count_0</Name>
               <Page isRef="3" />
-              <Parent isRef="10" />
+              <Parent isRef="11" />
               <Text>نام</Text>
               <TextBrush>Black</TextBrush>
               <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=False, Trimming=None, WordWrap=True, Angle=0, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
               <Type>Expression</Type>
               <VertAlignment>Center</VertAlignment>
             </HeaderStimulsoft_Report_Wpf_NodeTreeViewItem_Header__Items_Count_0>
-            <HeaderStimulsoft_Report_Wpf_NodeTreeViewItem_Header__Items_Count_02 Ref="12" type="Text" isKey="true">
+            <HeaderStimulsoft_Report_Wpf_NodeTreeViewItem_Header__Items_Count_02 Ref="13" type="Text" isKey="true">
               <Border>Bottom;Black;1;Solid;False;4;Black</Border>
               <Brush>Transparent</Brush>
               <ClientRectangle>5.5,0,0.8,0.3</ClientRectangle>
               <Conditions isList="true" count="0" />
-              <Font>B Titr,12,Bold</Font>
+              <Font>B Titr,11,Bold</Font>
               <HorAlignment>Center</HorAlignment>
               <Margins>0,0,0,0</Margins>
               <Name>HeaderStimulsoft_Report_Wpf_NodeTreeViewItem_Header__Items_Count_02</Name>
               <Page isRef="3" />
-              <Parent isRef="10" />
+              <Parent isRef="11" />
               <Text>نام خانوادگی</Text>
               <TextBrush>Black</TextBrush>
               <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=False, Trimming=None, WordWrap=True, Angle=0, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
               <Type>Expression</Type>
               <VertAlignment>Center</VertAlignment>
             </HeaderStimulsoft_Report_Wpf_NodeTreeViewItem_Header__Items_Count_02>
-            <HeaderStimulsoft_Report_Wpf_NodeTreeViewItem_Header__Items_Count_03 Ref="13" type="Text" isKey="true">
+            <HeaderStimulsoft_Report_Wpf_NodeTreeViewItem_Header__Items_Count_03 Ref="14" type="Text" isKey="true">
               <Border>Bottom;Black;1;Solid;False;4;Black</Border>
               <Brush>Transparent</Brush>
               <ClientRectangle>3.3,0,1.1,0.3</ClientRectangle>
@@ -159,14 +175,14 @@
               <Margins>0,0,0,0</Margins>
               <Name>HeaderStimulsoft_Report_Wpf_NodeTreeViewItem_Header__Items_Count_03</Name>
               <Page isRef="3" />
-              <Parent isRef="10" />
+              <Parent isRef="11" />
               <Text>شماره اتاق</Text>
               <TextBrush>Black</TextBrush>
               <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=False, Trimming=None, WordWrap=True, Angle=0, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
               <Type>Expression</Type>
               <VertAlignment>Center</VertAlignment>
             </HeaderStimulsoft_Report_Wpf_NodeTreeViewItem_Header__Items_Count_03>
-            <HeaderStimulsoft_Report_Wpf_NodeTreeViewItem_Header__Items_Count_04 Ref="14" type="Text" isKey="true">
+            <HeaderStimulsoft_Report_Wpf_NodeTreeViewItem_Header__Items_Count_04 Ref="15" type="Text" isKey="true">
               <Border>Bottom;Black;1;Solid;False;4;Black</Border>
               <Brush>Transparent</Brush>
               <ClientRectangle>2.2,0,1.1,0.3</ClientRectangle>
@@ -176,14 +192,14 @@
               <Margins>0,0,0,0</Margins>
               <Name>HeaderStimulsoft_Report_Wpf_NodeTreeViewItem_Header__Items_Count_04</Name>
               <Page isRef="3" />
-              <Parent isRef="10" />
+              <Parent isRef="11" />
               <Text>شماره طبقه اتاق</Text>
               <TextBrush>Black</TextBrush>
               <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=False, Trimming=None, WordWrap=True, Angle=0, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
               <Type>Expression</Type>
               <VertAlignment>Center</VertAlignment>
             </HeaderStimulsoft_Report_Wpf_NodeTreeViewItem_Header__Items_Count_04>
-            <HeaderStimulsoft_Report_Wpf_NodeTreeViewItem_Header__Items_Count_05 Ref="15" type="Text" isKey="true">
+            <HeaderStimulsoft_Report_Wpf_NodeTreeViewItem_Header__Items_Count_05 Ref="16" type="Text" isKey="true">
               <Border>Bottom;Black;1;Solid;False;4;Black</Border>
               <Brush>Transparent</Brush>
               <ClientRectangle>1.1,0,1.1,0.3</ClientRectangle>
@@ -193,14 +209,14 @@
               <Margins>0,0,0,0</Margins>
               <Name>HeaderStimulsoft_Report_Wpf_NodeTreeViewItem_Header__Items_Count_05</Name>
               <Page isRef="3" />
-              <Parent isRef="10" />
+              <Parent isRef="11" />
               <Text>نام بلوک</Text>
               <TextBrush>Black</TextBrush>
               <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=False, Trimming=None, WordWrap=True, Angle=0, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
               <Type>Expression</Type>
               <VertAlignment>Center</VertAlignment>
             </HeaderStimulsoft_Report_Wpf_NodeTreeViewItem_Header__Items_Count_05>
-            <HeaderStimulsoft_Report_Wpf_NodeTreeViewItem_Header__Items_Count_07 Ref="16" type="Text" isKey="true">
+            <HeaderStimulsoft_Report_Wpf_NodeTreeViewItem_Header__Items_Count_07 Ref="17" type="Text" isKey="true">
               <Border>Bottom;Black;1;Solid;False;4;Black</Border>
               <Brush>Transparent</Brush>
               <ClientRectangle>0,0,1.1,0.3</ClientRectangle>
@@ -210,14 +226,14 @@
               <Margins>0,0,0,0</Margins>
               <Name>HeaderStimulsoft_Report_Wpf_NodeTreeViewItem_Header__Items_Count_07</Name>
               <Page isRef="3" />
-              <Parent isRef="10" />
+              <Parent isRef="11" />
               <Text>تاریخ اسکان</Text>
               <TextBrush>Black</TextBrush>
               <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=False, Trimming=None, WordWrap=True, Angle=0, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
               <Type>Expression</Type>
               <VertAlignment>Center</VertAlignment>
             </HeaderStimulsoft_Report_Wpf_NodeTreeViewItem_Header__Items_Count_07>
-            <Text4 Ref="17" type="Text" isKey="true">
+            <Text4 Ref="18" type="Text" isKey="true">
               <Border>Bottom;Black;1;Solid;False;4;Black</Border>
               <Brush>Transparent</Brush>
               <ClientRectangle>7,0,0.7,0.3</ClientRectangle>
@@ -228,13 +244,13 @@
               <Margins>0,0,0,0</Margins>
               <Name>Text4</Name>
               <Page isRef="3" />
-              <Parent isRef="10" />
+              <Parent isRef="11" />
               <Text>ردیف</Text>
               <TextBrush>Black</TextBrush>
               <Type>Expression</Type>
               <VertAlignment>Center</VertAlignment>
             </Text4>
-            <HeaderStimulsoft_Report_Wpf_NodeTreeViewItem_Header__Items_Count_06 Ref="18" type="Text" isKey="true">
+            <HeaderStimulsoft_Report_Wpf_NodeTreeViewItem_Header__Items_Count_06 Ref="19" type="Text" isKey="true">
               <Border>Bottom;Black;1;Solid;False;4;Black</Border>
               <Brush>Transparent</Brush>
               <ClientRectangle>4.4,0,1.1,0.3</ClientRectangle>
@@ -244,7 +260,7 @@
               <Margins>0,0,0,0</Margins>
               <Name>HeaderStimulsoft_Report_Wpf_NodeTreeViewItem_Header__Items_Count_06</Name>
               <Page isRef="3" />
-              <Parent isRef="10" />
+              <Parent isRef="11" />
               <Text>شماره دانشجویی</Text>
               <TextBrush>Black</TextBrush>
               <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=False, Trimming=None, WordWrap=True, Angle=0, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
@@ -257,12 +273,12 @@
           <Page isRef="3" />
           <Parent isRef="3" />
         </HeaderDTStudents>
-        <DataDTStudents Ref="19" type="DataBand" isKey="true">
+        <DataDTStudents Ref="20" type="DataBand" isKey="true">
           <Brush>Transparent</Brush>
           <BusinessObjectGuid isNull="true" />
           <ClientRectangle>0,2.5,7.72,0.3</ClientRectangle>
           <Components isList="true" count="8">
-            <DataStimulsoft_Report_Wpf_NodeTreeViewItem_Header__Items_Count_0 Ref="20" type="Text" isKey="true">
+            <DataStimulsoft_Report_Wpf_NodeTreeViewItem_Header__Items_Count_0 Ref="21" type="Text" isKey="true">
               <Border>All;Black;1;Solid;False;4;Black</Border>
               <Brush>Transparent</Brush>
               <CanGrow>True</CanGrow>
@@ -273,13 +289,13 @@
               <Margins>0,0,0,0</Margins>
               <Name>DataStimulsoft_Report_Wpf_NodeTreeViewItem_Header__Items_Count_0</Name>
               <Page isRef="3" />
-              <Parent isRef="19" />
+              <Parent isRef="20" />
               <Text>{DTStudents.StudentFirstName}</Text>
               <TextBrush>Black</TextBrush>
               <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=False, Trimming=None, WordWrap=True, Angle=0, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
               <VertAlignment>Center</VertAlignment>
             </DataStimulsoft_Report_Wpf_NodeTreeViewItem_Header__Items_Count_0>
-            <DataStimulsoft_Report_Wpf_NodeTreeViewItem_Header__Items_Count_02 Ref="21" type="Text" isKey="true">
+            <DataStimulsoft_Report_Wpf_NodeTreeViewItem_Header__Items_Count_02 Ref="22" type="Text" isKey="true">
               <Border>All;Black;1;Solid;False;4;Black</Border>
               <Brush>Transparent</Brush>
               <CanGrow>True</CanGrow>
@@ -290,13 +306,13 @@
               <Margins>0,0,0,0</Margins>
               <Name>DataStimulsoft_Report_Wpf_NodeTreeViewItem_Header__Items_Count_02</Name>
               <Page isRef="3" />
-              <Parent isRef="19" />
+              <Parent isRef="20" />
               <Text>{DTStudents.StudentLastName}</Text>
               <TextBrush>Black</TextBrush>
               <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=False, Trimming=None, WordWrap=True, Angle=0, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
               <VertAlignment>Center</VertAlignment>
             </DataStimulsoft_Report_Wpf_NodeTreeViewItem_Header__Items_Count_02>
-            <DataStimulsoft_Report_Wpf_NodeTreeViewItem_Header__Items_Count_03 Ref="22" type="Text" isKey="true">
+            <DataStimulsoft_Report_Wpf_NodeTreeViewItem_Header__Items_Count_03 Ref="23" type="Text" isKey="true">
               <Border>All;Black;1;Solid;False;4;Black</Border>
               <Brush>Transparent</Brush>
               <CanGrow>True</CanGrow>
@@ -307,13 +323,13 @@
               <Margins>0,0,0,0</Margins>
               <Name>DataStimulsoft_Report_Wpf_NodeTreeViewItem_Header__Items_Count_03</Name>
               <Page isRef="3" />
-              <Parent isRef="19" />
+              <Parent isRef="20" />
               <Text>{DTStudents.RoomNumber}</Text>
               <TextBrush>Black</TextBrush>
               <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=False, Trimming=None, WordWrap=True, Angle=0, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
               <VertAlignment>Center</VertAlignment>
             </DataStimulsoft_Report_Wpf_NodeTreeViewItem_Header__Items_Count_03>
-            <DataStimulsoft_Report_Wpf_NodeTreeViewItem_Header__Items_Count_04 Ref="23" type="Text" isKey="true">
+            <DataStimulsoft_Report_Wpf_NodeTreeViewItem_Header__Items_Count_04 Ref="24" type="Text" isKey="true">
               <Border>All;Black;1;Solid;False;4;Black</Border>
               <Brush>Transparent</Brush>
               <CanGrow>True</CanGrow>
@@ -324,13 +340,13 @@
               <Margins>0,0,0,0</Margins>
               <Name>DataStimulsoft_Report_Wpf_NodeTreeViewItem_Header__Items_Count_04</Name>
               <Page isRef="3" />
-              <Parent isRef="19" />
+              <Parent isRef="20" />
               <Text>{DTStudents.RoomFloorNumber}</Text>
               <TextBrush>Black</TextBrush>
               <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=False, Trimming=None, WordWrap=True, Angle=0, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
               <VertAlignment>Center</VertAlignment>
             </DataStimulsoft_Report_Wpf_NodeTreeViewItem_Header__Items_Count_04>
-            <DataStimulsoft_Report_Wpf_NodeTreeViewItem_Header__Items_Count_05 Ref="24" type="Text" isKey="true">
+            <DataStimulsoft_Report_Wpf_NodeTreeViewItem_Header__Items_Count_05 Ref="25" type="Text" isKey="true">
               <Border>All;Black;1;Solid;False;4;Black</Border>
               <Brush>Transparent</Brush>
               <CanGrow>True</CanGrow>
@@ -341,13 +357,13 @@
               <Margins>0,0,0,0</Margins>
               <Name>DataStimulsoft_Report_Wpf_NodeTreeViewItem_Header__Items_Count_05</Name>
               <Page isRef="3" />
-              <Parent isRef="19" />
+              <Parent isRef="20" />
               <Text>{DTStudents.BlockName}</Text>
               <TextBrush>Black</TextBrush>
               <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=False, Trimming=None, WordWrap=True, Angle=0, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
               <VertAlignment>Center</VertAlignment>
             </DataStimulsoft_Report_Wpf_NodeTreeViewItem_Header__Items_Count_05>
-            <DataStimulsoft_Report_Wpf_NodeTreeViewItem_Header__Items_Count_07 Ref="25" type="Text" isKey="true">
+            <DataStimulsoft_Report_Wpf_NodeTreeViewItem_Header__Items_Count_07 Ref="26" type="Text" isKey="true">
               <Border>All;Black;1;Solid;False;4;Black</Border>
               <Brush>Transparent</Brush>
               <CanGrow>True</CanGrow>
@@ -358,13 +374,13 @@
               <Margins>0,0,0,0</Margins>
               <Name>DataStimulsoft_Report_Wpf_NodeTreeViewItem_Header__Items_Count_07</Name>
               <Page isRef="3" />
-              <Parent isRef="19" />
+              <Parent isRef="20" />
               <Text>{DTStudents.CreatOn}</Text>
               <TextBrush>Black</TextBrush>
               <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=False, Trimming=None, WordWrap=True, Angle=0, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
               <VertAlignment>Center</VertAlignment>
             </DataStimulsoft_Report_Wpf_NodeTreeViewItem_Header__Items_Count_07>
-            <Text5 Ref="26" type="Text" isKey="true">
+            <Text5 Ref="27" type="Text" isKey="true">
               <Border>All;Black;1;Solid;False;4;Black</Border>
               <Brush>Transparent</Brush>
               <ClientRectangle>7,0,0.7,0.3</ClientRectangle>
@@ -375,13 +391,13 @@
               <Margins>0,0,0,0</Margins>
               <Name>Text5</Name>
               <Page isRef="3" />
-              <Parent isRef="19" />
+              <Parent isRef="20" />
               <Text>{Line}</Text>
               <TextBrush>Black</TextBrush>
               <Type>Expression</Type>
               <VertAlignment>Center</VertAlignment>
             </Text5>
-            <DataStimulsoft_Report_Wpf_NodeTreeViewItem_Header__Items_Count_06 Ref="27" type="Text" isKey="true">
+            <DataStimulsoft_Report_Wpf_NodeTreeViewItem_Header__Items_Count_06 Ref="28" type="Text" isKey="true">
               <Border>All;Black;1;Solid;False;4;Black</Border>
               <Brush>Transparent</Brush>
               <CanGrow>True</CanGrow>
@@ -392,7 +408,7 @@
               <Margins>0,0,0,0</Margins>
               <Name>DataStimulsoft_Report_Wpf_NodeTreeViewItem_Header__Items_Count_06</Name>
               <Page isRef="3" />
-              <Parent isRef="19" />
+              <Parent isRef="20" />
               <Text>{DTStudents.StudentCode}</Text>
               <TextBrush>Black</TextBrush>
               <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=False, Trimming=None, WordWrap=True, Angle=0, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
@@ -416,13 +432,13 @@
       <PageWidth>8.5</PageWidth>
       <PaperSize>Letter</PaperSize>
       <Report isRef="0" />
-      <Watermark Ref="28" type="Stimulsoft.Report.Components.StiWatermark" isKey="true">
+      <Watermark Ref="29" type="Stimulsoft.Report.Components.StiWatermark" isKey="true">
         <Font>Arial,100</Font>
         <TextBrush>[50:0:0:0]</TextBrush>
       </Watermark>
     </Page1>
   </Pages>
-  <PrinterSettings Ref="29" type="Stimulsoft.Report.Print.StiPrinterSettings" isKey="true" />
+  <PrinterSettings Ref="30" type="Stimulsoft.Report.Print.StiPrinterSettings" isKey="true" />
   <ReferencedAssemblies isList="true" count="8">
     <value>System.Dll</value>
     <value>System.Drawing.Dll</value>
@@ -434,10 +450,10 @@
     <value>Stimulsoft.Report.Dll</value>
   </ReferencedAssemblies>
   <ReportAlias>Report</ReportAlias>
-  <ReportChanged>7/7/2025 7:57:14 PM</ReportChanged>
+  <ReportChanged>7/22/2025 1:25:43 PM</ReportChanged>
   <ReportCreated>6/13/2025 11:26:16 PM</ReportCreated>
-  <ReportFile>C:\Users\Asus\Desktop\Nerd\Nerds_First_Project\Final\bin\Debug\net8.0-windows\StudentsReport.mrt</ReportFile>
-  <ReportGuid>8eff0732028b49389037460bffa0bb9d</ReportGuid>
+  <ReportFile>D:\UNIVERSITY\PDF\Advanced Programming\NerdsProject\Nerds_First_Project\Final\bin\Debug\net8.0-windows\StudentsReport.mrt</ReportFile>
+  <ReportGuid>eefe9c77bdbb4ec8aae7fc3107cd5ef4</ReportGuid>
   <ReportName>Report</ReportName>
   <ReportUnit>Inches</ReportUnit>
   <ReportVersion>2014.3.0</ReportVersion>

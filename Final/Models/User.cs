@@ -81,7 +81,14 @@ public partial class User
     public static bool AnyUser(string UserName)
     {
         using DormitoryDbContext db = new DormitoryDbContext();
-        return db.Users.Any(i => i.UserName == UserName);
+        bool answer = db.Users.Any(i => i.UserName == UserName);
+        if (!answer) return answer;
+        else
+        {
+            var User = db.Users.Where(i => i.UserName == UserName).FirstOrDefault();
+            if (User.IsDeleted == false) return true;
+            else return false;
+        }
     }
     public static void ChangePassword(User user, string Password)
     {

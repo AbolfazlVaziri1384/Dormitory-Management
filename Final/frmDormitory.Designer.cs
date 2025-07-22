@@ -73,10 +73,9 @@
             // 
             // txtSearch
             // 
-            txtSearch.Location = new Point(215, 15);
-            txtSearch.Margin = new Padding(3, 2, 3, 2);
+            txtSearch.Location = new Point(246, 20);
             txtSearch.Name = "txtSearch";
-            txtSearch.Size = new Size(220, 23);
+            txtSearch.Size = new Size(251, 27);
             txtSearch.TabIndex = 0;
             txtSearch.TextChanged += txtSearch_TextChanged;
             // 
@@ -85,19 +84,18 @@
             label1.AutoSize = true;
             label1.Font = new Font("Microsoft Sans Serif", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 178);
             label1.ForeColor = Color.MediumBlue;
-            label1.Location = new Point(440, 16);
+            label1.Location = new Point(503, 21);
             label1.Name = "label1";
-            label1.Size = new Size(106, 17);
+            label1.Size = new Size(123, 20);
             label1.TabIndex = 1;
             label1.Text = ":جستجوی خوابگاه";
             // 
             // pictureBox1
             // 
             pictureBox1.Image = Properties.Resources.search;
-            pictureBox1.Location = new Point(536, 16);
-            pictureBox1.Margin = new Padding(3, 2, 3, 2);
+            pictureBox1.Location = new Point(622, 21);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(21, 22);
+            pictureBox1.Size = new Size(24, 29);
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox1.TabIndex = 2;
             pictureBox1.TabStop = false;
@@ -109,13 +107,12 @@
             dgvDormitory.BackgroundColor = Color.AliceBlue;
             dgvDormitory.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgvDormitory.Columns.AddRange(new DataGridViewColumn[] { Id, Name, Capacity, NowCapacity, Owner, DormitoryGender, Address });
-            dgvDormitory.Location = new Point(83, 55);
-            dgvDormitory.Margin = new Padding(3, 2, 3, 2);
+            dgvDormitory.Location = new Point(61, 73);
             dgvDormitory.Name = "dgvDormitory";
             dgvDormitory.ReadOnly = true;
             dgvDormitory.RightToLeft = RightToLeft.Yes;
             dgvDormitory.RowHeadersWidth = 51;
-            dgvDormitory.Size = new Size(561, 119);
+            dgvDormitory.Size = new Size(686, 159);
             dgvDormitory.TabIndex = 3;
             // 
             // Id
@@ -134,7 +131,7 @@
             Name.MinimumWidth = 6;
             Name.Name = "Name";
             Name.ReadOnly = true;
-            Name.Width = 46;
+            Name.Width = 56;
             // 
             // Capacity
             // 
@@ -143,7 +140,7 @@
             Capacity.MinimumWidth = 6;
             Capacity.Name = "Capacity";
             Capacity.ReadOnly = true;
-            Capacity.Width = 99;
+            Capacity.Width = 124;
             // 
             // NowCapacity
             // 
@@ -152,7 +149,7 @@
             NowCapacity.MinimumWidth = 6;
             NowCapacity.Name = "NowCapacity";
             NowCapacity.ReadOnly = true;
-            NowCapacity.Width = 97;
+            NowCapacity.Width = 122;
             // 
             // Owner
             // 
@@ -161,7 +158,7 @@
             Owner.MinimumWidth = 6;
             Owner.Name = "Owner";
             Owner.ReadOnly = true;
-            Owner.Width = 67;
+            Owner.Width = 83;
             // 
             // DormitoryGender
             // 
@@ -170,7 +167,7 @@
             DormitoryGender.MinimumWidth = 6;
             DormitoryGender.Name = "DormitoryGender";
             DormitoryGender.ReadOnly = true;
-            DormitoryGender.Width = 49;
+            DormitoryGender.Width = 60;
             // 
             // Address
             // 
@@ -179,15 +176,14 @@
             Address.MinimumWidth = 6;
             Address.Name = "Address";
             Address.ReadOnly = true;
-            Address.Width = 59;
+            Address.Width = 73;
             // 
             // pictureBox2
             // 
             pictureBox2.Image = Properties.Resources.printer;
-            pictureBox2.Location = new Point(612, 205);
-            pictureBox2.Margin = new Padding(3, 2, 3, 2);
+            pictureBox2.Location = new Point(699, 273);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(32, 28);
+            pictureBox2.Size = new Size(37, 37);
             pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox2.TabIndex = 10;
             pictureBox2.TabStop = false;
@@ -197,10 +193,9 @@
             btnStudentPrint.BackColor = Color.AliceBlue;
             btnStudentPrint.Font = new Font("Microsoft Sans Serif", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 178);
             btnStudentPrint.ForeColor = Color.MediumOrchid;
-            btnStudentPrint.Location = new Point(416, 205);
-            btnStudentPrint.Margin = new Padding(3, 2, 3, 2);
+            btnStudentPrint.Location = new Point(475, 273);
             btnStudentPrint.Name = "btnStudentPrint";
-            btnStudentPrint.Size = new Size(191, 28);
+            btnStudentPrint.Size = new Size(218, 37);
             btnStudentPrint.TabIndex = 11;
             btnStudentPrint.Text = "چاپ تاریخچه اسکان دانشجویان";
             btnStudentPrint.UseVisualStyleBackColor = false;
@@ -209,10 +204,9 @@
             // pictureBox3
             // 
             pictureBox3.Image = Properties.Resources.printer;
-            pictureBox3.Location = new Point(612, 246);
-            pictureBox3.Margin = new Padding(3, 2, 3, 2);
+            pictureBox3.Location = new Point(699, 328);
             pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(32, 28);
+            pictureBox3.Size = new Size(37, 37);
             pictureBox3.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox3.TabIndex = 12;
             pictureBox3.TabStop = false;
@@ -222,10 +216,9 @@
             btnPrint.BackColor = Color.AliceBlue;
             btnPrint.Font = new Font("Microsoft Sans Serif", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 178);
             btnPrint.ForeColor = Color.MediumOrchid;
-            btnPrint.Location = new Point(416, 246);
-            btnPrint.Margin = new Padding(3, 2, 3, 2);
+            btnPrint.Location = new Point(475, 328);
             btnPrint.Name = "btnPrint";
-            btnPrint.Size = new Size(191, 28);
+            btnPrint.Size = new Size(218, 37);
             btnPrint.TabIndex = 13;
             btnPrint.Text = "چاپ لیست خوابگاه ها";
             btnPrint.UseVisualStyleBackColor = false;
@@ -234,10 +227,9 @@
             // pictureBox4
             // 
             pictureBox4.Image = Properties.Resources.pen;
-            pictureBox4.Location = new Point(179, 205);
-            pictureBox4.Margin = new Padding(3, 2, 3, 2);
+            pictureBox4.Location = new Point(205, 273);
             pictureBox4.Name = "pictureBox4";
-            pictureBox4.Size = new Size(32, 28);
+            pictureBox4.Size = new Size(37, 37);
             pictureBox4.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox4.TabIndex = 14;
             pictureBox4.TabStop = false;
@@ -245,10 +237,9 @@
             // pictureBox5
             // 
             pictureBox5.Image = Properties.Resources.trash;
-            pictureBox5.Location = new Point(174, 246);
-            pictureBox5.Margin = new Padding(3, 2, 3, 2);
+            pictureBox5.Location = new Point(199, 328);
             pictureBox5.Name = "pictureBox5";
-            pictureBox5.Size = new Size(38, 28);
+            pictureBox5.Size = new Size(43, 37);
             pictureBox5.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox5.TabIndex = 15;
             pictureBox5.TabStop = false;
@@ -258,10 +249,9 @@
             btnEdit.BackColor = Color.AliceBlue;
             btnEdit.Font = new Font("Microsoft Sans Serif", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 178);
             btnEdit.ForeColor = Color.Orange;
-            btnEdit.Location = new Point(83, 205);
-            btnEdit.Margin = new Padding(3, 2, 3, 2);
+            btnEdit.Location = new Point(95, 273);
             btnEdit.Name = "btnEdit";
-            btnEdit.Size = new Size(91, 28);
+            btnEdit.Size = new Size(104, 37);
             btnEdit.TabIndex = 16;
             btnEdit.Text = "ویرایش";
             btnEdit.UseVisualStyleBackColor = false;
@@ -272,10 +262,9 @@
             btnDelete.BackColor = Color.AliceBlue;
             btnDelete.Font = new Font("Microsoft Sans Serif", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 178);
             btnDelete.ForeColor = Color.Crimson;
-            btnDelete.Location = new Point(83, 246);
-            btnDelete.Margin = new Padding(3, 2, 3, 2);
+            btnDelete.Location = new Point(95, 328);
             btnDelete.Name = "btnDelete";
-            btnDelete.Size = new Size(91, 28);
+            btnDelete.Size = new Size(104, 37);
             btnDelete.TabIndex = 17;
             btnDelete.Text = "حذف";
             btnDelete.UseVisualStyleBackColor = false;
@@ -284,10 +273,9 @@
             // pictureBox6
             // 
             pictureBox6.Image = Properties.Resources.pl;
-            pictureBox6.Location = new Point(351, 205);
-            pictureBox6.Margin = new Padding(3, 2, 3, 2);
+            pictureBox6.Location = new Point(401, 273);
             pictureBox6.Name = "pictureBox6";
-            pictureBox6.Size = new Size(38, 28);
+            pictureBox6.Size = new Size(43, 37);
             pictureBox6.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox6.TabIndex = 18;
             pictureBox6.TabStop = false;
@@ -297,10 +285,9 @@
             btnSetDormitory.BackColor = Color.AliceBlue;
             btnSetDormitory.Font = new Font("Microsoft Sans Serif", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 178);
             btnSetDormitory.ForeColor = Color.MediumSeaGreen;
-            btnSetDormitory.Location = new Point(242, 205);
-            btnSetDormitory.Margin = new Padding(3, 2, 3, 2);
+            btnSetDormitory.Location = new Point(277, 273);
             btnSetDormitory.Name = "btnSetDormitory";
-            btnSetDormitory.Size = new Size(103, 28);
+            btnSetDormitory.Size = new Size(118, 37);
             btnSetDormitory.TabIndex = 19;
             btnSetDormitory.Text = "ثبت خوابگاه";
             btnSetDormitory.UseVisualStyleBackColor = false;
@@ -309,10 +296,9 @@
             // pictureBox7
             // 
             pictureBox7.Image = Properties.Resources.pl;
-            pictureBox7.Location = new Point(351, 246);
-            pictureBox7.Margin = new Padding(3, 2, 3, 2);
+            pictureBox7.Location = new Point(401, 328);
             pictureBox7.Name = "pictureBox7";
-            pictureBox7.Size = new Size(38, 28);
+            pictureBox7.Size = new Size(43, 37);
             pictureBox7.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox7.TabIndex = 20;
             pictureBox7.TabStop = false;
@@ -322,10 +308,9 @@
             btnSetBlock.BackColor = Color.AliceBlue;
             btnSetBlock.Font = new Font("Microsoft Sans Serif", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 178);
             btnSetBlock.ForeColor = Color.MediumSeaGreen;
-            btnSetBlock.Location = new Point(242, 246);
-            btnSetBlock.Margin = new Padding(3, 2, 3, 2);
+            btnSetBlock.Location = new Point(277, 328);
             btnSetBlock.Name = "btnSetBlock";
-            btnSetBlock.Size = new Size(103, 28);
+            btnSetBlock.Size = new Size(118, 37);
             btnSetBlock.TabIndex = 21;
             btnSetBlock.Text = "ثبت بلوک";
             btnSetBlock.UseVisualStyleBackColor = false;
@@ -334,10 +319,9 @@
             // pictureBox8
             // 
             pictureBox8.Image = Properties.Resources.personal;
-            pictureBox8.Location = new Point(612, 287);
-            pictureBox8.Margin = new Padding(3, 2, 3, 2);
+            pictureBox8.Location = new Point(699, 383);
             pictureBox8.Name = "pictureBox8";
-            pictureBox8.Size = new Size(32, 26);
+            pictureBox8.Size = new Size(37, 35);
             pictureBox8.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox8.TabIndex = 22;
             pictureBox8.TabStop = false;
@@ -347,10 +331,9 @@
             btnAddOwner.BackColor = Color.AliceBlue;
             btnAddOwner.Font = new Font("Microsoft Sans Serif", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 178);
             btnAddOwner.ForeColor = Color.MediumSeaGreen;
-            btnAddOwner.Location = new Point(508, 285);
-            btnAddOwner.Margin = new Padding(3, 2, 3, 2);
+            btnAddOwner.Location = new Point(581, 380);
             btnAddOwner.Name = "btnAddOwner";
-            btnAddOwner.Size = new Size(99, 28);
+            btnAddOwner.Size = new Size(113, 37);
             btnAddOwner.TabIndex = 23;
             btnAddOwner.Text = "افزودن مسئول";
             btnAddOwner.UseVisualStyleBackColor = false;
@@ -361,10 +344,9 @@
             btnDeleteOwner.BackColor = Color.AliceBlue;
             btnDeleteOwner.Font = new Font("Microsoft Sans Serif", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 178);
             btnDeleteOwner.ForeColor = Color.Crimson;
-            btnDeleteOwner.Location = new Point(416, 285);
-            btnDeleteOwner.Margin = new Padding(3, 2, 3, 2);
+            btnDeleteOwner.Location = new Point(475, 380);
             btnDeleteOwner.Name = "btnDeleteOwner";
-            btnDeleteOwner.Size = new Size(92, 28);
+            btnDeleteOwner.Size = new Size(105, 37);
             btnDeleteOwner.TabIndex = 24;
             btnDeleteOwner.Text = "حذف مسئول";
             btnDeleteOwner.UseVisualStyleBackColor = false;
@@ -373,10 +355,9 @@
             // pictureBox9
             // 
             pictureBox9.Image = Properties.Resources.block;
-            pictureBox9.Location = new Point(349, 285);
-            pictureBox9.Margin = new Padding(3, 2, 3, 2);
+            pictureBox9.Location = new Point(399, 380);
             pictureBox9.Name = "pictureBox9";
-            pictureBox9.Size = new Size(38, 28);
+            pictureBox9.Size = new Size(43, 37);
             pictureBox9.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox9.TabIndex = 25;
             pictureBox9.TabStop = false;
@@ -386,10 +367,9 @@
             btnShowBlocks.BackColor = Color.AliceBlue;
             btnShowBlocks.Font = new Font("Microsoft Sans Serif", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 178);
             btnShowBlocks.ForeColor = Color.DeepPink;
-            btnShowBlocks.Location = new Point(242, 285);
-            btnShowBlocks.Margin = new Padding(3, 2, 3, 2);
+            btnShowBlocks.Location = new Point(277, 380);
             btnShowBlocks.Name = "btnShowBlocks";
-            btnShowBlocks.Size = new Size(102, 28);
+            btnShowBlocks.Size = new Size(117, 37);
             btnShowBlocks.TabIndex = 26;
             btnShowBlocks.Text = "نمایش بلوک‌ها";
             btnShowBlocks.UseVisualStyleBackColor = false;
@@ -400,10 +380,9 @@
             btnBackToMain.BackColor = Color.AliceBlue;
             btnBackToMain.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Bold, GraphicsUnit.Point, 178);
             btnBackToMain.ForeColor = Color.MediumBlue;
-            btnBackToMain.Location = new Point(10, 304);
-            btnBackToMain.Margin = new Padding(3, 2, 3, 2);
+            btnBackToMain.Location = new Point(11, 405);
             btnBackToMain.Name = "btnBackToMain";
-            btnBackToMain.Size = new Size(59, 25);
+            btnBackToMain.Size = new Size(67, 33);
             btnBackToMain.TabIndex = 27;
             btnBackToMain.Text = "بازگشت";
             btnBackToMain.UseVisualStyleBackColor = false;
@@ -461,9 +440,9 @@
             // 
             // frmDormitory
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(700, 338);
+            ClientSize = new Size(800, 451);
             Controls.Add(btnBackToMain);
             Controls.Add(btnShowBlocks);
             Controls.Add(pictureBox9);
@@ -486,7 +465,6 @@
             Controls.Add(pictureBox1);
             Controls.Add(label1);
             Controls.Add(txtSearch);
-            Margin = new Padding(3, 2, 3, 2);
             MaximizeBox = false;
             StartPosition = FormStartPosition.CenterParent;
             Text = "خوابگاه ها";

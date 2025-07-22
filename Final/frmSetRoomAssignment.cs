@@ -27,8 +27,7 @@ namespace Final
             if (RoomAssigmentEditId != -1)
             {
                 btnSave.Text = "ویرایش";
-                frmSetRoomAssignment frm = new frmSetRoomAssignment();
-                frm.Text = "ویرایش تخصیص اتاق";
+                this.Text = "ویرایش تخصیص اتاق";
             }
             db = new DormitoryDbContext();
             RefreshStudentsList(db.Users.ToList());
@@ -41,7 +40,7 @@ namespace Final
             {
                 //نباید مسئول خاصی باشه
                 //ادمین - مدیر - مسئول خوابگاه
-                if ((Models.Role.FindRole(item.Id) != (int)EnumTool.Role.Admin) || (Models.Role.FindRole(item.Id) != (int)EnumTool.Role.Manager) || (Models.Role.FindRole(item.Id) != (int)EnumTool.Role.DormitoryOwner))
+                if ((Models.Role.FindRole(item.Id) != (int)EnumTool.Role.Admin) && (Models.Role.FindRole(item.Id) != (int)EnumTool.Role.Manager) && (Models.Role.FindRole(item.Id) != (int)EnumTool.Role.DormitoryOwner))
                     //نباید قبلا بهش اتاقی داده باشیم
                     if ((!RoomAssigment.AnyRoomAssigment(item.Id)) && (item.IsDeleted == false))
                         //باید جنسیت با خوابگاه یکی باشه
@@ -62,6 +61,8 @@ namespace Final
         {
             try
             {
+                if (txtSearch.Text == null) return;
+
                 db = new DormitoryDbContext();
                 RefreshStudentsList((List<Models.User>)db.Users.Where(i => i.FirstName.Contains(txtSearch.Text.Trim()) ||
                                                    i.LastName.Contains(txtSearch.Text.Trim()) ||
@@ -88,7 +89,7 @@ namespace Final
                 if (RoomAssigmentEditId == -1)
                 {
                     RoomAssigment.SetRoomAssigment(id, RoomId, UserID);
-                    MessageBoxTool.msgr("تخصیص اتاف با موفقیت انجام شد");
+                    MessageBoxTool.msgr("تخصیص اتاق با موفقیت انجام شد");
                     Close();
                 }
                 else

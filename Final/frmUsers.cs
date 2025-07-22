@@ -54,6 +54,8 @@ namespace Final
         {
             try
             {
+                if (txtSearch.Text == null) return;
+
                 db = new DormitoryDbContext();
                 RefreshUsersList((List<Models.User>)db.Users.Where(i => i.FirstName.Contains(txtSearch.Text.Trim()) ||
                                                    i.LastName.Contains(txtSearch.Text.Trim()) ||
@@ -181,7 +183,7 @@ namespace Final
                                           item.Birthday,
                                           item.StuPerCode,
                                           item.NationalCode,
-                                          item.Phone,
+                                          $"0{item.Phone}",
                                          (item.IsActive == true) ? "فعال" : "غیر فعال",
                                           item.Address);
                     }

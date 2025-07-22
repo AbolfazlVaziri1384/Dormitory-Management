@@ -32,7 +32,7 @@ public partial class RoomAssigment
     public static bool AnyRoomAssigment(long StudentId)
     {
         using DormitoryDbContext db = new DormitoryDbContext();
-        return db.RoomAssigments.Any(i => i.StudentId == StudentId);
+        return db.RoomAssigments.Any(i => i.StudentId == StudentId && i.IsDeleted == false);
     }
     public static RoomAssigment? FindById(long RoomAssigmentId)
     {
@@ -54,6 +54,11 @@ public partial class RoomAssigment
         ra.CreatBy = UserID;
         ra.CreatOn = DateTime.Now;
         db.RoomAssigments.Add(ra);
+        //کم کردن از ظرفیت خوابگاه
+        var dormitory = Dormitory.FindDormitoryById(Block.FindBlockById(Room.FindRoomById(ra.RoomId).BlockId).DermitoryId);
+        db.Dormitories.Update(dormitory);
+        dormitory.NowCapacity++;
+
         db.SaveChanges();
     }
     public static void EditRoomAssigment(long RoomAssigmentEditId, long UserID, long StudentId)
@@ -74,5 +79,19 @@ public partial class RoomAssigment
     {
         using DormitoryDbContext db = new DormitoryDbContext();
         return db.RoomAssigments.Where(i => i.RoomId == RoomId).ToList();
+    }
+    public static void DeleteRoomAssignment(long UserDeletedId, long RoomAssignmentId)
+    {
+        using DormitoryDbContext db = new DormitoryDbContext();
+        Models.RoomAssigment ra = Models.RoomAssigment.FindById(RoomAssignmentId);
+        db.RoomAssigments.Update(ra);
+        ra.IsDeleted = true;
+        ra.DeletedBy = UserDeletedId;
+        ra.DeletedOn = DateTime.Now;
+        //ظرفیت خوابگاه
+        var dormitory = Dormitory.FindDormitoryById(Block.FindBlockById(Room.FindRoomById(ra.RoomId).BlockId).DermitoryId);
+        db.Dormitories.Update(dormitory);
+        dormitory.NowCapacity--;
+        db.SaveChanges();
     }
 }

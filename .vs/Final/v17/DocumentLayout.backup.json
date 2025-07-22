@@ -1,38 +1,50 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Administrator\\Nerds_final\\",
+  "WorkspaceRootPath": "D:\\UNIVERSITY\\PDF\\Advanced Programming\\NerdsProject\\Nerds_First_Project\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|c:\\users\\administrator\\nerds_final\\final\\frmsetblock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|solutionrelative:final\\frmsetblock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|d:\\university\\pdf\\advanced programming\\nerdsproject\\nerds_first_project\\final\\frmdormitory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|solutionrelative:final\\frmdormitory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|C:\\Users\\Administrator\\Nerds_final\\final\\frmsetblock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|solutionrelative:final\\frmsetblock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|d:\\university\\pdf\\advanced programming\\nerdsproject\\nerds_first_project\\final\\frmdormitory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|solutionrelative:final\\frmdormitory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|C:\\Users\\Administrator\\Nerds_final\\final\\frmstudentassets.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|solutionrelative:final\\frmstudentassets.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|d:\\university\\pdf\\advanced programming\\nerdsproject\\nerds_first_project\\final\\models\\dormitory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|solutionrelative:final\\models\\dormitory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|c:\\users\\administrator\\nerds_final\\final\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|solutionrelative:final\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|d:\\university\\pdf\\advanced programming\\nerdsproject\\nerds_first_project\\final\\frmsetroomassignment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|solutionrelative:final\\frmsetroomassignment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|C:\\Users\\Administrator\\Nerds_final\\final\\frmblock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|solutionrelative:final\\frmblock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|d:\\university\\pdf\\advanced programming\\nerdsproject\\nerds_first_project\\final\\models\\roomassigment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|solutionrelative:final\\models\\roomassigment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|c:\\users\\administrator\\nerds_final\\final\\frmstudentassets.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|solutionrelative:final\\frmstudentassets.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|d:\\university\\pdf\\advanced programming\\nerdsproject\\nerds_first_project\\final\\frmsetroomassignment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|solutionrelative:final\\frmsetroomassignment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|C:\\Users\\Administrator\\Nerds_final\\final\\aboutbox1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|solutionrelative:final\\aboutbox1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|d:\\university\\pdf\\advanced programming\\nerdsproject\\nerds_first_project\\final\\frmroomassignment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|solutionrelative:final\\frmroomassignment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|C:\\Users\\Administrator\\Nerds_final\\final\\frmsetdormitory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|solutionrelative:final\\frmsetdormitory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|d:\\university\\pdf\\advanced programming\\nerdsproject\\nerds_first_project\\final\\frmroomassignment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|solutionrelative:final\\frmroomassignment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|d:\\university\\pdf\\advanced programming\\nerdsproject\\nerds_first_project\\final\\frmroom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|solutionrelative:final\\frmroom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|d:\\university\\pdf\\advanced programming\\nerdsproject\\nerds_first_project\\final\\models\\room.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|solutionrelative:final\\models\\room.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|d:\\university\\pdf\\advanced programming\\nerdsproject\\nerds_first_project\\final\\frmroom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|solutionrelative:final\\frmroom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,7 +54,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 15,
           "Children": [
             {
               "$type": "Bookmark",
@@ -54,112 +66,154 @@
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:131:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "frmSetBlock.cs",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Nerds_final\\Final\\frmSetBlock.cs",
-              "RelativeDocumentMoniker": "Final\\frmSetBlock.cs",
-              "ToolTip": "C:\\Users\\Administrator\\Nerds_final\\Final\\frmSetBlock.cs",
-              "RelativeToolTip": "Final\\frmSetBlock.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAnwCkAAAARAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "Dormitory.cs",
+              "DocumentMoniker": "D:\\UNIVERSITY\\PDF\\Advanced Programming\\NerdsProject\\Nerds_First_Project\\Final\\Models\\Dormitory.cs",
+              "RelativeDocumentMoniker": "Final\\Models\\Dormitory.cs",
+              "ToolTip": "D:\\UNIVERSITY\\PDF\\Advanced Programming\\NerdsProject\\Nerds_First_Project\\Final\\Models\\Dormitory.cs",
+              "RelativeToolTip": "Final\\Models\\Dormitory.cs",
+              "ViewState": "AgIAAGAAAAAAAAAAAAAMwHIAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-21T17:08:22.585Z",
+              "WhenOpened": "2025-07-22T09:40:31.981Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "frmSetRoomAssignment.cs",
+              "DocumentMoniker": "D:\\UNIVERSITY\\PDF\\Advanced Programming\\NerdsProject\\Nerds_First_Project\\Final\\frmSetRoomAssignment.cs",
+              "RelativeDocumentMoniker": "Final\\frmSetRoomAssignment.cs",
+              "ToolTip": "D:\\UNIVERSITY\\PDF\\Advanced Programming\\NerdsProject\\Nerds_First_Project\\Final\\frmSetRoomAssignment.cs",
+              "RelativeToolTip": "Final\\frmSetRoomAssignment.cs",
+              "ViewState": "AgIAADoAAAAAAAAAAAAMwCwAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-22T09:35:34.078Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "frmSetRoomAssignment.cs [Design]",
+              "DocumentMoniker": "D:\\UNIVERSITY\\PDF\\Advanced Programming\\NerdsProject\\Nerds_First_Project\\Final\\frmSetRoomAssignment.cs",
+              "RelativeDocumentMoniker": "Final\\frmSetRoomAssignment.cs",
+              "ToolTip": "D:\\UNIVERSITY\\PDF\\Advanced Programming\\NerdsProject\\Nerds_First_Project\\Final\\frmSetRoomAssignment.cs [Design]",
+              "RelativeToolTip": "Final\\frmSetRoomAssignment.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-22T09:35:33.022Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Room.cs",
+              "DocumentMoniker": "D:\\UNIVERSITY\\PDF\\Advanced Programming\\NerdsProject\\Nerds_First_Project\\Final\\Models\\Room.cs",
+              "RelativeDocumentMoniker": "Final\\Models\\Room.cs",
+              "ToolTip": "D:\\UNIVERSITY\\PDF\\Advanced Programming\\NerdsProject\\Nerds_First_Project\\Final\\Models\\Room.cs",
+              "RelativeToolTip": "Final\\Models\\Room.cs",
+              "ViewState": "AgIAADQAAAAAAAAAAIA3wEkAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-22T09:29:32.487Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "frmRoom.cs",
+              "DocumentMoniker": "D:\\UNIVERSITY\\PDF\\Advanced Programming\\NerdsProject\\Nerds_First_Project\\Final\\frmRoom.cs",
+              "RelativeDocumentMoniker": "Final\\frmRoom.cs",
+              "ToolTip": "D:\\UNIVERSITY\\PDF\\Advanced Programming\\NerdsProject\\Nerds_First_Project\\Final\\frmRoom.cs",
+              "RelativeToolTip": "Final\\frmRoom.cs",
+              "ViewState": "AgIAANkAAAAAAAAAAAAMwOgAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-22T09:29:28.41Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "frmRoom.cs [Design]",
+              "DocumentMoniker": "D:\\UNIVERSITY\\PDF\\Advanced Programming\\NerdsProject\\Nerds_First_Project\\Final\\frmRoom.cs",
+              "RelativeDocumentMoniker": "Final\\frmRoom.cs",
+              "ToolTip": "D:\\UNIVERSITY\\PDF\\Advanced Programming\\NerdsProject\\Nerds_First_Project\\Final\\frmRoom.cs [Design]",
+              "RelativeToolTip": "Final\\frmRoom.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-22T09:29:18.178Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "frmRoomAssignment.cs",
+              "DocumentMoniker": "D:\\UNIVERSITY\\PDF\\Advanced Programming\\NerdsProject\\Nerds_First_Project\\Final\\frmRoomAssignment.cs",
+              "RelativeDocumentMoniker": "Final\\frmRoomAssignment.cs",
+              "ToolTip": "D:\\UNIVERSITY\\PDF\\Advanced Programming\\NerdsProject\\Nerds_First_Project\\Final\\frmRoomAssignment.cs",
+              "RelativeToolTip": "Final\\frmRoomAssignment.cs",
+              "ViewState": "AgIAACwAAAAAAAAAAAArwBkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-22T09:18:33.828Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "frmRoomAssignment.cs [Design]",
+              "DocumentMoniker": "D:\\UNIVERSITY\\PDF\\Advanced Programming\\NerdsProject\\Nerds_First_Project\\Final\\frmRoomAssignment.cs",
+              "RelativeDocumentMoniker": "Final\\frmRoomAssignment.cs",
+              "ToolTip": "D:\\UNIVERSITY\\PDF\\Advanced Programming\\NerdsProject\\Nerds_First_Project\\Final\\frmRoomAssignment.cs [Design]",
+              "RelativeToolTip": "Final\\frmRoomAssignment.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-22T09:18:32.176Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "RoomAssigment.cs",
+              "DocumentMoniker": "D:\\UNIVERSITY\\PDF\\Advanced Programming\\NerdsProject\\Nerds_First_Project\\Final\\Models\\RoomAssigment.cs",
+              "RelativeDocumentMoniker": "Final\\Models\\RoomAssigment.cs",
+              "ToolTip": "D:\\UNIVERSITY\\PDF\\Advanced Programming\\NerdsProject\\Nerds_First_Project\\Final\\Models\\RoomAssigment.cs",
+              "RelativeToolTip": "Final\\Models\\RoomAssigment.cs",
+              "ViewState": "AgIAAD0AAAAAAAAAAIAywE0AAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-22T09:14:52.106Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "frmSetBlock.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Nerds_final\\Final\\frmSetBlock.cs",
-              "RelativeDocumentMoniker": "Final\\frmSetBlock.cs",
-              "ToolTip": "C:\\Users\\Administrator\\Nerds_final\\Final\\frmSetBlock.cs [Design]",
-              "RelativeToolTip": "Final\\frmSetBlock.cs [Design]",
+              "Title": "frmDormitory.cs",
+              "DocumentMoniker": "D:\\UNIVERSITY\\PDF\\Advanced Programming\\NerdsProject\\Nerds_First_Project\\Final\\frmDormitory.cs",
+              "RelativeDocumentMoniker": "Final\\frmDormitory.cs",
+              "ToolTip": "D:\\UNIVERSITY\\PDF\\Advanced Programming\\NerdsProject\\Nerds_First_Project\\Final\\frmDormitory.cs",
+              "RelativeToolTip": "Final\\frmDormitory.cs",
+              "ViewState": "AgIAAI0AAAAAAAAAAAAgwJIAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-21T16:56:10.772Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "frmStudentAssets.cs",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Nerds_final\\Final\\frmStudentAssets.cs",
-              "RelativeDocumentMoniker": "Final\\frmStudentAssets.cs",
-              "ToolTip": "C:\\Users\\Administrator\\Nerds_final\\Final\\frmStudentAssets.cs",
-              "RelativeToolTip": "Final\\frmStudentAssets.cs",
-              "ViewState": "AgIAAEcAAAAAAAAAAAAIwFUAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-21T16:52:38.767Z",
+              "WhenOpened": "2025-07-22T09:13:26.639Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "frmStudentAssets.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Nerds_final\\Final\\frmStudentAssets.cs",
-              "RelativeDocumentMoniker": "Final\\frmStudentAssets.cs",
-              "ToolTip": "C:\\Users\\Administrator\\Nerds_final\\Final\\frmStudentAssets.cs [Design]",
-              "RelativeToolTip": "Final\\frmStudentAssets.cs [Design]",
+              "DocumentIndex": 0,
+              "Title": "frmDormitory.cs [Design]",
+              "DocumentMoniker": "D:\\UNIVERSITY\\PDF\\Advanced Programming\\NerdsProject\\Nerds_First_Project\\Final\\frmDormitory.cs",
+              "RelativeDocumentMoniker": "Final\\frmDormitory.cs",
+              "ToolTip": "D:\\UNIVERSITY\\PDF\\Advanced Programming\\NerdsProject\\Nerds_First_Project\\Final\\frmDormitory.cs [Design]",
+              "RelativeToolTip": "Final\\frmDormitory.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-21T16:52:36.015Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "User.cs",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Nerds_final\\Final\\Models\\User.cs",
-              "RelativeDocumentMoniker": "Final\\Models\\User.cs",
-              "ToolTip": "C:\\Users\\Administrator\\Nerds_final\\Final\\Models\\User.cs",
-              "RelativeToolTip": "Final\\Models\\User.cs",
-              "ViewState": "AgIAAGgAAAAAAAAAAAAgwFAAAAAvAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-21T16:52:03.729Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "frmBlock.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Nerds_final\\Final\\frmBlock.cs",
-              "RelativeDocumentMoniker": "Final\\frmBlock.cs",
-              "ToolTip": "C:\\Users\\Administrator\\Nerds_final\\Final\\frmBlock.cs [Design]",
-              "RelativeToolTip": "Final\\frmBlock.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-21T16:51:41.067Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "AboutBox1.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Nerds_final\\Final\\AboutBox1.cs",
-              "RelativeDocumentMoniker": "Final\\AboutBox1.cs",
-              "ToolTip": "C:\\Users\\Administrator\\Nerds_final\\Final\\AboutBox1.cs [Design]",
-              "RelativeToolTip": "Final\\AboutBox1.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-21T16:51:27.886Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "frmSetDormitory.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Nerds_final\\Final\\frmSetDormitory.cs",
-              "RelativeDocumentMoniker": "Final\\frmSetDormitory.cs",
-              "ToolTip": "C:\\Users\\Administrator\\Nerds_final\\Final\\frmSetDormitory.cs [Design]",
-              "RelativeToolTip": "Final\\frmSetDormitory.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-21T15:04:32.478Z"
+              "WhenOpened": "2025-07-22T09:13:22.106Z",
+              "EditorCaption": " [Design]"
             }
           ]
         }

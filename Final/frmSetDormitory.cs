@@ -29,37 +29,37 @@ namespace Final
         {
             try
             {
-                bool Istrue = CheckTool.DormitoryField(txtName.Text, txtAddress.Text, Convert.ToInt32(numCapacity.Value));
+                bool Istrue;
                 if (DormitoryEditId == -1)
                 {
+                    Istrue = CheckTool.DormitorySetField(txtName.Text, txtAddress.Text, Convert.ToInt32(numCapacity.Value));
                     if (Istrue == true)
                     {
                         int Dormitorygender = 1;
                         if (radWoman.Checked == true) Dormitorygender = 0;
                         if (radFamily.Checked == true) Dormitorygender = 2;
                         Dormitory.SetDormitory(txtName.Text, txtAddress.Text, Convert.ToInt32(numCapacity.Value), UserID, Dormitorygender);
-                        MessageBoxTool.msgr("کاربر جدید با موفقیت ثبت شد");
+                        MessageBoxTool.msgr("خوابگاه جدید با موفقیت ثبت شد");
                         Close();
                     }
-                    else
+                }
+                else
+                {
+                    Istrue = CheckTool.DormitoryEditField(txtName.Text, txtAddress.Text, Convert.ToInt32(numCapacity.Value));
+                    if (Istrue == true)
                     {
-                        if (Istrue == true)
+                        DialogResult result;
+                        result = MessageBoxTool.msgq("آیا از ویرایش مطمئن هستید؟");
+                        if (result == DialogResult.Yes)
                         {
-                            DialogResult result;
-                            result = MessageBoxTool.msgq("آیا از ویرایش مطمئن هستید؟");
-                            if (result == DialogResult.Yes)
-                            {
-                                int Dormitorygender = 1;
-                                if (radWoman.Checked == true) Dormitorygender = 0;
-                                if (radFamily.Checked == true) Dormitorygender = 2;
-                                Dormitory.EditDormitory(DormitoryEditId, UserID, txtName.Text, txtAddress.Text, Convert.ToInt32(numCapacity.Value), Dormitorygender);
-                                MessageBoxTool.msgr("کابر با موفقیت ویرایش شد");
-                                Close();
-                            }
+                            int Dormitorygender = 1;
+                            if (radWoman.Checked == true) Dormitorygender = 0;
+                            if (radFamily.Checked == true) Dormitorygender = 2;
+                            Dormitory.EditDormitory(DormitoryEditId, UserID, txtName.Text, txtAddress.Text, Convert.ToInt32(numCapacity.Value), Dormitorygender);
+                            MessageBoxTool.msgr("خوابگاه با موفقیت ویرایش شد");
+                            Close();
                         }
                     }
-
-
                 }
             }
             catch (Exception ex)
@@ -74,8 +74,7 @@ namespace Final
             if (DormitoryEditId != -1)
             {
                 btnSave.Text = "ویرایش";
-                frmSetDormitory frm = new frmSetDormitory();
-                frm.Text = "صفحه ویرایش خوابگاه";
+                this.Text = "صفحه ویرایش خوابگاه";
                 Dormitory? EditDormitory = Dormitory.FindDormitoryById(DormitoryEditId);
                 txtName.Text = EditDormitory.Name;
                 txtAddress.Text = EditDormitory.Address;

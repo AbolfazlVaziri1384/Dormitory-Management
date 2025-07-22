@@ -59,14 +59,13 @@ namespace Final
         {
             Models.User? Owner = Models.Role.FindDormitoryOwner(DormitoryId);
             Models.Dormitory? dormitory = Models.Dormitory.FindDormitoryById(DormitoryId);
-            frmBlock frmBlock = new frmBlock();
             if (Owner != null)
             {
                 string name = User.GetFullName(Owner);
-                frmBlock.Text = string.Format("{1} بلوک های خوابگاه {0} با مدیریت", dormitory.Name, name);
+                this.Text = string.Format("بلوک های خوابگاه {0} با مدیریت " + "{1}", dormitory.Name, name);
             }
             else
-                frmBlock.Text = string.Format("!بلوک های خوابگاه {0} بدون مدیر", dormitory.Name);
+                this.Text = string.Format("!بلوک های خوابگاه {0} بدون مدیر", dormitory.Name);
 
             db = new DormitoryDbContext();
             RefreshBlockList(db.Blocks.ToList());

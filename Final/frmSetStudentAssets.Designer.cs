@@ -107,6 +107,7 @@
             btnSave.TabIndex = 20;
             btnSave.Text = "ذخیره";
             btnSave.UseVisualStyleBackColor = false;
+            btnSave.Click += btnSave_Click;
             // 
             // frmSetStudentAssets
             // 

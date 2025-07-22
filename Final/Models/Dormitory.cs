@@ -49,7 +49,14 @@ public partial class Dormitory
     public static bool AnyDormitory(string DormitoryName)
     {
         using DormitoryDbContext db = new DormitoryDbContext();
-        return db.Dormitories.Any(i => i.Name == DormitoryName);
+        bool answer = db.Dormitories.Any(i => i.Name == DormitoryName);
+        if (!answer) return answer;
+        else
+        {
+            var Dormitory = db.Dormitories.Where(i => i.Name == DormitoryName).FirstOrDefault();
+            if (Dormitory.IsDeleted == false) return true;
+            else return false;
+        }
     }
     public static void SetDormitory(string Name, string Address, int Capacity, long UserId, int DormitoryGender)
     {
@@ -85,8 +92,14 @@ public partial class Dormitory
     public static string? FindDormitoryOwnerName(long DormitoryId)
     {
         using DormitoryDbContext db = new DormitoryDbContext();
-        var user = User.FindUserById(db.Roles.Where(i => i.DermitoryId == DormitoryId).FirstOrDefault().Id);
-        return (user?.FirstName + " " + user?.LastName) ?? "";
+        var USER = db.Roles.Where(i => i.DermitoryId == DormitoryId).FirstOrDefault();
+        User? _user = null;
+        if (USER != null)
+        {
+            _user = User.FindUserById(USER.UserId);
+        }
+        if (_user == null) return "";
+        else return User.GetFullName(_user);
     }
     public static List<RoomAssigment>? FindStudents(long DormitoryId)
     {
@@ -97,7 +110,10 @@ public partial class Dormitory
         foreach (Block b in blocks)
             foreach (Room r in Room.FindByBlockId(b.Id))
                 foreach (RoomAssigment rs in RoomAssigment.FindByRoomId(r.Id))
-                    RoomAssigments.Add(rs);
+                {
+                    if (rs.IsDeleted == false)
+                        RoomAssigments.Add(rs);
+                }
 
 
         return RoomAssigments;

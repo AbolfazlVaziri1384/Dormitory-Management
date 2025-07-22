@@ -59,8 +59,7 @@ namespace Final
             if (RoomAssetID != -1)
             {
                 btnSave.Text = "ویرایش";
-                frmSetRoomAssets frm = new frmSetRoomAssets();
-                frm.Text = "صفحه ویرایش";
+                this.Text = "صفحه ویرایش";
                 RoomAsset ra = RoomAsset.FindRoomAssetById(RoomAssetID);
                 txtAssetNumber.Text = ra.AssetNumber.ToString();
                 switch (ra.PartNumber)

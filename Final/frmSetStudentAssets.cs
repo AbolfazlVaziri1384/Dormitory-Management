@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Final.Models;
+using Final.Tools;
 
 namespace Final
 {
@@ -17,10 +19,32 @@ namespace Final
             InitializeComponent();
         }
         public long UserID;
-        public long RoomAssetID = -1;
         private void frmSetStudentAssets_Load(object sender, EventArgs e)
         {
+            lblGuid.Text = Serial();
+        }
+        private string Serial()
+        {
+            DateTime now = DateTime.Now;
+            return $"{now:yyyyMMddHHmmss}";
+        }
 
+        private void btnSave_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                bool Istrue = CheckTool.StudentAssetField(txtName.Text, txtDiscription.Text);
+                if (Istrue == true)
+                {
+                    StudentAsset.SetStudentAsset(txtName.Text, lblGuid.Text, UserID, txtDiscription.Text);
+                    MessageBoxTool.msgr("وسیله جدید با موفقیت ثبت شد");
+                    Close();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBoxTool.msger(ex.Message);
+            }
         }
     }
 }

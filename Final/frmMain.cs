@@ -51,6 +51,7 @@ namespace Final
             else if (role != (int)EnumTool.Role.Admin)
             {
                 mnuSetManager.Visible = false;
+                mnuFrmManagers.Visible = false;
             }
             lblFullName.Text = User.GetFullName(User.FindUserById(UserID));
             lblLogin.Text = User.FindUserById(UserID).PreviousLogin.ToHDateTime();
@@ -142,6 +143,31 @@ namespace Final
             frmUsers frmUsers = new frmUsers();
             frmUsers.UserID = UserID;
             frmUsers.ShowDialog();
+        }
+
+        private void mnuFrmSetUser_Click(object sender, EventArgs e)
+        {
+            frmSetUser frmsetUser = new frmSetUser();
+            frmsetUser.UserEditId = UserID;
+            frmsetUser.UserId = UserID;
+            frmsetUser.ShowDialog();
+            lblFullName.Text = User.GetFullName(User.FindUserById(UserID));
+        }
+
+        private void mnuFrmEditUser_Click(object sender, EventArgs e)
+        {
+            frmSetUser frmsetUser = new frmSetUser();
+            frmsetUser.UserEditId = UserID;
+            frmsetUser.UserId = UserID;
+            frmsetUser.ShowDialog();
+            lblFullName.Text = User.GetFullName(User.FindUserById(UserID));
+        }
+
+        private void mnuFrmManagers_Click(object sender, EventArgs e)
+        {
+            frmManagers frmManagers = new frmManagers();
+            frmManagers.UserID = UserID;
+            frmManagers.ShowDialog();
         }
     }
 }

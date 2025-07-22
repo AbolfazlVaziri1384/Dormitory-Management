@@ -26,7 +26,7 @@ namespace Final
         {
             try
             {
-                bool Istrue = CheckTool.RoomField( (int)numFloorNumber.Value, (int)numNumber.Value, (int)numCapacity.Value);
+                bool Istrue = CheckTool.RoomField((int)numFloorNumber.Value, (int)numNumber.Value, (int)numCapacity.Value);
                 if (EditRoomId == -1)
                 {
                     if (Istrue == true)
@@ -44,7 +44,7 @@ namespace Final
                         result = MessageBoxTool.msgq("آیا از ویرایش مطمئن هستید؟");
                         if (result == DialogResult.Yes)
                         {
-                            Room.EditRoom( (int)numFloorNumber.Value, (int)numNumber.Value, (int)numCapacity.Value, UserId, EditRoomId);
+                            Room.EditRoom((int)numFloorNumber.Value, (int)numNumber.Value, (int)numCapacity.Value, UserId, EditRoomId);
                             MessageBoxTool.msgr("اتاق با موفقیت ویرایش شد");
                             Close();
                         }
@@ -54,6 +54,19 @@ namespace Final
             catch (Exception ex)
             {
                 MessageBoxTool.msger(ex.Message);
+            }
+        }
+
+        private void frmSetRoom_Load(object sender, EventArgs e)
+        {
+            if (EditRoomId != -1)
+            {
+                btnSave.Text = "ویرایش";
+                this.Text = "صفحه ویرایش";
+                Room? EditRoom = Room.FindRoomById(EditRoomId);
+                numFloorNumber.Value = EditRoom.FloorNumber;
+                numCapacity.Value = EditRoom.Capacity;
+                numNumber.Value = EditRoom.Number;
             }
         }
     }

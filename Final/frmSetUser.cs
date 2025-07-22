@@ -18,7 +18,7 @@ namespace Final
         {
             InitializeComponent();
         }
-        public int UserEditId = -1;
+        public long UserEditId = -1;
         public long UserId = -1;
         private void chkShowPassword_CheckedChanged(object sender, EventArgs e)
         {
@@ -34,8 +34,7 @@ namespace Final
             if (UserEditId != -1)
             {
                 btnSave.Text = "ویرایش";
-                frmSetUser frm = new frmSetUser();
-                frm.Text = "صفحه ویرایش";
+                this.Text = "صفحه ویرایش";
                 User? EditUser = User.FindUserById(UserEditId);
                 txtFirstName.Text = EditUser.FirstName;
                 txtLastName.Text = EditUser.LastName;
@@ -58,11 +57,17 @@ namespace Final
             bool show = chkShowPassword.Checked;
             txtPassword.UseSystemPasswordChar = !show;
             txtConfirmPassword.UseSystemPasswordChar = !show;
-            // اگر فردی بخواهد تازه ثبت نام کند یا کسی بخواهد تغییری ایجاد کند
-            if (UserId != -1)
+            // اگر فردی بخواهد تغییری ایجاد کند
+            if (UserId != -1 && UserEditId != -1)
             {
                 grpLoginInfo.Enabled = false;
                 txtUserName.UseSystemPasswordChar = !show;
+            }
+            //اگر خودم بخواهم اطلاعات خودم را تغییر بدهم
+            if (UserId == UserEditId)
+            {
+                grpLoginInfo.Enabled = true;
+                txtUserName.UseSystemPasswordChar = show;
             }
         }
 
@@ -80,9 +85,10 @@ namespace Final
         {
             try
             {
-                bool Istrue = CheckTool.UserField(txtFirstName.Text, txtLastName.Text, txtUserName.Text, txtPassword.Text, txtConfirmPassword.Text, txtAddress.Text, Convert.ToInt64(numNationalCode.Value), Convert.ToInt64(numStu_Per_Code.Value), Convert.ToInt64(numPhone.Value), mskBirthDay.Text.ToString());
+                bool Istrue;
                 if (UserEditId == -1)
                 {
+                    Istrue = CheckTool.UserSetField(txtFirstName.Text, txtLastName.Text, txtUserName.Text, txtPassword.Text, txtConfirmPassword.Text, txtAddress.Text, Convert.ToInt64(numNationalCode.Value), Convert.ToInt64(numStu_Per_Code.Value), Convert.ToInt64(numPhone.Value), mskBirthDay.Text.ToString()); ;
                     if (Istrue == true)
                     {
                         User.SetUser(txtFirstName.Text, txtLastName.Text, txtUserName.Text, txtPassword.Text, txtAddress.Text, Convert.ToInt64(numNationalCode.Value), Convert.ToInt64(numStu_Per_Code.Value), Convert.ToInt64(numPhone.Value), mskBirthDay.Text.ToString(), radMen.Checked);
@@ -92,6 +98,7 @@ namespace Final
                 }
                 else
                 {
+                    Istrue = CheckTool.UserEditField(txtFirstName.Text, txtLastName.Text, txtUserName.Text, txtPassword.Text, txtConfirmPassword.Text, txtAddress.Text, Convert.ToInt64(numNationalCode.Value), Convert.ToInt64(numStu_Per_Code.Value), Convert.ToInt64(numPhone.Value), mskBirthDay.Text.ToString()); ;
                     if (Istrue == true)
                     {
                         DialogResult result;

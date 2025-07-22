@@ -25,6 +25,8 @@ namespace Final
         {
             try
             {
+                if (txtSearch.Text == null) return;
+
                 db = new DormitoryDbContext();
                 RefreshDormitoryList((List<Models.Dormitory>)db.Dormitories.Where(i => i.Name.Contains(txtSearch.Text.Trim())).ToList());
                 db.Dispose();
@@ -127,11 +129,6 @@ namespace Final
 
         private void btnStudentPrint_Click(object sender, EventArgs e)
         {
-            if (dgvDormitory.Rows.Count == 0)
-            {
-                MessageBoxTool.msger("لیست خوابگاه ها خالی است");
-                return;
-            }
             long id;
             id = long.Parse(dgvDormitory.CurrentRow.Cells[0].Value.ToString());
             List<RoomAssigment> RoomAssigments = new List<RoomAssigment>();
@@ -149,9 +146,9 @@ namespace Final
 
             foreach (var row in RoomAssigments)
             {
-                var user = User.FindUserById(row.Id);
-                var room = Room.FindRoomById(row.Id);
-                var block = Block.FindBlockById(row.Id);
+                var user = User.FindUserById(row.StudentId);
+                var room = Room.FindRoomById(row.RoomId);
+                var block = Block.FindBlockById(room.BlockId);
                 dtStudent.Rows.Add(
                     user.FirstName.ToString(),
                     user.LastName.ToString(),

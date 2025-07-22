@@ -28,25 +28,27 @@ namespace Final
         {
             try
             {
-                bool Istrue = CheckTool.BlockField(txtName.Text ,(int)numFloorNumber.Value,(int)numeRoomNumber.Value,(int)numCapacity.Value);
+                bool Istrue;
                 if (EditBlockID == -1)
                 {
+                    Istrue = CheckTool.BlockSetField(txtName.Text, (int)numFloorNumber.Value, (int)numeRoomNumber.Value, (int)numCapacity.Value);
                     if (Istrue == true)
                     {
-                        Block.SetBlock(txtName.Text, (int)numFloorNumber.Value, (int)numeRoomNumber.Value, (int)numCapacity.Value, DormitoryID,UserID);
+                        Block.SetBlock(txtName.Text, (int)numFloorNumber.Value, (int)numeRoomNumber.Value, (int)numCapacity.Value, DormitoryID, UserID);
                         MessageBoxTool.msgr("بلوک جدید با موفقیت ثبت شد");
                         Close();
                     }
                 }
                 else
                 {
+                    Istrue = CheckTool.BlockEditField(txtName.Text, (int)numFloorNumber.Value, (int)numeRoomNumber.Value, (int)numCapacity.Value);
                     if (Istrue == true)
                     {
                         DialogResult result;
                         result = MessageBoxTool.msgq("آیا از ویرایش مطمئن هستید؟");
                         if (result == DialogResult.Yes)
                         {
-                            Block.EditBlock(txtName.Text, (int)numFloorNumber.Value, (int)numeRoomNumber.Value, (int)numCapacity.Value, DormitoryID, UserID,EditBlockID);
+                            Block.EditBlock(txtName.Text, (int)numFloorNumber.Value, (int)numeRoomNumber.Value, (int)numCapacity.Value, UserID, EditBlockID);
                             MessageBoxTool.msgr("بلوک با موفقیت ویرایش شد");
                             Close();
                         }
@@ -60,6 +62,19 @@ namespace Final
 
         }
 
+        private void frmSetBlock_Load(object sender, EventArgs e)
+        {
+            if (EditBlockID != -1)
+            {
+                btnSave.Text = "ویرایش";
+                this.Text = "صفحه ویرایش";
+                Block? EditBlock = Block.FindBlockById(EditBlockID);
+                txtName.Text = EditBlock.Name;
+                numFloorNumber.Value = EditBlock.FloorNumber;
+                numCapacity.Value = EditBlock.Capacity;
+                numeRoomNumber.Value = EditBlock.RoomNumber;
+            }
+        }
     }
 }
     

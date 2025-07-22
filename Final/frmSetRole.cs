@@ -68,6 +68,8 @@ namespace Final
         {
             try
             {
+                if (txtSearch.Text == null) return;
+
                 db = new DormitoryDbContext();
                 RefreshUsersList((List<Models.User>)db.Users.Where(i => i.FirstName.Contains(txtSearch.Text.Trim()) ||
                                                    i.LastName.Contains(txtSearch.Text.Trim()) ||

@@ -37,4 +37,15 @@ public partial class StudentAsset
         asset.TransferDate = DateTime.Now;
         db.SaveChanges();
     }
+    public static void SetStudentAsset(string Name , string Guid , long UserId , string Discription)
+    {
+        using DormitoryDbContext db = new DormitoryDbContext();
+        StudentAsset studentAsset = new StudentAsset();
+        studentAsset.Name = Name;
+        studentAsset.Guid = Guid;
+        studentAsset.StudentId = UserId;
+        studentAsset.Discription = Discription;
+        db.StudentAssets.Add(studentAsset);
+        db.SaveChanges();
+    }
 }

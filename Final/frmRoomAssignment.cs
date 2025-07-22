@@ -23,17 +23,16 @@ namespace Final
         DormitoryDbContext db;
         private void frmRoomAssignment_Load(object sender, EventArgs e)
         {
-            frmRoomAssignment frmRoomAssigment = new frmRoomAssignment();
 
             Models.Room? room = Models.Room.FindRoomById(RoomId);
             Models.Block? block = Models.Block.FindBlockById(room.BlockId);
             Models.Dormitory? dormitory = Models.Dormitory.FindDormitoryById(block.DermitoryId);
-            frmRoomAssigment.Text = string.Format("{1} افراد اتاق شماره {0} در طبقه", room.Number, room.FloorNumber);
+            this.Text = string.Format("{1} افراد اتاق شماره {0} در طبقه", room.Number, room.FloorNumber);
             lblBlock.Text = block.Name;
             lblDormitory.Text = dormitory.Name;
 
             Models.User? BlockOwner = Models.Role.FindBlockOwner(room.BlockId);
-            Models.User? DormitoryOwner = Models.Role.FindBlockOwner(Models.Block.FindBlockById(room.BlockId).DermitoryId);
+            Models.User? DormitoryOwner = Models.Role.FindDormitoryOwner(Models.Block.FindBlockById(room.BlockId).DermitoryId);
 
             if (BlockOwner != null)
             {
@@ -63,7 +62,7 @@ namespace Final
 
                 if ((item.RoomId == RoomId) && (item.IsDeleted == false))
                 {
-                    Models.User user = User.FindUserById(item.Id);
+                    Models.User user = User.FindUserById(item.StudentId);
                     string name = User.GetFullName(user);
 
                     dgvStudents.Rows.Add(item.Id.ToString(),
@@ -135,7 +134,7 @@ namespace Final
                     result = MessageBoxTool.msgq("آیا از حذف مطمئن هستید ؟");
                     if (result == DialogResult.Yes)
                     {
-                        Models.Block.DeleteBlock(UserID, id);
+                        Models.RoomAssigment.DeleteRoomAssignment(UserID, id);
                         MessageBoxTool.msg();
                         db = new DormitoryDbContext();
                         RefreshRoomAssigmentList(db.RoomAssigments.ToList());
@@ -155,15 +154,14 @@ namespace Final
         {
             try
             {
-                if (dgvStudents.Rows.Count == 0)
+                if (Room.FindRoomById(RoomId).Capacity == Room.StudentCount(RoomId))
                 {
+                    MessageBoxTool.msger("ظرفیت پر است");
                     return;
                 }
-                long id;
-                id = int.Parse(dgvStudents.CurrentRow.Cells[0].Value.ToString());
                 frmSetRoomAssignment frm = new frmSetRoomAssignment();
                 frm.UserID = UserID;
-                frm.RoomId = id;
+                frm.RoomId = RoomId;
                 frm.ShowDialog();
                 db = new DormitoryDbContext();
                 RefreshRoomAssigmentList(db.RoomAssigments.ToList());

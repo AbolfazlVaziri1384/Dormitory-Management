@@ -34,14 +34,20 @@ public partial class Role
     public static User? FindDormitoryOwner(long DormitoryId)
     {
         using DormitoryDbContext db = new DormitoryDbContext();
-        User? user = User.FindUserById(db.Roles.FirstOrDefault(i => i.DermitoryId == DormitoryId).UserId);
-        return user ?? null;
+        Role? role = db.Roles.FirstOrDefault(i => i.DermitoryId == DormitoryId);
+        User? user;
+        if (role == null) user = null;
+        else user = User.FindUserById(role.UserId);
+        return user;
     }
     public static User? FindBlockOwner(long BlockId)
     {
         using DormitoryDbContext db = new DormitoryDbContext();
-        User? user = User.FindUserById(db.Roles.FirstOrDefault(i => i.BlockId == BlockId).UserId);
-        return user ?? null;
+        Role? role = db.Roles.FirstOrDefault(i => i.BlockId == BlockId);
+        User? user;
+        if (role == null) user = null;
+        else user = User.FindUserById(role.UserId);
+        return user;
     }
     public static bool AnyRole(long UserId)
     {
@@ -59,7 +65,7 @@ public partial class Role
             role.Role1 = 1;
             role.DermitoryId = null;
             role.BlockId = null;
-            role.CreatBy = UserId;
+            role.CreatBy = CreatBy;
             role.CreatOn = DateTime.Now;
         }
         //مسئول بلوک
@@ -69,7 +75,7 @@ public partial class Role
             role.Role1 = 3;
             role.DermitoryId = null;
             role.BlockId = Dor_Blo_Id;
-            role.CreatBy = UserId;
+            role.CreatBy = CreatBy;
             role.CreatOn = DateTime.Now;
         }
         //مسئول خوابگاه
@@ -79,7 +85,7 @@ public partial class Role
             role.Role1 = 2;
             role.DermitoryId = Dor_Blo_Id;
             role.BlockId = null;
-            role.CreatBy = UserId;
+            role.CreatBy = CreatBy;
             role.CreatOn = DateTime.Now;
         }
         db.Roles.Add(role);
@@ -99,6 +105,13 @@ public partial class Role
         return role ?? null;
 
     }
+    public static Role findByUserId(long UserId)
+    {
+        using DormitoryDbContext db = new DormitoryDbContext();
+        var role = db.Roles.Where(r => r.UserId == UserId).FirstOrDefault();
+        return role ?? null;
+
+    }
 
     public static void DeleteRole(long DormitoryId)
     {
@@ -111,6 +124,13 @@ public partial class Role
     {
         using DormitoryDbContext db = new DormitoryDbContext();
         Models.Role role = Models.Role.findByBlockId(BlockId);
+        db.Roles.Remove(role);
+        db.SaveChanges();
+    }
+    public static void DeleteManagerRole(long UserId)
+    {
+        using DormitoryDbContext db = new DormitoryDbContext();
+        Models.Role role = Models.Role.findByUserId(UserId);
         db.Roles.Remove(role);
         db.SaveChanges();
     }

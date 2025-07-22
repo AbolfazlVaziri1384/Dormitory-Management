@@ -53,7 +53,7 @@ public partial class Block
         db.Blocks.Add(block);
         db.SaveChanges();
     }
-    public static void EditBlock(string Name, int FloorNumber, int RoomNumber, int Capacity, long DormitoryId, long UserId,long EditBlockId)
+    public static void EditBlock(string Name, int FloorNumber, int RoomNumber, int Capacity, long UserId,long EditBlockId)
     {
         using DormitoryDbContext db = new DormitoryDbContext();
         Block block = Block.FindBlockById(EditBlockId);
@@ -62,7 +62,6 @@ public partial class Block
         block.FloorNumber = FloorNumber;
         block.RoomNumber = RoomNumber;
         block.Capacity = Capacity;
-        block.DermitoryId = DormitoryId;
         block.ModifiedBy = UserId;
         block.ModifiedOn = DateTime.Now;
 
@@ -72,13 +71,26 @@ public partial class Block
     public static bool AnyBlock(string BlockName)
     {
         using DormitoryDbContext db = new DormitoryDbContext();
-        return db.Blocks.Any(i => i.Name == BlockName);
+        bool answer = db.Blocks.Any(i => i.Name == BlockName);
+        if (!answer) return answer;
+        else
+        {
+            var Block = db.Blocks.Where(i => i.Name == BlockName).FirstOrDefault();
+            if (Block.IsDeleted == false) return true;
+            else return false;
+        }
     }
     public static string? FindBlockOwnerName(long BlockId)
     {
         using DormitoryDbContext db = new DormitoryDbContext();
-        var user = User.FindUserById(db.Roles.Where(i => i.BlockId == BlockId).FirstOrDefault().UserId);
-        return (user?.FirstName + " " + user?.LastName) ?? "";
+        var USER = db.Roles.Where(i => i.BlockId == BlockId).FirstOrDefault();
+        User? _user = null;
+        if (USER != null)
+        {
+            _user = User.FindUserById(USER.UserId);
+        }
+        if (_user == null) return "";
+        else return User.GetFullName(_user);
     }
     public static Block? FindBlockById(long BlockId)
     {

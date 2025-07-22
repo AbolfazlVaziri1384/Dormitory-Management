@@ -64,6 +64,8 @@ namespace Final
         {
             try
             {
+                if (txtSearch.Text == null) return;
+
                 db = new DormitoryDbContext();
                 RefreshRoomAssetsList((List<Models.RoomAsset>)db.RoomAssets.Where(i => i.PartNumber.ToString().Contains(txtSearch.Text.Trim()) ||
                                                                                   i.AssetNumber.ToString().Contains(txtSearch.Text.Trim())).ToList());

@@ -62,6 +62,8 @@ namespace Final
         {
             try
             {
+                if (txtSearch.Text == null) return;
+
                 db = new DormitoryDbContext();
                 RefreshRequestsList((List<Models.Repair>)db.Repairs.Where(i => i.Guid.ToString().Contains(txtSearch.Text.Trim())).ToList());
                 db.Dispose();

@@ -28,8 +28,7 @@ namespace Final
             if (EditTransferRoomAssetID != -1)
             {
                 btnSave.Text = "ویرایش";
-                frmSetTransferRoomAssetHistory frm = new frmSetTransferRoomAssetHistory();
-                frm.Text = "ویرایش تخصیص وسایل";
+                this.Text = "ویرایش تخصیص وسایل";
             }
 
             db = new DormitoryDbContext();
@@ -165,6 +164,8 @@ namespace Final
         {
             try
             {
+                if (txtSearch.Text == null) return;
+
                 db = new DormitoryDbContext();
                 if (RoomAsset.FindRoomAssetById(RoomAssetID).PartNumber == 1)
                     RefreshRoomList((List<Models.Room>)db.Rooms.Where(i => i.Number.ToString().Contains(txtSearch.Text.Trim()) ||

@@ -32,14 +32,13 @@ namespace Final
             Models.User? Owner = Models.Role.FindBlockOwner(BlockId);
             Models.Block? block = Models.Block.FindBlockById(BlockId);
             Models.Dormitory? dormitory = Models.Dormitory.FindDormitoryById(block.DermitoryId);
-            frmRoom frmRoom = new frmRoom();
             if (Owner != null)
             {
                 string name = User.GetFullName(Owner);
-                frmRoom.Text = string.Format("{اتاق های بلوک {0} از خوابگاه {1} با مدیریت {2", block.Name, dormitory.Name, name);
+                this.Text = string.Format("اتاق های بلوک" + " {0} " + "از خوابگاه" + " {1} " + "با مدیریت" + " {2} ", block.Name, dormitory.Name, name);
             }
             else
-                frmRoom.Text = string.Format("!اتاق های بلوک {0} از خوابگاه {1} بدون مدیر", block.Name, dormitory.Name);
+                this.Text = string.Format("!اتاق های بلوک {0} از خوابگاه {1} بدون مدیر", block.Name, dormitory.Name);
             db = new DormitoryDbContext();
             RefreshRoomList(db.Rooms.ToList());
             db.Dispose();
@@ -69,7 +68,7 @@ namespace Final
                 foreach (DataGridViewRow row in dgvRooms.Rows)
                 {
                     // برای زمانی که اتاقی پره
-                    if (row.Cells[3].Value == row.Cells[4].Value)
+                    if ((int)row.Cells[3].Value == (int)row.Cells[4].Value)
                     {
                         row.DefaultCellStyle.BackColor = Color.Aqua;
                     }
@@ -120,7 +119,6 @@ namespace Final
         {
             try
             {
-
                 frmSetRoom frm = new frmSetRoom();
                 frm.UserId = UserID;
                 frm.BlockId = BlockId;
@@ -144,6 +142,7 @@ namespace Final
                 {
                     return;
                 }
+ 
                 int id;
                 id = int.Parse(dgvRooms.CurrentRow.Cells[0].Value.ToString());
                 frmSetRoom frm = new frmSetRoom();
@@ -167,6 +166,11 @@ namespace Final
             {
                 if (dgvRooms.Rows.Count == 0)
                 {
+                    return;
+                }
+                if ((int)dgvRooms.CurrentRow.Cells[3].Value == (int)dgvRooms.CurrentRow.Cells[4].Value)
+                {
+                    MessageBoxTool.msger("این اتاق پر است");
                     return;
                 }
                 long id;
@@ -201,7 +205,7 @@ namespace Final
                     result = MessageBoxTool.msgq("آیا از حذف مطمئن هستید ؟");
                     if (result == DialogResult.Yes)
                     {
-                        Models.Block.DeleteBlock(UserID, id);
+                        Models.Room.DeleteRoom(UserID, id);
                         MessageBoxTool.msg();
                         db = new DormitoryDbContext();
                         RefreshRoomList(db.Rooms.ToList());
@@ -239,5 +243,7 @@ namespace Final
                 MessageBoxTool.msger(ex.ToString());
             }
         }
+
+       
     }
 }

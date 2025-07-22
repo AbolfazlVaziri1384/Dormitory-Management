@@ -10,7 +10,7 @@ namespace Final.Tools
 {
     internal class CheckTool
     {
-        public static bool UserField(string FirstName, string LastName, string UserName, string Password, string ConfirmPassword, string Address, long NationalCode, long Stu_Per_Code, long Phone, string Birthday)
+        public static bool UserSetField(string FirstName, string LastName, string UserName, string Password, string ConfirmPassword, string Address, long NationalCode, long Stu_Per_Code, long Phone, string Birthday)
         {
             bool Istrue = false;
             if ((string.IsNullOrWhiteSpace(FirstName)) ||
@@ -25,7 +25,7 @@ namespace Final.Tools
                 (Stu_Per_Code == 0) ||
                 (string.IsNullOrWhiteSpace(Phone.ToString())) ||
                 (Phone == 0) ||
-                (Birthday != "    /  /  "))
+                (Birthday == "    /  /  "))
             {
                 MessageBoxTool.msger("تمام فیلد ها باید کامل شوند");
                 return false;
@@ -44,12 +44,40 @@ namespace Final.Tools
             }
             return true;
         }
-        public static bool DormitoryField(string Name, string Address, int Capacity)
+        public static bool UserEditField(string FirstName, string LastName, string UserName, string Password, string ConfirmPassword, string Address, long NationalCode, long Stu_Per_Code, long Phone, string Birthday)
+        {
+            bool Istrue = false;
+            if ((string.IsNullOrWhiteSpace(FirstName)) ||
+                (string.IsNullOrWhiteSpace(LastName)) ||
+                (string.IsNullOrWhiteSpace(UserName)) ||
+                (string.IsNullOrWhiteSpace(Password)) ||
+                (string.IsNullOrWhiteSpace(ConfirmPassword)) ||
+                (string.IsNullOrWhiteSpace(Address)) ||
+                (string.IsNullOrWhiteSpace(NationalCode.ToString())) ||
+                (NationalCode == 0) ||
+                (string.IsNullOrWhiteSpace(Stu_Per_Code.ToString())) ||
+                (Stu_Per_Code == 0) ||
+                (string.IsNullOrWhiteSpace(Phone.ToString())) ||
+                (Phone == 0) ||
+                (Birthday == "    /  /  "))
+            {
+                MessageBoxTool.msger("تمام فیلد ها باید کامل شوند");
+                return false;
+            }
+            if ((Password.Trim() != ConfirmPassword.Trim()) || (string.IsNullOrWhiteSpace(Password)) || (string.IsNullOrWhiteSpace(ConfirmPassword)))
+            {
+                MessageBoxTool.msger("رمز جدید با تکرار آن مغایرت دارد");
+                return false;
+            }
+            
+            return true;
+        }
+        public static bool DormitorySetField(string Name, string Address, int Capacity)
         {
             bool Istrue = false;
             if ((string.IsNullOrWhiteSpace(Name)) ||
                 (string.IsNullOrWhiteSpace(Address)) ||
-                (Capacity < 0))
+                (Capacity <= 0))
             {
                 MessageBoxTool.msger("تمام فیلد ها باید به درستی کامل شوند");
                 return false;
@@ -63,7 +91,19 @@ namespace Final.Tools
             }
             return true;
         }
-        public static  bool BlockField(string Name, int FloorNumber, int RoomNumber, int Capacity)
+        public static bool DormitoryEditField(string Name, string Address, int Capacity)
+        {
+            bool Istrue = false;
+            if ((string.IsNullOrWhiteSpace(Name)) ||
+                (string.IsNullOrWhiteSpace(Address)) ||
+                (Capacity < 0))
+            {
+                MessageBoxTool.msger("تمام فیلد ها باید به درستی کامل شوند");
+                return false;
+            }
+            return true;
+        }
+        public static  bool BlockSetField(string Name, int FloorNumber, int RoomNumber, int Capacity)
         {
             bool Istrue = false;
             if ((string.IsNullOrWhiteSpace(Name)) ||
@@ -83,6 +123,19 @@ namespace Final.Tools
             }
             return true;
         }
+        public static  bool BlockEditField(string Name, int FloorNumber, int RoomNumber, int Capacity)
+        {
+            bool Istrue = false;
+            if ((string.IsNullOrWhiteSpace(Name)) ||
+                (Capacity < 0) ||
+                (FloorNumber == 0) ||
+                (RoomNumber == 0))
+            {
+                MessageBoxTool.msger("تمام فیلد ها باید به درستی کامل شوند");
+                return false;
+            }
+            return true;
+        }
         public static bool RoomField(int FloorNumber, int Number, int Capacity)
         {
             bool Istrue = false;
@@ -90,6 +143,19 @@ namespace Final.Tools
                 (Capacity > 7) ||
                 (FloorNumber == 0) ||
                 (Number == 0))
+
+            {
+                MessageBoxTool.msger("تمام فیلد ها باید به درستی کامل شوند");
+                return false;
+            }
+
+            return true;
+        }
+        public static bool StudentAssetField(string Name , string Discription)
+        {
+            bool Istrue = false;
+            if ((string.IsNullOrWhiteSpace(Name)) ||
+                (string.IsNullOrWhiteSpace(Discription)))
 
             {
                 MessageBoxTool.msger("تمام فیلد ها باید به درستی کامل شوند");

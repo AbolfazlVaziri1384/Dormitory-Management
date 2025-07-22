@@ -71,7 +71,7 @@ public partial class Room
         int count = 0;
         foreach (var i in db.RoomAssigments.ToList())
         {
-            if (i.RoomId == RoomId) count++;
+            if (i.RoomId == RoomId && i.IsDeleted == false) count++;
         }
         return count;
     }
@@ -89,5 +89,15 @@ public partial class Room
     {
         using DormitoryDbContext db = new DormitoryDbContext();
         return db.Rooms.Where(i => i.BlockId == BlockId).ToList();
+    }
+    public static void DeleteRoom(long UserDeletedId, long RoomId)
+    {
+        using DormitoryDbContext db = new DormitoryDbContext();
+        Models.Room room = Models.Room.FindRoomById(RoomId);
+        db.Rooms.Update(room);
+        room.IsDeleted = true;
+        room.DeletedBy = UserDeletedId;
+        room.DeletedOn = DateTime.Now;
+        db.SaveChanges();
     }
 }

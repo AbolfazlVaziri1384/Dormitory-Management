@@ -69,7 +69,7 @@
             txtSearch.Location = new Point(307, 45);
             txtSearch.Name = "txtSearch";
             txtSearch.RightToLeft = RightToLeft.Yes;
-            txtSearch.Size = new Size(328, 27);
+            txtSearch.Size = new Size(267, 27);
             txtSearch.TabIndex = 0;
             txtSearch.TextChanged += txtSearch_TextChanged;
             // 
@@ -78,7 +78,7 @@
             label1.AutoSize = true;
             label1.Font = new Font("B Koodak", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 178);
             label1.ForeColor = Color.MediumBlue;
-            label1.Location = new Point(641, 43);
+            label1.Location = new Point(580, 46);
             label1.Name = "label1";
             label1.Size = new Size(105, 29);
             label1.TabIndex = 1;
@@ -93,13 +93,13 @@
             dgvUsers.BackgroundColor = Color.AliceBlue;
             dgvUsers.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgvUsers.Columns.AddRange(new DataGridViewColumn[] { Id, FisrtName, LastName, Gender, Birthday, StuPerCode, NationalCode, Phone, Status, Address });
-            dgvUsers.Location = new Point(12, 107);
+            dgvUsers.Location = new Point(12, 96);
             dgvUsers.Name = "dgvUsers";
             dgvUsers.ReadOnly = true;
             dgvUsers.RightToLeft = RightToLeft.Yes;
             dgvUsers.RowHeadersWidth = 51;
             dgvUsers.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            dgvUsers.Size = new Size(1031, 170);
+            dgvUsers.Size = new Size(970, 209);
             dgvUsers.TabIndex = 2;
             // 
             // Id
@@ -311,7 +311,7 @@
             // pictureBox6
             // 
             pictureBox6.Image = Properties.Resources.search;
-            pictureBox6.Location = new Point(740, 43);
+            pictureBox6.Location = new Point(679, 46);
             pictureBox6.Name = "pictureBox6";
             pictureBox6.Size = new Size(31, 26);
             pictureBox6.SizeMode = PictureBoxSizeMode.Zoom;
@@ -360,7 +360,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1055, 450);
+            ClientSize = new Size(994, 450);
             Controls.Add(btnBackToMain);
             Controls.Add(pictureBox6);
             Controls.Add(pictureBox5);

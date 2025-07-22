@@ -87,7 +87,7 @@
             txtFirstName.Name = "txtFirstName";
             txtFirstName.RightToLeft = RightToLeft.Yes;
             txtFirstName.Size = new Size(125, 37);
-            txtFirstName.TabIndex = 1;
+            txtFirstName.TabIndex = 0;
             // 
             // label2
             // 
@@ -106,7 +106,7 @@
             txtLastName.Name = "txtLastName";
             txtLastName.RightToLeft = RightToLeft.Yes;
             txtLastName.Size = new Size(125, 37);
-            txtLastName.TabIndex = 3;
+            txtLastName.TabIndex = 1;
             // 
             // label3
             // 
@@ -144,21 +144,21 @@
             txtUserName.MaxLength = 50;
             txtUserName.Name = "txtUserName";
             txtUserName.Size = new Size(125, 37);
-            txtUserName.TabIndex = 7;
+            txtUserName.TabIndex = 0;
             // 
             // txtPassword
             // 
             txtPassword.Location = new Point(45, 86);
             txtPassword.Name = "txtPassword";
             txtPassword.Size = new Size(125, 37);
-            txtPassword.TabIndex = 8;
+            txtPassword.TabIndex = 1;
             // 
             // txtConfirmPassword
             // 
             txtConfirmPassword.Location = new Point(45, 128);
             txtConfirmPassword.Name = "txtConfirmPassword";
             txtConfirmPassword.Size = new Size(125, 37);
-            txtConfirmPassword.TabIndex = 9;
+            txtConfirmPassword.TabIndex = 3;
             // 
             // chkShowPassword
             // 
@@ -166,7 +166,7 @@
             chkShowPassword.Location = new Point(21, 92);
             chkShowPassword.Name = "chkShowPassword";
             chkShowPassword.Size = new Size(18, 17);
-            chkShowPassword.TabIndex = 10;
+            chkShowPassword.TabIndex = 2;
             chkShowPassword.UseVisualStyleBackColor = true;
             chkShowPassword.CheckedChanged += chkShowPassword_CheckedChanged;
             // 
@@ -219,7 +219,7 @@
             txtAddress.RightToLeft = RightToLeft.Yes;
             txtAddress.ScrollBars = ScrollBars.Vertical;
             txtAddress.Size = new Size(182, 64);
-            txtAddress.TabIndex = 13;
+            txtAddress.TabIndex = 5;
             // 
             // grpPersonalInfo
             // 
@@ -250,7 +250,7 @@
             radWoman.Location = new Point(169, 174);
             radWoman.Name = "radWoman";
             radWoman.Size = new Size(60, 33);
-            radWoman.TabIndex = 25;
+            radWoman.TabIndex = 3;
             radWoman.TabStop = true;
             radWoman.Text = "خانم";
             radWoman.UseVisualStyleBackColor = true;
@@ -261,7 +261,7 @@
             radMen.Location = new Point(104, 174);
             radMen.Name = "radMen";
             radMen.Size = new Size(50, 33);
-            radMen.TabIndex = 24;
+            radMen.TabIndex = 4;
             radMen.TabStop = true;
             radMen.Text = "آقا";
             radMen.UseVisualStyleBackColor = true;
@@ -304,7 +304,7 @@
             mskBirthDay.Mask = "0000/00/00";
             mskBirthDay.Name = "mskBirthDay";
             mskBirthDay.Size = new Size(125, 37);
-            mskBirthDay.TabIndex = 14;
+            mskBirthDay.TabIndex = 2;
             mskBirthDay.TextAlign = HorizontalAlignment.Center;
             mskBirthDay.ValidatingType = typeof(DateTime);
             // 
@@ -314,7 +314,7 @@
             numNationalCode.Maximum = new decimal(new int[] { 1410065407, 2, 0, 0 });
             numNationalCode.Name = "numNationalCode";
             numNationalCode.Size = new Size(150, 37);
-            numNationalCode.TabIndex = 15;
+            numNationalCode.TabIndex = 0;
             // 
             // numStu_Per_Code
             // 
@@ -322,7 +322,7 @@
             numStu_Per_Code.Maximum = new decimal(new int[] { 1410065407, 2, 0, 0 });
             numStu_Per_Code.Name = "numStu_Per_Code";
             numStu_Per_Code.Size = new Size(150, 37);
-            numStu_Per_Code.TabIndex = 16;
+            numStu_Per_Code.TabIndex = 1;
             // 
             // numPhone
             // 
@@ -330,7 +330,7 @@
             numPhone.Maximum = new decimal(new int[] { 1215752191, 23, 0, 0 });
             numPhone.Name = "numPhone";
             numPhone.Size = new Size(150, 37);
-            numPhone.TabIndex = 17;
+            numPhone.TabIndex = 2;
             // 
             // label7
             // 
@@ -402,7 +402,7 @@
             btnSave.Location = new Point(471, 382);
             btnSave.Name = "btnSave";
             btnSave.Size = new Size(155, 42);
-            btnSave.TabIndex = 22;
+            btnSave.TabIndex = 0;
             btnSave.Text = "ثبت اطلاعات";
             btnSave.UseVisualStyleBackColor = false;
             btnSave.Click += btnSave_Click;
