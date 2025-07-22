@@ -31,16 +31,38 @@ namespace Final
             dgvRequsts.Rows.Clear();
             foreach (var item in Repairlist)
             {
+                string Thing;
+                switch (((EnumTool.PartNumber)RoomAsset.FindRoomAssetById(item.RoomAssetId).PartNumber))
+                {
+                    case EnumTool.PartNumber.Refrigerator:
+                        Thing = "یخچال";
+                        break;
+                    case EnumTool.PartNumber.Desk:
+                        Thing = "میز";
+                        break;
+                    case EnumTool.PartNumber.Chair:
+                        Thing = "صندلی";
+                        break;
+                    case EnumTool.PartNumber.Bed:
+                        Thing = "تخت";
+                        break;
+                    case EnumTool.PartNumber.Dresser:
+                        Thing = "کمد";
+                        break;
+                    default:
+                        Thing = "";
+                        break;
+                }
 
                 dgvRequsts.Rows.Add(item.Id.ToString(),
                                      item.Guid,
-                                      ((EnumTool.PartNumber)item.RoomAsset.PartNumber).ToString(),
-                                      (item.RoomAsset.AssetNumber).ToString(),
+                                      Thing,
+                                      (RoomAsset.FindRoomAssetById(item.RoomAssetId).AssetNumber).ToString(),
                                       (item.Status == (int)EnumTool.Status.Intact) ? "سالم" : (item.Status == (int)EnumTool.Status.Defective) ? "معیوب" : "درحال تعمیر",
                                       item.Discription,
                                        HDateTimeTool.ToHDateTime(item.RequestDate),
                                        (item.IsRepair == true) ? "تعمیر انجام شده" : "در حال پیگیری",
-                                       User.GetFullName(item.User)
+                                       User.GetFullName(User.FindUserById(item.UserId))
                                        );
 
 
@@ -50,9 +72,9 @@ namespace Final
                 foreach (DataGridViewRow row in dgvRequsts.Rows)
                 {
                     // اگر وسیله در حال استفاده باشد
-                    if (row.Cells[6].Value.ToString() != "تعمیر انجام شده")
+                    if (row.Cells[7].Value.ToString() != "تعمیر انجام شده")
                     {
-                        row.DefaultCellStyle.BackColor = Color.Aqua;
+                        row.DefaultCellStyle.BackColor = Color.Red;
                     }
                 }
             }

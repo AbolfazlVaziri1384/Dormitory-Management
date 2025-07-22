@@ -31,7 +31,7 @@ public partial class Repair
         repair.Status = Status;
         repair.Discription = Discription;
         repair.RequestDate = DateTime.Now;
-        repair.IsRepair = true;
+        repair.IsRepair = false;
         repair.UserId = UserID;
         repair.Guid = guid;
         db.Repairs.Add(repair);
@@ -68,9 +68,21 @@ public partial class Repair
         Repair repair = db.Repairs.Where(i => i.Id == Id).FirstOrDefault();
         db.Repairs.Update(repair);
         if (repair.IsRepair == true)
+        {
             repair.IsRepair = false;
+            repair.Status = 1;
+            var ra = db.RoomAssets.Where(r => r.Id == repair.RoomAssetId).FirstOrDefault();
+            db.RoomAssets.Update(ra);
+            ra.Status = 2;
+        }
         else
+        {
             repair.IsRepair = true;
+            repair.Status = 0;
+            var ra = db.RoomAssets.Where(r => r.Id == repair.RoomAssetId).FirstOrDefault();
+            db.RoomAssets.Update(ra);
+            ra.Status = 0;
+        }
         db.SaveChanges();
     }
 }

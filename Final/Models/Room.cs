@@ -85,6 +85,7 @@ public partial class Room
         using DormitoryDbContext db = new DormitoryDbContext();
         return db.Rooms.Where(i => i.Id == RoomId).FirstOrDefault();
     }
+
     public static List<Room>? FindByBlockId(long BlockId)
     {
         using DormitoryDbContext db = new DormitoryDbContext();

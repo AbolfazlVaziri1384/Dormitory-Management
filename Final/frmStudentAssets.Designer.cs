@@ -41,19 +41,20 @@
             btnRepairRoomAsset = new Button();
             groupBox1 = new GroupBox();
             dgvRoomAssets = new DataGridView();
+            Id2 = new DataGridViewTextBoxColumn();
+            PartNumber = new DataGridViewTextBoxColumn();
+            AssetNumber = new DataGridViewTextBoxColumn();
+            Status = new DataGridViewTextBoxColumn();
+            CreateOn = new DataGridViewTextBoxColumn();
+            CreateBy = new DataGridViewTextBoxColumn();
             groupBox2 = new GroupBox();
+            stiAssetPrint = new Stimulsoft.Report.StiReport();
             Id = new DataGridViewTextBoxColumn();
             Name = new DataGridViewTextBoxColumn();
             Guid = new DataGridViewTextBoxColumn();
             OwnerName = new DataGridViewTextBoxColumn();
             TransferDate = new DataGridViewTextBoxColumn();
             Discription = new DataGridViewTextBoxColumn();
-            Id2 = new DataGridViewTextBoxColumn();
-            PartNumber = new DataGridViewTextBoxColumn();
-            AssetNumber = new DataGridViewTextBoxColumn();
-            CreateOn = new DataGridViewTextBoxColumn();
-            CreateBy = new DataGridViewTextBoxColumn();
-            stiAssetPrint = new Stimulsoft.Report.StiReport();
             ((System.ComponentModel.ISupportInitialize)dgvStudentAssets).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
@@ -77,7 +78,7 @@
             dgvStudentAssets.ReadOnly = true;
             dgvStudentAssets.RightToLeft = RightToLeft.Yes;
             dgvStudentAssets.RowHeadersWidth = 51;
-            dgvStudentAssets.Size = new Size(612, 148);
+            dgvStudentAssets.Size = new Size(648, 148);
             dgvStudentAssets.TabIndex = 0;
             // 
             // pictureBox4
@@ -199,10 +200,10 @@
             // 
             groupBox1.Controls.Add(dgvRoomAssets);
             groupBox1.Font = new Font("B Koodak", 10.2F, FontStyle.Bold);
-            groupBox1.Location = new Point(89, 208);
+            groupBox1.Location = new Point(12, 208);
             groupBox1.Name = "groupBox1";
             groupBox1.RightToLeft = RightToLeft.Yes;
-            groupBox1.Size = new Size(556, 193);
+            groupBox1.Size = new Size(665, 193);
             groupBox1.TabIndex = 26;
             groupBox1.TabStop = false;
             groupBox1.Text = "لوازم خوابگاه";
@@ -214,14 +215,68 @@
             dgvRoomAssets.AllowUserToDeleteRows = false;
             dgvRoomAssets.BackgroundColor = Color.AliceBlue;
             dgvRoomAssets.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvRoomAssets.Columns.AddRange(new DataGridViewColumn[] { Id2, PartNumber, AssetNumber, CreateOn, CreateBy });
-            dgvRoomAssets.Location = new Point(17, 36);
+            dgvRoomAssets.Columns.AddRange(new DataGridViewColumn[] { Id2, PartNumber, AssetNumber, Status, CreateOn, CreateBy });
+            dgvRoomAssets.Location = new Point(11, 36);
             dgvRoomAssets.Name = "dgvRoomAssets";
             dgvRoomAssets.ReadOnly = true;
             dgvRoomAssets.RightToLeft = RightToLeft.Yes;
             dgvRoomAssets.RowHeadersWidth = 51;
-            dgvRoomAssets.Size = new Size(525, 137);
+            dgvRoomAssets.Size = new Size(648, 137);
             dgvRoomAssets.TabIndex = 28;
+            // 
+            // Id2
+            // 
+            Id2.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
+            Id2.HeaderText = "Id";
+            Id2.MinimumWidth = 6;
+            Id2.Name = "Id2";
+            Id2.ReadOnly = true;
+            Id2.Visible = false;
+            Id2.Width = 125;
+            // 
+            // PartNumber
+            // 
+            PartNumber.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
+            PartNumber.HeaderText = "پارت نامبر";
+            PartNumber.MinimumWidth = 6;
+            PartNumber.Name = "PartNumber";
+            PartNumber.ReadOnly = true;
+            PartNumber.Width = 102;
+            // 
+            // AssetNumber
+            // 
+            AssetNumber.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
+            AssetNumber.HeaderText = "شماره سریال";
+            AssetNumber.MinimumWidth = 6;
+            AssetNumber.Name = "AssetNumber";
+            AssetNumber.ReadOnly = true;
+            AssetNumber.Width = 114;
+            // 
+            // Status
+            // 
+            Status.HeaderText = "وضعیت";
+            Status.MinimumWidth = 6;
+            Status.Name = "Status";
+            Status.ReadOnly = true;
+            Status.Width = 125;
+            // 
+            // CreateOn
+            // 
+            CreateOn.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
+            CreateOn.HeaderText = "تاریخ ثبت";
+            CreateOn.MinimumWidth = 6;
+            CreateOn.Name = "CreateOn";
+            CreateOn.ReadOnly = true;
+            CreateOn.Width = 99;
+            // 
+            // CreateBy
+            // 
+            CreateBy.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
+            CreateBy.HeaderText = "ثبت کننده";
+            CreateBy.MinimumWidth = 6;
+            CreateBy.Name = "CreateBy";
+            CreateBy.ReadOnly = true;
+            CreateBy.Width = 101;
             // 
             // groupBox2
             // 
@@ -230,11 +285,36 @@
             groupBox2.Location = new Point(12, 12);
             groupBox2.Name = "groupBox2";
             groupBox2.RightToLeft = RightToLeft.Yes;
-            groupBox2.Size = new Size(633, 190);
+            groupBox2.Size = new Size(665, 190);
             groupBox2.TabIndex = 27;
             groupBox2.TabStop = false;
             groupBox2.Text = "لوازم شخصی";
             groupBox2.Enter += groupBox2_Enter;
+            // 
+            // stiAssetPrint
+            // 
+            stiAssetPrint.CookieContainer = null;
+            stiAssetPrint.EngineVersion = Stimulsoft.Report.Engine.StiEngineVersion.EngineV2;
+            stiAssetPrint.HttpHeadersContainer = null;
+            stiAssetPrint.Key = "1b458a6878634c579acea89e3f9e83a2";
+            stiAssetPrint.ReferencedAssemblies = new string[]
+    {
+    "System.Dll",
+    "System.Drawing.Dll",
+    "System.Windows.Forms.Dll",
+    "System.Data.Dll",
+    "System.Xml.Dll",
+    "Stimulsoft.Controls.Dll",
+    "Stimulsoft.Base.Dll",
+    "Stimulsoft.Report.Dll"
+    };
+            stiAssetPrint.ReportAlias = "Report";
+            stiAssetPrint.ReportGuid = "ec33c81a9e194519a92391b23c23a9a9";
+            stiAssetPrint.ReportName = "Report";
+            stiAssetPrint.ReportSource = null;
+            stiAssetPrint.ReportUnit = Stimulsoft.Report.StiReportUnitType.Centimeters;
+            stiAssetPrint.ScriptLanguage = Stimulsoft.Report.StiReportLanguageType.CSharp;
+            stiAssetPrint.UseProgressInThread = false;
             // 
             // Id
             // 
@@ -267,11 +347,11 @@
             // OwnerName
             // 
             OwnerName.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
-            OwnerName.HeaderText = "نام مالک";
+            OwnerName.HeaderText = "نام مالک قبلی";
             OwnerName.MinimumWidth = 6;
             OwnerName.Name = "OwnerName";
             OwnerName.ReadOnly = true;
-            OwnerName.Width = 90;
+            OwnerName.Width = 119;
             // 
             // TransferDate
             // 
@@ -291,82 +371,11 @@
             Discription.ReadOnly = true;
             Discription.Width = 98;
             // 
-            // Id2
-            // 
-            Id2.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
-            Id2.HeaderText = "Id";
-            Id2.MinimumWidth = 6;
-            Id2.Name = "Id2";
-            Id2.ReadOnly = true;
-            Id2.Visible = false;
-            Id2.Width = 60;
-            // 
-            // PartNumber
-            // 
-            PartNumber.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
-            PartNumber.HeaderText = "پارت نامبر";
-            PartNumber.MinimumWidth = 6;
-            PartNumber.Name = "PartNumber";
-            PartNumber.ReadOnly = true;
-            PartNumber.Width = 102;
-            // 
-            // AssetNumber
-            // 
-            AssetNumber.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
-            AssetNumber.HeaderText = "شماره سریال";
-            AssetNumber.MinimumWidth = 6;
-            AssetNumber.Name = "AssetNumber";
-            AssetNumber.ReadOnly = true;
-            AssetNumber.Width = 114;
-            // 
-            // CreateOn
-            // 
-            CreateOn.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
-            CreateOn.HeaderText = "تاریخ ثبت";
-            CreateOn.MinimumWidth = 6;
-            CreateOn.Name = "CreateOn";
-            CreateOn.ReadOnly = true;
-            CreateOn.Width = 99;
-            // 
-            // CreateBy
-            // 
-            CreateBy.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
-            CreateBy.HeaderText = "ثبت کننده";
-            CreateBy.MinimumWidth = 6;
-            CreateBy.Name = "CreateBy";
-            CreateBy.ReadOnly = true;
-            CreateBy.Width = 101;
-            // 
-            // stiAssetPrint
-            // 
-            stiAssetPrint.CookieContainer = null;
-            stiAssetPrint.EngineVersion = Stimulsoft.Report.Engine.StiEngineVersion.EngineV2;
-            stiAssetPrint.HttpHeadersContainer = null;
-            stiAssetPrint.Key = "1b458a6878634c579acea89e3f9e83a2";
-            stiAssetPrint.ReferencedAssemblies = new string[]
-    {
-    "System.Dll",
-    "System.Drawing.Dll",
-    "System.Windows.Forms.Dll",
-    "System.Data.Dll",
-    "System.Xml.Dll",
-    "Stimulsoft.Controls.Dll",
-    "Stimulsoft.Base.Dll",
-    "Stimulsoft.Report.Dll"
-    };
-            stiAssetPrint.ReportAlias = "Report";
-            stiAssetPrint.ReportGuid = "ec33c81a9e194519a92391b23c23a9a9";
-            stiAssetPrint.ReportName = "Report";
-            stiAssetPrint.ReportSource = null;
-            stiAssetPrint.ReportUnit = Stimulsoft.Report.StiReportUnitType.Centimeters;
-            stiAssetPrint.ScriptLanguage = Stimulsoft.Report.StiReportLanguageType.CSharp;
-            stiAssetPrint.UseProgressInThread = false;
-            // 
             // frmStudentAssets
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(664, 618);
+            ClientSize = new Size(689, 618);
             Controls.Add(groupBox2);
             Controls.Add(groupBox1);
             Controls.Add(btnRepairRoomAsset);
@@ -411,17 +420,18 @@
         private GroupBox groupBox1;
         private GroupBox groupBox2;
         private DataGridView dgvRoomAssets;
+        private Stimulsoft.Report.StiReport stiAssetPrint;
+        private DataGridViewTextBoxColumn Id2;
+        private DataGridViewTextBoxColumn PartNumber;
+        private DataGridViewTextBoxColumn AssetNumber;
+        private DataGridViewTextBoxColumn Status;
+        private DataGridViewTextBoxColumn CreateOn;
+        private DataGridViewTextBoxColumn CreateBy;
         private DataGridViewTextBoxColumn Id;
         private DataGridViewTextBoxColumn Name;
         private DataGridViewTextBoxColumn Guid;
         private DataGridViewTextBoxColumn OwnerName;
         private DataGridViewTextBoxColumn TransferDate;
         private DataGridViewTextBoxColumn Discription;
-        private DataGridViewTextBoxColumn Id2;
-        private DataGridViewTextBoxColumn PartNumber;
-        private DataGridViewTextBoxColumn AssetNumber;
-        private DataGridViewTextBoxColumn CreateOn;
-        private DataGridViewTextBoxColumn CreateBy;
-        private Stimulsoft.Report.StiReport stiAssetPrint;
     }
 }

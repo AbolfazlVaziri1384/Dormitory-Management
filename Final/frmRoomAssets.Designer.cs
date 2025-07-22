@@ -29,6 +29,12 @@
         private void InitializeComponent()
         {
             dgvRoomAssets = new DataGridView();
+            Id = new DataGridViewTextBoxColumn();
+            PartNumber = new DataGridViewTextBoxColumn();
+            AssetNumber = new DataGridViewTextBoxColumn();
+            IsUsed = new DataGridViewTextBoxColumn();
+            Status = new DataGridViewTextBoxColumn();
+            CreateOn = new DataGridViewTextBoxColumn();
             pictureBox1 = new PictureBox();
             label1 = new Label();
             txtSearch = new TextBox();
@@ -52,12 +58,6 @@
             btnEditOwner = new Button();
             btnShowOwner = new Button();
             stiRoomAssetsPrint = new Stimulsoft.Report.StiReport();
-            Id = new DataGridViewTextBoxColumn();
-            PartNumber = new DataGridViewTextBoxColumn();
-            AssetNumber = new DataGridViewTextBoxColumn();
-            IsUsed = new DataGridViewTextBoxColumn();
-            Status = new DataGridViewTextBoxColumn();
-            CreateOn = new DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)dgvRoomAssets).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
@@ -84,6 +84,61 @@
             dgvRoomAssets.RowHeadersWidth = 51;
             dgvRoomAssets.Size = new Size(708, 156);
             dgvRoomAssets.TabIndex = 0;
+            // 
+            // Id
+            // 
+            Id.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
+            Id.HeaderText = "Id";
+            Id.MinimumWidth = 6;
+            Id.Name = "Id";
+            Id.ReadOnly = true;
+            Id.Visible = false;
+            Id.Width = 125;
+            // 
+            // PartNumber
+            // 
+            PartNumber.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
+            PartNumber.HeaderText = "پارت نامبر";
+            PartNumber.MinimumWidth = 6;
+            PartNumber.Name = "PartNumber";
+            PartNumber.ReadOnly = true;
+            PartNumber.Width = 99;
+            // 
+            // AssetNumber
+            // 
+            AssetNumber.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
+            AssetNumber.HeaderText = "شماره سریال";
+            AssetNumber.MinimumWidth = 6;
+            AssetNumber.Name = "AssetNumber";
+            AssetNumber.ReadOnly = true;
+            AssetNumber.Width = 118;
+            // 
+            // IsUsed
+            // 
+            IsUsed.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
+            IsUsed.HeaderText = "وضعبت";
+            IsUsed.MinimumWidth = 6;
+            IsUsed.Name = "IsUsed";
+            IsUsed.ReadOnly = true;
+            IsUsed.Width = 89;
+            // 
+            // Status
+            // 
+            Status.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
+            Status.HeaderText = "حالت دستگاه";
+            Status.MinimumWidth = 6;
+            Status.Name = "Status";
+            Status.ReadOnly = true;
+            Status.Width = 120;
+            // 
+            // CreateOn
+            // 
+            CreateOn.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
+            CreateOn.HeaderText = "تاریخ ثبت";
+            CreateOn.MinimumWidth = 6;
+            CreateOn.Name = "CreateOn";
+            CreateOn.ReadOnly = true;
+            CreateOn.Width = 96;
             // 
             // pictureBox1
             // 
@@ -294,7 +349,7 @@
             btnSetOwner.Name = "btnSetOwner";
             btnSetOwner.Size = new Size(166, 40);
             btnSetOwner.TabIndex = 35;
-            btnSetOwner.Text = "تغییر مالک وسیله";
+            btnSetOwner.Text = "ثبت مالک وسیله";
             btnSetOwner.UseVisualStyleBackColor = false;
             btnSetOwner.Click += btnSetOwner_Click;
             // 
@@ -361,61 +416,6 @@
             stiRoomAssetsPrint.ReportUnit = Stimulsoft.Report.StiReportUnitType.Centimeters;
             stiRoomAssetsPrint.ScriptLanguage = Stimulsoft.Report.StiReportLanguageType.CSharp;
             stiRoomAssetsPrint.UseProgressInThread = false;
-            // 
-            // Id
-            // 
-            Id.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
-            Id.HeaderText = "Id";
-            Id.MinimumWidth = 6;
-            Id.Name = "Id";
-            Id.ReadOnly = true;
-            Id.Visible = false;
-            Id.Width = 51;
-            // 
-            // PartNumber
-            // 
-            PartNumber.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
-            PartNumber.HeaderText = "پارت نامبر";
-            PartNumber.MinimumWidth = 6;
-            PartNumber.Name = "PartNumber";
-            PartNumber.ReadOnly = true;
-            PartNumber.Width = 99;
-            // 
-            // AssetNumber
-            // 
-            AssetNumber.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
-            AssetNumber.HeaderText = "شماره سریال";
-            AssetNumber.MinimumWidth = 6;
-            AssetNumber.Name = "AssetNumber";
-            AssetNumber.ReadOnly = true;
-            AssetNumber.Width = 118;
-            // 
-            // IsUsed
-            // 
-            IsUsed.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
-            IsUsed.HeaderText = "وضعبت";
-            IsUsed.MinimumWidth = 6;
-            IsUsed.Name = "IsUsed";
-            IsUsed.ReadOnly = true;
-            IsUsed.Width = 89;
-            // 
-            // Status
-            // 
-            Status.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
-            Status.HeaderText = "حالت دستگاه";
-            Status.MinimumWidth = 6;
-            Status.Name = "Status";
-            Status.ReadOnly = true;
-            Status.Width = 120;
-            // 
-            // CreateOn
-            // 
-            CreateOn.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
-            CreateOn.HeaderText = "تاریخ ثبت";
-            CreateOn.MinimumWidth = 6;
-            CreateOn.Name = "CreateOn";
-            CreateOn.ReadOnly = true;
-            CreateOn.Width = 96;
             // 
             // frmRoomAssets
             // 

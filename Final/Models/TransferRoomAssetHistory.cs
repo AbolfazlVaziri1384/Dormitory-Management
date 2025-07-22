@@ -46,8 +46,13 @@ public partial class TransferRoomAssetHistory
         using DormitoryDbContext db = new DormitoryDbContext();
         TransferRoomAssetHistory tra = db.TransferRoomAssetHistorys.Where(i => i.RoomAssetId == AssetId).FirstOrDefault();
         db.TransferRoomAssetHistorys.Update(tra);
-        tra.RoomAsset.IsUsed = false;
-
+        db.RoomAssets.Where(i => i.Id == tra.RoomAssetId).FirstOrDefault().IsUsed = false;
+        if (tra.StudentId != null)
+        {
+            var ssa = db.SubstituteStudentAssets.Where(i => i.NewRoomAssetId == tra.RoomAssetId).FirstOrDefault();
+            ssa.LastRoomAssetId = ssa.NewRoomAssetId;
+            ssa.NewRoomAssetId = 0;
+        }
         db.TransferRoomAssetHistorys.Remove(tra);
         db.SaveChanges();
     }
@@ -55,6 +60,11 @@ public partial class TransferRoomAssetHistory
     {
         using DormitoryDbContext db = new DormitoryDbContext();
         return db.TransferRoomAssetHistorys.Where(i => i.RoomAssetId == AssetId).FirstOrDefault();
+    }
+    public static TransferRoomAssetHistory FindById(long taId)
+    {
+        using DormitoryDbContext db = new DormitoryDbContext();
+        return db.TransferRoomAssetHistorys.Where(i => i.Id == taId).FirstOrDefault();
     }
     public static bool IsRoomInUse(long RoomID)
     {

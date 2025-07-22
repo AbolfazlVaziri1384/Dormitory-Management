@@ -33,8 +33,30 @@ namespace Final
             {
                 if ((item.CreatBy == UserID) && (item.IsDeleted == false))
                 {
+                    string Thing;
+                    switch ((EnumTool.PartNumber)item.PartNumber)
+                    {
+                        case EnumTool.PartNumber.Refrigerator:
+                            Thing = "یخچال";
+                            break;
+                        case EnumTool.PartNumber.Desk:
+                            Thing = "میز";
+                            break;
+                        case EnumTool.PartNumber.Chair:
+                            Thing = "صندلی";
+                            break;
+                        case EnumTool.PartNumber.Bed:
+                            Thing = "تخت";
+                            break;
+                        case EnumTool.PartNumber.Dresser:
+                            Thing = "کمد";
+                            break;
+                        default:
+                            Thing = "";
+                            break;
+                    }
                     dgvRoomAssets.Rows.Add(item.Id.ToString(),
-                                          ((EnumTool.PartNumber)item.PartNumber).ToString(),
+                                          Thing,
                                             item.AssetNumber,
                                             (item.IsUsed == true) ? "در حال استفاده" : "آزاد",
                                             (item.Status == (int)EnumTool.Status.Intact) ? "سالم" : (item.Status == (int)EnumTool.Status.Defective) ? "معیوب" : "درحال تعمیر",
@@ -57,7 +79,8 @@ namespace Final
 
         private void btnTransferRoomAssetHistory_Click(object sender, EventArgs e)
         {
-
+            frmSubstituteStudentAssets frmSubstituteStudentAssets = new frmSubstituteStudentAssets();
+            frmSubstituteStudentAssets.ShowDialog();
         }
 
         private void txtSearch_TextChanged(object sender, EventArgs e)
@@ -158,8 +181,15 @@ namespace Final
 
         private void btnRepairRoomAsset_Click(object sender, EventArgs e)
         {
+            if (dgvRoomAssets.Rows.Count == 0)
+            {
+                return;
+            }
+            long id;
+            id = long.Parse(dgvRoomAssets.CurrentRow.Cells[0].Value.ToString());
             frmRepairRoomAsset frm = new frmRepairRoomAsset();
             frm.UserID = UserID;
+            frm.RoomAssetID = id;
             frm.ShowDialog();
             // برای اینکه اگر زمانی ما درخواست تعمیر را ثبت کردیم
             db = new DormitoryDbContext();
@@ -194,6 +224,11 @@ namespace Final
             {
                 return;
             }
+            if (dgvRoomAssets.CurrentRow.Cells[3].Value.ToString() == "در حال استفاده")
+            {
+                MessageBoxTool.msger("این وسیله در حال استفاده است");
+                return;
+            }
             long id;
             id = long.Parse(dgvRoomAssets.CurrentRow.Cells[0].Value.ToString());
             frmSetTransferRoomAssetHistory frm = new frmSetTransferRoomAssetHistory();
@@ -213,10 +248,15 @@ namespace Final
             }
             long id;
             id = long.Parse(dgvRoomAssets.CurrentRow.Cells[0].Value.ToString());
-            TransferRoomAssetHistory.DeleteOwner(id);
-            db = new DormitoryDbContext();
-            RefreshRoomAssetsList(db.RoomAssets.ToList());
-            db.Dispose();
+            DialogResult result;
+            result = MessageBoxTool.msgq("آیا از حذف مطمئن هستید ؟");
+            if (result == DialogResult.Yes)
+            {
+                TransferRoomAssetHistory.DeleteOwner(id);
+                db = new DormitoryDbContext();
+                RefreshRoomAssetsList(db.RoomAssets.ToList());
+                db.Dispose();
+            }
         }
 
         private void btnEditOwner_Click(object sender, EventArgs e)
@@ -225,11 +265,16 @@ namespace Final
             {
                 return;
             }
+            if (dgvRoomAssets.CurrentRow.Cells[3].Value.ToString() != "در حال استفاده")
+            {
+                MessageBoxTool.msger("این وسیله در حال استفاده نیست");
+                return;
+            }
             long id;
             id = long.Parse(dgvRoomAssets.CurrentRow.Cells[0].Value.ToString());
             frmSetTransferRoomAssetHistory frm = new frmSetTransferRoomAssetHistory();
             frm.UserID = UserID;
-            frm.RoomAssetID = id;
+            frm.EditTransferRoomAssetID = id;
             frm.ShowDialog();
         }
 
@@ -244,29 +289,23 @@ namespace Final
             string masseg = "";
             TransferRoomAssetHistory tra = TransferRoomAssetHistory.FindByAssetId(id);
             string room;
-            switch (tra.RoomAsset.AssetNumber)
-            {
-                case 1:
-                    room = $"{tra.Room.Block.Dermitory.Name} در خوابگاه {tra.Room.Block.Name} در بلوک {tra.Room.FloorNumber} در طبقه {tra.Room.Number} اتاق";
-                    masseg = $"است {room} این یخچال برای";
-                    break;
-                case 2:
-                    room = $"{RoomAssigment.FindByUserId(tra.Student.Id).Room.Block.Dermitory.Name} در خوابگاه {RoomAssigment.FindByUserId(tra.Student.Id).Room.Block.Name} در بلوک {RoomAssigment.FindByUserId(tra.Student.Id).Room.FloorNumber} در طبقه {RoomAssigment.FindByUserId(tra.Student.Id).Room.Number} اتاق";
-                    masseg = $"است {room} در {tra.Student.StuPerCode} با کد دانشجویی {User.GetFullName(tra.Student)} این میز برای";
-                    break;
-                case 3:
-                    room = $"{RoomAssigment.FindByUserId(tra.Student.Id).Room.Block.Dermitory.Name} در خوابگاه {RoomAssigment.FindByUserId(tra.Student.Id).Room.Block.Name} در بلوک {RoomAssigment.FindByUserId(tra.Student.Id).Room.FloorNumber} در طبقه {RoomAssigment.FindByUserId(tra.Student.Id).Room.Number} اتاق";
-                    masseg = $"است {room} در {tra.Student.StuPerCode} با کد دانشجویی {User.GetFullName(tra.Student)} این صندلی برای";
-                    break;
-                case 4:
-                    room = $"{RoomAssigment.FindByUserId(tra.Student.Id).Room.Block.Dermitory.Name} در خوابگاه {RoomAssigment.FindByUserId(tra.Student.Id).Room.Block.Name} در بلوک {RoomAssigment.FindByUserId(tra.Student.Id).Room.FloorNumber} در طبقه {RoomAssigment.FindByUserId(tra.Student.Id).Room.Number} اتاق";
-                    masseg = $"است {room} در {tra.Student.StuPerCode} با کد دانشجویی {User.GetFullName(tra.Student)} این تخت برای";
-                    break;
-                case 5:
-                    room = $"{RoomAssigment.FindByUserId(tra.Student.Id).Room.Block.Dermitory.Name} در خوابگاه {RoomAssigment.FindByUserId(tra.Student.Id).Room.Block.Name} در بلوک {RoomAssigment.FindByUserId(tra.Student.Id).Room.FloorNumber} در طبقه {RoomAssigment.FindByUserId(tra.Student.Id).Room.Number} اتاق";
-                    masseg = $"است {room} در {tra.Student.StuPerCode} با کد دانشجویی {User.GetFullName(tra.Student)} این کمد برای";
-                    break;
-            }
+            if (tra == null) masseg = "این وسیله هنوز به کسی داده نشده است";
+            else
+                switch (RoomAsset.FindRoomAssetById(tra.RoomAssetId).PartNumber)
+                {
+                    case 1:
+                        room = "اتاق" + $" {Room.FindRoomById(RoomAssigment.GetByRoomId(tra.RoomId ?? -1).RoomId).Number} \n" + "در طبقه" + $" {Room.FindRoomById(RoomAssigment.GetByRoomId(tra.RoomId ?? -1).RoomId).FloorNumber} \n" + "در بلوک" + $" {Block.FindBlockById(Room.FindRoomById(RoomAssigment.GetByRoomId(tra.RoomId ?? -1).RoomId).BlockId).Name} \n" + "در خوابگاه" + $" {Dormitory.FindDormitoryById(Block.FindBlockById(Room.FindRoomById(RoomAssigment.GetByRoomId(tra.RoomId ?? -1).RoomId).BlockId).DermitoryId).Name} \n";
+                        masseg = $"این یخچال برای {room} است";
+                        break;
+                    case 2:
+                    case 3:
+                    case 4:
+                    case 5:
+                        room = "اتاق" + $" {Room.FindRoomById(RoomAssigment.FindByUserId(tra.StudentId ?? -1).RoomId).Number} " + "در بلوک" + $" {Block.FindBlockById(Room.FindRoomById(RoomAssigment.FindByUserId(tra.StudentId ?? -1).RoomId).BlockId).Name} " + "در خوابگاه" + $" {Dormitory.FindDormitoryById(Block.FindBlockById(Room.FindRoomById(RoomAssigment.FindByUserId(tra.StudentId ?? -1).RoomId).BlockId).DermitoryId).Name} ";
+                        var user = User.FindUserById(tra.StudentId ?? -1);
+                        masseg = "این وسیله برای" + $" {User.GetFullName(user)} " + "با کد دانشجویی" + $" {user.StuPerCode} " + "در" + $" {room} " + "است";
+                        break;
+                }
             MessageBoxTool.msgr(masseg);
         }
     }

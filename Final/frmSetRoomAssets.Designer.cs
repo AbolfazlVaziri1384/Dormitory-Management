@@ -65,6 +65,7 @@
             cmbPartNumber.Items.AddRange(new object[] { "یخچال", "میز", "صندلی", "تخت", "کمد" });
             cmbPartNumber.Location = new Point(382, 163);
             cmbPartNumber.Name = "cmbPartNumber";
+            cmbPartNumber.RightToLeft = RightToLeft.Yes;
             cmbPartNumber.Size = new Size(151, 28);
             cmbPartNumber.TabIndex = 4;
             // 
@@ -86,6 +87,7 @@
             cmbStatus.Items.AddRange(new object[] { "سالم", "معیوب", "در حال تعمیر" });
             cmbStatus.Location = new Point(382, 226);
             cmbStatus.Name = "cmbStatus";
+            cmbStatus.RightToLeft = RightToLeft.Yes;
             cmbStatus.Size = new Size(151, 28);
             cmbStatus.TabIndex = 6;
             // 

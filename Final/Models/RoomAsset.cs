@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using Microsoft.VisualBasic.ApplicationServices;
 
 namespace Final.Models;
 
@@ -31,11 +32,11 @@ public partial class RoomAsset
 
     public virtual ICollection<Repair> Repairs { get; set; } = new List<Repair>();
 
-    public virtual ICollection<SubstituteStudentAsset> SubstituteStudentAssets { get; set; } = new List<SubstituteStudentAsset>();
+    //public virtual ICollection<SubstituteStudentAsset> SubstituteStudentAssets { get; set; } = new List<SubstituteStudentAsset>();
 
     public virtual ICollection<TransferRoomAssetHistory> TransferRoomAssetHistories { get; set; } = new List<TransferRoomAssetHistory>();
 
-    public static RoomAsset FindRoomAssetById(long Id)
+    public static RoomAsset FindRoomAssetById(long? Id)
     {
         using DormitoryDbContext db = new DormitoryDbContext();
         return db.RoomAssets.Where(i => i.Id == Id).FirstOrDefault();
@@ -77,7 +78,7 @@ public partial class RoomAsset
         ra.Status = status;
         ra.IsUsed = false;
         ra.IsDeleted = false;
-        ra.ModifiedBy = RoomAsset.FindRoomAssetById(ModifyBy).Id;
+        ra.ModifiedBy = ModifyBy;
         ra.ModifiedOn = DateTime.Now;
 
         db.SaveChanges();

@@ -51,7 +51,7 @@ namespace Final
         public string TimeSerial()
         {
             DateTime now = DateTime.Now;
-            return $"{now:yyyyMMddHHmm}";
+            return $"{now:yyyyMMddHHmmss}";
         }
 
         private void frmSetRoomAssets_Load(object sender, EventArgs e)

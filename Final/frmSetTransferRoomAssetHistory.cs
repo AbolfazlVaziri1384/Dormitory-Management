@@ -19,7 +19,7 @@ namespace Final
             InitializeComponent();
         }
         public long UserID;
-        public long RoomAssetID;
+        public long RoomAssetID = 0 ;
         public long EditTransferRoomAssetID = -1;
         DormitoryDbContext db;
 
@@ -32,15 +32,17 @@ namespace Final
             }
 
             db = new DormitoryDbContext();
-            if (RoomAsset.FindRoomAssetById(RoomAssetID).PartNumber == 1)
+            if (RoomAsset.FindRoomAssetById((RoomAssetID != 0) ? RoomAssetID : EditTransferRoomAssetID).PartNumber == 1)
             {
                 RefreshRoomList(db.Rooms.ToList());
                 grpRoom.Enabled = true;
+                grpStudent.Enabled = false;
             }
             else
             {
                 RefreshStudentList(db.Users.ToList());
                 grpStudent.Enabled = true;
+                grpRoom.Enabled = false;
             }
             db.Dispose();
         }
@@ -58,8 +60,8 @@ namespace Final
                     dgvRoom.Rows.Add(item.Id.ToString(),
                                             item.Number,
                                             item.FloorNumber,
-                                            item.Block.Name,
-                                            item.Block.Dermitory.Name);
+                                            Block.FindBlockById(item.BlockId).Name,
+                                            Dormitory.FindDormitoryById(Block.FindBlockById(item.BlockId).DermitoryId).Name);
                 }
 
             }
@@ -71,18 +73,19 @@ namespace Final
 
             foreach (var item in Userlist)
             {
-                // دیگر اگر قبلا این وسیله را به ان فرد اختصاص دادیم نشانش ندیم
-
-                if ((!TransferRoomAssetHistory.IsStudentHasThisAsset(item.Id, RoomAsset.FindRoomAssetById(RoomAssetID).PartNumber)) && (item.IsDeleted == false))
-                {
-                    dgvOwner.Rows.Add(item.Id.ToString(),
-                                          item.FirstName,
-                                          item.LastName,
-                                         (item.Gender == 0) ? "خانم" : "آقا",
-                                          item.StuPerCode,
-                                          item.NationalCode,
-                                         (item.IsActive == true) ? "فعال" : "غیر فعال");
-                }
+                //ادمین و مدیر و مسئول خوابگاه
+                if (Role.FindRole(item.Id) != (int)EnumTool.Role.Admin && Role.FindRole(item.Id) != (int)EnumTool.Role.Manager && Role.FindRole(item.Id) != (int)EnumTool.Role.DormitoryOwner)
+                    // دیگر اگر قبلا این وسیله را به ان فرد اختصاص دادیم نشانش ندیم
+                    if ((!TransferRoomAssetHistory.IsStudentHasThisAsset(item.Id, RoomAsset.FindRoomAssetById((RoomAssetID != 0) ? RoomAssetID : EditTransferRoomAssetID).PartNumber)) && (item.IsDeleted == false))
+                    {
+                        dgvOwner.Rows.Add(item.Id.ToString(),
+                                              item.FirstName,
+                                              item.LastName,
+                                             (item.Gender == 0) ? "خانم" : "آقا",
+                                              item.StuPerCode,
+                                              item.NationalCode,
+                                             (item.IsActive == true) ? "فعال" : "غیر فعال");
+                    }
 
             }
 
@@ -107,7 +110,7 @@ namespace Final
             {
                 long id;
 
-                if (RoomAsset.FindRoomAssetById(RoomAssetID).PartNumber == 1)
+                if (RoomAsset.FindRoomAssetById((RoomAssetID != 0) ? RoomAssetID : EditTransferRoomAssetID).PartNumber == 1)
                 {
                     if (dgvRoom.Rows.Count == 0)
                     {
@@ -120,14 +123,17 @@ namespace Final
                         MessageBoxTool.msgr("تخصیص با موفقیت انجام شد");
                         Close();
                     }
-                    DialogResult result;
-                    result = MessageBoxTool.msgq("آیا از ویرایش مطمئن هستید؟");
-                    if (result == DialogResult.Yes)
+                    else
                     {
+                        DialogResult result;
+                        result = MessageBoxTool.msgq("آیا از ویرایش مطمئن هستید؟");
+                        if (result == DialogResult.Yes)
+                        {
 
-                        TransferRoomAssetHistory.Edit(EditTransferRoomAssetID, true, id, UserID);
-                        MessageBoxTool.msgr("تخصیص با موفقیت ویرایش شد");
-                        Close();
+                            TransferRoomAssetHistory.Edit(EditTransferRoomAssetID, true, id, UserID);
+                            MessageBoxTool.msgr("تخصیص با موفقیت ویرایش شد");
+                            Close();
+                        }
                     }
                 }
                 else
@@ -143,13 +149,16 @@ namespace Final
                         MessageBoxTool.msgr("تخصیص با موفقیت انجام شد");
                         Close();
                     }
-                    DialogResult result;
-                    result = MessageBoxTool.msgq("آیا از ویرایش مطمئن هستید؟");
-                    if (result == DialogResult.Yes)
+                    else
                     {
-                        TransferRoomAssetHistory.Edit(EditTransferRoomAssetID, false, id, UserID);
-                        MessageBoxTool.msgr("تخصیص با موفقیت ویرایش شد");
-                        Close();
+                        DialogResult result;
+                        result = MessageBoxTool.msgq("آیا از ویرایش مطمئن هستید؟");
+                        if (result == DialogResult.Yes)
+                        {
+                            TransferRoomAssetHistory.Edit(EditTransferRoomAssetID, false, id, UserID);
+                            MessageBoxTool.msgr("تخصیص با موفقیت ویرایش شد");
+                            Close();
+                        }
                     }
                 }
 
@@ -167,9 +176,9 @@ namespace Final
                 if (txtSearch.Text == null) return;
 
                 db = new DormitoryDbContext();
-                if (RoomAsset.FindRoomAssetById(RoomAssetID).PartNumber == 1)
+                if (RoomAsset.FindRoomAssetById((RoomAssetID != 0) ? RoomAssetID : EditTransferRoomAssetID).PartNumber == 1)
                     RefreshRoomList((List<Models.Room>)db.Rooms.Where(i => i.Number.ToString().Contains(txtSearch.Text.Trim()) ||
-                                                                           i.FloorNumber.ToString().Contains(txtSearch.Text.Trim())).ToList());
+                                                                       i.FloorNumber.ToString().Contains(txtSearch.Text.Trim())).ToList());
                 else
                     RefreshStudentList((List<Models.User>)db.Users.Where(i => i.FirstName.Contains(txtSearch.Text.Trim()) ||
                                                                i.LastName.Contains(txtSearch.Text.Trim()) ||

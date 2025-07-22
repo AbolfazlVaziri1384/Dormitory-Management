@@ -69,12 +69,35 @@ namespace Final
             dgvRoomAssets.Rows.Clear();
             foreach (var item in TRAlist)
             {
-                if (((item.StudentId == UserID) || (TransferRoomAssetHistory.IsInOneRoom(item.RoomAssetId, UserID))) && (item.RoomAsset.IsDeleted == false))
+                
+                if (((item.StudentId == UserID) || (TransferRoomAssetHistory.IsInOneRoom(item.RoomAssetId, UserID))) && (RoomAsset.FindRoomAssetById(item.RoomAssetId).IsDeleted == false))
                 {
+                    string Thing;
+                switch ((EnumTool.PartNumber)RoomAsset.FindRoomAssetById(item.RoomAssetId).PartNumber)
+                {
+                    case EnumTool.PartNumber.Refrigerator:
+                        Thing = "یخچال";
+                        break;
+                    case EnumTool.PartNumber.Desk:
+                        Thing = "میز";
+                        break;
+                    case EnumTool.PartNumber.Chair:
+                        Thing = "صندلی";
+                        break;
+                    case EnumTool.PartNumber.Bed:
+                        Thing = "تخت";
+                        break;
+                    case EnumTool.PartNumber.Dresser:
+                        Thing = "کمد";
+                        break;
+                    default:
+                        Thing = "";
+                        break;
+                }
                     dgvRoomAssets.Rows.Add(item.Id.ToString(),
-                                            ((EnumTool.PartNumber)item.RoomAsset.PartNumber).ToString(),
-                                            item.RoomAsset.AssetNumber,
-                                            (item.RoomAsset.Status == (int)EnumTool.Status.Intact) ? "سالم" : (item.RoomAsset.Status == (int)EnumTool.Status.Defective) ? "معیوب" : "درحال تعمیر",
+                                            Thing,
+                                            RoomAsset.FindRoomAssetById(item.RoomAssetId).AssetNumber,
+                                            (RoomAsset.FindRoomAssetById(item.RoomAssetId).Status == (int)EnumTool.Status.Intact) ? "سالم" : (RoomAsset.FindRoomAssetById(item.RoomAssetId).Status == (int)EnumTool.Status.Defective) ? "معیوب" : "درحال تعمیر",
                                             HDateTimeTool.ToHDateTime(item.CreatOn),
                                             Models.User.GetFullName(Models.User.FindUserById(item.CreatBy)));
                 }
@@ -120,20 +143,20 @@ namespace Final
             }
 
             DataTable dtRoomAsset = new DataTable();
-            dtStudentAsset.Columns.Add("PartNumber");
-            dtStudentAsset.Columns.Add("AssetNumber");
-            dtStudentAsset.Columns.Add("Status");
-            dtStudentAsset.Columns.Add("CreatOn");
-            dtStudentAsset.Columns.Add("CreatBy");
+            dtRoomAsset.Columns.Add("PartNumber");
+            dtRoomAsset.Columns.Add("AssetNumber");
+            dtRoomAsset.Columns.Add("Status");
+            dtRoomAsset.Columns.Add("CreatOn");
+            dtRoomAsset.Columns.Add("CreatBy");
 
 
             foreach (DataGridViewRow row in dgvRoomAssets.Rows)
             {
-                dtStudentAsset.Rows.Add(
+                dtRoomAsset.Rows.Add(
                     row.Cells[1].Value.ToString(),
                     row.Cells[2].Value.ToString(),
                     row.Cells[3].Value.ToString(),
-                    row.Cells[4].Value.ToString(),
+                    row.Cells[4].Value.ToString(), 
                     row.Cells[5].Value.ToString()
                     );
             }
@@ -158,6 +181,10 @@ namespace Final
             {
                 StudentAsset.DeleteAsset(id);
                 MessageBoxTool.msgr("حذف با موفقیت انجام شد");
+                db = new DormitoryDbContext();
+                RefreshStudentAssetsList(db.StudentAssets.ToList());
+                RefreshRoomAssetsList(db.TransferRoomAssetHistorys.ToList());
+                db.Dispose();
             }
         }
 
@@ -172,7 +199,7 @@ namespace Final
 
             frmRepairRoomAsset frm = new frmRepairRoomAsset();
             frm.UserID = UserID;
-            frm.RoomAssetID = id;
+            frm.RoomAssetID = TransferRoomAssetHistory.FindById(id).RoomAssetId;
             frm.ShowDialog();
             db = new DormitoryDbContext();
             RefreshStudentAssetsList(db.StudentAssets.ToList());

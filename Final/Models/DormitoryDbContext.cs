@@ -164,10 +164,10 @@ public partial class DormitoryDbContext : DbContext
 
         modelBuilder.Entity<SubstituteStudentAsset>(entity =>
         {
-            entity.HasOne(d => d.LastRoomAsset).WithMany(p => p.SubstituteStudentAssets)
-                .HasForeignKey(d => d.LastRoomAssetId)
-                .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("FK_SubstituteStudentAssets_RoomAssets");
+            //entity.HasOne(d => d.LastRoomAsset).WithMany(p => p.SubstituteStudentAssets)
+            //    .HasForeignKey(d => d.LastRoomAssetId)
+            //    .OnDelete(DeleteBehavior.ClientSetNull)
+            //    .HasConstraintName("FK_SubstituteStudentAssets_RoomAssets");
 
             entity.HasOne(d => d.Student).WithMany(p => p.SubstituteStudentAssets)
                 .HasForeignKey(d => d.StudentId)

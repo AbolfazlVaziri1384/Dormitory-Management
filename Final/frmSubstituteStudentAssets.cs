@@ -31,18 +31,40 @@ namespace Final
 
             foreach (var item in SSAlist)
             {
+                string Thing;
+                switch ((EnumTool.PartNumber)item.PartNumber)
+                {
+                    case EnumTool.PartNumber.Refrigerator:
+                        Thing = "یخچال";
+                        break;
+                    case EnumTool.PartNumber.Desk:
+                        Thing = "میز";
+                        break;
+                    case EnumTool.PartNumber.Chair:
+                        Thing = "صندلی";
+                        break;
+                    case EnumTool.PartNumber.Bed:
+                        Thing = "تخت";
+                        break;
+                    case EnumTool.PartNumber.Dresser:
+                        Thing = "کمد";
+                        break;
+                    default:
+                        Thing = "";
+                        break;
+                }
                 dgvSubstitute.Rows.Add(item.Id.ToString(),
-                                        User.GetFullName(item.Student),
-                                        ((EnumTool.PartNumber)item.PartNumber).ToString(),
-                                        RoomAsset.FindRoomAssetById(item.NewRoomAssetId).AssetNumber,
-                                        item.LastRoomAsset.AssetNumber);
+                                        User.GetFullName(User.FindUserById(item.StudentId)),
+                                        Thing,
+                                        (item.NewRoomAssetId == 0 || item.NewRoomAssetId == null) ? "" : RoomAsset.FindRoomAssetById(item.NewRoomAssetId).AssetNumber,
+                                        (item.LastRoomAssetId == 0 || item.LastRoomAssetId == null) ? "" : RoomAsset.FindRoomAssetById(item.LastRoomAssetId).AssetNumber);
             }
 
             if (dgvSubstitute.Rows.Count != 0)
             {
                 foreach (DataGridViewRow row in dgvSubstitute.Rows)
                 {
-                    if (row.Cells[4].Value == null)
+                    if (row.Cells[4].Value == "")
                     {
                         row.DefaultCellStyle.BackColor = Color.Aqua;
                     }
