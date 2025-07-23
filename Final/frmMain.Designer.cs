@@ -42,6 +42,7 @@
             mnufrmSubstituteStudentAssets = new ToolStripMenuItem();
             mnuFrmUser = new ToolStripMenuItem();
             mnuFrmEditUser = new ToolStripMenuItem();
+            mnuFrmManagers = new ToolStripMenuItem();
             LowMenu = new ToolStripMenuItem();
             mnufrmSetStudentAssets = new ToolStripMenuItem();
             mnufrmStudentAssets = new ToolStripMenuItem();
@@ -59,10 +60,13 @@
             label5 = new Label();
             groupBox1 = new GroupBox();
             groupBox2 = new GroupBox();
-            mnuFrmManagers = new ToolStripMenuItem();
+            pictureBox1 = new PictureBox();
+            pictureBox2 = new PictureBox();
             menuStrip1.SuspendLayout();
             groupBox1.SuspendLayout();
             groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             SuspendLayout();
             // 
             // menuStrip1
@@ -153,6 +157,13 @@
             mnuFrmEditUser.Text = "ویرایش اطلاعات شخصی";
             mnuFrmEditUser.Click += mnuFrmEditUser_Click;
             // 
+            // mnuFrmManagers
+            // 
+            mnuFrmManagers.Name = "mnuFrmManagers";
+            mnuFrmManagers.Size = new Size(306, 26);
+            mnuFrmManagers.Text = "لیست مدیران";
+            mnuFrmManagers.Click += mnuFrmManagers_Click;
+            // 
             // LowMenu
             // 
             LowMenu.DropDownItems.AddRange(new ToolStripItem[] { mnufrmSetStudentAssets, mnufrmStudentAssets, mnuFrmSetUser });
@@ -210,7 +221,7 @@
             // 
             lblFullName.AutoSize = true;
             lblFullName.Font = new Font("B Koodak", 12F, FontStyle.Bold, GraphicsUnit.Point, 178);
-            lblFullName.Location = new Point(41, 73);
+            lblFullName.Location = new Point(54, 69);
             lblFullName.Name = "lblFullName";
             lblFullName.Size = new Size(108, 34);
             lblFullName.TabIndex = 2;
@@ -221,12 +232,13 @@
             // 
             lblLogin.AutoSize = true;
             lblLogin.Font = new Font("B Koodak", 12F, FontStyle.Bold, GraphicsUnit.Point, 178);
-            lblLogin.Location = new Point(41, 164);
+            lblLogin.Location = new Point(72, 179);
             lblLogin.Name = "lblLogin";
             lblLogin.RightToLeft = RightToLeft.Yes;
             lblLogin.Size = new Size(59, 34);
             lblLogin.TabIndex = 4;
             lblLogin.Text = "time";
+            lblLogin.Click += lblLogin_Click;
             // 
             // label3
             // 
@@ -249,12 +261,13 @@
             // 
             lblTimer.AutoSize = true;
             lblTimer.Font = new Font("B Koodak", 12F, FontStyle.Bold, GraphicsUnit.Point, 178);
-            lblTimer.Location = new Point(114, 73);
+            lblTimer.Location = new Point(104, 69);
             lblTimer.Name = "lblTimer";
             lblTimer.RightToLeft = RightToLeft.Yes;
             lblTimer.Size = new Size(59, 34);
             lblTimer.TabIndex = 6;
             lblTimer.Text = "time";
+            lblTimer.Click += lblTimer_Click;
             // 
             // label4
             // 
@@ -271,12 +284,13 @@
             // 
             lblDate.AutoSize = true;
             lblDate.Font = new Font("B Koodak", 12F, FontStyle.Bold, GraphicsUnit.Point, 178);
-            lblDate.Location = new Point(114, 164);
+            lblDate.Location = new Point(107, 179);
             lblDate.Name = "lblDate";
             lblDate.RightToLeft = RightToLeft.Yes;
             lblDate.Size = new Size(59, 34);
             lblDate.TabIndex = 8;
             lblDate.Text = "time";
+            lblDate.Click += lblDate_Click;
             // 
             // label5
             // 
@@ -306,9 +320,11 @@
             // 
             // groupBox2
             // 
-            groupBox2.Controls.Add(label4);
-            groupBox2.Controls.Add(lblTimer);
             groupBox2.Controls.Add(lblDate);
+            groupBox2.Controls.Add(pictureBox2);
+            groupBox2.Controls.Add(lblTimer);
+            groupBox2.Controls.Add(pictureBox1);
+            groupBox2.Controls.Add(label4);
             groupBox2.Controls.Add(label5);
             groupBox2.Font = new Font("B Koodak", 12F, FontStyle.Bold, GraphicsUnit.Point, 178);
             groupBox2.Location = new Point(12, 80);
@@ -319,12 +335,25 @@
             groupBox2.TabStop = false;
             groupBox2.Text = "تاریخ و ساعت";
             // 
-            // mnuFrmManagers
+            // pictureBox1
             // 
-            mnuFrmManagers.Name = "mnuFrmManagers";
-            mnuFrmManagers.Size = new Size(306, 26);
-            mnuFrmManagers.Text = "لیست مدیران";
-            mnuFrmManagers.Click += mnuFrmManagers_Click;
+            pictureBox1.Image = Properties.Resources.digital_clock;
+            pictureBox1.Location = new Point(38, 41);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(194, 90);
+            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox1.TabIndex = 11;
+            pictureBox1.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            pictureBox2.Image = Properties.Resources.calendar1;
+            pictureBox2.Location = new Point(53, 148);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(168, 74);
+            pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox2.TabIndex = 11;
+            pictureBox2.TabStop = false;
             // 
             // frmMain
             // 
@@ -350,6 +379,8 @@
             groupBox1.PerformLayout();
             groupBox2.ResumeLayout(false);
             groupBox2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -386,5 +417,7 @@
         private ToolStripMenuItem mnuFrmSetUser;
         private ToolStripMenuItem mnuFrmEditUser;
         private ToolStripMenuItem mnuFrmManagers;
+        private PictureBox pictureBox1;
+        private PictureBox pictureBox2;
     }
 }

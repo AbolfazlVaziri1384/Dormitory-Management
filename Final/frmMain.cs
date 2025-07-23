@@ -169,5 +169,20 @@ namespace Final
             frmManagers.UserID = UserID;
             frmManagers.ShowDialog();
         }
+
+        private void lblTimer_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblDate_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblLogin_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
