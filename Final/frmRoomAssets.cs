@@ -156,6 +156,11 @@ namespace Final
                 {
                     return;
                 }
+                if (dgvRoomAssets.CurrentRow.Cells[3].Value.ToString() == "در حال استفاده")
+                {
+                    MessageBoxTool.msger("این وسیله در حال استفاده است");
+                    return;
+                }
                 long id;
                 id = long.Parse(dgvRoomAssets.CurrentRow.Cells[0].Value.ToString());
                 if (id != 0)

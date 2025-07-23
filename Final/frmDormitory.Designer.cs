@@ -32,13 +32,6 @@
             label1 = new Label();
             pictureBox1 = new PictureBox();
             dgvDormitory = new DataGridView();
-            Id = new DataGridViewTextBoxColumn();
-            Name = new DataGridViewTextBoxColumn();
-            Capacity = new DataGridViewTextBoxColumn();
-            NowCapacity = new DataGridViewTextBoxColumn();
-            Owner = new DataGridViewTextBoxColumn();
-            DormitoryGender = new DataGridViewTextBoxColumn();
-            Address = new DataGridViewTextBoxColumn();
             pictureBox2 = new PictureBox();
             btnStudentPrint = new Button();
             pictureBox3 = new PictureBox();
@@ -59,6 +52,13 @@
             btnBackToMain = new Button();
             stiDormitoryPrint = new Stimulsoft.Report.StiReport();
             stiStudentPrint = new Stimulsoft.Report.StiReport();
+            Id = new DataGridViewTextBoxColumn();
+            Name = new DataGridViewTextBoxColumn();
+            Capacity = new DataGridViewTextBoxColumn();
+            NowCapacity = new DataGridViewTextBoxColumn();
+            Owner = new DataGridViewTextBoxColumn();
+            DormitoryGender = new DataGridViewTextBoxColumn();
+            Address = new DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dgvDormitory).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
@@ -114,69 +114,6 @@
             dgvDormitory.RowHeadersWidth = 51;
             dgvDormitory.Size = new Size(686, 159);
             dgvDormitory.TabIndex = 3;
-            // 
-            // Id
-            // 
-            Id.HeaderText = "Id";
-            Id.MinimumWidth = 6;
-            Id.Name = "Id";
-            Id.ReadOnly = true;
-            Id.Visible = false;
-            Id.Width = 125;
-            // 
-            // Name
-            // 
-            Name.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
-            Name.HeaderText = "نام";
-            Name.MinimumWidth = 6;
-            Name.Name = "Name";
-            Name.ReadOnly = true;
-            Name.Width = 56;
-            // 
-            // Capacity
-            // 
-            Capacity.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
-            Capacity.HeaderText = "ظرفیت اصلی";
-            Capacity.MinimumWidth = 6;
-            Capacity.Name = "Capacity";
-            Capacity.ReadOnly = true;
-            Capacity.Width = 124;
-            // 
-            // NowCapacity
-            // 
-            NowCapacity.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
-            NowCapacity.HeaderText = "ظرفیت فعلی";
-            NowCapacity.MinimumWidth = 6;
-            NowCapacity.Name = "NowCapacity";
-            NowCapacity.ReadOnly = true;
-            NowCapacity.Width = 122;
-            // 
-            // Owner
-            // 
-            Owner.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
-            Owner.HeaderText = "مسئول";
-            Owner.MinimumWidth = 6;
-            Owner.Name = "Owner";
-            Owner.ReadOnly = true;
-            Owner.Width = 83;
-            // 
-            // DormitoryGender
-            // 
-            DormitoryGender.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
-            DormitoryGender.HeaderText = "نوع";
-            DormitoryGender.MinimumWidth = 6;
-            DormitoryGender.Name = "DormitoryGender";
-            DormitoryGender.ReadOnly = true;
-            DormitoryGender.Width = 60;
-            // 
-            // Address
-            // 
-            Address.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
-            Address.HeaderText = "آدرس";
-            Address.MinimumWidth = 6;
-            Address.Name = "Address";
-            Address.ReadOnly = true;
-            Address.Width = 73;
             // 
             // pictureBox2
             // 
@@ -438,6 +375,69 @@
             stiStudentPrint.ScriptLanguage = Stimulsoft.Report.StiReportLanguageType.CSharp;
             stiStudentPrint.UseProgressInThread = false;
             // 
+            // Id
+            // 
+            Id.HeaderText = "Id";
+            Id.MinimumWidth = 6;
+            Id.Name = "Id";
+            Id.ReadOnly = true;
+            Id.Visible = false;
+            Id.Width = 125;
+            // 
+            // Name
+            // 
+            Name.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
+            Name.HeaderText = "نام";
+            Name.MinimumWidth = 6;
+            Name.Name = "Name";
+            Name.ReadOnly = true;
+            Name.Width = 56;
+            // 
+            // Capacity
+            // 
+            Capacity.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
+            Capacity.HeaderText = "ظرفیت اصلی";
+            Capacity.MinimumWidth = 6;
+            Capacity.Name = "Capacity";
+            Capacity.ReadOnly = true;
+            Capacity.Width = 124;
+            // 
+            // NowCapacity
+            // 
+            NowCapacity.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
+            NowCapacity.HeaderText = "ساکنین فعلی";
+            NowCapacity.MinimumWidth = 6;
+            NowCapacity.Name = "NowCapacity";
+            NowCapacity.ReadOnly = true;
+            NowCapacity.Width = 122;
+            // 
+            // Owner
+            // 
+            Owner.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
+            Owner.HeaderText = "مسئول";
+            Owner.MinimumWidth = 6;
+            Owner.Name = "Owner";
+            Owner.ReadOnly = true;
+            Owner.Width = 83;
+            // 
+            // DormitoryGender
+            // 
+            DormitoryGender.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
+            DormitoryGender.HeaderText = "نوع";
+            DormitoryGender.MinimumWidth = 6;
+            DormitoryGender.Name = "DormitoryGender";
+            DormitoryGender.ReadOnly = true;
+            DormitoryGender.Width = 60;
+            // 
+            // Address
+            // 
+            Address.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
+            Address.HeaderText = "آدرس";
+            Address.MinimumWidth = 6;
+            Address.Name = "Address";
+            Address.ReadOnly = true;
+            Address.Width = 73;
+            // 
             // frmDormitory
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -507,6 +507,8 @@
         private PictureBox pictureBox9;
         private Button btnShowBlocks;
         private Button btnBackToMain;
+        private Stimulsoft.Report.StiReport stiDormitoryPrint;
+        private Stimulsoft.Report.StiReport stiStudentPrint;
         private DataGridViewTextBoxColumn Id;
         private DataGridViewTextBoxColumn Name;
         private DataGridViewTextBoxColumn Capacity;
@@ -514,7 +516,5 @@
         private DataGridViewTextBoxColumn Owner;
         private DataGridViewTextBoxColumn DormitoryGender;
         private DataGridViewTextBoxColumn Address;
-        private Stimulsoft.Report.StiReport stiDormitoryPrint;
-        private Stimulsoft.Report.StiReport stiStudentPrint;
     }
 }

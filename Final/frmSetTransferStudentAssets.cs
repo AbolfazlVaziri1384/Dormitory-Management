@@ -32,7 +32,7 @@ namespace Final
             dgvStudents.Rows.Clear();
             foreach (var item in Userslist)
             {
-                if ((Role.FindRole(UserID) != (int)EnumTool.Role.Admin) && (Role.FindRole(UserID) != (int)EnumTool.Role.Manager) && (Role.FindRole(UserID) == (int)EnumTool.Role.DormitoryOwner))
+                if ((Role.FindRole(item.Id) != (int)EnumTool.Role.Admin) && (Role.FindRole(item.Id) != (int)EnumTool.Role.Manager) && (Role.FindRole(item.Id) != (int)EnumTool.Role.DormitoryOwner))
                     if ((item.Id != UserID) && (item.IsDeleted == false) && (item.IsActive == true))
                     {
                         dgvStudents.Rows.Add(item.Id.ToString(),

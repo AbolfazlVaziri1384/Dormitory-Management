@@ -335,7 +335,6 @@
             Controls.Add(pictureBox6);
             Controls.Add(dgvStudents);
             MaximizeBox = false;
-            Name = "frmRoomAssignment";
             StartPosition = FormStartPosition.CenterParent;
             Text = "RoomAssignment";
             Load += frmRoomAssignment_Load;

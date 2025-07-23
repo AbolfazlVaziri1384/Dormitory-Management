@@ -29,6 +29,12 @@
         private void InitializeComponent()
         {
             dgvStudentAssets = new DataGridView();
+            Id = new DataGridViewTextBoxColumn();
+            Name = new DataGridViewTextBoxColumn();
+            Guid = new DataGridViewTextBoxColumn();
+            OwnerName = new DataGridViewTextBoxColumn();
+            TransferDate = new DataGridViewTextBoxColumn();
+            Discription = new DataGridViewTextBoxColumn();
             pictureBox4 = new PictureBox();
             btnDelete = new Button();
             pictureBox2 = new PictureBox();
@@ -49,12 +55,6 @@
             CreateBy = new DataGridViewTextBoxColumn();
             groupBox2 = new GroupBox();
             stiAssetPrint = new Stimulsoft.Report.StiReport();
-            Id = new DataGridViewTextBoxColumn();
-            Name = new DataGridViewTextBoxColumn();
-            Guid = new DataGridViewTextBoxColumn();
-            OwnerName = new DataGridViewTextBoxColumn();
-            TransferDate = new DataGridViewTextBoxColumn();
-            Discription = new DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)dgvStudentAssets).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
@@ -78,13 +78,68 @@
             dgvStudentAssets.ReadOnly = true;
             dgvStudentAssets.RightToLeft = RightToLeft.Yes;
             dgvStudentAssets.RowHeadersWidth = 51;
-            dgvStudentAssets.Size = new Size(648, 148);
+            dgvStudentAssets.Size = new Size(695, 148);
             dgvStudentAssets.TabIndex = 0;
+            // 
+            // Id
+            // 
+            Id.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
+            Id.HeaderText = "Id";
+            Id.MinimumWidth = 6;
+            Id.Name = "Id";
+            Id.ReadOnly = true;
+            Id.Visible = false;
+            Id.Width = 125;
+            // 
+            // Name
+            // 
+            Name.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
+            Name.HeaderText = "نام";
+            Name.MinimumWidth = 6;
+            Name.Name = "Name";
+            Name.ReadOnly = true;
+            Name.Width = 56;
+            // 
+            // Guid
+            // 
+            Guid.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
+            Guid.HeaderText = "شماره سریال";
+            Guid.MinimumWidth = 6;
+            Guid.Name = "Guid";
+            Guid.ReadOnly = true;
+            Guid.Width = 114;
+            // 
+            // OwnerName
+            // 
+            OwnerName.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
+            OwnerName.HeaderText = "نام مالک قبلی";
+            OwnerName.MinimumWidth = 6;
+            OwnerName.Name = "OwnerName";
+            OwnerName.ReadOnly = true;
+            OwnerName.Width = 119;
+            // 
+            // TransferDate
+            // 
+            TransferDate.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
+            TransferDate.HeaderText = "تاریخ انتقال";
+            TransferDate.MinimumWidth = 6;
+            TransferDate.Name = "TransferDate";
+            TransferDate.ReadOnly = true;
+            TransferDate.Width = 106;
+            // 
+            // Discription
+            // 
+            Discription.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
+            Discription.HeaderText = "توضیحات";
+            Discription.MinimumWidth = 6;
+            Discription.Name = "Discription";
+            Discription.ReadOnly = true;
+            Discription.Width = 98;
             // 
             // pictureBox4
             // 
             pictureBox4.Image = Properties.Resources.trash;
-            pictureBox4.Location = new Point(261, 484);
+            pictureBox4.Location = new Point(300, 484);
             pictureBox4.Name = "pictureBox4";
             pictureBox4.Size = new Size(42, 50);
             pictureBox4.SizeMode = PictureBoxSizeMode.Zoom;
@@ -96,7 +151,7 @@
             btnDelete.BackColor = Color.AliceBlue;
             btnDelete.Font = new Font("B Koodak", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 178);
             btnDelete.ForeColor = Color.Crimson;
-            btnDelete.Location = new Point(106, 488);
+            btnDelete.Location = new Point(145, 488);
             btnDelete.Name = "btnDelete";
             btnDelete.Size = new Size(149, 40);
             btnDelete.TabIndex = 16;
@@ -107,7 +162,7 @@
             // pictureBox2
             // 
             pictureBox2.Image = Properties.Resources.printer;
-            pictureBox2.Location = new Point(260, 428);
+            pictureBox2.Location = new Point(299, 428);
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Size = new Size(43, 50);
             pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
@@ -119,7 +174,7 @@
             btnPrint.BackColor = Color.AliceBlue;
             btnPrint.Font = new Font("B Koodak", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 178);
             btnPrint.ForeColor = Color.MediumOrchid;
-            btnPrint.Location = new Point(106, 428);
+            btnPrint.Location = new Point(145, 428);
             btnPrint.Name = "btnPrint";
             btnPrint.Size = new Size(149, 40);
             btnPrint.TabIndex = 18;
@@ -130,7 +185,7 @@
             // pictureBox5
             // 
             pictureBox5.Image = Properties.Resources.wrench;
-            pictureBox5.Location = new Point(506, 547);
+            pictureBox5.Location = new Point(545, 547);
             pictureBox5.Name = "pictureBox5";
             pictureBox5.Size = new Size(59, 42);
             pictureBox5.SizeMode = PictureBoxSizeMode.Zoom;
@@ -140,7 +195,7 @@
             // pictureBox6
             // 
             pictureBox6.Image = Properties.Resources.devices;
-            pictureBox6.Location = new Point(506, 426);
+            pictureBox6.Location = new Point(545, 426);
             pictureBox6.Name = "pictureBox6";
             pictureBox6.Size = new Size(59, 42);
             pictureBox6.SizeMode = PictureBoxSizeMode.Zoom;
@@ -152,7 +207,7 @@
             btnSetStudentAsset.BackColor = Color.AliceBlue;
             btnSetStudentAsset.Font = new Font("B Koodak", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 178);
             btnSetStudentAsset.ForeColor = Color.ForestGreen;
-            btnSetStudentAsset.Location = new Point(351, 428);
+            btnSetStudentAsset.Location = new Point(390, 428);
             btnSetStudentAsset.Name = "btnSetStudentAsset";
             btnSetStudentAsset.Size = new Size(149, 40);
             btnSetStudentAsset.TabIndex = 22;
@@ -163,7 +218,7 @@
             // pictureBox7
             // 
             pictureBox7.Image = Properties.Resources.room;
-            pictureBox7.Location = new Point(506, 481);
+            pictureBox7.Location = new Point(545, 481);
             pictureBox7.Name = "pictureBox7";
             pictureBox7.Size = new Size(59, 46);
             pictureBox7.SizeMode = PictureBoxSizeMode.Zoom;
@@ -175,7 +230,7 @@
             btnSetTransfer.BackColor = Color.AliceBlue;
             btnSetTransfer.Font = new Font("B Koodak", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 178);
             btnSetTransfer.ForeColor = Color.SaddleBrown;
-            btnSetTransfer.Location = new Point(351, 487);
+            btnSetTransfer.Location = new Point(390, 487);
             btnSetTransfer.Name = "btnSetTransfer";
             btnSetTransfer.Size = new Size(149, 40);
             btnSetTransfer.TabIndex = 24;
@@ -188,7 +243,7 @@
             btnRepairRoomAsset.BackColor = Color.AliceBlue;
             btnRepairRoomAsset.Font = new Font("B Koodak", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 178);
             btnRepairRoomAsset.ForeColor = Color.Orange;
-            btnRepairRoomAsset.Location = new Point(351, 547);
+            btnRepairRoomAsset.Location = new Point(390, 547);
             btnRepairRoomAsset.Name = "btnRepairRoomAsset";
             btnRepairRoomAsset.Size = new Size(149, 40);
             btnRepairRoomAsset.TabIndex = 25;
@@ -203,7 +258,7 @@
             groupBox1.Location = new Point(12, 208);
             groupBox1.Name = "groupBox1";
             groupBox1.RightToLeft = RightToLeft.Yes;
-            groupBox1.Size = new Size(665, 193);
+            groupBox1.Size = new Size(712, 193);
             groupBox1.TabIndex = 26;
             groupBox1.TabStop = false;
             groupBox1.Text = "لوازم خوابگاه";
@@ -221,7 +276,7 @@
             dgvRoomAssets.ReadOnly = true;
             dgvRoomAssets.RightToLeft = RightToLeft.Yes;
             dgvRoomAssets.RowHeadersWidth = 51;
-            dgvRoomAssets.Size = new Size(648, 137);
+            dgvRoomAssets.Size = new Size(695, 137);
             dgvRoomAssets.TabIndex = 28;
             // 
             // Id2
@@ -285,7 +340,7 @@
             groupBox2.Location = new Point(12, 12);
             groupBox2.Name = "groupBox2";
             groupBox2.RightToLeft = RightToLeft.Yes;
-            groupBox2.Size = new Size(665, 190);
+            groupBox2.Size = new Size(712, 190);
             groupBox2.TabIndex = 27;
             groupBox2.TabStop = false;
             groupBox2.Text = "لوازم شخصی";
@@ -316,66 +371,11 @@
             stiAssetPrint.ScriptLanguage = Stimulsoft.Report.StiReportLanguageType.CSharp;
             stiAssetPrint.UseProgressInThread = false;
             // 
-            // Id
-            // 
-            Id.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
-            Id.HeaderText = "Id";
-            Id.MinimumWidth = 6;
-            Id.Name = "Id";
-            Id.ReadOnly = true;
-            Id.Visible = false;
-            Id.Width = 60;
-            // 
-            // Name
-            // 
-            Name.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
-            Name.HeaderText = "نام";
-            Name.MinimumWidth = 6;
-            Name.Name = "Name";
-            Name.ReadOnly = true;
-            Name.Width = 56;
-            // 
-            // Guid
-            // 
-            Guid.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
-            Guid.HeaderText = "شماره سریال";
-            Guid.MinimumWidth = 6;
-            Guid.Name = "Guid";
-            Guid.ReadOnly = true;
-            Guid.Width = 114;
-            // 
-            // OwnerName
-            // 
-            OwnerName.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
-            OwnerName.HeaderText = "نام مالک قبلی";
-            OwnerName.MinimumWidth = 6;
-            OwnerName.Name = "OwnerName";
-            OwnerName.ReadOnly = true;
-            OwnerName.Width = 119;
-            // 
-            // TransferDate
-            // 
-            TransferDate.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
-            TransferDate.HeaderText = "تاریخ انتقال";
-            TransferDate.MinimumWidth = 6;
-            TransferDate.Name = "TransferDate";
-            TransferDate.ReadOnly = true;
-            TransferDate.Width = 106;
-            // 
-            // Discription
-            // 
-            Discription.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
-            Discription.HeaderText = "توضیحات";
-            Discription.MinimumWidth = 6;
-            Discription.Name = "Discription";
-            Discription.ReadOnly = true;
-            Discription.Width = 98;
-            // 
             // frmStudentAssets
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(689, 618);
+            ClientSize = new Size(736, 618);
             Controls.Add(groupBox2);
             Controls.Add(groupBox1);
             Controls.Add(btnRepairRoomAsset);

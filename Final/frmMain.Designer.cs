@@ -84,7 +84,7 @@
             // 
             // HighMenu
             // 
-            HighMenu.DropDownItems.AddRange(new ToolStripItem[] { mnuFrmDormitory, mnuSetDormitory, mnufrmRepairRoomAssetsRequest, mnuFrmRoomAssets, mnuSetManager, frmSetUser, mnufrmSetRoomAssets, mnufrmSubstituteStudentAssets, mnuFrmUser, mnuFrmEditUser, mnuFrmManagers, mnufrmDormitoryOwner, mnufrmBlockOwner });
+            HighMenu.DropDownItems.AddRange(new ToolStripItem[] { mnuFrmUser, mnuFrmManagers, mnufrmDormitoryOwner, mnufrmBlockOwner, mnuFrmDormitory, mnuFrmRoomAssets, mnufrmRepairRoomAssetsRequest, mnufrmSubstituteStudentAssets, frmSetUser, mnuSetManager, mnuSetDormitory, mnufrmSetRoomAssets, mnuFrmEditUser });
             HighMenu.Name = "HighMenu";
             HighMenu.Size = new Size(86, 24);
             HighMenu.Text = "امور اداری";
