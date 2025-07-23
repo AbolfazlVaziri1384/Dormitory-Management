@@ -47,11 +47,11 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new Font("Microsoft Sans Serif", 10.2F, FontStyle.Bold);
+            label1.Font = new Font("B Koodak", 10.2F, FontStyle.Bold);
             label1.ForeColor = Color.MediumBlue;
             label1.Location = new Point(633, 105);
             label1.Name = "label1";
-            label1.Size = new Size(85, 20);
+            label1.Size = new Size(77, 29);
             label1.TabIndex = 0;
             label1.Text = ":نام خوابگاه";
             label1.Click += label1_Click;
@@ -59,11 +59,11 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Font = new Font("Microsoft Sans Serif", 10.2F, FontStyle.Bold);
+            label2.Font = new Font("B Koodak", 10.2F, FontStyle.Bold);
             label2.ForeColor = Color.MediumBlue;
             label2.Location = new Point(633, 148);
             label2.Name = "label2";
-            label2.Size = new Size(51, 20);
+            label2.Size = new Size(55, 29);
             label2.TabIndex = 1;
             label2.Text = ":آدرس";
             // 
@@ -90,11 +90,11 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Font = new Font("Microsoft Sans Serif", 10.2F, FontStyle.Bold);
+            label3.Font = new Font("B Koodak", 10.2F, FontStyle.Bold);
             label3.ForeColor = Color.MediumBlue;
             label3.Location = new Point(633, 245);
             label3.Name = "label3";
-            label3.Size = new Size(59, 20);
+            label3.Size = new Size(58, 29);
             label3.TabIndex = 4;
             label3.Text = ":ظرفیت";
             // 
@@ -112,7 +112,7 @@
             // btnSave
             // 
             btnSave.BackColor = Color.Honeydew;
-            btnSave.Font = new Font("Microsoft Sans Serif", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 178);
+            btnSave.Font = new Font("B Koodak", 10.2F, FontStyle.Bold);
             btnSave.ForeColor = Color.MediumSeaGreen;
             btnSave.Location = new Point(421, 333);
             btnSave.Name = "btnSave";
@@ -135,11 +135,11 @@
             // radMan
             // 
             radMan.AutoSize = true;
-            radMan.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Bold);
+            radMan.Font = new Font("B Koodak", 10.2F, FontStyle.Bold);
             radMan.ForeColor = Color.MediumBlue;
             radMan.Location = new Point(483, 288);
             radMan.Name = "radMan";
-            radMan.Size = new Size(75, 22);
+            radMan.Size = new Size(76, 33);
             radMan.TabIndex = 28;
             radMan.TabStop = true;
             radMan.Text = "برادران";
@@ -148,11 +148,11 @@
             // radWoman
             // 
             radWoman.AutoSize = true;
-            radWoman.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Bold);
+            radWoman.Font = new Font("B Koodak", 10.2F, FontStyle.Bold);
             radWoman.ForeColor = Color.MediumBlue;
             radWoman.Location = new Point(399, 288);
             radWoman.Name = "radWoman";
-            radWoman.Size = new Size(80, 22);
+            radWoman.Size = new Size(83, 33);
             radWoman.TabIndex = 27;
             radWoman.TabStop = true;
             radWoman.Text = "خواهران";
@@ -161,22 +161,22 @@
             // label11
             // 
             label11.AutoSize = true;
-            label11.Font = new Font("Microsoft Sans Serif", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 178);
+            label11.Font = new Font("B Koodak", 10.2F, FontStyle.Bold);
             label11.ForeColor = Color.MediumBlue;
             label11.Location = new Point(633, 289);
             label11.Name = "label11";
-            label11.Size = new Size(58, 20);
+            label11.Size = new Size(61, 29);
             label11.TabIndex = 26;
             label11.Text = ":جنسیت";
             // 
             // radFamily
             // 
             radFamily.AutoSize = true;
-            radFamily.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Bold);
+            radFamily.Font = new Font("B Koodak", 10.2F, FontStyle.Bold);
             radFamily.ForeColor = Color.MediumBlue;
             radFamily.Location = new Point(560, 288);
             radFamily.Name = "radFamily";
-            radFamily.Size = new Size(68, 22);
+            radFamily.Size = new Size(71, 33);
             radFamily.TabIndex = 29;
             radFamily.TabStop = true;
             radFamily.Text = "متاهلی";

@@ -4,6 +4,12 @@
     <Compile Update="AboutBox1.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="frmBlockOwners.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="frmDormitoryOwner.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="frmForgotPassword.cs">
       <SubType>Form</SubType>
     </Compile>

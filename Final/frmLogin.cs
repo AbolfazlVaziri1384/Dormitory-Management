@@ -66,6 +66,9 @@ namespace Final
                             case 1:
                                 role = "مدیر";
                                 break;
+                            case 2:
+                                role = "مسئول خوابگاه";
+                                break;
                             case 3:
                                 role = "مسئول بلوک";
                                 break;

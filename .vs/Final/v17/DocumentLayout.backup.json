@@ -1,38 +1,126 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\tuf Pc\\Desktop\\FINAL project\\Nerds_First_Project\\",
+  "WorkspaceRootPath": "C:\\Users\\Asus\\Desktop\\Update Pro\\Nerds_First_Project\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|c:\\users\\tuf pc\\desktop\\final project\\nerds_first_project\\final\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|solutionrelative:final\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|c:\\users\\asus\\desktop\\update pro\\nerds_first_project\\final\\frmusers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|solutionrelative:final\\frmusers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|c:\\users\\tuf pc\\desktop\\final project\\nerds_first_project\\final\\properties\\resources.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}",
-      "RelativeMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|solutionrelative:final\\properties\\resources.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}"
+      "AbsoluteMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|c:\\users\\asus\\desktop\\update pro\\nerds_first_project\\final\\frmsubstitutestudentassets.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|solutionrelative:final\\frmsubstitutestudentassets.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|C:\\Users\\tuf Pc\\Desktop\\FINAL project\\Nerds_First_Project\\final\\frmrepairroomasset.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|solutionrelative:final\\frmrepairroomasset.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|c:\\users\\tuf pc\\desktop\\final project\\nerds_first_project\\final\\models\\repair.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|solutionrelative:final\\models\\repair.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|c:\\users\\tuf pc\\desktop\\final project\\nerds_first_project\\final\\frmstudentassets.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|solutionrelative:final\\frmstudentassets.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|c:\\users\\tuf pc\\desktop\\final project\\nerds_first_project\\final\\frmstudentassets.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|c:\\users\\asus\\desktop\\update pro\\nerds_first_project\\final\\frmstudentassets.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|solutionrelative:final\\frmstudentassets.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|c:\\users\\tuf pc\\desktop\\final project\\nerds_first_project\\final\\frmsettransferstudentassets.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|solutionrelative:final\\frmsettransferstudentassets.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|c:\\users\\asus\\desktop\\update pro\\nerds_first_project\\final\\frmsetuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|solutionrelative:final\\frmsetuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|c:\\users\\tuf pc\\desktop\\final project\\nerds_first_project\\final\\frmstudentassets.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|solutionrelative:final\\frmstudentassets.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|c:\\users\\asus\\desktop\\update pro\\nerds_first_project\\final\\frmsettransferstudentassets.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|solutionrelative:final\\frmsettransferstudentassets.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|c:\\users\\asus\\desktop\\update pro\\nerds_first_project\\final\\frmsettransferroomassethistory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|solutionrelative:final\\frmsettransferroomassethistory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|c:\\users\\asus\\desktop\\update pro\\nerds_first_project\\final\\frmsetstudentassets.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|solutionrelative:final\\frmsetstudentassets.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|c:\\users\\asus\\desktop\\update pro\\nerds_first_project\\final\\frmsetroomassignment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|solutionrelative:final\\frmsetroomassignment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|c:\\users\\asus\\desktop\\update pro\\nerds_first_project\\final\\frmsetroomassets.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|solutionrelative:final\\frmsetroomassets.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|c:\\users\\asus\\desktop\\update pro\\nerds_first_project\\final\\frmsetroom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|solutionrelative:final\\frmsetroom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|c:\\users\\asus\\desktop\\update pro\\nerds_first_project\\final\\frmsetrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|solutionrelative:final\\frmsetrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|c:\\users\\asus\\desktop\\update pro\\nerds_first_project\\final\\frmsetdormitory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|solutionrelative:final\\frmsetdormitory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|c:\\users\\asus\\desktop\\update pro\\nerds_first_project\\final\\frmsetblock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|solutionrelative:final\\frmsetblock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|c:\\users\\asus\\desktop\\update pro\\nerds_first_project\\final\\frmroomassignment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|solutionrelative:final\\frmroomassignment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|c:\\users\\asus\\desktop\\update pro\\nerds_first_project\\final\\frmroomassets.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|solutionrelative:final\\frmroomassets.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|c:\\users\\asus\\desktop\\update pro\\nerds_first_project\\final\\frmroom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|solutionrelative:final\\frmroom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|c:\\users\\asus\\desktop\\update pro\\nerds_first_project\\final\\frmrepairroomassetsrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|solutionrelative:final\\frmrepairroomassetsrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|c:\\users\\asus\\desktop\\update pro\\nerds_first_project\\final\\frmrepairroomasset.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|solutionrelative:final\\frmrepairroomasset.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|c:\\users\\asus\\desktop\\update pro\\nerds_first_project\\final\\frmrepairroomasset.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|solutionrelative:final\\frmrepairroomasset.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|c:\\users\\asus\\desktop\\update pro\\nerds_first_project\\final\\frmmanagers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|solutionrelative:final\\frmmanagers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|c:\\users\\asus\\desktop\\update pro\\nerds_first_project\\final\\frmdormitoryowner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|solutionrelative:final\\frmdormitoryowner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|c:\\users\\asus\\desktop\\update pro\\nerds_first_project\\final\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|solutionrelative:final\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|c:\\users\\asus\\desktop\\update pro\\nerds_first_project\\final\\frmdormitory.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|solutionrelative:final\\frmdormitory.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|c:\\users\\asus\\desktop\\update pro\\nerds_first_project\\final\\frmblock.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|solutionrelative:final\\frmblock.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|c:\\users\\asus\\desktop\\update pro\\nerds_first_project\\final\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|solutionrelative:final\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|c:\\users\\asus\\desktop\\update pro\\nerds_first_project\\final\\frmforgotpassword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|solutionrelative:final\\frmforgotpassword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|c:\\users\\asus\\desktop\\update pro\\nerds_first_project\\final\\frmdormitory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|solutionrelative:final\\frmdormitory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|c:\\users\\asus\\desktop\\update pro\\nerds_first_project\\final\\frmblockowners.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|solutionrelative:final\\frmblockowners.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|c:\\users\\asus\\desktop\\update pro\\nerds_first_project\\final\\frmblock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|solutionrelative:final\\frmblock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|c:\\users\\asus\\desktop\\update pro\\nerds_first_project\\final\\aboutbox1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|solutionrelative:final\\aboutbox1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,7 +130,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -53,102 +141,379 @@
               "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Resources.resx",
-              "DocumentMoniker": "C:\\Users\\tuf Pc\\Desktop\\FINAL project\\Nerds_First_Project\\Final\\Properties\\Resources.resx",
-              "RelativeDocumentMoniker": "Final\\Properties\\Resources.resx",
-              "ToolTip": "C:\\Users\\tuf Pc\\Desktop\\FINAL project\\Nerds_First_Project\\Final\\Properties\\Resources.resx",
-              "RelativeToolTip": "Final\\Properties\\Resources.resx",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
-              "WhenOpened": "2025-07-23T09:36:06.19Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "frmMain.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\tuf Pc\\Desktop\\FINAL project\\Nerds_First_Project\\Final\\frmMain.cs",
-              "RelativeDocumentMoniker": "Final\\frmMain.cs",
-              "ToolTip": "C:\\Users\\tuf Pc\\Desktop\\FINAL project\\Nerds_First_Project\\Final\\frmMain.cs [Design]",
-              "RelativeToolTip": "Final\\frmMain.cs [Design]",
+              "Title": "frmUsers.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\Update Pro\\Nerds_First_Project\\Final\\frmUsers.cs",
+              "RelativeDocumentMoniker": "Final\\frmUsers.cs",
+              "ToolTip": "C:\\Users\\Asus\\Desktop\\Update Pro\\Nerds_First_Project\\Final\\frmUsers.cs [Design]",
+              "RelativeToolTip": "Final\\frmUsers.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-23T09:02:27.182Z",
+              "WhenOpened": "2025-07-23T12:48:40.381Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "frmSubstituteStudentAssets.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\Update Pro\\Nerds_First_Project\\Final\\frmSubstituteStudentAssets.cs",
+              "RelativeDocumentMoniker": "Final\\frmSubstituteStudentAssets.cs",
+              "ToolTip": "C:\\Users\\Asus\\Desktop\\Update Pro\\Nerds_First_Project\\Final\\frmSubstituteStudentAssets.cs [Design]",
+              "RelativeToolTip": "Final\\frmSubstituteStudentAssets.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-23T12:48:38.277Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "frmStudentAssets.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\Update Pro\\Nerds_First_Project\\Final\\frmStudentAssets.cs",
+              "RelativeDocumentMoniker": "Final\\frmStudentAssets.cs",
+              "ToolTip": "C:\\Users\\Asus\\Desktop\\Update Pro\\Nerds_First_Project\\Final\\frmStudentAssets.cs [Design]",
+              "RelativeToolTip": "Final\\frmStudentAssets.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-23T12:48:35.265Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "Repair.cs",
-              "DocumentMoniker": "C:\\Users\\tuf Pc\\Desktop\\FINAL project\\Nerds_First_Project\\Final\\Models\\Repair.cs",
-              "RelativeDocumentMoniker": "Final\\Models\\Repair.cs",
-              "ToolTip": "C:\\Users\\tuf Pc\\Desktop\\FINAL project\\Nerds_First_Project\\Final\\Models\\Repair.cs",
-              "RelativeToolTip": "Final\\Models\\Repair.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAgwBkAAAAEAAAAAAAAAA==",
+              "Title": "frmSetUser.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\Update Pro\\Nerds_First_Project\\Final\\frmSetUser.cs",
+              "RelativeDocumentMoniker": "Final\\frmSetUser.cs",
+              "ToolTip": "C:\\Users\\Asus\\Desktop\\Update Pro\\Nerds_First_Project\\Final\\frmSetUser.cs [Design]",
+              "RelativeToolTip": "Final\\frmSetUser.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-22T16:19:12.046Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "frmRepairRoomAsset.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\tuf Pc\\Desktop\\FINAL project\\Nerds_First_Project\\Final\\frmRepairRoomAsset.cs",
-              "RelativeDocumentMoniker": "Final\\frmRepairRoomAsset.cs",
-              "ToolTip": "C:\\Users\\tuf Pc\\Desktop\\FINAL project\\Nerds_First_Project\\Final\\frmRepairRoomAsset.cs [Design]",
-              "RelativeToolTip": "Final\\frmRepairRoomAsset.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-22T16:12:34.814Z",
+              "WhenOpened": "2025-07-23T12:48:33.309Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "frmStudentAssets.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\tuf Pc\\Desktop\\FINAL project\\Nerds_First_Project\\Final\\frmStudentAssets.Designer.cs",
-              "RelativeDocumentMoniker": "Final\\frmStudentAssets.Designer.cs",
-              "ToolTip": "C:\\Users\\tuf Pc\\Desktop\\FINAL project\\Nerds_First_Project\\Final\\frmStudentAssets.Designer.cs",
-              "RelativeToolTip": "Final\\frmStudentAssets.Designer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAIAAAAAAAAAA==",
+              "Title": "frmSetTransferStudentAssets.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\Update Pro\\Nerds_First_Project\\Final\\frmSetTransferStudentAssets.cs",
+              "RelativeDocumentMoniker": "Final\\frmSetTransferStudentAssets.cs",
+              "ToolTip": "C:\\Users\\Asus\\Desktop\\Update Pro\\Nerds_First_Project\\Final\\frmSetTransferStudentAssets.cs [Design]",
+              "RelativeToolTip": "Final\\frmSetTransferStudentAssets.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-22T16:09:27.749Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-23T12:48:30.986Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "frmStudentAssets.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\tuf Pc\\Desktop\\FINAL project\\Nerds_First_Project\\Final\\frmStudentAssets.cs",
-              "RelativeDocumentMoniker": "Final\\frmStudentAssets.cs",
-              "ToolTip": "C:\\Users\\tuf Pc\\Desktop\\FINAL project\\Nerds_First_Project\\Final\\frmStudentAssets.cs [Design]",
-              "RelativeToolTip": "Final\\frmStudentAssets.cs [Design]",
+              "Title": "frmSetTransferRoomAssetHistory.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\Update Pro\\Nerds_First_Project\\Final\\frmSetTransferRoomAssetHistory.cs",
+              "RelativeDocumentMoniker": "Final\\frmSetTransferRoomAssetHistory.cs",
+              "ToolTip": "C:\\Users\\Asus\\Desktop\\Update Pro\\Nerds_First_Project\\Final\\frmSetTransferRoomAssetHistory.cs [Design]",
+              "RelativeToolTip": "Final\\frmSetTransferRoomAssetHistory.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-22T16:05:19.077Z",
+              "WhenOpened": "2025-07-23T12:48:24.94Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "frmSetTransferStudentAssets.cs",
-              "DocumentMoniker": "C:\\Users\\tuf Pc\\Desktop\\FINAL project\\Nerds_First_Project\\Final\\frmSetTransferStudentAssets.cs",
-              "RelativeDocumentMoniker": "Final\\frmSetTransferStudentAssets.cs",
-              "ToolTip": "C:\\Users\\tuf Pc\\Desktop\\FINAL project\\Nerds_First_Project\\Final\\frmSetTransferStudentAssets.cs",
-              "RelativeToolTip": "Final\\frmSetTransferStudentAssets.cs",
-              "ViewState": "AgIAAC4AAAAAAAAAAAAUwCIAAACDAAAAAAAAAA==",
+              "Title": "frmSetStudentAssets.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\Update Pro\\Nerds_First_Project\\Final\\frmSetStudentAssets.cs",
+              "RelativeDocumentMoniker": "Final\\frmSetStudentAssets.cs",
+              "ToolTip": "C:\\Users\\Asus\\Desktop\\Update Pro\\Nerds_First_Project\\Final\\frmSetStudentAssets.cs [Design]",
+              "RelativeToolTip": "Final\\frmSetStudentAssets.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-22T16:22:46.653Z"
+              "WhenOpened": "2025-07-23T12:48:22.361Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "frmStudentAssets.cs",
-              "DocumentMoniker": "C:\\Users\\tuf Pc\\Desktop\\FINAL project\\Nerds_First_Project\\Final\\frmStudentAssets.cs",
-              "RelativeDocumentMoniker": "Final\\frmStudentAssets.cs",
-              "ToolTip": "C:\\Users\\tuf Pc\\Desktop\\FINAL project\\Nerds_First_Project\\Final\\frmStudentAssets.cs",
-              "RelativeToolTip": "Final\\frmStudentAssets.cs",
-              "ViewState": "AgIAAMAAAAAAAAAAAAAqwNoAAAAnAAAAAAAAAA==",
+              "Title": "frmSetRoomAssignment.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\Update Pro\\Nerds_First_Project\\Final\\frmSetRoomAssignment.cs",
+              "RelativeDocumentMoniker": "Final\\frmSetRoomAssignment.cs",
+              "ToolTip": "C:\\Users\\Asus\\Desktop\\Update Pro\\Nerds_First_Project\\Final\\frmSetRoomAssignment.cs [Design]",
+              "RelativeToolTip": "Final\\frmSetRoomAssignment.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-22T15:46:56.754Z"
+              "WhenOpened": "2025-07-23T12:48:19.631Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "frmSetRoomAssets.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\Update Pro\\Nerds_First_Project\\Final\\frmSetRoomAssets.cs",
+              "RelativeDocumentMoniker": "Final\\frmSetRoomAssets.cs",
+              "ToolTip": "C:\\Users\\Asus\\Desktop\\Update Pro\\Nerds_First_Project\\Final\\frmSetRoomAssets.cs [Design]",
+              "RelativeToolTip": "Final\\frmSetRoomAssets.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-23T12:48:16.876Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "frmSetRoom.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\Update Pro\\Nerds_First_Project\\Final\\frmSetRoom.cs",
+              "RelativeDocumentMoniker": "Final\\frmSetRoom.cs",
+              "ToolTip": "C:\\Users\\Asus\\Desktop\\Update Pro\\Nerds_First_Project\\Final\\frmSetRoom.cs [Design]",
+              "RelativeToolTip": "Final\\frmSetRoom.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-23T12:47:58.752Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "frmSetRole.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\Update Pro\\Nerds_First_Project\\Final\\frmSetRole.cs",
+              "RelativeDocumentMoniker": "Final\\frmSetRole.cs",
+              "ToolTip": "C:\\Users\\Asus\\Desktop\\Update Pro\\Nerds_First_Project\\Final\\frmSetRole.cs [Design]",
+              "RelativeToolTip": "Final\\frmSetRole.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-23T12:47:54.722Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "frmSetDormitory.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\Update Pro\\Nerds_First_Project\\Final\\frmSetDormitory.cs",
+              "RelativeDocumentMoniker": "Final\\frmSetDormitory.cs",
+              "ToolTip": "C:\\Users\\Asus\\Desktop\\Update Pro\\Nerds_First_Project\\Final\\frmSetDormitory.cs [Design]",
+              "RelativeToolTip": "Final\\frmSetDormitory.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-23T12:47:29.506Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "frmSetBlock.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\Update Pro\\Nerds_First_Project\\Final\\frmSetBlock.cs",
+              "RelativeDocumentMoniker": "Final\\frmSetBlock.cs",
+              "ToolTip": "C:\\Users\\Asus\\Desktop\\Update Pro\\Nerds_First_Project\\Final\\frmSetBlock.cs [Design]",
+              "RelativeToolTip": "Final\\frmSetBlock.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-23T12:47:11.728Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "frmRoomAssignment.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\Update Pro\\Nerds_First_Project\\Final\\frmRoomAssignment.cs",
+              "RelativeDocumentMoniker": "Final\\frmRoomAssignment.cs",
+              "ToolTip": "C:\\Users\\Asus\\Desktop\\Update Pro\\Nerds_First_Project\\Final\\frmRoomAssignment.cs [Design]",
+              "RelativeToolTip": "Final\\frmRoomAssignment.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-23T12:46:27.017Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "frmRoomAssets.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\Update Pro\\Nerds_First_Project\\Final\\frmRoomAssets.cs",
+              "RelativeDocumentMoniker": "Final\\frmRoomAssets.cs",
+              "ToolTip": "C:\\Users\\Asus\\Desktop\\Update Pro\\Nerds_First_Project\\Final\\frmRoomAssets.cs [Design]",
+              "RelativeToolTip": "Final\\frmRoomAssets.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-23T12:46:22.791Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "frmRoom.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\Update Pro\\Nerds_First_Project\\Final\\frmRoom.cs",
+              "RelativeDocumentMoniker": "Final\\frmRoom.cs",
+              "ToolTip": "C:\\Users\\Asus\\Desktop\\Update Pro\\Nerds_First_Project\\Final\\frmRoom.cs [Design]",
+              "RelativeToolTip": "Final\\frmRoom.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-23T12:46:03.41Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "frmRepairRoomAssetsRequest.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\Update Pro\\Nerds_First_Project\\Final\\frmRepairRoomAssetsRequest.cs",
+              "RelativeDocumentMoniker": "Final\\frmRepairRoomAssetsRequest.cs",
+              "ToolTip": "C:\\Users\\Asus\\Desktop\\Update Pro\\Nerds_First_Project\\Final\\frmRepairRoomAssetsRequest.cs [Design]",
+              "RelativeToolTip": "Final\\frmRepairRoomAssetsRequest.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-23T12:45:59.21Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "frmRepairRoomAsset.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\Update Pro\\Nerds_First_Project\\Final\\frmRepairRoomAsset.cs",
+              "RelativeDocumentMoniker": "Final\\frmRepairRoomAsset.cs",
+              "ToolTip": "C:\\Users\\Asus\\Desktop\\Update Pro\\Nerds_First_Project\\Final\\frmRepairRoomAsset.cs",
+              "RelativeToolTip": "Final\\frmRepairRoomAsset.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAA3wBgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-23T12:44:45.652Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "frmRepairRoomAsset.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\Update Pro\\Nerds_First_Project\\Final\\frmRepairRoomAsset.cs",
+              "RelativeDocumentMoniker": "Final\\frmRepairRoomAsset.cs",
+              "ToolTip": "C:\\Users\\Asus\\Desktop\\Update Pro\\Nerds_First_Project\\Final\\frmRepairRoomAsset.cs [Design]",
+              "RelativeToolTip": "Final\\frmRepairRoomAsset.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-23T12:44:31.676Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "frmManagers.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\Update Pro\\Nerds_First_Project\\Final\\frmManagers.cs",
+              "RelativeDocumentMoniker": "Final\\frmManagers.cs",
+              "ToolTip": "C:\\Users\\Asus\\Desktop\\Update Pro\\Nerds_First_Project\\Final\\frmManagers.cs [Design]",
+              "RelativeToolTip": "Final\\frmManagers.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-23T12:44:12.621Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "frmDormitory.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\Update Pro\\Nerds_First_Project\\Final\\frmDormitory.Designer.cs",
+              "RelativeDocumentMoniker": "Final\\frmDormitory.Designer.cs",
+              "ToolTip": "C:\\Users\\Asus\\Desktop\\Update Pro\\Nerds_First_Project\\Final\\frmDormitory.Designer.cs",
+              "RelativeToolTip": "Final\\frmDormitory.Designer.cs",
+              "ViewState": "AgIAAMABAAAAAAAAAAAlwNQBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-23T12:41:35.059Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "frmBlock.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\Update Pro\\Nerds_First_Project\\Final\\frmBlock.Designer.cs",
+              "RelativeDocumentMoniker": "Final\\frmBlock.Designer.cs",
+              "ToolTip": "C:\\Users\\Asus\\Desktop\\Update Pro\\Nerds_First_Project\\Final\\frmBlock.Designer.cs",
+              "RelativeToolTip": "Final\\frmBlock.Designer.cs",
+              "ViewState": "AgIAAH0BAAAAAAAAAAAlwJEBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-23T12:41:27.774Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "frmMain.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\Update Pro\\Nerds_First_Project\\Final\\frmMain.cs",
+              "RelativeDocumentMoniker": "Final\\frmMain.cs",
+              "ToolTip": "C:\\Users\\Asus\\Desktop\\Update Pro\\Nerds_First_Project\\Final\\frmMain.cs [Design]",
+              "RelativeToolTip": "Final\\frmMain.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-23T12:40:18.765Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "frmLogin.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\Update Pro\\Nerds_First_Project\\Final\\frmLogin.cs",
+              "RelativeDocumentMoniker": "Final\\frmLogin.cs",
+              "ToolTip": "C:\\Users\\Asus\\Desktop\\Update Pro\\Nerds_First_Project\\Final\\frmLogin.cs [Design]",
+              "RelativeToolTip": "Final\\frmLogin.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-23T12:40:17.469Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "frmForgotPassword.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\Update Pro\\Nerds_First_Project\\Final\\frmForgotPassword.cs",
+              "RelativeDocumentMoniker": "Final\\frmForgotPassword.cs",
+              "ToolTip": "C:\\Users\\Asus\\Desktop\\Update Pro\\Nerds_First_Project\\Final\\frmForgotPassword.cs [Design]",
+              "RelativeToolTip": "Final\\frmForgotPassword.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-23T12:40:09.106Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "frmDormitoryOwner.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\Update Pro\\Nerds_First_Project\\Final\\frmDormitoryOwner.cs",
+              "RelativeDocumentMoniker": "Final\\frmDormitoryOwner.cs",
+              "ToolTip": "C:\\Users\\Asus\\Desktop\\Update Pro\\Nerds_First_Project\\Final\\frmDormitoryOwner.cs [Design]",
+              "RelativeToolTip": "Final\\frmDormitoryOwner.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-23T12:39:56.204Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "frmDormitory.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\Update Pro\\Nerds_First_Project\\Final\\frmDormitory.cs",
+              "RelativeDocumentMoniker": "Final\\frmDormitory.cs",
+              "ToolTip": "C:\\Users\\Asus\\Desktop\\Update Pro\\Nerds_First_Project\\Final\\frmDormitory.cs [Design]",
+              "RelativeToolTip": "Final\\frmDormitory.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-23T12:38:43.42Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "frmBlockOwners.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\Update Pro\\Nerds_First_Project\\Final\\frmBlockOwners.cs",
+              "RelativeDocumentMoniker": "Final\\frmBlockOwners.cs",
+              "ToolTip": "C:\\Users\\Asus\\Desktop\\Update Pro\\Nerds_First_Project\\Final\\frmBlockOwners.cs [Design]",
+              "RelativeToolTip": "Final\\frmBlockOwners.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-23T12:37:50.224Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "frmBlock.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\Update Pro\\Nerds_First_Project\\Final\\frmBlock.cs",
+              "RelativeDocumentMoniker": "Final\\frmBlock.cs",
+              "ToolTip": "C:\\Users\\Asus\\Desktop\\Update Pro\\Nerds_First_Project\\Final\\frmBlock.cs [Design]",
+              "RelativeToolTip": "Final\\frmBlock.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-23T12:36:06.847Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "AboutBox1.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\Update Pro\\Nerds_First_Project\\Final\\AboutBox1.cs",
+              "RelativeDocumentMoniker": "Final\\AboutBox1.cs",
+              "ToolTip": "C:\\Users\\Asus\\Desktop\\Update Pro\\Nerds_First_Project\\Final\\AboutBox1.cs [Design]",
+              "RelativeToolTip": "Final\\AboutBox1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-23T12:35:59.756Z",
+              "EditorCaption": " [Design]"
             }
           ]
         }

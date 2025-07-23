@@ -131,7 +131,7 @@
             // btnPrint
             // 
             btnPrint.BackColor = Color.AliceBlue;
-            btnPrint.Font = new Font("Microsoft Sans Serif", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 178);
+            btnPrint.Font = new Font("B Koodak", 10.8F, FontStyle.Bold);
             btnPrint.ForeColor = Color.DarkOrchid;
             btnPrint.Location = new Point(282, 379);
             btnPrint.Name = "btnPrint";
@@ -154,7 +154,7 @@
             // btnDelete
             // 
             btnDelete.BackColor = Color.AliceBlue;
-            btnDelete.Font = new Font("Microsoft Sans Serif", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 178);
+            btnDelete.Font = new Font("B Koodak", 10.8F, FontStyle.Bold);
             btnDelete.ForeColor = Color.Crimson;
             btnDelete.Location = new Point(117, 379);
             btnDelete.Name = "btnDelete";
@@ -177,7 +177,7 @@
             // btnSetRoomAssignment
             // 
             btnSetRoomAssignment.BackColor = Color.AliceBlue;
-            btnSetRoomAssignment.Font = new Font("Microsoft Sans Serif", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 178);
+            btnSetRoomAssignment.Font = new Font("B Koodak", 10.8F, FontStyle.Bold);
             btnSetRoomAssignment.ForeColor = Color.ForestGreen;
             btnSetRoomAssignment.Location = new Point(448, 379);
             btnSetRoomAssignment.Name = "btnSetRoomAssignment";
@@ -197,7 +197,7 @@
             groupBox1.Controls.Add(label1);
             groupBox1.Controls.Add(lblDormitory);
             groupBox1.Controls.Add(label6);
-            groupBox1.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point, 178);
+            groupBox1.Font = new Font("B Koodak", 10.8F, FontStyle.Bold);
             groupBox1.ForeColor = SystemColors.HotTrack;
             groupBox1.Location = new Point(12, 21);
             groupBox1.Name = "groupBox1";
@@ -211,88 +211,88 @@
             // lblDormitoryOwner
             // 
             lblDormitoryOwner.AutoSize = true;
-            lblDormitoryOwner.Font = new Font("Microsoft Sans Serif", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 178);
+            lblDormitoryOwner.Font = new Font("B Koodak", 10.8F, FontStyle.Bold);
             lblDormitoryOwner.ForeColor = Color.OliveDrab;
             lblDormitoryOwner.Location = new Point(358, 101);
             lblDormitoryOwner.Name = "lblDormitoryOwner";
-            lblDormitoryOwner.Size = new Size(154, 22);
+            lblDormitoryOwner.Size = new Size(165, 31);
             lblDormitoryOwner.TabIndex = 44;
             lblDormitoryOwner.Text = "DormitoryOwner";
             // 
             // lblBlockOwner
             // 
             lblBlockOwner.AutoSize = true;
-            lblBlockOwner.Font = new Font("Microsoft Sans Serif", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 178);
+            lblBlockOwner.Font = new Font("B Koodak", 10.8F, FontStyle.Bold);
             lblBlockOwner.ForeColor = Color.SaddleBrown;
-            lblBlockOwner.Location = new Point(45, 103);
+            lblBlockOwner.Location = new Point(32, 103);
             lblBlockOwner.Name = "lblBlockOwner";
-            lblBlockOwner.Size = new Size(117, 22);
+            lblBlockOwner.Size = new Size(127, 31);
             lblBlockOwner.TabIndex = 40;
             lblBlockOwner.Text = "BlockOwner";
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Font = new Font("Microsoft Sans Serif", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 178);
+            label3.Font = new Font("B Koodak", 10.8F, FontStyle.Bold);
             label3.ForeColor = Color.SaddleBrown;
             label3.Location = new Point(211, 101);
             label3.Name = "label3";
-            label3.Size = new Size(103, 22);
+            label3.Size = new Size(100, 31);
             label3.TabIndex = 39;
             label3.Text = "مسئول بلوک :";
             // 
             // label4
             // 
             label4.AutoSize = true;
-            label4.Font = new Font("Microsoft Sans Serif", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 178);
+            label4.Font = new Font("B Koodak", 10.8F, FontStyle.Bold);
             label4.ForeColor = Color.OliveDrab;
             label4.Location = new Point(554, 101);
             label4.Name = "label4";
-            label4.Size = new Size(122, 22);
+            label4.Size = new Size(112, 31);
             label4.TabIndex = 43;
             label4.Text = "مسئول خوابگاه :";
             // 
             // lblBlock
             // 
             lblBlock.AutoSize = true;
-            lblBlock.Font = new Font("Microsoft Sans Serif", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 178);
+            lblBlock.Font = new Font("B Koodak", 10.8F, FontStyle.Bold);
             lblBlock.ForeColor = Color.SaddleBrown;
-            lblBlock.Location = new Point(46, 52);
+            lblBlock.Location = new Point(33, 52);
             lblBlock.Name = "lblBlock";
-            lblBlock.Size = new Size(110, 22);
+            lblBlock.Size = new Size(120, 31);
             lblBlock.TabIndex = 38;
             lblBlock.Text = "BlockName";
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new Font("Microsoft Sans Serif", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 178);
+            label1.Font = new Font("B Koodak", 10.8F, FontStyle.Bold);
             label1.ForeColor = Color.SaddleBrown;
             label1.Location = new Point(233, 51);
             label1.Name = "label1";
-            label1.Size = new Size(76, 22);
+            label1.Size = new Size(76, 31);
             label1.TabIndex = 37;
             label1.Text = "نام بلوک :";
             // 
             // lblDormitory
             // 
             lblDormitory.AutoSize = true;
-            lblDormitory.Font = new Font("Microsoft Sans Serif", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 178);
+            lblDormitory.Font = new Font("B Koodak", 10.8F, FontStyle.Bold);
             lblDormitory.ForeColor = Color.OliveDrab;
             lblDormitory.Location = new Point(360, 48);
             lblDormitory.Name = "lblDormitory";
-            lblDormitory.Size = new Size(147, 22);
+            lblDormitory.Size = new Size(158, 31);
             lblDormitory.TabIndex = 42;
             lblDormitory.Text = "DormitoryName";
             // 
             // label6
             // 
             label6.AutoSize = true;
-            label6.Font = new Font("Microsoft Sans Serif", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 178);
+            label6.Font = new Font("B Koodak", 10.8F, FontStyle.Bold);
             label6.ForeColor = Color.OliveDrab;
             label6.Location = new Point(581, 48);
             label6.Name = "label6";
-            label6.Size = new Size(90, 22);
+            label6.Size = new Size(85, 31);
             label6.TabIndex = 41;
             label6.Text = "نام خوبگاه :";
             // 
@@ -335,6 +335,7 @@
             Controls.Add(pictureBox6);
             Controls.Add(dgvStudents);
             MaximizeBox = false;
+            Name = "frmRoomAssignment";
             StartPosition = FormStartPosition.CenterParent;
             Text = "RoomAssignment";
             Load += frmRoomAssignment_Load;

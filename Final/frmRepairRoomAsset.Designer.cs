@@ -33,9 +33,6 @@
             label1 = new Label();
             label2 = new Label();
             btnSave = new Button();
-            pictureBox1 = new PictureBox();
-            label3 = new Label();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // cmbStatus
@@ -90,32 +87,11 @@
             btnSave.UseVisualStyleBackColor = false;
             btnSave.Click += btnSave_Click;
             // 
-            // pictureBox1
-            // 
-            pictureBox1.Image = Properties.Resources.digital_clock;
-            pictureBox1.Location = new Point(345, 208);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(183, 84);
-            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox1.TabIndex = 22;
-            pictureBox1.TabStop = false;
-            // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.Location = new Point(410, 238);
-            label3.Name = "label3";
-            label3.Size = new Size(50, 20);
-            label3.TabIndex = 23;
-            label3.Text = "label3";
-            // 
             // frmRepairRoomAsset
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(572, 328);
-            Controls.Add(label3);
-            Controls.Add(pictureBox1);
             Controls.Add(btnSave);
             Controls.Add(label2);
             Controls.Add(label1);
@@ -126,7 +102,6 @@
             StartPosition = FormStartPosition.CenterParent;
             Text = "درخواست تعمیر وسیله";
             Load += frmRepairRoomAsset_Load;
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -138,7 +113,5 @@
         private Label label1;
         private Label label2;
         private Button btnSave;
-        private PictureBox pictureBox1;
-        private Label label3;
     }
 }

@@ -52,11 +52,11 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Font = new Font("Microsoft Sans Serif", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 178);
+            label2.Font = new Font("B Koodak", 10.8F, FontStyle.Bold);
             label2.ForeColor = Color.MediumBlue;
             label2.Location = new Point(538, 110);
             label2.Name = "label2";
-            label2.Size = new Size(87, 20);
+            label2.Size = new Size(86, 31);
             label2.TabIndex = 10;
             label2.Text = ":شماره طبقه";
             // 
@@ -71,11 +71,11 @@
             // label4
             // 
             label4.AutoSize = true;
-            label4.Font = new Font("Microsoft Sans Serif", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 178);
+            label4.Font = new Font("B Koodak", 10.8F, FontStyle.Bold);
             label4.ForeColor = Color.MediumBlue;
             label4.Location = new Point(538, 220);
             label4.Name = "label4";
-            label4.Size = new Size(59, 20);
+            label4.Size = new Size(60, 31);
             label4.TabIndex = 12;
             label4.Text = ":ظرفیت";
             // 
@@ -90,18 +90,18 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Font = new Font("Microsoft Sans Serif", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 178);
+            label3.Font = new Font("B Koodak", 10.8F, FontStyle.Bold);
             label3.ForeColor = Color.MediumBlue;
             label3.Location = new Point(538, 166);
             label3.Name = "label3";
-            label3.Size = new Size(85, 20);
+            label3.Size = new Size(83, 31);
             label3.TabIndex = 15;
             label3.Text = ":شماره اتاق";
             // 
             // btnSave
             // 
             btnSave.BackColor = Color.Honeydew;
-            btnSave.Font = new Font("Microsoft Sans Serif", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 178);
+            btnSave.Font = new Font("B Koodak", 10.8F, FontStyle.Bold);
             btnSave.ForeColor = Color.MediumSeaGreen;
             btnSave.Location = new Point(407, 276);
             btnSave.Name = "btnSave";

@@ -69,7 +69,7 @@
             // btnDelete
             // 
             btnDelete.BackColor = Color.AliceBlue;
-            btnDelete.Font = new Font("Microsoft Sans Serif", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 178);
+            btnDelete.Font = new Font("B Koodak", 10.2F, FontStyle.Bold);
             btnDelete.ForeColor = Color.Crimson;
             btnDelete.Location = new Point(115, 447);
             btnDelete.Name = "btnDelete";
@@ -82,7 +82,7 @@
             // btnEdit
             // 
             btnEdit.BackColor = Color.AliceBlue;
-            btnEdit.Font = new Font("Microsoft Sans Serif", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 178);
+            btnEdit.Font = new Font("B Koodak", 10.2F, FontStyle.Bold);
             btnEdit.ForeColor = Color.Orange;
             btnEdit.Location = new Point(289, 447);
             btnEdit.Name = "btnEdit";
@@ -126,7 +126,7 @@
             // btnPrint
             // 
             btnPrint.BackColor = Color.AliceBlue;
-            btnPrint.Font = new Font("Microsoft Sans Serif", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 178);
+            btnPrint.Font = new Font("B Koodak", 10.2F, FontStyle.Bold);
             btnPrint.ForeColor = Color.DarkOrchid;
             btnPrint.Location = new Point(464, 447);
             btnPrint.Name = "btnPrint";
@@ -139,7 +139,7 @@
             // btnSetBlock
             // 
             btnSetBlock.BackColor = Color.AliceBlue;
-            btnSetBlock.Font = new Font("Microsoft Sans Serif", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 178);
+            btnSetBlock.Font = new Font("B Koodak", 10.2F, FontStyle.Bold);
             btnSetBlock.ForeColor = Color.MediumSeaGreen;
             btnSetBlock.Location = new Point(464, 320);
             btnSetBlock.Name = "btnSetBlock";
@@ -152,7 +152,7 @@
             // btnSetRoom
             // 
             btnSetRoom.BackColor = Color.AliceBlue;
-            btnSetRoom.Font = new Font("Microsoft Sans Serif", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 178);
+            btnSetRoom.Font = new Font("B Koodak", 10.2F, FontStyle.Bold);
             btnSetRoom.ForeColor = Color.MediumSeaGreen;
             btnSetRoom.Location = new Point(289, 317);
             btnSetRoom.Name = "btnSetRoom";
@@ -165,7 +165,7 @@
             // btnDeleteOwner
             // 
             btnDeleteOwner.BackColor = Color.AliceBlue;
-            btnDeleteOwner.Font = new Font("Microsoft Sans Serif", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 178);
+            btnDeleteOwner.Font = new Font("B Koodak", 10.2F, FontStyle.Bold);
             btnDeleteOwner.ForeColor = Color.Crimson;
             btnDeleteOwner.Location = new Point(272, 383);
             btnDeleteOwner.Name = "btnDeleteOwner";
@@ -178,7 +178,7 @@
             // btnAddOwner
             // 
             btnAddOwner.BackColor = Color.AliceBlue;
-            btnAddOwner.Font = new Font("Microsoft Sans Serif", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 178);
+            btnAddOwner.Font = new Font("B Koodak", 10.2F, FontStyle.Bold);
             btnAddOwner.ForeColor = Color.MediumSeaGreen;
             btnAddOwner.Location = new Point(423, 383);
             btnAddOwner.Name = "btnAddOwner";
@@ -231,7 +231,7 @@
             // btnShowRooms
             // 
             btnShowRooms.BackColor = Color.AliceBlue;
-            btnShowRooms.Font = new Font("Microsoft Sans Serif", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 178);
+            btnShowRooms.Font = new Font("B Koodak", 10.2F, FontStyle.Bold);
             btnShowRooms.ForeColor = Color.DeepPink;
             btnShowRooms.Location = new Point(115, 317);
             btnShowRooms.Name = "btnShowRooms";
@@ -366,11 +366,11 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new Font("Microsoft Sans Serif", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 178);
+            label1.Font = new Font("B Koodak", 10.2F, FontStyle.Bold);
             label1.ForeColor = Color.MediumBlue;
             label1.Location = new Point(497, 27);
             label1.Name = "label1";
-            label1.Size = new Size(105, 20);
+            label1.Size = new Size(105, 29);
             label1.TabIndex = 34;
             label1.Text = ":جستجوی بلوک";
             // 

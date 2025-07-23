@@ -131,7 +131,7 @@
             // btnSetRoomAssegment
             // 
             btnSetRoomAssegment.BackColor = Color.AliceBlue;
-            btnSetRoomAssegment.Font = new Font("Microsoft Sans Serif", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 178);
+            btnSetRoomAssegment.Font = new Font("B Koodak", 10.8F, FontStyle.Bold);
             btnSetRoomAssegment.ForeColor = Color.CadetBlue;
             btnSetRoomAssegment.Location = new Point(169, 365);
             btnSetRoomAssegment.Name = "btnSetRoomAssegment";
@@ -154,7 +154,7 @@
             // btnSetRoom
             // 
             btnSetRoom.BackColor = Color.AliceBlue;
-            btnSetRoom.Font = new Font("Microsoft Sans Serif", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 178);
+            btnSetRoom.Font = new Font("B Koodak", 10.8F, FontStyle.Bold);
             btnSetRoom.ForeColor = Color.SeaGreen;
             btnSetRoom.Location = new Point(404, 305);
             btnSetRoom.Name = "btnSetRoom";
@@ -177,7 +177,7 @@
             // btnShowRoomAssegment
             // 
             btnShowRoomAssegment.BackColor = Color.AliceBlue;
-            btnShowRoomAssegment.Font = new Font("Microsoft Sans Serif", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 178);
+            btnShowRoomAssegment.Font = new Font("B Koodak", 10.8F, FontStyle.Bold);
             btnShowRoomAssegment.ForeColor = Color.Chocolate;
             btnShowRoomAssegment.Location = new Point(170, 431);
             btnShowRoomAssegment.Name = "btnShowRoomAssegment";
@@ -210,7 +210,7 @@
             // btnPrint
             // 
             btnPrint.BackColor = Color.AliceBlue;
-            btnPrint.Font = new Font("Microsoft Sans Serif", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 178);
+            btnPrint.Font = new Font("B Koodak", 10.8F, FontStyle.Bold);
             btnPrint.ForeColor = Color.MediumOrchid;
             btnPrint.Location = new Point(169, 307);
             btnPrint.Name = "btnPrint";
@@ -233,7 +233,7 @@
             // btnDelete
             // 
             btnDelete.BackColor = Color.AliceBlue;
-            btnDelete.Font = new Font("Microsoft Sans Serif", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 178);
+            btnDelete.Font = new Font("B Koodak", 10.8F, FontStyle.Bold);
             btnDelete.ForeColor = Color.Crimson;
             btnDelete.Location = new Point(403, 428);
             btnDelete.Name = "btnDelete";
@@ -256,7 +256,7 @@
             // btnEdit
             // 
             btnEdit.BackColor = Color.AliceBlue;
-            btnEdit.Font = new Font("Microsoft Sans Serif", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 178);
+            btnEdit.Font = new Font("B Koodak", 10.8F, FontStyle.Bold);
             btnEdit.ForeColor = Color.Fuchsia;
             btnEdit.Location = new Point(403, 367);
             btnEdit.Name = "btnEdit";

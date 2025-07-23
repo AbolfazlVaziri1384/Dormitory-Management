@@ -156,7 +156,7 @@
             // AboutBox1
             // 
             AcceptButton = okButton;
-            AutoScaleDimensions = new SizeF(8F, 15F);
+            AutoScaleDimensions = new SizeF(10F, 18F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(725, 566);
             Controls.Add(tableLayoutPanel);

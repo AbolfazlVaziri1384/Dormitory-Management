@@ -154,7 +154,7 @@
             // btnDelete
             // 
             btnDelete.BackColor = Color.AliceBlue;
-            btnDelete.Font = new Font("Microsoft Sans Serif", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 178);
+            btnDelete.Font = new Font("B Koodak", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 178);
             btnDelete.ForeColor = Color.Crimson;
             btnDelete.Location = new Point(370, 250);
             btnDelete.Name = "btnDelete";

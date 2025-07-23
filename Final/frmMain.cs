@@ -53,6 +53,14 @@ namespace Final
                 mnuSetManager.Visible = false;
                 mnuFrmManagers.Visible = false;
             }
+            if (role != (int)EnumTool.Role.Manager && role != (int)EnumTool.Role.Admin)
+            {
+                mnufrmDormitoryOwner.Visible = false;
+            }
+            if (role != (int)EnumTool.Role.Manager && role != (int)EnumTool.Role.Admin && role != (int)EnumTool.Role.DormitoryOwner)
+            {
+                mnufrmBlockOwner.Visible = false;
+            }
             lblFullName.Text = User.GetFullName(User.FindUserById(UserID));
             lblLogin.Text = User.FindUserById(UserID).PreviousLogin.ToHDateTime();
             lblTimer.Text = DateTime.Now.ToString("HH:mm:ss");
@@ -183,6 +191,20 @@ namespace Final
         private void lblLogin_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void mnufrmDormitoryOwner_Click(object sender, EventArgs e)
+        {
+            frmDormitoryOwner frmDormitoryOwner = new frmDormitoryOwner();
+            frmDormitoryOwner.UserID = UserID;
+            frmDormitoryOwner.ShowDialog();
+        }
+
+        private void mnufrmBlockOwner_Click(object sender, EventArgs e)
+        {
+            frmBlockOwners frmOwner = new frmBlockOwners();
+            frmOwner.UserID = UserID;
+            frmOwner.ShowDialog();
         }
     }
 }

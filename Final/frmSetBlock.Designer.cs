@@ -47,11 +47,11 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new Font("Microsoft Sans Serif", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 178);
+            label1.Font = new Font("B Koodak", 10.8F, FontStyle.Bold);
             label1.ForeColor = Color.MediumBlue;
             label1.Location = new Point(549, 87);
             label1.Name = "label1";
-            label1.Size = new Size(67, 20);
+            label1.Size = new Size(72, 31);
             label1.TabIndex = 0;
             label1.Text = ":نام بلوک";
             // 
@@ -66,40 +66,40 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Font = new Font("Microsoft Sans Serif", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 178);
+            label2.Font = new Font("B Koodak", 10.8F, FontStyle.Bold);
             label2.ForeColor = Color.MediumBlue;
             label2.Location = new Point(549, 147);
             label2.Name = "label2";
-            label2.Size = new Size(81, 20);
+            label2.Size = new Size(82, 31);
             label2.TabIndex = 5;
             label2.Text = ":تعداد طبقه";
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Font = new Font("Microsoft Sans Serif", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 178);
+            label3.Font = new Font("B Koodak", 10.8F, FontStyle.Bold);
             label3.ForeColor = Color.MediumBlue;
             label3.Location = new Point(549, 208);
             label3.Name = "label3";
-            label3.Size = new Size(79, 20);
+            label3.Size = new Size(79, 31);
             label3.TabIndex = 6;
             label3.Text = ":تعداد اتاق";
             // 
             // label4
             // 
             label4.AutoSize = true;
-            label4.Font = new Font("Microsoft Sans Serif", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 178);
+            label4.Font = new Font("B Koodak", 10.8F, FontStyle.Bold);
             label4.ForeColor = Color.MediumBlue;
             label4.Location = new Point(555, 268);
             label4.Name = "label4";
-            label4.Size = new Size(59, 20);
+            label4.Size = new Size(60, 31);
             label4.TabIndex = 7;
             label4.Text = ":ظرفیت";
             // 
             // btnSave
             // 
             btnSave.BackColor = Color.Honeydew;
-            btnSave.Font = new Font("Microsoft Sans Serif", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 178);
+            btnSave.Font = new Font("B Koodak", 10.8F, FontStyle.Bold);
             btnSave.ForeColor = Color.MediumSeaGreen;
             btnSave.Location = new Point(341, 343);
             btnSave.Name = "btnSave";
