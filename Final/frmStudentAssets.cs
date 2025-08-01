@@ -147,6 +147,7 @@ namespace Final
             dtRoomAsset.Columns.Add("AssetNumber");
             dtRoomAsset.Columns.Add("Status");
             dtRoomAsset.Columns.Add("CreatOn");
+
             dtRoomAsset.Columns.Add("CreatBy");
 
 
@@ -196,7 +197,11 @@ namespace Final
             }
             long id;
             id = long.Parse(dgvRoomAssets.CurrentRow.Cells[0].Value.ToString());
-
+            if (dgvRoomAssets.CurrentRow.Cells[3].Value.ToString() == "درحال تعمیر")
+            {
+                MessageBoxTool.msger("درخواست تعمیر برای این وسیله زده شده است");
+                return ;
+            }
             frmRepairRoomAsset frm = new frmRepairRoomAsset();
             frm.UserID = UserID;
             frm.RoomAssetID = TransferRoomAssetHistory.FindById(id).RoomAssetId;

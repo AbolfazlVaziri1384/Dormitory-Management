@@ -1,14 +1,26 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Asus\\Desktop\\Update Pro\\Nerds_First_Project\\",
+  "WorkspaceRootPath": "D:\\PROGRAMMING\\C#\\project\\DormitoryManager_Nerds\\Nerds_First_Project\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|c:\\users\\asus\\desktop\\update pro\\nerds_first_project\\final\\frmroomassets.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|d:\\programming\\c#\\project\\dormitorymanager_nerds\\nerds_first_project\\final\\models\\dormitory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|solutionrelative:final\\models\\dormitory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|d:\\programming\\c#\\project\\dormitorymanager_nerds\\nerds_first_project\\final\\frmstudentassets.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|solutionrelative:final\\frmstudentassets.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|d:\\programming\\c#\\project\\dormitorymanager_nerds\\nerds_first_project\\final\\frmroomassets.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|solutionrelative:final\\frmroomassets.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|C:\\Users\\Asus\\Desktop\\Update Pro\\Nerds_First_Project\\final\\frmroomassets.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|D:\\PROGRAMMING\\C#\\project\\DormitoryManager_Nerds\\Nerds_First_Project\\final\\frmroomassets.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|solutionrelative:final\\frmroomassets.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|D:\\PROGRAMMING\\C#\\project\\DormitoryManager_Nerds\\Nerds_First_Project\\final\\frmstudentassets.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A45397B4-5F3C-491F-8816-EA99EBAF393C}|Final\\Final.csproj|solutionrelative:final\\frmstudentassets.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -38,33 +50,64 @@
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
-            {
-              "$type": "Bookmark",
               "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Dormitory.cs",
+              "DocumentMoniker": "D:\\PROGRAMMING\\C#\\project\\DormitoryManager_Nerds\\Nerds_First_Project\\Final\\Models\\Dormitory.cs",
+              "RelativeDocumentMoniker": "Final\\Models\\Dormitory.cs",
+              "ToolTip": "D:\\PROGRAMMING\\C#\\project\\DormitoryManager_Nerds\\Nerds_First_Project\\Final\\Models\\Dormitory.cs",
+              "RelativeToolTip": "Final\\Models\\Dormitory.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAAAC4AAABEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-30T17:06:48.012Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "frmStudentAssets.cs",
+              "DocumentMoniker": "D:\\PROGRAMMING\\C#\\project\\DormitoryManager_Nerds\\Nerds_First_Project\\Final\\frmStudentAssets.cs",
+              "RelativeDocumentMoniker": "Final\\frmStudentAssets.cs",
+              "ToolTip": "D:\\PROGRAMMING\\C#\\project\\DormitoryManager_Nerds\\Nerds_First_Project\\Final\\frmStudentAssets.cs",
+              "RelativeToolTip": "Final\\frmStudentAssets.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAMcAAABTAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-25T06:58:16.801Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "frmStudentAssets.cs [Design]",
+              "DocumentMoniker": "D:\\PROGRAMMING\\C#\\project\\DormitoryManager_Nerds\\Nerds_First_Project\\Final\\frmStudentAssets.cs",
+              "RelativeDocumentMoniker": "Final\\frmStudentAssets.cs",
+              "ToolTip": "C:\\Users\\Asus\\Desktop\\Update Pro\\Nerds_First_Project\\Final\\frmStudentAssets.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-25T06:58:13.56Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "frmRoomAssets.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\Update Pro\\Nerds_First_Project\\Final\\frmRoomAssets.cs",
+              "DocumentMoniker": "D:\\PROGRAMMING\\C#\\project\\DormitoryManager_Nerds\\Nerds_First_Project\\Final\\frmRoomAssets.cs",
               "RelativeDocumentMoniker": "Final\\frmRoomAssets.cs",
-              "ToolTip": "C:\\Users\\Asus\\Desktop\\Update Pro\\Nerds_First_Project\\Final\\frmRoomAssets.cs",
+              "ToolTip": "D:\\PROGRAMMING\\C#\\project\\DormitoryManager_Nerds\\Nerds_First_Project\\Final\\frmRoomAssets.cs",
               "RelativeToolTip": "Final\\frmRoomAssets.cs",
-              "ViewState": "AgIAAIkAAAAAAAAAAAAkwKIAAAARAAAAAAAAAA==",
+              "ViewState": "AgIAACMAAAAAAAAAAAAqwD0AAACgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-23T15:18:04.434Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "frmRoomAssets.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\Update Pro\\Nerds_First_Project\\Final\\frmRoomAssets.cs",
+              "DocumentMoniker": "D:\\PROGRAMMING\\C#\\project\\DormitoryManager_Nerds\\Nerds_First_Project\\Final\\frmRoomAssets.cs",
               "RelativeDocumentMoniker": "Final\\frmRoomAssets.cs",
               "ToolTip": "C:\\Users\\Asus\\Desktop\\Update Pro\\Nerds_First_Project\\Final\\frmRoomAssets.cs [Design]",
-              "RelativeToolTip": "Final\\frmRoomAssets.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-23T15:18:02.22Z"
             }
