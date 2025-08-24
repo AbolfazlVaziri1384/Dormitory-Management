@@ -1,3 +1,3 @@
 # Nerds_First_Project 
-Dormitory C# Project 
+Dormitory Management C# Project 
 Developed by the "Nerds" Group
